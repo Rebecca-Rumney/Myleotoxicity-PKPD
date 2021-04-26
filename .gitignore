@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Virtual environments
+venv/
+env/
+
+# vscode
+.vscode
+
+# idea
+.idea
+
+# =4.2.0 (not sure what this does
+=4.2.0
