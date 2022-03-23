@@ -1,0 +1,1652 @@
+# Pharmacokinetics and Pharmacodynamics of Myelotoxicity
+
+### Contents
+- [Introduction](introduction.ipynb)
+- [Exploring Data](data_explore.ipynb)
+- [PK model - Naive Pooled Inference](PK_naive_pooled_inference.ipynb)
+- **PD friberg model - Naive Pooled Inference**
+    - [Simulated Data](#Simulated-Data)
+        - [Initial Optimisation](#Initial-Optimisation)
+    - [Real Data](#Real-Data)
+        - [K-Fold Validation](#K-Fold-Validation)
+    
+**NEW**: [K-Fold Validation - Simulated Data](#NEW)
+    
+- Performed K-fold validation on multiplicative noise. 
+- Looked at $\hat{r}$ for the MCMC sampling.
+
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+import scipy
+from scipy import optimize, integrate
+import pints
+import pints.plot
+import pandas
+import plotly.express as px
+import plotly.graph_objects as go
+from ipynb.fs.full.model_simulation import PK_iv_result # import the required model
+from ipynb.fs.full.model_simulation import PD_result # import the required model
+from ipynb.fs.full.model_simulation import GaussianLogLikelihood
+from ipynb.fs.full.model_simulation import MultiplicativeGaussianLogLikelihood
+from ipynb.fs.full.model_simulation import ConstantAndMultiplicativeGaussianLogLikelihood
+from ipynb.fs.full.model_simulation import PintsPDFriberg # import the pints model
+from ipynb.fs.full.model_simulation import PintsPDFribergFixParam # import the pints model
+
+## PD friberg model - Naive Pooled Inference
+
+The first pharmacodynamic model (see [fig 1](PD-Friberg)) we will be looking at was produced by Friberg et. al. which models the life cycle of blood cells as transitioning through different states:
+
+ - a proliferation state ($Prol$), in which the cells are able to proliferate
+ - 3 transit states ($T_1$, $T_2$ and $T_3$), which represents the time delay between proliferation and circulation while the cell is maturing
+ - a circulation state ($Circ$), in which the cells are circulating the blood stream and can be measured.
+ 
+The blood cells in the proliferation state creates new cells at a rate of $k_{prol}$ when at equilibrium and transitions into the first transition state at a rate of $k_{tr}$. The blood cells also transition from one transition state to the next or from the last transition state into circulation at a rate of $k_{tr}$. The circulating blood cells are cleared from the blood stream at a rate of $k_{circ}$. However, as per the friberg paper, I will simplify the system by making $k_{prol} = k_{tr} = k_{circ} = \frac{4}{\mathrm{MTT}}$ where MTT is the mean transit time. To maintain a concentraion of $Circ$ at a constant level $Circ_0$, there is a negative feedback loop.
+
+The drug interacts with the system by inhibiting proliferation. The relation between drug amount and drug effect is assumed to be linear, i.e. $E_\mathrm{drug} = slope*Conc_\mathrm{drug}$
+
+<img src="Images/PD_Friberg.svg">
+
+This Produces equations:
+
+$$
+\dot{Prol} = k_{prol}(1-E_\mathrm{drug})(\frac{Circ_0}{Circ})^\gamma Prol - k_{tr} Prol \\
+\dot{T_1} = k_{tr}Prol - k_{tr} T_1\\
+\dot{T_2} = k_{tr}T_1 - k_{tr} T_2\\
+\dot{T_3} = k_{tr}T_2 - k_{tr} T_3\\
+\dot{Circ} = k_{tr}T_3 - k_{tr} Circ
+$$
+
+### Simulated Data
+
+I initially test fit the model to simulated data before trying to fit to the real data. This shows which methods can reliably infer the parameters. The noise used had both additive and multiplicative parts, i.e.
+$$
+X_\mathrm{Obs}(t_i) = Circ(t_i) + \left(\sigma_{base} + \sigma_{rel} Circ(t_i)^\eta\right) \epsilon_i,
+$$
+where 
+$$
+\epsilon_i \sim \mathcal{N}\left(0,\,\sigma^{2}\right)
+$$
+I used the typical PD parameters that Friberg et. al. inferred to create this synthesised data. The PK parameters came from the previous inference that I performed for Docetaxel. This dataset has 100 observations between the times -48 hours and 1440 hours (where dosing occurs at 0 hours).
+
+# Options
+drug = 'Simulated Drug'
+dose = 2
+
+# Retrieve the parameters for the conc-time curve
+PK_params = np.load('simulated_parameters_actual_dose'+str(dose)+'.npy')
+num_comp = int(len(PK_params)/2)  # If this has a linear PK model
+
+
+# Actual Parameters - Taken from the Friberg Paper
+# (This is only to produce the simulated data. These are 'unknown' when doing the inference)
+Circ_0 = 983.10 # 5.45
+MTT = 85.26 # 65
+gamma = 0.44 # 0.174
+slope = 0.02 # 0.126
+PD_actual_params = [Circ_0, MTT, gamma, slope]
+
+# Create the Data
+start_time = -48
+end_time = 552
+num_obs = 100
+# data_times = np.linspace(start_time, end_time, num_obs) 
+data_times = np.asarray(
+    [-48.0, 24.0, 48.0, 72.0, 96.0, 120.0, 144.0, 168.0, 192.0, 216.0, 
+     240.0, 264.0, 288.0, 312.0, 336.0, 360.0, 384.0, 432.0, 480.0, 552.0]
+)
+times_before_dose = np.count_nonzero(data_times < 0)
+
+# Conc-Time Curve
+PK_times = data_times[times_before_dose:]
+if PK_times[0] == 0:
+    conc_cuve = PK_iv_result(dose, num_comp, PK_params, PK_times)[:,0]
+    conc_cuve = np.concatenate((np.zeros(times_before_dose), conc_curve))
+else:
+    conc_curve = PK_iv_result(dose, num_comp, PK_params, np.concatenate((np.zeros(1),PK_times)))[:, 0]
+    conc_curve = np.concatenate((np.zeros(times_before_dose), conc_curve[1:]))
+
+# Add combined relative and constant Noise
+sigma_rel = 0.13 # Same as the real data. (previous: 0.0453)
+ratio = 42.43/983.10 # Ratio between sigma_base and Circ_0 in the real data
+sigma_base = Circ_0 * ratio # (previous: 0.0671)
+
+mult_noise = np.random.normal(0, sigma_rel, len(data_times))
+add_noise = np.random.normal(0, sigma_base, len(data_times))
+values_no_noise = PD_result(dose, num_comp, np.concatenate((PK_params, np.asarray(PD_actual_params))), data_times)
+values_noisey = values_no_noise*(1+mult_noise)+add_noise
+df = pandas.DataFrame({'TIME' : data_times, 'OBS' : values_noisey})
+
+PD_actual_params = PD_actual_params+[sigma_base, 1, sigma_rel]
+param_names = ["Circ_0", "MTT", "gamma", "slope", "sigma_base", "eta", "sigma_rel"]
+
+more_times = np.linspace(start_time, end_time, num_obs*10)
+more_values = PD_result(dose, num_comp, np.concatenate((PK_params, np.asarray(PD_actual_params[:4]))), more_times)
+
+# Visualise the data
+plt.plot(df['TIME']/24, df['OBS'], '.', label='Measured values (known)')
+plt.plot(data_times/24, values_no_noise, '.', label='Actual values (unknown)')
+plt.plot(more_times/24, more_values, label='Actual curve (unknown)')
+plt.xlabel('Time')
+plt.ylabel('Concentration')
+plt.legend()
+plt.show()
+
+plt.plot(data_times/24, conc_curve)
+plt.xlabel('Time')
+plt.ylabel('Concentration')
+plt.show
+
+np.save("./Data_and_parameters/pd_sim_actual_params_dose_"+str(dose), PD_actual_params)
+
+# save the data for ease of use later
+data_file = "./Data_and_parameters/pd_sim_data_dose_" + str(dose)
+df.to_csv(data_file, index = False)
+
+#### Initial Optimisation
+
+Before performing bayesian inference, I used optimisation to find the parameters with the highest likelihood, given the data. This should give a good starting point for using bayesian inference.
+
+# Create the model in PINTS 
+dose = 2
+PK_params=np.load('simulated_parameters_actual_dose'+str(dose)+'.npy')
+df = pandas.read_csv("./Data_and_parameters/pd_sim_data_dose_" + str(dose))
+pints_model_simulated = PintsPDFriberg(PK_params, dose, start_time=start_time)
+print(df)
+
+Before starting the optimisation we can estimate the parameter Circ_0.
+
+df_before_0 = df[df["TIME"] < 0]
+Circ_0_approx = sum(df_before_0["OBS"])/times_before_dose
+print("approximate Circ_0: ", Circ_0_approx)
+
+I also used 2 different error scores for the optimisation. Sum of squares error and the combined relative and constant gaussian noise log likelihood.
+
+# Optimise the model with respect to the data
+problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df['OBS'].to_numpy())
+error_measure = pints.SumOfSquaresError(problem)
+lower_bound = [0.1, 0.1, 0.01, 0.001]
+upper_bound = [10000, 1000, 100, 10]
+
+point = np.exp((np.log(np.asarray(lower_bound)) + np.log(np.asarray(upper_bound)))/2)
+point[0] = Circ_0_approx
+unchanged_threshold = 1e-4
+
+optimisation = pints.OptimisationController(error_measure, point, method=pints.CMAES, boundaries=pints.RectangularBoundaries(lower_bound, upper_bound))
+optimisation.set_max_unchanged_iterations(threshold=unchanged_threshold)
+
+optimisation.set_log_to_screen(True)
+
+parametersadd, erroradd = optimisation.run()
+actual_error = error_measure(PD_actual_params[:4])
+parametersadd = (parametersadd, erroradd, actual_error)
+
+np.save("./Data_and_parameters/pd_sim_opt_add_params_dose_"+str(dose), parametersadd)
+
+# Optimise the model with respect to the data by maximising the Log Likelihood.
+problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df['OBS'].to_numpy())
+log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem)
+error_measure = pints.ProbabilityBasedError(log_likelihood)
+lower_bound = [1e-1, 1e0, 1e-3, 1e-3, 1e-4, 1e-2, 1e-4]
+upper_bound = [1e4, 1e4, 1e1, 1e1, 1e2, 1e2, 1e2]
+
+point = np.exp((np.log(np.asarray(lower_bound)) + np.log(np.asarray(upper_bound)))/2)
+point[0] = Circ_0_approx
+unchanged_threshold = 1e-4
+
+optimisation = pints.OptimisationController(error_measure, point, method=pints.CMAES, boundaries=pints.RectangularBoundaries(lower_bound, upper_bound))
+optimisation.set_max_unchanged_iterations(threshold=unchanged_threshold)
+
+optimisation.set_log_to_screen(True)
+
+parameterslike, errorlike = optimisation.run()
+actual_error = error_measure(PD_actual_params)
+parameterslike = (parameterslike, errorlike, actual_error)
+
+np.save("./Data_and_parameters/pd_sim_opt_like_params_dose_"+str(dose), parameterslike)
+
+##### Optimisation results
+
+# Table of Parameters
+
+dose = 2
+
+
+parameter_names =['Circ_0', 'MTT', 'gamma', 'slope', 'sigma_base', 'eta', 'sigma_rel']
+
+parametersadd = np.load("./Data_and_parameters/pd_sim_opt_like_params_dose_"+str(dose)+"_less_noise.npy", allow_pickle=True)
+parameterslike = np.load("./Data_and_parameters/pd_sim_opt_like_params_dose_"+str(dose)+".npy", allow_pickle=True)
+PD_actual_params = np.load("./Data_and_parameters/pd_sim_actual_params_dose_"+str(dose)+".npy")
+
+print('\t\tLess Noise \t\tMore Noise \t\tReal')
+print(parameter_names[0] + ': \t' + str(parametersadd[0][0]) + '\t' + str(parameterslike[0][0]) + '\t' + str(PD_actual_params[0]))
+print(parameter_names[1] + ': \t\t' + str(parametersadd[0][1]) + '\t' + str(parameterslike[0][1]) + '\t' + str(PD_actual_params[1]))
+print(parameter_names[2] + ': \t\t' + str(parametersadd[0][2]) + '\t' + str(parameterslike[0][2]) + '\t' + str(PD_actual_params[2]))
+print(parameter_names[3] + ': \t\t' + str(parametersadd[0][3]) + '\t' + str(parameterslike[0][3]) + '\t' + str(PD_actual_params[3]))
+print('Error: \t\t'+str(parametersadd[1])+'\t'+str(parameterslike[1]) +'\t'+str(error_measure(PD_actual_params)))
+
+# Lets Visualise using Plotly
+
+data_file = "./Data_and_parameters/pd_sim_data_dose_" + str(dose)
+df = pandas.read_csv(data_file)
+
+more_times = np.linspace(start_time, end_time, num_obs*10)
+more_values = PD_result(dose, num_comp, np.concatenate((PK_params, np.asarray(PD_actual_params[:4]))), more_times)
+
+y_label = "Concentration"
+x_label = "Time"
+
+fig = px.scatter(
+    df,
+    title="Blood cell Concentration Mean",
+    x="TIME",
+    y="OBS",
+    width=800, 
+    height=500,
+)
+
+fig.update_xaxes(title_text=x_label)
+fig.update_yaxes(title_text=y_label)
+fig.update_traces(mode='markers+lines')
+fig['data'][0]['showlegend']=True
+fig['data'][0]['name']='Observed Values'
+fig.add_trace(go.Scatter(x=more_times, y=pints_model_simulated.simulate(parametersadd[0][:4], more_times-start_time),
+                    mode='lines',
+                    name='Prediction - additive noise'))
+
+fig.add_trace(go.Scatter(x=more_times, y=pints_model_simulated.simulate(parameterslike[0][:4], more_times-start_time),
+                    mode='lines',
+                    name='Prediction - combination noise'))
+
+fig.add_trace(go.Scatter(x=more_times, y=more_values,
+                    mode='lines',
+                    name='Actual'))
+
+fig.update_layout(
+    updatemenus=[
+        dict(
+            type = "buttons",
+            direction = "left",
+            buttons=list([
+                dict(
+                    args=[{"yaxis.type": "linear"}],
+                    label="Linear y-scale",
+                    method="relayout"
+                ),
+                dict(
+                    args=[{"yaxis.type": "log"}],
+                    label="Log y-scale",
+                    method="relayout"
+                )
+            ]),
+            pad={"r": 0, "t": -10},
+            showactive=True,
+            x=1.0,
+            xanchor="right",
+            y=1.15,
+            yanchor="top"
+        ),
+    ]
+)
+fig.show()
+
+# num_points = 100
+# P_0 = np.asarray(PD_actual_params)
+# P_1 = parametersadd
+# errors = []
+# xs = np.linspace(0, 1, num_points)
+
+# for x in xs:
+#     point = x*P_0+(1-x)*P_1
+#     errors.append(error_measure(point))
+    
+# plt.plot(xs, errors)
+# plt.show()
+
+This is a useful way of estimating the correct parameters and visualising how good the model and estimated parameters fit the data. However, it would also be useful to know how sure we are on these parameter values. To do this we use Bayesian inference and MCMC to sample the parameter space and give a distribution of probable parameter values.
+
+log_prior = pints.UniformLogPrior(np.asarray(lower_bound)*0.8, np.asarray(upper_bound)*1.2)
+log_posterior = pints.LogPosterior(log_likelihood, log_prior)
+num_iterations = (pints_model_simulated.n_parameters()+3)*3000
+
+startpoints = [parameterslike[0], parameterslike[0]*0.8, parameterslike[0]*1.2]
+mcmc = pints.MCMCController(log_posterior, 3, startpoints, method=pints.HaarioBardenetACMC)
+mcmc.set_max_iterations(num_iterations)
+# mcmc.set_log_to_screen(False)
+samples = mcmc.run()
+
+np.save("./Data_and_parameters/pd_sim_mcmc_comb_params_dose_"+str(dose), samples)
+pints.plot.trace(samples)
+plt.show()
+
+pints.plot.pairwise(np.vstack(samples[:,int(num_iterations/2):]))
+plt.show()
+
+# New - Parameter Identifiability
+
+Now we shall see whether the parameters are easily identifiable from this data.
+
+# For single Parameters
+dose = 2
+PK_params=np.load('simulated_parameters_actual_dose'+str(dose)+'.npy')
+df = pandas.read_csv("./Data_and_parameters/pd_sim_data_dose_" + str(dose))
+lower_bound = [1e-1, 1e0, 1e-3, 1e-3, 1e-4, 1e-2, 1e-4]
+upper_bound = [1e4, 1e4, 1e1, 1e1, 1e2, 1e2, 1e2]
+
+opt_params_initial = np.load("./Data_and_parameters/pd_sim_opt_like_params_dose_"+str(dose)+".npy", allow_pickle=True)[0]
+
+for param_no in range(4, 7):
+    param_range = np.linspace(1*opt_params_initial[param_no], 0.5*opt_params_initial[param_no], 100)
+    point = np.concatenate((opt_params_initial[:param_no], opt_params_initial[param_no+1:]))
+    likelihood_lower = []
+
+    for param_value in param_range:
+        if i < 4:
+            pints_model_simulated = PintsPDFribergFixParam(PK_params, dose, fix_param=[[param_no], [param_value]], start_time=start_time)
+            problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df[''].to_numpy())
+            log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem)
+        else:
+            pints_model_simulated = PintsPDFribergFixParam(PK_params, dose, start_time=start_time)
+            problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df['OBS'].to_numpy())
+            fix_noise = [None]*3
+            fix_noise[i] = param_value
+            log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem, fix_noise=fix_noise)
+            
+        error_measure = pints.ProbabilityBasedError(log_likelihood)
+
+#         unchanged_threshold = 1e-4
+#         # boundaries=pints.RectangularBoundaries(lower_bound[:param_no]+lower_bound[param_no+1:], upper_bound[:param_no]+upper_bound[param_no+1:])
+        
+#         optimisation = pints.OptimisationController(error_measure, point, method=pints.NelderMead)
+#         optimisation.set_max_unchanged_iterations(threshold=unchanged_threshold)
+
+#         optimisation.set_log_to_screen(False)
+#         point, error = optimisation.run()
+        likelihood_lower.append([param_value, error])
+    
+    param_range = np.linspace(1*opt_params_initial[param_no], 1.5*opt_params_initial[param_no], 100)
+    point = np.concatenate((opt_params_initial[:param_no], opt_params_initial[param_no+1:]))
+    likelihood_upper = []
+
+    for param_value in param_range:
+        pints_model_simulated = PintsPDFribergFixParam(PK_params, dose, fix_param=[[param_no], [param_value]], start_time=start_time)
+        problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df['OBS'].to_numpy())
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem)
+        error_measure = pints.ProbabilityBasedError(log_likelihood)
+
+        unchanged_threshold = 1e-4
+        boundaries=pints.RectangularBoundaries(lower_bound[:param_no]+lower_bound[param_no+1:], upper_bound[:param_no]+upper_bound[param_no+1:])
+        
+        optimisation = pints.OptimisationController(error_measure, point, method=pints.NelderMead)
+        optimisation.set_max_unchanged_iterations(threshold=unchanged_threshold)
+
+        optimisation.set_log_to_screen(False)
+        point, error = optimisation.run()
+        likelihood_upper.append([param_value, error])
+    
+    likelihood_lower.reverse()
+    likelihood = np.array(likelihood_lower+likelihood_upper)
+    np.save("./Data_and_parameters/pd_sim_identify_comb_param_"+str(param_no)+"_dose_"+str(dose), likelihood)
+
+def profile_likelihood(i, j, param_range_i, param_range_j, point_start):
+    point_next_line = point_start
+    likelihood_matrix = np.zeros((len(param_range_i), len(param_range_j)))
+    for index_i, param_value_i in enumerate(param_range_i):
+        print(str(index_i/len(param_range_i)*100)+"%", sep=' ', end='', flush=True)
+        point = point_next_line
+        for index_j, param_value_j in enumerate(param_range_j):
+            pints_model_simulated = PintsPDFribergFixParam(PK_params, dose, fix_param=[[i, j], [param_value_i, param_value_j]], start_time=start_time)
+            problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df['OBS'].to_numpy())
+            log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem)
+            error_measure = pints.ProbabilityBasedError(log_likelihood)
+
+            unchanged_threshold = 1e-4
+
+            optimisation = pints.OptimisationController(error_measure, point, method=pints.NelderMead)
+            optimisation.set_max_unchanged_iterations(threshold=unchanged_threshold)
+
+            optimisation.set_log_to_screen(False)
+            point, error = optimisation.run()
+            likelihood_matrix[index_i,index_j] = error
+
+            if index_j==0:
+                point_next_line = point
+    return likelihood_matrix
+
+# For double parameters
+for i in range(3, 4):
+    param_range_i_lower = np.linspace(1*opt_params_initial[i], 0.5*opt_params_initial[i], 10)
+    param_range_i_upper = np.linspace(1*opt_params_initial[i], 1.5*opt_params_initial[i], 10)
+    for j in range(0,i):
+        print("parameter "+param_names[i]+" with parameter "+param_names[j])
+        param_range_j_left = np.linspace(1*opt_params_initial[j], 0.5*opt_params_initial[j], 10)
+        param_range_j_right = np.linspace(1*opt_params_initial[j], 1.5*opt_params_initial[j], 10)
+        
+        point_start = np.concatenate((opt_params_initial[:j],opt_params_initial[j+1:i], opt_params_initial[i+1:]))
+        likelihood_lower_left = profile_likelihood(i,j, param_range_i_lower, param_range_j_left, point_start)
+        likelihood_lower_left = np.fliplr(likelihood_lower_left[:,1:])
+        
+        likelihood_upper_left = profile_likelihood(i,j, param_range_i_upper, param_range_j_left, point_start)
+        likelihood_upper_left = np.fliplr(np.flipud(likelihood_upper_left[1:,1:]))
+        
+        likelihood_lower_right = profile_likelihood(i,j, param_range_i_lower, param_range_j_right, point_start)
+        
+        likelihood_upper_right = profile_likelihood(i,j, param_range_i_upper, param_range_j_right, point_start)
+        likelihood_upper_right = np.flipud(likelihood_upper_right[1:,:])
+        
+        likelihood_upper = np.concatenate((likelihood_upper_left, likelihood_upper_right), axis=1)
+        likelihood_lower = np.concatenate((likelihood_lower_left, likelihood_lower_right), axis=1)
+        likelihood =  np.concatenate((likelihood_upper, likelihood_lower), axis=0)
+        
+        np.save("./Data_and_parameters/pd_sim_identify_comb_param_"+str(i)+"_"+str(j)+"_dose_"+str(dose), likelihood)
+
+fig, ax = plt.subplots(4, 4)
+fig.set_size_inches(18.5, 18.5)
+for i in range(0,4):
+    for j in range(0,4):
+        if i == j:
+            likelihood = np.load("./Data_and_parameters/pd_sim_identify_comb_param_"+str(i)+"_dose_"+str(dose)+".npy")
+
+            ax[i, j].plot(likelihood[:,0], likelihood[:,1])
+            ax[i, j].axvline(x=PD_actual_params[i], linestyle='--', color='r')
+        elif j<i:
+            likelihood = np.load("./Data_and_parameters/pd_sim_identify_comb_param_"+str(i)+"_"+str(j)+"_dose_"+str(dose)+".npy")
+            y_range = np.linspace(0.5*opt_params_initial[i], 1.5*opt_params_initial[i], 19)
+            x_range = np.linspace(0.5*opt_params_initial[j], 1.5*opt_params_initial[j], 19)
+
+            colouring = ax[i, j].pcolormesh(x_range, y_range, likelihood, vmin=likelihood.min(), vmax=likelihood.max(), cmap='PuBu_r', shading='auto')
+            
+            ax[i, j].axvline(x=PD_actual_params[j], linestyle='--', color='r')
+            ax[i, j].axhline(y=PD_actual_params[i], linestyle='--', color='r')
+        
+        else:
+            ax[i, j].set_axis_off()
+        
+#         fig.colorbar(colouring, ax=ax[i,j], extend='max')
+        if i == 3:
+            ax[i, j].set_xlabel(param_names[j])
+        else:
+            ax[i, j].set_xticks([])
+        if j == 0:
+            ax[i, j].set_ylabel(param_names[i])
+        else:
+            ax[i, j].set_yticks([])
+
+#### K-Fold Validation: Simulated Data
+
+For both the LOO and WAIC calculations a warning was given (LOO: Estimated shape parameter of Pareto distribution is greater than 0.7; WAIC: For one or more samples the posterior variance of the log predictive densities exceeds 0.4). This is likely due to one or more of the observations being highly influential in the fit. Thus, to confirm the results of the model comparison, I will use a more computationally intensive method, K-fold validation, that will be less impacted by these influential points.
+
+We start this process by splitting up the data into $K$ subsets, $X^{Obs}_k$.
+
+# Options
+drug = 'Simulated Drug'
+dose = 2
+
+# Retrieve the parameters for the conc-time curve
+num_comp = int(len(PK_params)/2)  # If this has a linear PK model
+
+K = 4
+model_type = "multNoEta" # choose from: "combNoEta", "add" or "multNoEta"
+
+# Split into the K subsets
+df= pandas.read_csv("./Data_and_parameters/pd_sim_data_dose_" + str(dose))
+df_shuffled = df.sample(frac=1)
+data_k = np.array_split(df_shuffled, K)
+np.save("./Data_and_parameters/pd_sim_mcmc_"+model_type+"_datak_dose_"+str(dose)+"K_fold", data_k)
+# data_k = np.load("./Data_and_parameters/pd_sim_mcmc_"+model_type+"_datak_dose_"+str(dose)+"K_fold2.npy")
+# data_k = [pandas.DataFrame(data=data_k[0], columns=['TIME','OBS']), pandas.DataFrame(data=data_k[1], columns=['TIME','OBS']), pandas.DataFrame(data=data_k[2], columns=['TIME','OBS']), pandas.DataFrame(data=data_k[3], columns=['TIME','OBS'])]
+
+Then the model needs to be fit to each set $X^{obs}_{-k} = \cup_{j \neq k} X^{obs}_j $ thus providing the posterior distribution, $P(\theta | X^{obs}_{-k})$.
+
+# Get the data_-k for fitting
+data_minus_k = [None]*K
+for i in range(0, K):
+    data = data_k[:i] + data_k[i+1:]
+    data_minus_k[i] = pandas.concat(data)
+    data_minus_k[i] = data_minus_k[i].sort_values(['TIME'], ascending=True)
+
+# Set up details of the MCMC run
+PK_params=np.load('simulated_parameters_actual_dose'+str(dose)+'.npy')
+start_time = df['TIME'].min()
+
+pints_model_real = PintsPDFriberg(PK_params, dose, num_comp=num_comp, start_time=start_time)
+
+df_before_0 = df[df["TIME"] < 0]
+times_before_dose = len(df_before_0["OBS"])
+Circ_0_approx = sum(df_before_0["OBS"])/times_before_dose
+parameter_names =['Circ_0', 'MTT', 'gamma', 'slope', 'sigma_base', 'sigma_rel']
+
+lower_bound = [1e0, 1e0, 1e-3, 1e-3, 1e-4, 1e-2, 1e-4]
+upper_bound = [1e4, 1e4, 1e1, 1e1, 1e2, 1e2, 1e2]
+log_posterior = [None]*K
+num_iterations = (pints_model_real.n_parameters()+3)*3000
+parameters = np.load("./Data_and_parameters/pd_sim_opt_like_params_dose_"+str(dose)+".npy", allow_pickle=True)[0]
+
+# Create the problem and log posteriors in Pints
+for k in range(0, K):
+    problem = pints.SingleOutputProblem(pints_model_real, np.asarray(data_minus_k[k]['TIME'])-start_time, data_minus_k[k]['OBS'])
+    if model_type == "add":
+        log_likelihood = GaussianLogLikelihood(problem)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)[:-2]*0.8, np.asarray(upper_bound)[:-2]*1.2)
+        startpoints = [np.asarray(parameters)[:-2], np.asarray(parameters)[:-2]*0.8, np.asarray(parameters)[:-2]*1.2]
+    elif model_type == "multNoEta":
+        log_likelihood = MultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)[:-2]*0.8, np.asarray(upper_bound)[:-2]*1.2)
+        startpoints = [np.asarray(parameters)[:-2], np.asarray(parameters)[:-2]*0.8, np.asarray(parameters)[:-2]*1.2]
+    elif model_type == "combNoEta":
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)[:-1]*0.8, np.asarray(upper_bound)[:-1]*1.2)
+        startpoints = [np.asarray(parameters)[:-1], np.asarray(parameters)[:-1]*0.8, np.asarray(parameters)[:-1]*1.2]
+    log_posterior[k] = pints.LogPosterior(log_likelihood, log_prior)
+
+# run MCMC on the log posteriors
+for k in range(0, K):
+    mcmc = pints.MCMCController(log_posterior[k], 3, startpoints, method=pints.HaarioBardenetACMC)
+    mcmc.set_max_iterations(num_iterations)
+    mcmc.set_log_to_screen(True)
+    samples = mcmc.run()
+    np.save("./Data_and_parameters/pd_sim_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k), samples)
+
+The out-of-sample predictive power of the model for each $x^{Obs}_i \in X^{Obs}_k$ is then given by the expected log pointwise predictive density, 
+
+$$elpd_i = \log \frac{1}{S}\sum_{s=1}^{S}P(x^{Obs}_i | \theta^{-k, s})$$
+
+where $\theta^{-k, s}$ is the $s$-th parameter sample from the MCMC sampling done with the $X^{Obs}_{-k}$ dataset and $S$ is the total number of parameters sampled. The validation score is then the sum of $elpd_i$ for all $i$.
+
+# NEW
+
+K-fold validation on multiplicative noise model when combined noise was used to create the data.
+
+for k in range(0, 1):
+    # load parameter samples
+    samples = np.load("./Data_and_parameters/pd_sim_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k)+".npy")
+    samples = np.vstack(samples[:,int(0.75*num_iterations):])
+    no_samples = samples.shape[0]
+                        
+    # create log posterior for data subset k
+    data_k[k] = data_k[k].sort_values(['TIME'], ascending=True)
+    problem = pints.SingleOutputProblem(pints_model_real, np.asarray(data_k[k]['TIME'])-start_time, data_k[k]['OBS'])
+    if model_type == "add":
+        log_likelihood = GaussianLogLikelihood(problem)
+    elif model_type == "multNoEta":
+        log_likelihood = MultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+    elif model_type == "combNoEta":
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+    
+    # Get pointwise likelihoods for each sample parameter
+    # This creates a matrix of size S x N/K
+    
+    pointwise = np.zeros((no_samples, len(data_k[k])), dtype = np.longdouble)
+    proportion_check = 0.0
+    first_sample_error = 0
+    for j, sample_parameters in enumerate(samples):
+             
+        single_pointwise = log_likelihood.create_pointwise_loglikelihoods(sample_parameters)
+        pointwise[j]= single_pointwise
+    mean = np.average(pointwise, axis=0)
+    pointwise_differences = np.exp(pointwise - mean) # pointwise is log likelihood, we need likelihood
+    elpd = - np.log(no_samples) + mean + np.log(np.sum(pointwise_differences, axis=0))
+    if k==0:
+        elpd_i = elpd
+    else:
+        elpd_i = np.concatenate((elpd_i, elpd))
+
+print(elpd_i)
+
+model_types = ["multNoEta"] # "combNoEta", "add", 
+
+for model_type in model_types:
+    for k in range(0, K):
+        print(model_type + "k=" + str(k))
+        # load parameter samples
+        samples = np.load("./Data_and_parameters/pd_sim_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k)+".npy")
+        print(pints.MCMCSummary(samples))
+        samples = np.vstack(samples[:,int(0.75*num_iterations):])
+        print("---------------------------------")
+
+np.save("./Data_and_parameters/pd_sim_elpd_i_K_Fold"+ model_type +"_dose_"+str(dose), elpd_i)
+
+Some of the $ELPD_i$ for this set of parameters could not be numerically calcultated. We will now see whether interpolating some points will improve results.
+
+# Interpolate
+df= pandas.read_csv("./Data_and_parameters/pd_sim_data_dose_" + str(dose))
+x = np.arange(0, len(df["TIME"]))
+x_new = np.arange(0, len(df["TIME"])-0.5, 0.5)
+time_new  = np.interp(x_new, x, df["TIME"])
+OBS_new = np.interp(time_new, df["TIME"], df["OBS"])
+df_new = pandas.DataFrame(data = {"TIME": time_new, "OBS": OBS_new})
+
+# Lets Visualise using Plotly
+
+more_times = np.linspace(start_time, end_time, num_obs*10)
+more_values = PD_result(dose, num_comp, np.concatenate((PK_params, np.asarray(PD_actual_params[:4]))), more_times)
+
+y_label = "Concentration"
+x_label = "Time"
+
+fig = go.Figure()
+
+fig.update_xaxes(title_text=x_label)
+fig.update_yaxes(title_text=y_label)
+
+fig.add_trace(go.Scatter(x=df["TIME"], y=df["OBS"],
+                    mode='markers',
+                    marker_size=10,
+                    name='Original Data'))
+
+fig.add_trace(go.Scatter(x=df_new["TIME"], y=df_new["OBS"],
+                    mode='markers',
+                    name='Interpolated Data'))
+
+fig.add_trace(go.Scatter(x=more_times, y=more_values,
+                    mode='lines',
+                    name='Actual'))
+
+fig.update_layout(
+    updatemenus=[
+        dict(
+            type = "buttons",
+            direction = "left",
+            buttons=list([
+                dict(
+                    args=[{"yaxis.type": "linear"}],
+                    label="Linear y-scale",
+                    method="relayout"
+                ),
+                dict(
+                    args=[{"yaxis.type": "log"}],
+                    label="Log y-scale",
+                    method="relayout"
+                )
+            ]),
+            pad={"r": 0, "t": -10},
+            showactive=True,
+            x=1.0,
+            xanchor="right",
+            y=1.15,
+            yanchor="top"
+        ),
+    ]
+)
+fig.show()
+
+df_new.to_csv("./Data_and_parameters/pd_sim_interp_data_dose_" + str(dose), index = False)
+
+# Options
+drug = 'Simulated Drug'
+dose = 2
+
+# Retrieve the parameters for the conc-time curve
+num_comp = int(len(PK_params)/2)  # If this has a linear PK model
+
+K = 4
+model_type = "multNoEta" # choose from: "combNoEta", "add" or "multNoEta"
+
+# Interpolate
+df= pandas.read_csv("./Data_and_parameters/pd_sim_interp_data_dose_" + str(dose))
+
+# Split into K subsets
+df_shuffled = df.sample(frac=1)
+data_k = np.array_split(df_shuffled, K)
+np.save("./Data_and_parameters/pd_sim_interp_mcmc_"+model_type+"_datak_dose_"+str(dose)+"K_fold", data_k)
+# data_k = np.load("./Data_and_parameters/pd_sim_interp_mcmc_"+model_type+"_datak_dose_"+str(dose)+"K_fold.npy", allow_pickle=True)
+
+# Get the data_-k for fitting
+data_minus_k = [None]*K
+for i in range(0, K):
+    data = data_k[:i] + data_k[i+1:]
+    data_minus_k[i] = pandas.concat(data)
+    data_minus_k[i] = data_minus_k[i].sort_values(['TIME'], ascending=True)
+
+# Set up details of the MCMC run
+PK_params=np.load('simulated_parameters_actual_dose'+str(dose)+'.npy')
+start_time = df['TIME'].min()
+
+pints_model_real = PintsPDFriberg(PK_params, dose, num_comp=num_comp, start_time=start_time)
+
+df_before_0 = df[df["TIME"] < 0]
+times_before_dose = len(df_before_0["OBS"])
+Circ_0_approx = sum(df_before_0["OBS"])/times_before_dose
+parameter_names =['Circ_0', 'MTT', 'gamma', 'slope', 'sigma_base', 'sigma_rel']
+
+lower_bound = [1e0, 1e0, 1e-3, 1e-3, 1e-4, 1e-2, 1e-4]
+upper_bound = [1e4, 1e4, 1e1, 1e1, 1e2, 1e2, 1e2]
+log_posterior = [None]*K
+num_iterations = (pints_model_real.n_parameters()+3)*3000
+parameters = np.load("./Data_and_parameters/pd_sim_opt_like_params_dose_"+str(dose)+".npy", allow_pickle=True)[0]
+
+# Create the problem and log posteriors in Pints
+for k in range(0, K):
+    problem = pints.SingleOutputProblem(pints_model_real, np.asarray(data_minus_k[k]['TIME'])-start_time, data_minus_k[k]['OBS'])
+    if model_type == "add":
+        log_likelihood = GaussianLogLikelihood(problem)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)[:-2]*0.8, np.asarray(upper_bound)[:-2]*1.2)
+        startpoints = [np.asarray(parameters)[:-2], np.asarray(parameters)[:-2]*0.8, np.asarray(parameters)[:-2]*1.2]
+    elif model_type == "multNoEta":
+        log_likelihood = MultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)[:-2]*0.8, np.asarray(upper_bound)[:-2]*1.2)
+        startpoints = [np.asarray(parameters)[:-2], np.asarray(parameters)[:-2]*0.8, np.asarray(parameters)[:-2]*1.2]
+    elif model_type == "combNoEta":
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)[:-1]*0.8, np.asarray(upper_bound)[:-1]*1.2)
+        startpoints = [np.asarray(parameters)[:-1], np.asarray(parameters)[:-1]*0.8, np.asarray(parameters)[:-1]*1.2]
+    log_posterior[k] = pints.LogPosterior(log_likelihood, log_prior)
+
+# run MCMC on the log posteriors
+for k in range(0, K):
+    mcmc = pints.MCMCController(log_posterior[k], 3, startpoints, method=pints.HaarioBardenetACMC)
+    mcmc.set_max_iterations(num_iterations)
+    mcmc.set_log_to_screen(True)
+    samples = mcmc.run()
+    np.save("./Data_and_parameters/pd_sim_interp_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k), samples)
+
+for k in range(0, K):
+    # load parameter samples
+    samples = np.load("./Data_and_parameters/pd_sim_interp_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k)+".npy")
+    samples = np.vstack(samples[:,int(0.75*num_iterations):])
+    no_samples = samples.shape[0]
+                        
+    # create log posterior for data subset k
+    data_k[k] = data_k[k].sort_values(['TIME'], ascending=True)
+    problem = pints.SingleOutputProblem(pints_model_real, np.asarray(data_k[k]['TIME'])-start_time, data_k[k]['OBS'])
+    if model_type == "add":
+        log_likelihood = GaussianLogLikelihood(problem)
+    elif model_type == "multNoEta":
+        log_likelihood = MultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+    elif model_type == "combNoEta":
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+    
+    # Get pointwise likelihoods for each sample parameter
+    # This creates a matrix of size S x N/K
+    
+    pointwise = np.zeros((no_samples, len(data_k[k])), dtype = np.longdouble)
+    proportion_check = 0.0
+    first_sample_error = 0
+    tricky_params = []
+    for j, sample_parameters in enumerate(samples):
+             
+        single_pointwise = log_likelihood.create_pointwise_loglikelihoods(sample_parameters)
+        pointwise[j]= single_pointwise
+        
+        if np.count_nonzero(np.isnan(single_pointwise)) > 0:
+            print(sample_parameters)
+            tricky_params.append(sample_parameters)
+            noise_parameters = np.asarray(sample_parameters[-1:])
+            sigma = noise_parameters
+            eta = 1
+
+            function_values = log_likelihood._problem.evaluate(sample_parameters[:-1])
+            error = log_likelihood._values - function_values
+            noise_term = function_values**eta * sigma
+            print(-0.5 * np.log(2 * np.pi), np.log(noise_term), error**2/ (2 * noise_term**2))
+        
+    mean = np.average(pointwise, axis=0)
+    pointwise_differences = np.exp(pointwise - mean) # pointwise is log likelihood, we need likelihood
+    elpd = - np.log(no_samples) + mean + np.log(np.sum(pointwise_differences, axis=0))
+    if k==0:
+        elpd_i = elpd
+    else:
+        elpd_i = np.concatenate((elpd_i, elpd))
+
+print(elpd_i)
+
+The ELPD_i on the interpolated results no longer have inf but still have nan, an investigation into why nan is coming up needs to be made.
+
+# df_recombine = pandas.concat(data_k)
+df_recombine = data_k[0]
+df_recombine["ELPD_i"] = elpd_i
+df_recombine = df_recombine.sort_values(['TIME'], ascending=True)
+print(df_recombine)
+print("number of samples =", len(pointwise[:,0]))
+print(pointwise[:])
+for i in range(0,10):
+    print(np.count_nonzero(np.isnan(pointwise[:,i])))
+
+model_types = ["multNoEta"] # "combNoEta", "add", 
+
+for model_type in model_types:
+    for k in range(0, K):
+        print(model_type + "k=" + str(k))
+        # load parameter samples
+        samples = np.load("./Data_and_parameters/pd_sim_interp_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k)+".npy")
+        print(pints.MCMCSummary(samples))
+        samples = np.vstack(samples[:,int(0.75*num_iterations):])
+        print("---------------------------------")
+
+np.save("./Data_and_parameters/pd_sim_interp_elpd_i_K_Fold"+ model_type +"_dose_"+str(dose), elpd_i)
+
+print(np.sum(elpd_i))
+
+# Now compare the models
+
+# "p_waic" effective no. of parameters columns=[,"Rank", , "Weight"]
+compare_K_fold = {"Model Type": ["Constant", "Relative", "Combined"]} 
+
+elpd_i = [
+    np.load("./Data_and_parameters/pd_sim_elpd_i_K_Fold"+ "add"+"_dose_"+str(dose)+".npy"),
+    np.load("./Data_and_parameters/pd_sim_elpd_i_K_Fold"+ "multNoEta" +"_dose_"+str(dose)+".npy"),
+    np.load("./Data_and_parameters/pd_sim_elpd_i_K_Fold"+ "combNoEta"+"_dose_"+str(dose)+".npy")
+]
+
+compare_K_fold["ELPD"] = np.array([np.sum(elpd_i[0]), np.sum(elpd_i[1]), np.sum(elpd_i[2])])
+max_ELPD = compare_K_fold["ELPD"].max()
+max_index = np.argmax(compare_K_fold["ELPD"])
+
+compare_K_fold["d_ELPD"] = compare_K_fold["ELPD"]-min_ELPD
+compare_K_fold["SE"] = np.array([np.std(elpd_i[0]), np.std(elpd_i[1]), np.std(elpd_i[2])])*np.power(len(elpd_i_comb), 0.5)
+d_i = np.asarray(elpd_i) - elpd_i[max_index]
+d_std = np.std(d_i, axis=1)
+compare_K_fold["dSE"] = d_std*np.power(len(elpd_i_comb), 0.5)
+
+df_compare_K_fold = pandas.DataFrame(data = compare_K_fold)
+df_compare_K_fold = df_compare_K_fold.sort_values(["ELPD"], ascending=False, ignore_index=True)
+df_compare_K_fold
+
+# End of New
+
+### Real Data
+
+The above inference was also be performed on the in vivo data provided by Roche.
+
+import numpy as np
+import math
+import matplotlib.pyplot as plt
+import scipy
+from scipy import optimize, integrate
+import pints
+import pints.plot
+import pandas
+import plotly.express as px
+import plotly.graph_objects as go
+import nbformat
+from ipynb.fs.full.model_simulation import PintsPDFriberg # import the pints model
+from ipynb.fs.full.model_simulation import GaussianLogLikelihood
+from ipynb.fs.full.model_simulation import MultiplicativeGaussianLogLikelihood
+from ipynb.fs.full.model_simulation import ConstantAndMultiplicativeGaussianLogLikelihood
+
+# Quick look at what the data contains
+df = pandas.read_csv("0470-2008_2018-05-09.csv")
+df = df.sort_values(['DOSE', 'TIME'], ascending=True)
+group = df.groupby('DRUG')
+df_view = group.apply(lambda x: x['DOSE'].unique())
+df_view = df_view.apply(pandas.Series)
+df_view = df_view.replace(np.nan, '', regex=True)
+df_view.columns = ['Dose 1', "Dose 2", "Dose 3"]
+print(df_view)
+
+# Options: change to one of the above drugs and corresponding dose
+drug = 'Docetaxel'
+observation = 'Platelets '
+dose = 10
+num_comp = 2
+
+# Refine the Data
+df = df.astype({'ID': 'int64'})
+df_drug = df.loc[(df['DOSE'] == dose) & (df['DRUG'] == drug)] #
+df_OBS = df_drug.loc[(df_drug['YNAME'] == observation)]
+# Find average values
+df_OBS = df_OBS.drop(df_OBS[df_OBS['OBS'] == '.'].index)[['TIME', 'DOSE', 'OBS']]
+df_OBS = df_OBS.astype({'OBS': 'float64'})
+df_stats = df_OBS[['TIME', 'DOSE', 'OBS']]
+    # df_stats = df_stats.loc[(df_stats['DOSE'] == dose)]
+df_stats = df_stats.astype({'OBS': 'float64'})
+df_stats = df_stats.groupby(["TIME", "DOSE"], as_index=False).filter(lambda x: len(x) > 1).groupby(["TIME", "DOSE"], as_index=False).agg({'OBS':['mean','std']})
+    # print(df_stats)
+df_stats.columns = ['TIME', "DOSE", 'mean', 'std']
+print(df_stats)
+df_stats.to_csv(path_or_buf="./Data_and_parameters/pd_real_data_refined_"+drug+"_dose_"+str(dose))
+
+# Get actual dose amount
+dose_amount = df_drug.drop(df_drug[df_drug['AMT'] == '.'].index).astype({'AMT': 'float64'}).mean()['AMT']
+print("Average dose amount = " + str(dose_amount))
+
+# Create the model in PINTS (This is the same model as above but with the new dose and num_comp)
+PK_params=np.load('PK_parameters_real_'+drug+str(dose)+'.npy')
+start_time = df_OBS['TIME'].min()
+print(start_time)
+
+pints_model_real = PintsPDFriberg(PK_params, dose_amount, num_comp=num_comp, start_time=start_time)
+    
+
+# Before starting the optimisation we should estimate the parameter Circ_0. We can do this by averaging over all 
+# the values before time 0
+df_before_0 = df_stats[df_stats["TIME"] < 0]
+print(df_before_0)
+times_before_dose = len(df_before_0["mean"])
+Circ_0_approx = sum(df_before_0["mean"])/times_before_dose
+print(Circ_0_approx)
+
+# OSet up the problem
+problem = pints.SingleOutputProblem(pints_model_real, np.asarray(df_stats['TIME'])-start_time, df_stats['mean'])
+log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+parameter_names =['Circ_0', 'MTT', 'gamma', 'slope', 'sigma_base', 'sigma_rel']
+error_measure = pints.ProbabilityBasedError(log_likelihood)
+# error_measure = pints.SumOfSquaresError(problem)
+lower_bound = [0.01*Circ_0_approx, 0.1, 0.01, 0.001, 0.0, 0.0]
+upper_bound = [100*Circ_0_approx, 1000, 100, 10, 100, 10]
+
+# Begin optimisation
+optimisation = pints.OptimisationController(error_measure, [Circ_0_approx, 100, 1, 0.1, 0.1, 0.1], method=pints.CMAES, boundaries=pints.RectangularBoundaries(lower_bound, upper_bound))
+# optimisation.set_log_to_screen(False)
+parameters, error = optimisation.run()
+# np.save("./Data_and_parameters/pd_real_opt_combNoEta_params_dose_"+str(dose), parameters)
+
+# Quick visualisation
+parameters = np.load("./Data_and_parameters/pd_real_opt_combNoEta_params_dose_"+str(dose)+".npy")
+
+time_span = df_stats["TIME"].max()
+times = np.linspace(start_time,time_span,1000)
+
+# Show results
+print('\t\t Parameter Estimate')
+print(parameter_names[0] + ': \t' + str(parameters[0]))
+print(parameter_names[1] + ': \t\t' + str(parameters[1]))
+print(parameter_names[2] + ': \t\t' + str(parameters[2]))
+print(parameter_names[3] + ': \t\t' + str(parameters[3]))
+print('Error: \t\t'+str(error_measure(parameters)))
+
+# Visualisation using Plotly
+y_label = drug + " Concentration"
+x_label = "Time"
+
+fig = px.scatter(
+    df_stats,
+    title=drug + " Concentration Mean",
+    x="TIME",
+    y="mean",
+    error_y = "std",
+    # facet_col="DOSE",
+    # color="DOSE",
+    width=800, 
+    height=500,
+)
+
+fig.update_xaxes(title_text=x_label)
+fig.update_yaxes(title_text=y_label)
+fig.update_traces(mode='markers+lines')
+fig['data'][0]['showlegend']=True
+fig['data'][0]['name']='Observed Values'
+fig.add_trace(go.Scatter(x=times, y=pints_model_real.simulate(parameters[:4], times-start_time),
+                    mode='lines',
+                    name='Prediction'))
+
+fig.update_layout(
+    updatemenus=[
+        dict(
+            type = "buttons",
+            direction = "left",
+            buttons=list([
+                dict(
+                    args=[{"yaxis.type": "linear"}],
+                    label="Linear y-scale",
+                    method="relayout"
+                ),
+                dict(
+                    args=[{"yaxis.type": "log"}],
+                    label="Log y-scale",
+                    method="relayout"
+                )
+            ]),
+            pad={"r": 0, "t": -10},
+            showactive=True,
+            x=1.0,
+            xanchor="right",
+            y=1.15,
+            yanchor="top"
+        ),
+    ]
+)
+fig.show()
+
+## MCMC Sampling
+
+To determine the parameter distribution I performed MCMC sampling of the log posterior. However for this system, the noise term is unknown. So I will compare three different models that have the same ODE structure but different log likelihoods to capture differing noises. These noise models will be:
+ - Constant Gausian noise
+ - Relative Gaussian noise
+ - A Combination of the above
+
+To compare these models I will be using WAIC and LOO-PSIS scores, which estimates the prediction accuracy for out-of-sample datapoints without requiring out-of-sample data. To do this I will need to save the pointwise loglikelihoods, i.e. $\log L(\sigma|x^{obs}_i)$ for each data point, $x^{obs}_i \in X^{obs}$, and each parameter sample, $\sigma$, obtained from the MCMC sampling.
+
+### Combined Constant and Relative Noise
+
+If we assume that the distrbution of observations around the true value has both a constant and relative part, i.e. 
+$$
+X^{obs} = f\left(t, \theta\right) + \left(\sigma_{base} + \sigma_{rel} f\left(t, \theta\right)^\eta\right) \epsilon,
+$$
+where $ \epsilon \sim N\left(0,1\right)$.
+
+Then the likelihood of our data is given by
+
+$$ \log L\left(\theta,\sigma_{base}, \sigma_{rel}, \eta | X^{obs}\right) = \sum_{i=1}^{n_o}\sum_{j=1}^{n_t}\left[\log L\left(\theta,\sigma_{base}, \sigma_{rel}, \eta|x^{obs}_{ij}\right)\right] $$
+
+where the pointwise log liklihoods are
+
+$$\log L\left(\theta,\sigma, \eta|x^{obs}_{ij}\right) = - \frac{1}{2} \log 2\pi - \log \sigma_{tot,ij} -\frac{\left(x^{obs}_{ij} - f_i\left(t_j, \theta\right)\right)^2}{2\sigma_{tot,ij}^2}$$
+
+and 
+$$\sigma_{tot,ij} = \sigma_{base, i} + f_i\left(t_j, \theta\right)^{\eta_i}\sigma_{rel, i}$$
+
+# A look at the distribution of the parameters
+parameters = np.load("./Data_and_parameters/pd_real_opt_combNoEta_params_dose_"+str(dose)+".npy")
+log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihoodFixEta(problem)
+log_prior = pints.UniformLogPrior(np.asarray(lower_bound)*0.8, np.asarray(upper_bound)*1.2)
+log_posterior = pints.LogPosterior(log_likelihood, log_prior)
+num_iterations = (pints_model_real.n_parameters()+3)*3000
+
+startpoints = [np.asarray(parameters), np.asarray(parameters)*0.8, np.asarray(parameters)*1.2]
+mcmc = pints.MCMCController(log_posterior, 3, startpoints, method=pints.HaarioBardenetACMC)
+mcmc.set_max_iterations(num_iterations)
+# mcmc.set_log_to_screen(False)
+samples = mcmc.run()
+np.save("./Data_and_parameters/pd_real_mcmc_combNoEta_params_dose_"+str(dose), samples)
+
+samples = np.load("./Data_and_parameters/pd_real_mcmc_combNoEta_params_dose_"+str(dose)+".npy")
+pints.plot.trace(samples)
+plt.show()
+
+pints.plot.series(np.vstack(samples[:,int(3*num_iterations/4):]), problem)
+plt.show()
+pints.plot.pairwise(np.vstack(samples[:,int(3*num_iterations/4):]))
+plt.show()
+pints.plot.autocorrelation(np.vstack(samples[:,int(3*num_iterations/4):]))
+plt.show()
+
+print(pints.MCMCSummary(samples))
+
+### Constant Gaussian Noise
+
+If we assume that the distrbution of observations around the true value is given by a Gaussian distribution, i.e. 
+$$
+X^{obs} \sim f(t, \theta) + \sigma N(0,1),
+$$
+
+then the likelihood of our data is given by
+
+$$ \log L(\theta, \sigma | X^{obs}) = \sum_{i=1}^{n_t}\sum_{j=1}^{n_t}\left[\log L(\theta,\sigma|x^{obs}_j)\right] $$
+
+where our pointwise log liklihoods are
+
+$$\log L(\theta,\sigma|x^{obs}_{ij}) = - \frac{1}{2} \log 2\pi -  \log\sigma_i +\frac{(x^{obs}_{ij} - f_i(t_j, \theta))^2}{2\sigma_i^2}$$
+
+# A look at the distribution of the parameters
+parameters = np.load("./Data_and_parameters/pd_real_opt_combNoEta_params_dose_"+str(dose)+".npy")
+log_likelihood = pints.GaussianLogLikelihood(problem)
+log_prior = pints.UniformLogPrior(np.asarray(lower_bound[:5])*0.8, np.asarray(upper_bound[:5])*1.2)
+log_posterior = pints.LogPosterior(log_likelihood, log_prior)
+num_iterations = (pints_model_real.n_parameters()+3)*3000
+
+startpoints = [np.asarray(parameters[:5]), np.asarray(parameters[:5])*0.8, np.asarray(parameters[:5])*1.2]
+mcmc = pints.MCMCController(log_posterior, 3, startpoints, method=pints.HaarioBardenetACMC)
+mcmc.set_max_iterations(num_iterations)
+# mcmc.set_log_to_screen(False)
+samples = mcmc.run()
+np.save("./Data_and_parameters/pd_real_mcmc_add_params_dose_"+str(dose), samples)
+
+samples = np.load("./Data_and_parameters/pd_real_mcmc_add_params_dose_"+str(dose)+".npy")
+pints.plot.trace(samples, parameter_names=parameter_names[:5])
+plt.show()
+
+num_iterations = (pints_model_real.n_parameters()+3)*3000
+pints.plot.series(np.vstack(samples[:,int(2*num_iterations/4):]), problem)
+plt.show()
+pints.plot.pairwise(np.vstack(samples[:,int(2*num_iterations/4):]), parameter_names=parameter_names[:5])
+plt.show()
+pints.plot.autocorrelation(np.vstack(samples[:,int(2*num_iterations/4):]), parameter_names=parameter_names[:5])
+plt.show()
+
+### Relative Gaussian likelihood
+
+If we assume that the distrbution of observations around the true value is relative to the magnitude of the true value, i.e. 
+$$
+X^{obs} = f\left(t, \theta\right) + \sigma f\left(t, \theta\right)^\eta \epsilon,
+$$
+where $ \epsilon \sim N\left(0,1\right)$.
+
+Then the likelihood of our data is given by
+
+$$ \log L\left(\theta, \sigma, \eta | X^{obs}\right) = \sum_{i=1}^{n_t}\sum_{j=1}^{n_t}\left[\log L\left(\theta,\sigma, \eta|x^{obs}_{ij}\right)\right] $$
+
+where our pointwise log liklihoods are
+
+$$\log L\left(\theta,\sigma, \eta|x^{obs}_{ij}\right) = - \frac{1}{2} \log 2\pi - \log f_i\left(t_j, \theta\right)^{\eta_i}\sigma_i -\frac{\left(x^{obs}_{ij} - f_i\left(t_j, \theta\right)\right)^2}{2\left(f_i\left(t_j, \theta\right)^{\eta_i}\sigma_i\right)^2}$$
+
+# A look at the distribution of the parameters
+parameters = np.load("./Data_and_parameters/pd_real_opt_combNoEta_params_dose_"+str(dose)+".npy")
+
+lower_bound = [0.01*Circ_0_approx, 0.1, 0.01, 0.001, 0.0]
+upper_bound = [100*Circ_0_approx, 1000, 100, 10, 10]
+
+log_likelihood = MultiplicativeGaussianLogLikelihoodFixEta(problem)
+log_prior = pints.UniformLogPrior(np.asarray(lower_bound)*0.8, np.asarray(upper_bound)*1.2)
+log_posterior = pints.LogPosterior(log_likelihood, log_prior)
+num_iterations = (pints_model_real.n_parameters()+3)*3000
+
+print(parameters)
+
+start_point = np.concatenate((np.asarray(parameters[:4]),np.asarray(parameters[5:])))
+
+startpoints = [start_point, start_point*0.8, start_point*1.2]
+mcmc = pints.MCMCController(log_posterior, 3, startpoints, method=pints.HaarioBardenetACMC)
+mcmc.set_max_iterations(num_iterations)
+# mcmc.set_log_to_screen(False)
+samples = mcmc.run()
+np.save("./Data_and_parameters/pd_real_mcmc_multNoEta_params_dose_"+str(dose), samples)
+
+samples = np.load("./Data_and_parameters/pd_real_mcmc_multNoEta_params_dose_"+str(dose)+'.npy')
+pints.plot.trace(samples)
+plt.show()
+print(pints.MCMCSummary(samples))
+
+#### Getting pointwise loglikelihoods
+
+import numpy as np
+import pints
+import pandas
+
+# Get our Log-likelihoods:
+from ipynb.fs.full.model_simulation import GaussianLogLikelihood
+from ipynb.fs.full.model_simulation import MultiplicativeGaussianLogLikelihood
+from ipynb.fs.full.model_simulation import ConstantAndMultiplicativeGaussianLogLikelihood
+
+data_type = 'real'
+model_type = 'multNoEta'
+drug = 'Docetaxel'
+observation = 'Platelets '
+dose = 10
+num_comp = 2
+
+# Load data
+df = pandas.read_csv("0470-2008_2018-05-09.csv")
+df = df.sort_values(['DOSE', 'TIME'], ascending=True)
+df = df.astype({'ID': 'int64'})
+df_drug = df.loc[(df['DOSE'] == dose) & (df['DRUG'] == drug)] #
+df_OBS = df_drug.loc[(df_drug['YNAME'] == observation)]
+df_OBS = df_OBS.drop(df_OBS[df_OBS['OBS'] == '.'].index)[['TIME', 'DOSE', 'OBS']]
+df_OBS = df_OBS.astype({'OBS': 'float64'})
+df_stats = df_OBS[['TIME', 'DOSE', 'OBS']]
+df_stats = df_stats.astype({'OBS': 'float64'})
+df_stats = df_stats.groupby(["TIME", "DOSE"], as_index=False).filter(lambda x: len(x) > 1).groupby(["TIME", "DOSE"], as_index=False).agg({'OBS':['mean','std']})
+df_stats.columns = ['TIME', "DOSE", 'mean', 'std']
+
+# Load samples
+samples = np.load("./Data_and_parameters/pd_"+data_type+"_mcmc_"+model_type+"_params_dose_"+str(dose)+".npy")
+
+from ipynb.fs.full.model_simulation import PintsPDFriberg # import the pints model
+
+# Create the model in PINTS
+PK_params=np.load('PK_parameters_real_'+drug+str(dose)+'.npy')
+start_time = df_OBS['TIME'].min()
+print(start_time)
+
+pints_model_real = PintsPDFriberg(PK_params, dose, num_comp=num_comp, start_time=start_time)
+problem = pints.SingleOutputProblem(pints_model_real, np.asarray(df_stats['TIME'])-start_time, df_stats['mean'])
+    
+
+# Recreate
+parameters = np.load("./Data_and_parameters/pd_"+data_type+"_opt_"+"combNoEta"+"_params_dose_"+str(dose)+".npy")
+
+log_likelihood = GaussianLogLikelihood(problem)
+test_likelihood = pints.GaussianLogLikelihood(problem)
+num_iterations = (pints_model_real.n_parameters()+3)*3000
+
+print(parameters)
+
+pointwise = []
+sum_likelihoods = []
+
+no_samples = samples.shape[1]
+for chain_no, chain in enumerate(samples):
+    proportion_check = 0
+    for j, sample_parameters in enumerate(chain):
+        single_pointwise = log_likelihood.create_pointwise_loglikelihoods(sample_parameters)
+        pointwise.append(single_pointwise)
+        test = test_likelihood.__call__(sample_parameters)
+        sum_likelihoods.append(test)
+        proportion = (j+1)/no_samples
+        if proportion > proportion_check:
+            print("chain "+str(chain_no+1)+"\t\t" +str(proportion_check*100)+"%")
+            if proportion_check < 0.1:
+                proportion_check += 0.01
+            else:
+                proportion_check += 0.1
+pointwise = np.asarray(pointwise)
+
+np.save("./Data_and_parameters/pd_"+data_type+"_mcmc_"+"add"+"_pointwiseLogLikelihoods_dose_"+str(dose)+".npy", pointwise)
+
+print(pointwise.shape)
+sum_points = np.sum(pointwise, axis=1)
+print(np.sum(sum_likelihoods-sum_points))
+
+
+
+# New - Parameter Identifiability
+
+Now we shall see whether the parameters are easily identifiable from this data.
+
+# For single Parameters
+dose = 10
+drug = "Docetaxel"
+PK_params=np.load('PK_parameters_real_'+drug+str(dose)+'.npy')
+df = pandas.read_csv("./Data_and_parameters/pd_real_data_refined_"+drug+"_dose_"+str(dose))
+lower_bound = [1e-1, 1e0, 1e-3, 1e-3, 1e-4, 1e-2, 1e-4]
+upper_bound = [1e4, 1e4, 1e1, 1e1, 1e2, 1e2, 1e2]
+
+opt_params_initial = np.load("./Data_and_parameters/pd_real_opt_combNoEta_params_dose_"+str(dose)+".npy", allow_pickle=True)
+
+for param_no in range(1, 4):
+    
+    print("performing 1D profile Likelihood " + str(param_no))
+    param_range = np.linspace(1*opt_params_initial[param_no], 0.5*opt_params_initial[param_no], 100)
+    point = np.concatenate((opt_params_initial[:param_no], opt_params_initial[param_no+1:]))
+    point = np.insert(point, [-1], [1.0])
+    likelihood_lower = []
+
+    for param_value in param_range:
+        pints_model_simulated = PintsPDFribergFixParam(PK_params, dose, fix_param=[[param_no], [param_value]], start_time=start_time)
+        problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df['mean'].to_numpy())
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem)
+        error_measure = pints.ProbabilityBasedError(log_likelihood)
+
+        unchanged_threshold = 1e-4
+        # boundaries=pints.RectangularBoundaries(lower_bound[:param_no]+lower_bound[param_no+1:], upper_bound[:param_no]+upper_bound[param_no+1:])
+        
+        optimisation = pints.OptimisationController(error_measure, point, method=pints.NelderMead)
+        optimisation.set_max_unchanged_iterations(threshold=unchanged_threshold)
+
+        optimisation.set_log_to_screen(False)
+        point, error = optimisation.run()
+        likelihood_lower.append([param_value, error])
+    
+    param_range = np.linspace(1*opt_params_initial[param_no], 1.5*opt_params_initial[param_no], 100)
+    point = np.concatenate((opt_params_initial[:param_no], opt_params_initial[param_no+1:]))
+    point = np.insert(point, [-1], [1.0])
+    likelihood_upper = []
+
+    for param_value in param_range:
+        pints_model_simulated = PintsPDFribergFixParam(PK_params, dose, fix_param=[[param_no], [param_value]], start_time=start_time)
+        problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df['mean'].to_numpy())
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem)
+        error_measure = pints.ProbabilityBasedError(log_likelihood)
+
+        unchanged_threshold = 1e-4
+        boundaries=pints.RectangularBoundaries(lower_bound[:param_no]+lower_bound[param_no+1:], upper_bound[:param_no]+upper_bound[param_no+1:])
+        
+        optimisation = pints.OptimisationController(error_measure, point, method=pints.NelderMead)
+        optimisation.set_max_unchanged_iterations(threshold=unchanged_threshold)
+
+        optimisation.set_log_to_screen(False)
+        point, error = optimisation.run()
+        likelihood_upper.append([param_value, error])
+    
+    likelihood_lower.reverse()
+    likelihood = np.array(likelihood_lower+likelihood_upper)
+    np.save("./Data_and_parameters/pd_real_identify_combNoEta_param_"+str(param_no)+"_dose_"+str(dose), likelihood)
+
+def profile_likelihood(i, j, param_range_i, param_range_j, point_start):
+    point_next_line = point_start
+    likelihood_matrix = np.zeros((len(param_range_i), len(param_range_j)))
+    for index_i, param_value_i in enumerate(param_range_i):
+        print("\r", str(index_i/len(param_range_i)*100)+"%", sep=' ', end='', flush=True)
+        point = point_next_line
+        for index_j, param_value_j in enumerate(param_range_j):
+            pints_model_simulated = PintsPDFribergFixParam(PK_params, dose, fix_param=[[i, j], [param_value_i, param_value_j]], start_time=start_time)
+            problem = pints.SingleOutputProblem(pints_model_simulated, df['TIME'].to_numpy()-start_time, df['mean'].to_numpy())
+            log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem)
+            error_measure = pints.ProbabilityBasedError(log_likelihood)
+
+            unchanged_threshold = 1e-4
+
+            optimisation = pints.OptimisationController(error_measure, point, method=pints.NelderMead)
+            optimisation.set_max_unchanged_iterations(threshold=unchanged_threshold)
+
+            optimisation.set_log_to_screen(False)
+            point, error = optimisation.run()
+            likelihood_matrix[index_i,index_j] = error
+
+            if index_j==0:
+                point_next_line = point
+    return likelihood_matrix
+
+# For double parameters
+for i in range(0, 3):
+    param_range_i_lower = np.linspace(1*opt_params_initial[i], 0.5*opt_params_initial[i], 10)
+    param_range_i_upper = np.linspace(1*opt_params_initial[i], 1.5*opt_params_initial[i], 10)
+    for j in range(0,i):
+        print("\n parameter "+param_names[i]+" with parameter "+param_names[j])
+        param_range_j_left = np.linspace(1*opt_params_initial[j], 0.5*opt_params_initial[j], 10)
+        param_range_j_right = np.linspace(1*opt_params_initial[j], 1.5*opt_params_initial[j], 10)
+        
+        point_start = np.concatenate((opt_params_initial[:j],opt_params_initial[j+1:i], opt_params_initial[i+1:]))
+        point_start = np.insert(point_start, [-1], [1.0])
+        
+        likelihood_lower_left = profile_likelihood(i,j, param_range_i_lower, param_range_j_left, point_start)
+        likelihood_lower_left = np.fliplr(likelihood_lower_left[:,1:])
+        
+        likelihood_upper_left = profile_likelihood(i,j, param_range_i_upper, param_range_j_left, point_start)
+        likelihood_upper_left = np.fliplr(np.flipud(likelihood_upper_left[1:,1:]))
+        
+        likelihood_lower_right = profile_likelihood(i,j, param_range_i_lower, param_range_j_right, point_start)
+        
+        likelihood_upper_right = profile_likelihood(i,j, param_range_i_upper, param_range_j_right, point_start)
+        likelihood_upper_right = np.flipud(likelihood_upper_right[1:,:])
+        
+        likelihood_upper = np.concatenate((likelihood_upper_left, likelihood_upper_right), axis=1)
+        likelihood_lower = np.concatenate((likelihood_lower_left, likelihood_lower_right), axis=1)
+        likelihood =  np.concatenate((likelihood_upper, likelihood_lower), axis=0)
+        
+        np.save("./Data_and_parameters/pd_real_identify_comb_param_"+str(i)+"_"+str(j)+"_dose_"+str(dose), likelihood)
+
+fig, ax = plt.subplots(4, 4)
+fig.set_size_inches(18.5, 18.5)
+for i in range(0,4):
+    for j in range(0,4):
+        if i == j:
+            likelihood = np.load("./Data_and_parameters/pd_sim_identify_comb_param_"+str(i)+"_dose_"+str(dose)+".npy")
+
+            ax[i, j].plot(likelihood[:,0], likelihood[:,1])
+            ax[i, j].axvline(x=PD_actual_params[i], linestyle='--', color='r')
+        elif j<i:
+            likelihood = np.load("./Data_and_parameters/pd_sim_identify_comb_param_"+str(i)+"_"+str(j)+"_dose_"+str(dose)+".npy")
+            y_range = np.linspace(0.5*opt_params_initial[i], 1.5*opt_params_initial[i], 19)
+            x_range = np.linspace(0.5*opt_params_initial[j], 1.5*opt_params_initial[j], 19)
+
+            colouring = ax[i, j].pcolormesh(x_range, y_range, likelihood, vmin=likelihood.min(), vmax=likelihood.max(), cmap='PuBu_r', shading='auto')
+            
+            ax[i, j].axvline(x=PD_actual_params[j], linestyle='--', color='r')
+            ax[i, j].axhline(y=PD_actual_params[i], linestyle='--', color='r')
+        
+        else:
+            ax[i, j].set_axis_off()
+        
+#         fig.colorbar(colouring, ax=ax[i,j], extend='max')
+        if i == 3:
+            ax[i, j].set_xlabel(param_names[j])
+        else:
+            ax[i, j].set_xticks([])
+        if j == 0:
+            ax[i, j].set_ylabel(param_names[i])
+        else:
+            ax[i, j].set_yticks([])
+
+### Model Comparison
+
+Using these samples and the pointwise likelihoods I can compare the ability of these models to predict out-of-sample data. I will be using the python package Arvix to calculate the WAIC and LOO score.
+
+import arviz as az
+import matplotlib.pyplot as plt
+
+model_type = "add"
+
+samples = np.load("./Data_and_parameters/pd_"+data_type+"_mcmc_"+model_type+"_params_dose_"+str(dose)+".npy")
+pointwise =np.load("./Data_and_parameters/pd_"+data_type+"_mcmc_"+model_type+"_pointwiseLogLikelihoods_dose_"+str(dose)+".npy")
+pointwise=[pointwise[:21000,:],pointwise[21000:42000,:],pointwise[42000:,:]]
+pointwise= np.asarray(pointwise)
+print(pointwise.shape)
+
+likelihood = az.convert_to_inference_data(pointwise, group='log_likelihood')
+posterior = az.convert_to_inference_data(samples, group='posterior')
+observed = az.convert_to_inference_data(np.asarray(df_stats['mean']), group='observed_data')
+
+inference_data = az.concat(likelihood, posterior, observed)
+
+parameter_names = ['Circ_0', 'MTT', 'gamma', 'slope', 'sigma_base', 'eta', 'sigma_rel']
+n_param = 5
+
+az.style.use("arviz-darkgrid")
+var_names=parameter_names[:n_param]
+
+# az.plot_autocorr(inference_data)
+# plt.show()
+
+# az.plot_ess(inference_data, kind="evolution")
+# plt.show()
+
+# loo = az.loo(inference_data, pointwise=True)
+# az.plot_khat(loo, show_bins=True)
+# plt.show()
+
+az.plot_rank(inference_data)
+plt.show()
+
+# az.plot_loo_pit(inference_data, y="0", ecdf=True, color="maroon")
+# plt.show()
+
+# Needs posterior predictive
+
+# az.plot_bpv(inference_data)
+# plt.show()
+# az.plot_bpv(inference_data, kind="t_stat", t_stat="0.5")
+# plt.show()
+
+# Needs sample_stats
+
+# az.plot_energy(inference_data, figsize=(12, 8))
+# plt.show()
+
+
+
+
+#### Comparisons
+
+I looked at the MCMC summary for each of the models, especially $\hat{r}$ to determine whether the chains converged, as well as comparing the models using both LOO-PSIS and WAIC.
+
+model_types = ["combNoEta", "add", "multNoEta"]
+compare_dict = {}
+data_type = 'real'
+
+for model_type in model_types:
+    samples = np.load("./Data_and_parameters/pd_"+data_type+"_mcmc_"+model_type+"_params_dose_"+str(dose)+".npy")
+    print(model_type)
+    print(pints.MCMCSummary(samples))
+    
+    pointwise =np.load("./Data_and_parameters/pd_"+data_type+"_mcmc_"+model_type+"_pointwiseLogLikelihoods_dose_"+str(dose)+".npy")
+    pointwise=[pointwise[:21000,:],pointwise[21000:42000,:],pointwise[42000:,:]]
+    pointwise= np.asarray(pointwise)
+    likelihood = az.convert_to_inference_data(pointwise, group='log_likelihood')
+    posterior = az.convert_to_inference_data(samples, group='posterior')
+    observed = az.convert_to_inference_data(np.asarray(df_stats['mean']), group='observed_data')
+    inference_data = az.concat(likelihood, posterior, observed)
+    compare_dict[model_type] = inference_data
+
+comparison = az.compare(compare_dict)
+comparison
+
+$\hat{r}$ shows that when MCMC sampling was performed on constant gaussian noise ("add" in the table) there was no convergence in the chains. This explains the incredibly low LOO score with very high standard error. The multiplicative noise and combined noise models mostly converged and performed better in the LOO analysis with combined noise performing the best.
+
+model_type = "multNoEta"
+z_value = comparison["d_loo"][model_type] / comparison["dse"][model_type]
+p_value = scipy.stats.norm.sf(abs(z_value))
+print(model_type)
+print("\t z value =", z_value)
+print("\t p value =", p_value)
+
+model_type = "add"
+z_value = comparison["d_loo"][model_type] / comparison["dse"][model_type]
+p_value = scipy.stats.norm.sf(abs(z_value))
+print(model_type)
+print("\t z value =", z_value)
+print("\t p value =", p_value)
+
+comparison = az.compare(compare_dict, ic="waic")
+comparison
+
+WAIC also confirms the results from LOO.
+
+model_type = "multNoEta"
+z_value = comparison["d_waic"][model_type] / comparison["dse"][model_type]
+p_value = scipy.stats.norm.sf(abs(z_value))
+print(model_type)
+print("\t z value =", z_value)
+print("\t p value =", p_value)
+
+model_type = "add"
+z_value = comparison["d_waic"][model_type] / comparison["dse"][model_type]
+p_value = scipy.stats.norm.sf(abs(z_value))
+print(model_type)
+print("\t z value =", z_value)
+print("\t p value =", p_value)
+
+#### K-Fold Validation
+
+For both the LOO and WAIC calculations a warning was given (LOO: Estimated shape parameter of Pareto distribution is greater than 0.7; WAIC: For one or more samples the posterior variance of the log predictive densities exceeds 0.4). This is likely due to one or more of the observations being highly influential in the fit. Thus, to confirm the results of the model comparison, I will use a more computationally intensive method, K-fold validation, that will be less impacted by these influential points.
+
+We start this process by splitting up the data into $K$ subsets, $X^{Obs}_k$.
+
+K = 4
+model_type = "multNoEta" # choose from: "combNoEta", "add" or "multNoEta"
+
+# Split into the K subsets
+df= pandas.read_csv("./Data_and_parameters/pd_real_data_refined_"+drug+"_dose_"+str(dose))
+df_shuffled = df.sample(frac=1)
+data_k = np.array_split(df_shuffled, K)
+
+Then the model needs to be fit to each set $X^{obs}_{-k} = \cup_{j \neq k} X^{obs}_j $ thus providing the posterior distribution, $P(\theta | X^{obs}_{-k})$.
+
+# Get the data_-k for fitting
+data_minus_k = [None]*K
+for i in range(0, K):
+    data = data_k[:i] + data_k[i+1:]
+    data_minus_k[i] = pandas.concat(data)
+    data_minus_k[i] = data_minus_k[i].sort_values(['DOSE', 'TIME'], ascending=True)
+    # print(data_minus_k[i])
+
+# Set up details of the MCMC run
+PK_params=np.load('PK_parameters_real_'+drug+str(dose)+'.npy')
+start_time = df['TIME'].min()
+
+pints_model_real = PintsPDFriberg(PK_params, dose_amount, num_comp=num_comp, start_time=start_time)
+
+df_before_0 = df[df["TIME"] < 0]
+times_before_dose = len(df_before_0["mean"])
+Circ_0_approx = sum(df_before_0["mean"])/times_before_dose
+parameter_names =['Circ_0', 'MTT', 'gamma', 'slope', 'sigma_base', 'sigma_rel']
+
+lower_bound = [0.01*Circ_0_approx, 0.1, 0.01, 0.001, 0.0, 0.0]
+upper_bound = [100*Circ_0_approx, 1000, 100, 10, 100, 10]
+log_posterior = [None]*K
+num_iterations = (pints_model_real.n_parameters()+3)*3000
+parameters = np.load("./Data_and_parameters/pd_real_opt_combNoEta_params_dose_"+str(dose)+".npy")
+
+# Create the problem and log posteriors in Pints
+for k in range(0, K):
+    problem = pints.SingleOutputProblem(pints_model_real, np.asarray(data_minus_k[k]['TIME'])-start_time, data_minus_k[k]['mean'])
+    if model_type == "add":
+        log_likelihood = GaussianLogLikelihood(problem)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)[:-1]*0.8, np.asarray(upper_bound)[:-1]*1.2)
+        startpoints = [np.asarray(parameters)[:-1], np.asarray(parameters)[:-1]*0.8, np.asarray(parameters)[:-1]*1.2]
+    elif model_type == "multNoEta":
+        log_likelihood = MultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)[:-1]*0.8, np.asarray(upper_bound)[:-1]*1.2)
+        startpoints = [np.asarray(parameters)[:-1], np.asarray(parameters)[:-1]*0.8, np.asarray(parameters)[:-1]*1.2]
+    elif model_type == "combNoEta":
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+        log_prior = pints.UniformLogPrior(np.asarray(lower_bound)*0.8, np.asarray(upper_bound)*1.2)
+        startpoints = [np.asarray(parameters), np.asarray(parameters)*0.8, np.asarray(parameters)*1.2]
+    log_posterior[k] = pints.LogPosterior(log_likelihood, log_prior)
+
+# run MCMC on the log posteriors
+for k in range(0, K):
+    mcmc = pints.MCMCController(log_posterior[k], 3, startpoints, method=pints.HaarioBardenetACMC)
+    mcmc.set_max_iterations(num_iterations)
+    mcmc.set_log_to_screen(False)
+    samples = mcmc.run()
+    np.save("./Data_and_parameters/pd_real_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k), samples)
+
+The out-of-sample predictive power of the model for each $x^{Obs}_i \in X^{Obs}_k$ is then given by the expected log pointwise predictive density, 
+
+$$elpd_i = \log \frac{1}{S}\sum_{s=1}^{S}P(x^{Obs}_i | \theta^{-k, s})$$
+
+where $\theta^{-k, s}$ is the $s$-th parameter sample from the MCMC sampling done with the $X^{Obs}_{-k}$ dataset and $S$ is the total number of parameters sampled. The validation score is then the sum of $elpd_i$ for all $i$.
+
+for k in range(0, K):
+    # load parameter samples
+    samples = np.load("./Data_and_parameters/pd_real_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k)+".npy")
+    samples = np.vstack(samples[:,int(0.75*num_iterations):])
+    no_samples = samples.shape[0]
+                        
+    # create log posterior for data subset k
+    data_k[k] = data_k[k].sort_values(['DOSE', 'TIME'], ascending=True)
+    problem = pints.SingleOutputProblem(pints_model_real, np.asarray(data_k[k]['TIME'])-start_time, data_k[k]['mean'])
+    if model_type == "add":
+        log_likelihood = GaussianLogLikelihood(problem)
+    elif model_type == "multNoEta":
+        log_likelihood = MultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+    elif model_type == "combNoEta":
+        log_likelihood = ConstantAndMultiplicativeGaussianLogLikelihood(problem, fix_eta=1)
+    
+    # Get pointwise likelihoods for each sample parameter
+    # This creates a matrix of size S x N/K
+    
+    pointwise = np.zeros((no_samples, len(data_k[k])), dtype = np.longdouble)
+    proportion_check = 0.0
+    first_sample_error = 0
+    for j, sample_parameters in enumerate(samples):
+             
+        single_pointwise = log_likelihood.create_pointwise_loglikelihoods(sample_parameters)
+        pointwise[j]= single_pointwise
+    mean = np.average(pointwise, axis=0)
+    pointwise_differences = np.exp(pointwise - mean) # pointwise is log likelihood, we need likelihood
+    elpd = - np.log(no_samples) + mean + np.log(np.sum(pointwise_differences, axis=0))
+    if k==0:
+        elpd_i = elpd
+    else:
+        elpd_i = np.concatenate((elpd_i, elpd))
+
+# elpd_i = np.log(elpd_i)
+print(elpd_i)
+
+model_types = ["combNoEta", "add", "multNoEta"]
+
+for model_type in model_types:
+    print(model_type)
+    for k in range(0, K):
+        print("k=" + str(k))
+        # load parameter samples
+        samples = np.load("./Data_and_parameters/pd_real_mcmc_"+model_type+"_params_dose_"+str(dose)+"K_fold"+str(k)+".npy")
+        print(pints.MCMCSummary(samples))
+        samples = np.vstack(samples[:,int(0.75*num_iterations):])
+    print("---------------------------------")
+
+We can see from $\hat{r}$ that combined noise was the only model that could converge the MCMC chains (only 1 parameter for 1 of the subsets was not close to convergence. Where as the multiplicative noise and constant noise had large difficulties in converging the chains. 
+
+np.save("./Data_and_parameters/pd_real_elpd_i_K_Fold"+ model_type +"_dose_"+str(dose), elpd_i)
+
+print(np.sum(elpd_i))
+
+print(np.average(pointwise, axis=0))
+print(np.sum(pointwise-pointwise[0]))
+print(np.exp(pointwise-pointwise[0]))
+print(np.sum(np.exp(pointwise-pointwise[0]), axis=0))
+print(np.log(np.sum(np.exp(pointwise-pointwise[0]), axis=0))+pointwise[0]+np.log(1/31.0))
+
+x = -7.91867736e+13
+print(np.exp(x))
+
+# Now compare the models
+
+# "p_waic" effective no. of parameters columns=[,"Rank", , "Weight"]
+compare_K_fold = {"Model Type": ["Constant", "Relative", "Combined"]} 
+
+elpd_i = [
+    np.load("./Data_and_parameters/pd_real_elpd_i_K_Fold"+ "add"+"_dose_"+str(dose)+".npy"),
+    np.load("./Data_and_parameters/pd_real_elpd_i_K_Fold"+ "multNoEta" +"_dose_"+str(dose)+".npy"),
+    np.load("./Data_and_parameters/pd_real_elpd_i_K_Fold"+ "combNoEta"+"_dose_"+str(dose)+".npy")
+]
+
+compare_K_fold["ELPD"] = np.array([np.sum(elpd_i[0]), -np.sum(elpd_i[1]), np.sum(elpd_i[2])])
+max_ELPD = compare_K_fold["ELPD"].max()
+max_index = np.argmax(compare_K_fold["ELPD"])
+
+compare_K_fold["d_ELPD"] = compare_K_fold["ELPD"]-min_ELPD
+compare_K_fold["SE"] = np.array([np.std(elpd_i[0]), np.std(elpd_i[1]), np.std(elpd_i[2])])*np.power(len(elpd_i_comb), 0.5)
+d_i = np.asarray(elpd_i) - elpd_i[max_index]
+d_std = np.std(d_i, axis=1)
+compare_K_fold["dSE"] = d_std*np.power(len(elpd_i_comb), 0.5)
+
+df_compare_K_fold = pandas.DataFrame(data = compare_K_fold)
+df_compare_K_fold = df_compare_K_fold.sort_values(["ELPD"], ascending=False, ignore_index=True)
+df_compare_K_fold
+
+This lack of convergence and very small likelihoods cause numerical issues in the code meaning a K-fold comparison could not be made.
+
+
