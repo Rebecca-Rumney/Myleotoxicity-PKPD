@@ -1,0 +1,3398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="main-svg"
+   width="930.67529"
+   height="669.63739"
+   viewBox="0 0 930.67529 669.63739"
+   version="1.1"
+   id="svg3215"
+   sodipodi:docname="PKPD_Docetaxel_10.0_opt.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata3219">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="845"
+     id="namedview3217"
+     showgrid="false"
+     inkscape:zoom="0.95"
+     inkscape:cx="434.04276"
+     inkscape:cy="336.4534"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3215"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="g6367"
+     transform="translate(0,269.63737)">
+    <rect
+       id="rect5734"
+       style="fill:#ffffff;fill-opacity:1"
+       height="400"
+       width="500"
+       y="0"
+       x="0" />
+    <g
+       id="g5741"
+       class="bglayer" />
+    <g
+       id="g5747"
+       class="layer-below">
+      <g
+         id="g5743"
+         class="imagelayer" />
+      <g
+         id="g5745"
+         class="shapelayer" />
+    </g>
+    <g
+       id="g5749"
+       class="cartesianlayer" />
+    <g
+       id="g5751"
+       class="polarlayer" />
+    <g
+       id="g5753"
+       class="ternarylayer" />
+    <g
+       id="g5755"
+       class="geolayer" />
+    <g
+       id="g5757"
+       class="funnelarealayer" />
+    <g
+       id="g5759"
+       class="pielayer" />
+    <g
+       id="g5761"
+       class="treemaplayer" />
+    <g
+       id="g5763"
+       class="sunburstlayer" />
+    <g
+       id="g5765"
+       class="glimages" />
+    <g
+       id="g6135"
+       style="overflow:visible"
+       height="400"
+       width="500"
+       overflow="visible"
+       class="table">
+      <g
+         id="g6133"
+         clip-path="url(#clip203ed4_scrollAreaBottomClip_cd2549true)"
+         transform="translate(80,100)"
+         class="table-control-view">
+        <rect
+           id="rect5767"
+           height="220"
+           width="340"
+           class="scroll-background"
+           x="0"
+           y="0"
+           style="fill:none" />
+        <g
+           id="g5855"
+           clip-path="url(#clip203ed4_columnBoundaryClippath_cd2549true_0)"
+           class="y-column">
+          <g
+             id="cells1"
+             class="column-block">
+            <g
+               id="g5833"
+               class="column-cells">
+              <g
+                 id="g5775"
+                 transform="translate(0,28)"
+                 class="column-cell">
+                <rect
+                   id="rect5769"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5773"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5771"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">R_0</text>
+                </g>
+              </g>
+              <g
+                 id="g5783"
+                 transform="translate(0,48)"
+                 class="column-cell">
+                <rect
+                   id="rect5777"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5781"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5779"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">MTT</text>
+                </g>
+              </g>
+              <g
+                 id="g5791"
+                 transform="translate(0,68)"
+                 class="column-cell">
+                <rect
+                   id="rect5785"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5789"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5787"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">gamma</text>
+                </g>
+              </g>
+              <g
+                 id="g5799"
+                 transform="translate(0,88)"
+                 class="column-cell">
+                <rect
+                   id="rect5793"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5797"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5795"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">s</text>
+                </g>
+              </g>
+              <g
+                 id="g5807"
+                 transform="translate(0,108)"
+                 class="column-cell">
+                <rect
+                   id="rect5801"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5805"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5803"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">sigma_c</text>
+                </g>
+              </g>
+              <g
+                 id="g5815"
+                 transform="translate(0,128)"
+                 class="column-cell">
+                <rect
+                   id="rect5809"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5813"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5811"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">eta</text>
+                </g>
+              </g>
+              <g
+                 id="g5823"
+                 transform="translate(0,148)"
+                 class="column-cell">
+                <rect
+                   id="rect5817"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5821"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5819"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">sigma_m</text>
+                </g>
+              </g>
+              <g
+                 id="g5831"
+                 transform="translate(0,168)"
+                 class="column-cell">
+                <rect
+                   id="rect5825"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5829"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5827"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">likelihood</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="cells2"
+             class="column-block">
+            <g
+               id="g5836"
+               class="column-cells" />
+          </g>
+          <g
+             id="header"
+             class="column-block">
+            <g
+               id="g5847"
+               class="column-cells">
+              <g
+                 id="g5845"
+                 class="column-cell">
+                <rect
+                   id="rect5839"
+                   style="fill:#c8d4e3;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="28"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5843"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5841"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">Parameter</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="g5850"
+             class="column-boundary" />
+          <clipPath
+             id="clip203ed4_columnBoundaryClippath_cd2549true_0"
+             class="column-boundary-clippath">
+            <rect
+               id="rect5852"
+               y="-1"
+               x="-1"
+               height="227"
+               width="87"
+               class="column-boundary-rect"
+               style="fill:none" />
+          </clipPath>
+        </g>
+        <g
+           id="g5946"
+           clip-path="url(#clip203ed4_columnBoundaryClippath_cd2549true_1)"
+           transform="translate(85)"
+           class="y-column">
+          <g
+             id="g5923"
+             class="column-block">
+            <g
+               id="g5921"
+               class="column-cells">
+              <g
+                 id="g5863"
+                 transform="translate(0,28)"
+                 class="column-cell">
+                <rect
+                   id="rect5857"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5861"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5859"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">921.34</text>
+                </g>
+              </g>
+              <g
+                 id="g5871"
+                 transform="translate(0,48)"
+                 class="column-cell">
+                <rect
+                   id="rect5865"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5869"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5867"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">76.86</text>
+                </g>
+              </g>
+              <g
+                 id="g5879"
+                 transform="translate(0,68)"
+                 class="column-cell">
+                <rect
+                   id="rect5873"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5877"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5875"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">0.41</text>
+                </g>
+              </g>
+              <g
+                 id="g5887"
+                 transform="translate(0,88)"
+                 class="column-cell">
+                <rect
+                   id="rect5881"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5885"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5883"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">19.97</text>
+                </g>
+              </g>
+              <g
+                 id="g5895"
+                 transform="translate(0,108)"
+                 class="column-cell">
+                <rect
+                   id="rect5889"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5893"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5891"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">171.31</text>
+                </g>
+              </g>
+              <g
+                 id="g5903"
+                 transform="translate(0,128)"
+                 class="column-cell">
+                <rect
+                   id="rect5897"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5901"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5899"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">.</text>
+                </g>
+              </g>
+              <g
+                 id="g5911"
+                 transform="translate(0,148)"
+                 class="column-cell">
+                <rect
+                   id="rect5905"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5909"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5907"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">.</text>
+                </g>
+              </g>
+              <g
+                 id="g5919"
+                 transform="translate(0,168)"
+                 class="column-cell">
+                <rect
+                   id="rect5913"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5917"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5915"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">114.06</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="g5927"
+             class="column-block">
+            <g
+               id="g5925"
+               class="column-cells" />
+          </g>
+          <g
+             id="g5939"
+             class="column-block">
+            <g
+               id="g5937"
+               class="column-cells">
+              <g
+                 id="g5935"
+                 class="column-cell">
+                <rect
+                   id="rect5929"
+                   style="fill:#c8d4e3;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="28"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5933"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5931"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">Constant</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="g5941"
+             class="column-boundary" />
+          <clipPath
+             id="clip203ed4_columnBoundaryClippath_cd2549true_1"
+             class="column-boundary-clippath">
+            <rect
+               id="rect5943"
+               y="-1"
+               x="-1"
+               height="227"
+               width="87"
+               class="column-boundary-rect"
+               style="fill:none" />
+          </clipPath>
+        </g>
+        <g
+           id="g6037"
+           clip-path="url(#clip203ed4_columnBoundaryClippath_cd2549true_2)"
+           transform="translate(170)"
+           class="y-column">
+          <g
+             id="g6014"
+             class="column-block">
+            <g
+               id="g6012"
+               class="column-cells">
+              <g
+                 id="g5954"
+                 transform="translate(0,28)"
+                 class="column-cell">
+                <rect
+                   id="rect5948"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5952"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5950"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">985.14</text>
+                </g>
+              </g>
+              <g
+                 id="g5962"
+                 transform="translate(0,48)"
+                 class="column-cell">
+                <rect
+                   id="rect5956"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5960"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5958"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">84.98</text>
+                </g>
+              </g>
+              <g
+                 id="g5970"
+                 transform="translate(0,68)"
+                 class="column-cell">
+                <rect
+                   id="rect5964"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5968"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5966"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">0.42</text>
+                </g>
+              </g>
+              <g
+                 id="g5978"
+                 transform="translate(0,88)"
+                 class="column-cell">
+                <rect
+                   id="rect5972"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5976"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5974"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">16.35</text>
+                </g>
+              </g>
+              <g
+                 id="g5986"
+                 transform="translate(0,108)"
+                 class="column-cell">
+                <rect
+                   id="rect5980"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5984"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5982"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">.</text>
+                </g>
+              </g>
+              <g
+                 id="g5994"
+                 transform="translate(0,128)"
+                 class="column-cell">
+                <rect
+                   id="rect5988"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g5992"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5990"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">1.26</text>
+                </g>
+              </g>
+              <g
+                 id="g6002"
+                 transform="translate(0,148)"
+                 class="column-cell">
+                <rect
+                   id="rect5996"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6000"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text5998"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">0.02</text>
+                </g>
+              </g>
+              <g
+                 id="g6010"
+                 transform="translate(0,168)"
+                 class="column-cell">
+                <rect
+                   id="rect6004"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6008"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6006"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">125.83</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="g6018"
+             class="column-block">
+            <g
+               id="g6016"
+               class="column-cells" />
+          </g>
+          <g
+             id="g6030"
+             class="column-block">
+            <g
+               id="g6028"
+               class="column-cells">
+              <g
+                 id="g6026"
+                 class="column-cell">
+                <rect
+                   id="rect6020"
+                   style="fill:#c8d4e3;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="28"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6024"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6022"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">Multiplicative</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="g6032"
+             class="column-boundary" />
+          <clipPath
+             id="clip203ed4_columnBoundaryClippath_cd2549true_2"
+             class="column-boundary-clippath">
+            <rect
+               id="rect6034"
+               y="-1"
+               x="-1"
+               height="227"
+               width="87"
+               class="column-boundary-rect"
+               style="fill:none" />
+          </clipPath>
+        </g>
+        <g
+           id="g6128"
+           clip-path="url(#clip203ed4_columnBoundaryClippath_cd2549true_3)"
+           transform="translate(255)"
+           class="y-column">
+          <g
+             id="g6105"
+             class="column-block">
+            <g
+               id="g6103"
+               class="column-cells">
+              <g
+                 id="g6045"
+                 transform="translate(0,28)"
+                 class="column-cell">
+                <rect
+                   id="rect6039"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6043"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6041"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">985.43</text>
+                </g>
+              </g>
+              <g
+                 id="g6053"
+                 transform="translate(0,48)"
+                 class="column-cell">
+                <rect
+                   id="rect6047"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6051"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6049"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">84.42</text>
+                </g>
+              </g>
+              <g
+                 id="g6061"
+                 transform="translate(0,68)"
+                 class="column-cell">
+                <rect
+                   id="rect6055"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6059"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6057"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">0.41</text>
+                </g>
+              </g>
+              <g
+                 id="g6069"
+                 transform="translate(0,88)"
+                 class="column-cell">
+                <rect
+                   id="rect6063"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6067"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6065"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">16.56</text>
+                </g>
+              </g>
+              <g
+                 id="g6077"
+                 transform="translate(0,108)"
+                 class="column-cell">
+                <rect
+                   id="rect6071"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6075"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6073"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">36.7</text>
+                </g>
+              </g>
+              <g
+                 id="g6085"
+                 transform="translate(0,128)"
+                 class="column-cell">
+                <rect
+                   id="rect6079"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6083"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6081"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">1.67</text>
+                </g>
+              </g>
+              <g
+                 id="g6093"
+                 transform="translate(0,148)"
+                 class="column-cell">
+                <rect
+                   id="rect6087"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6091"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6089"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">0</text>
+                </g>
+              </g>
+              <g
+                 id="g6101"
+                 transform="translate(0,168)"
+                 class="column-cell">
+                <rect
+                   id="rect6095"
+                   style="fill:#ebf0f8;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="20"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6099"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6097"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">125.79</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="g6109"
+             class="column-block">
+            <g
+               id="g6107"
+               class="column-cells" />
+          </g>
+          <g
+             id="g6121"
+             class="column-block">
+            <g
+               id="g6119"
+               class="column-cells">
+              <g
+                 id="g6117"
+                 class="column-cell">
+                <rect
+                   id="rect6111"
+                   style="fill:#c8d4e3;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+                   height="28"
+                   width="85"
+                   class="cell-rect"
+                   x="0"
+                   y="0" />
+                <g
+                   id="g6115"
+                   style="text-anchor:start"
+                   transform="translate(8,8)"
+                   class="cell-text-holder">
+                  <text
+                     id="text6113"
+                     style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;fill:#2a3f5f;fill-opacity:1"
+                     dy="0.75em"
+                     class="cell-text">Combined</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g
+             id="g6123"
+             class="column-boundary" />
+          <clipPath
+             id="clip203ed4_columnBoundaryClippath_cd2549true_3"
+             class="column-boundary-clippath">
+            <rect
+               id="rect6125"
+               y="-1"
+               x="-1"
+               height="227"
+               width="87"
+               class="column-boundary-rect"
+               style="fill:none" />
+          </clipPath>
+        </g>
+        <clipPath
+           id="clip203ed4_scrollAreaBottomClip_cd2549true"
+           class="scroll-area-clip">
+          <rect
+             id="rect6130"
+             height="225"
+             width="430"
+             y="-5"
+             x="-45"
+             class="scroll-area-clip-rect"
+             style="fill:none" />
+        </clipPath>
+      </g>
+    </g>
+    <g
+       id="g6144"
+       class="layer-above">
+      <g
+         id="g6140"
+         class="imagelayer" />
+      <g
+         id="g6142"
+         class="shapelayer" />
+    </g>
+    <g
+       id="g6148"
+       class="infolayer">
+      <g
+         id="g6146"
+         class="g-gtitle" />
+    </g>
+  </g>
+  <defs
+     id="defs-fbbe1b">
+    <g
+       class="clips"
+       id="g2866">
+      <clipPath
+         id="clipfbbe1bxyplot"
+         class="plotclip">
+        <rect
+           width="262"
+           height="220"
+           id="rect2854"
+           x="0"
+           y="0" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipfbbe1bx">
+        <rect
+           x="83"
+           y="0"
+           width="262"
+           height="360"
+           id="rect2857" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipfbbe1by">
+        <rect
+           x="0"
+           y="60"
+           width="500"
+           height="220"
+           id="rect2860" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipfbbe1bxy">
+        <rect
+           x="83"
+           y="60"
+           width="262"
+           height="220"
+           id="rect2863" />
+      </clipPath>
+    </g>
+    <g
+       class="gradients"
+       id="g2868" />
+    <g
+       id="g5736"
+       class="clips" />
+    <g
+       id="g5738"
+       class="gradients" />
+    <g
+       id="g6137"
+       class="clips" />
+    <g
+       id="g7260"
+       class="clips">
+      <clipPath
+         class="plotclip"
+         id="clipcc3f47xyplot">
+        <rect
+           id="rect7248"
+           height="220"
+           width="297"
+           x="0"
+           y="0" />
+      </clipPath>
+      <clipPath
+         id="clipcc3f47x"
+         class="axesclip">
+        <rect
+           id="rect7251"
+           height="360"
+           width="297"
+           y="0"
+           x="83" />
+      </clipPath>
+      <clipPath
+         id="clipcc3f47y"
+         class="axesclip">
+        <rect
+           id="rect7254"
+           height="220"
+           width="500"
+           y="60"
+           x="0" />
+      </clipPath>
+      <clipPath
+         id="clipcc3f47xy"
+         class="axesclip">
+        <rect
+           id="rect7257"
+           height="220"
+           width="297"
+           y="60"
+           x="83" />
+      </clipPath>
+    </g>
+    <g
+       id="g7262"
+       class="gradients" />
+    <g
+       id="g7431"
+       class="clips" />
+    <clipPath
+       id="legendcc3f47">
+      <rect
+         id="rect7433"
+         y="0"
+         x="0"
+         height="64"
+         width="102" />
+    </clipPath>
+    <g
+       id="g8272"
+       class="clips">
+      <clipPath
+         class="plotclip"
+         id="clip8f2c88xyplot">
+        <rect
+           id="rect8260"
+           height="175"
+           width="150"
+           x="0"
+           y="0" />
+      </clipPath>
+      <clipPath
+         id="clip8f2c88x"
+         class="axesclip">
+        <rect
+           id="rect8263"
+           height="175"
+           width="150"
+           y="0"
+           x="0" />
+      </clipPath>
+      <clipPath
+         id="clip8f2c88y"
+         class="axesclip">
+        <rect
+           id="rect8266"
+           height="175"
+           width="150"
+           y="0"
+           x="0" />
+      </clipPath>
+      <clipPath
+         id="clip8f2c88xy"
+         class="axesclip">
+        <rect
+           id="rect8269"
+           height="175"
+           width="150"
+           y="0"
+           x="0" />
+      </clipPath>
+    </g>
+    <g
+       id="g8274"
+       class="gradients" />
+    <g
+       id="g8367"
+       class="clips" />
+  </defs>
+  <g
+     class="layer-below"
+     id="g2879"
+     transform="translate(430,301.21632)">
+    <g
+       class="imagelayer"
+       id="g2875" />
+    <g
+       class="shapelayer"
+       id="g2877" />
+  </g>
+  <g
+     class="polarlayer"
+     id="g3077"
+     transform="translate(430,301.21632)" />
+  <g
+     class="ternarylayer"
+     id="g3079"
+     transform="translate(430,301.21632)" />
+  <g
+     class="geolayer"
+     id="g3081"
+     transform="translate(430,301.21632)" />
+  <g
+     class="funnelarealayer"
+     id="g3083"
+     transform="translate(430,301.21632)" />
+  <g
+     class="pielayer"
+     id="g3085"
+     transform="translate(430,301.21632)" />
+  <g
+     class="treemaplayer"
+     id="g3087"
+     transform="translate(430,301.21632)" />
+  <g
+     class="sunburstlayer"
+     id="g3089"
+     transform="translate(430,301.21632)" />
+  <g
+     class="glimages"
+     id="g3091"
+     transform="translate(430,301.21632)" />
+  <defs
+     id="topdefs-fbbe1b">
+    <g
+       class="clips"
+       id="g3093" />
+    <clipPath
+       id="legendfbbe1b">
+      <rect
+         width="138"
+         height="132"
+         x="0"
+         y="0"
+         id="rect3095" />
+    </clipPath>
+  </defs>
+  <g
+     class="layer-above"
+     id="g3103"
+     transform="translate(430,301.21632)">
+    <g
+       class="imagelayer"
+       id="g3099" />
+    <g
+       class="shapelayer"
+       id="g3101" />
+  </g>
+  <rect
+     class="scrollbar"
+     rx="20"
+     ry="3"
+     width="0"
+     height="0"
+     style="fill:#808ba4;fill-opacity:1"
+     x="780.23999"
+     y="361.21631"
+     id="rect3195" />
+  <g
+     id="g3199"
+     class="g-gtitle"
+     transform="translate(430,301.21632)" />
+  <g
+     class="layer-below"
+     id="g7273"
+     transform="translate(430.67526,-12)">
+    <g
+       class="imagelayer"
+       id="g7269" />
+    <g
+       class="shapelayer"
+       id="g7271" />
+  </g>
+  <g
+     class="polarlayer"
+     id="g7415"
+     transform="translate(430.67526,-12)" />
+  <g
+     class="ternarylayer"
+     id="g7417"
+     transform="translate(430.67526,-12)" />
+  <g
+     class="geolayer"
+     id="g7419"
+     transform="translate(430.67526,-12)" />
+  <g
+     class="funnelarealayer"
+     id="g7421"
+     transform="translate(430.67526,-12)" />
+  <g
+     class="pielayer"
+     id="g7423"
+     transform="translate(430.67526,-12)" />
+  <g
+     class="treemaplayer"
+     id="g7425"
+     transform="translate(430.67526,-12)" />
+  <g
+     class="sunburstlayer"
+     id="g7427"
+     transform="translate(430.67526,-12)" />
+  <g
+     class="glimages"
+     id="g7429"
+     transform="translate(430.67526,-12)" />
+  <g
+     class="layer-above"
+     id="g7441"
+     transform="translate(430.67526,-12)">
+    <g
+       class="imagelayer"
+       id="g7437" />
+    <g
+       class="shapelayer"
+       id="g7439" />
+  </g>
+  <rect
+     class="scrollbar"
+     rx="20"
+     ry="3"
+     width="0"
+     height="0"
+     style="fill:#808ba4;fill-opacity:1"
+     x="816.61523"
+     y="47.999996"
+     id="rect7489" />
+  <g
+     id="g7493"
+     class="g-gtitle"
+     transform="translate(430.67526,-12)" />
+  <g
+     id="g8640"
+     transform="translate(178.1579,82.87421)">
+    <rect
+       id="rect8258"
+       style="fill:#ffffff;fill-opacity:1"
+       height="175"
+       width="150"
+       y="0"
+       x="0" />
+    <g
+       id="g8279"
+       class="bglayer">
+      <rect
+         id="rect8277"
+         style="fill:#e5ecf6;fill-opacity:1;stroke-width:0"
+         height="175"
+         width="150"
+         y="0"
+         x="0"
+         class="bg" />
+    </g>
+    <g
+       id="g8285"
+       class="layer-below">
+      <g
+         id="g8281"
+         class="imagelayer" />
+      <g
+         id="g8283"
+         class="shapelayer" />
+    </g>
+    <g
+       id="g8349"
+       class="cartesianlayer">
+      <g
+         id="g8347"
+         class="subplot xy">
+        <g
+           id="g8291"
+           class="layer-subplot">
+          <g
+             id="g8287"
+             class="shapelayer" />
+          <g
+             id="g8289"
+             class="imagelayer" />
+        </g>
+        <g
+           id="g8309"
+           class="gridlayer">
+          <g
+             id="g8295"
+             class="x">
+            <path
+               id="path8293"
+               style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+               d="M 0,0 V 175"
+               transform="translate(75)"
+               class="xgrid crisp"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g8307"
+             class="y">
+            <path
+               id="path8297"
+               style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+               d="M 0,0 H 150"
+               transform="translate(0,145.83)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path8299"
+               style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+               d="M 0,0 H 150"
+               transform="translate(0,116.67)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path8301"
+               style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+               d="M 0,0 H 150"
+               transform="translate(0,87.5)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path8303"
+               style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+               d="M 0,0 H 150"
+               transform="translate(0,58.33)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path8305"
+               style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+               d="M 0,0 H 150"
+               transform="translate(0,29.17)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+        <g
+           id="g8311"
+           class="zerolinelayer" />
+        <path
+           id="path8313"
+           class="xlines-below"
+           d=""
+           inkscape:connector-curvature="0" />
+        <path
+           id="path8315"
+           class="ylines-below"
+           d=""
+           inkscape:connector-curvature="0" />
+        <g
+           id="g8317"
+           class="overlines-below" />
+        <g
+           id="g8319"
+           class="xaxislayer-below" />
+        <g
+           id="g8321"
+           class="yaxislayer-below" />
+        <g
+           id="g8323"
+           class="overaxes-below" />
+        <g
+           id="g8331"
+           clip-path="url(#clip8f2c88xyplot)"
+           class="plot">
+          <g
+             id="g8329"
+             class="heatmaplayer mlayer">
+            <g
+               id="g8327"
+               class="hm">
+              <image
+                 id="image8325"
+                 style="opacity:0.75"
+                 xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACvCAYAAAAfdCeHAAADTElEQVR4Xu3cwQ3CQBAEQe5HVOSfjEnBSMTgfk05gJG2r94+r/fnfvkUeLjAAevhoub+BcACISkAVpLVKFgMJAXASrIaBYuBpABYSVajYDGQFAAryWoULAaSAmAlWY2CxUBSAKwkq1GwGEgKgJVkNQoWA0kBsJKsRsFiICkAVpLVKFgMJAXASrIaBYuBpABYSVajYDGQFAAryWoULAaSAmAlWY2CxUBS4FzX109BkrTbo2Btv392PVhZ2u1hsLbfP7serCzt9jBY2++fXQ9WlnZ7GKzt98+uBytLuz0M1vb7Z9eDlaXdHgZr+/2z68HK0m4Pg7X9/tn1YGVpt4fB2n7/7HqwsrTbw2Btv392PVhZ2u1hsLbfP7serCzt9jBY2++fXQ9WlnZ7GKzt98+uBytLuz0M1vb7Z9eDlaXdHgZr+/2z68HK0m4Pn/u+/RRk20ByPVhJVqNgMZAUACvJahQsBpICYCVZjYLFQFIArCSrUbAYSAqAlWQ1ChYDSQGwkqxGwWIgKQBWktUoWAwkBcBKshoFi4GkAFhJVqNgMZAUACvJahQsBpICYCVZjYLFQFIArCSrUbAYSAqAlWQ1ChYDSQGwkqxGwWIgKQBWktWo3xgxkBQAK8lqFCwGkgJgJVmNgsVAUgCsJKtRsBhICoCVZDUKFgNJAbCSrEbBYiApAFaS1ShYDCQFwEqyGgWLgaQAWElWo2AxkBQAK8lqFCwGkgJgJVmNgsVAUgCsJKtRsBhICoCVZDUKFgNJAbCSrEbBYiApAFaS1ShYDCQF/G0myWoULAaSAmAlWY2CxUBSAKwkq1GwGEgKgJVkNQoWA0kBsJKsRsFiICkAVpLVKFgMJAXASrIaBYuBpABYSVajYDGQFAAryWoULAaSAmAlWY2CxUBSAKwkq1GwGEgKgJVkNQoWA0kBsJKsRsFiICkAVpLVKFgMJAXASrIa9bcZBpICYCVZjYLFQFIArCSrUbAYSAqAlWQ1ChYDSQGwkqxGwWIgKQBWktUoWAwkBcBKshoFi4GkAFhJVqNgMZAUACvJahQsBpICYCVZjYLFQFIArCSrUbAYSAqAlWQ1ChYDSQGwkqxGwWIgKQBWktUoWAwkBcBKshoFi4GkwA8RW1lUSEcXWQAAAABJRU5ErkJggg=="
+                 y="0"
+                 x="0"
+                 width="150"
+                 height="175"
+                 preserveAspectRatio="none" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="g8333"
+           class="overplot" />
+        <path
+           id="path8335"
+           style="fill:none"
+           d="M 0,0"
+           class="xlines-above crisp"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path8337"
+           style="fill:none"
+           d="M 0,0"
+           class="ylines-above crisp"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g8339"
+           class="overlines-above" />
+        <g
+           id="g8341"
+           class="xaxislayer-above" />
+        <g
+           id="g8343"
+           class="yaxislayer-above" />
+        <g
+           id="g8345"
+           class="overaxes-above" />
+      </g>
+    </g>
+    <g
+       id="g8351"
+       class="polarlayer" />
+    <g
+       id="g8353"
+       class="ternarylayer" />
+    <g
+       id="g8355"
+       class="geolayer" />
+    <g
+       id="g8357"
+       class="funnelarealayer" />
+    <g
+       id="g8359"
+       class="pielayer" />
+    <g
+       id="g8361"
+       class="treemaplayer" />
+    <g
+       id="g8363"
+       class="sunburstlayer" />
+    <g
+       id="g8365"
+       class="glimages" />
+    <g
+       id="g8374"
+       class="layer-above">
+      <g
+         id="g8370"
+         class="imagelayer" />
+      <g
+         id="g8372"
+         class="shapelayer" />
+    </g>
+    <g
+       id="g8506"
+       class="infolayer">
+      <g
+         id="g8376"
+         class="g-gtitle" />
+      <g
+         id="g8378"
+         class="g-xtitle" />
+      <g
+         id="g8380"
+         class="g-ytitle" />
+      <g
+         id="g8392"
+         style="opacity:1"
+         data-index="0"
+         class="annotation">
+        <g
+           id="g8390"
+           class="annotation-text-g">
+          <g
+             id="g8388"
+             transform="translate(4,4)"
+             class="cursor-pointer">
+            <rect
+               id="rect8382"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="68"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8386"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#ffffff;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">
+              <tspan
+                 id="tspan8384"
+                 style="font-weight:bold">Parameter</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8404"
+         style="opacity:1"
+         data-index="1"
+         class="annotation">
+        <g
+           id="g8402"
+           class="annotation-text-g">
+          <g
+             id="g8400"
+             transform="translate(79,4)"
+             class="cursor-pointer">
+            <rect
+               id="rect8394"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="37"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8398"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#ffffff;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">
+              <tspan
+                 id="tspan8396"
+                 style="font-weight:bold">Value</tspan>
+            </text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8414"
+         style="opacity:1"
+         data-index="2"
+         class="annotation">
+        <g
+           id="g8412"
+           class="annotation-text-g">
+          <g
+             id="g8410"
+             transform="translate(4,33)"
+             class="cursor-pointer">
+            <rect
+               id="rect8406"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="34"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8408"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">V_c, L</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8424"
+         style="opacity:1"
+         data-index="3"
+         class="annotation">
+        <g
+           id="g8422"
+           class="annotation-text-g">
+          <g
+             id="g8420"
+             transform="translate(79,33)"
+             class="cursor-pointer">
+            <rect
+               id="rect8416"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="41"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8418"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">0.6845</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8434"
+         style="opacity:1"
+         data-index="4"
+         class="annotation">
+        <g
+           id="g8432"
+           class="annotation-text-g">
+          <g
+             id="g8430"
+             transform="translate(4,62)"
+             class="cursor-pointer">
+            <rect
+               id="rect8426"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="54"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8428"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">K_cl, L/hr</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8444"
+         style="opacity:1"
+         data-index="5"
+         class="annotation">
+        <g
+           id="g8442"
+           class="annotation-text-g">
+          <g
+             id="g8440"
+             transform="translate(79,62)"
+             class="cursor-pointer">
+            <rect
+               id="rect8436"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="41"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8438"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">2.8187</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8454"
+         style="opacity:1"
+         data-index="6"
+         class="annotation">
+        <g
+           id="g8452"
+           class="annotation-text-g">
+          <g
+             id="g8450"
+             transform="translate(4,92)"
+             class="cursor-pointer">
+            <rect
+               id="rect8446"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="35"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8448"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">V_1, L</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8464"
+         style="opacity:1"
+         data-index="7"
+         class="annotation">
+        <g
+           id="g8462"
+           class="annotation-text-g">
+          <g
+             id="g8460"
+             transform="translate(79,92)"
+             class="cursor-pointer">
+            <rect
+               id="rect8456"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="34"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8458"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">4.874</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8474"
+         style="opacity:1"
+         data-index="8"
+         class="annotation">
+        <g
+           id="g8472"
+           class="annotation-text-g">
+          <g
+             id="g8470"
+             transform="translate(4,121)"
+             class="cursor-pointer">
+            <rect
+               id="rect8466"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="52"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8468"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">K_1, L/hr</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8484"
+         style="opacity:1"
+         data-index="9"
+         class="annotation">
+        <g
+           id="g8482"
+           class="annotation-text-g">
+          <g
+             id="g8480"
+             transform="translate(79,121)"
+             class="cursor-pointer">
+            <rect
+               id="rect8476"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="41"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8478"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">2.2729</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8494"
+         style="opacity:1"
+         data-index="10"
+         class="annotation">
+        <g
+           id="g8492"
+           class="annotation-text-g">
+          <g
+             id="g8490"
+             transform="translate(4,150)"
+             class="cursor-pointer">
+            <rect
+               id="rect8486"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="77"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8488"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">sigma_rel_PK</text>
+          </g>
+        </g>
+      </g>
+      <g
+         id="g8504"
+         style="opacity:1"
+         data-index="11"
+         class="annotation">
+        <g
+           id="g8502"
+           class="annotation-text-g">
+          <g
+             id="g8500"
+             transform="translate(79,150)"
+             class="cursor-pointer">
+            <rect
+               id="rect8496"
+               style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1px;stroke-opacity:0"
+               height="20"
+               width="41"
+               y="0.5"
+               x="0.5"
+               class="bg" />
+            <text
+               id="text8498"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#000000;fill-opacity:1"
+               y="15"
+               x="2"
+               class="annotation-text">0.0914</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="g9312"
+     transform="translate(430,301.21632)">
+    <rect
+       id="rect2852"
+       style="fill:#ffffff;fill-opacity:1"
+       height="360"
+       width="500"
+       y="0"
+       x="0" />
+    <g
+       id="g2873"
+       class="bglayer">
+      <rect
+         id="rect2871"
+         style="fill:#e5ecf6;fill-opacity:1;stroke-width:0"
+         height="220"
+         width="262"
+         y="60"
+         x="83"
+         class="bg" />
+    </g>
+    <g
+       id="g3075"
+       class="cartesianlayer">
+      <g
+         id="g3073"
+         class="subplot xy">
+        <g
+           id="g2885"
+           class="layer-subplot">
+          <g
+             id="g2881"
+             class="shapelayer" />
+          <g
+             id="g2883"
+             class="imagelayer" />
+        </g>
+        <g
+           id="g2907"
+           class="gridlayer">
+          <g
+             id="g2891"
+             class="x">
+            <path
+               id="path2887"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 0,60 V 280"
+               transform="translate(194.21)"
+               class="xgrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path2889"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 0,60 V 280"
+               transform="translate(270.31)"
+               class="xgrid crisp"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g2905"
+             class="y">
+            <path
+               id="path2893"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 83,0 H 345"
+               transform="translate(0,260.28)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path2895"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 83,0 H 345"
+               transform="translate(0,222.04)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path2897"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 83,0 H 345"
+               transform="translate(0,183.8)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path2899"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 83,0 H 345"
+               transform="translate(0,145.56)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path2901"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 83,0 H 345"
+               transform="translate(0,107.32)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path2903"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 83,0 H 345"
+               transform="translate(0,69.08)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+        <g
+           id="g2911"
+           class="zerolinelayer">
+          <path
+             id="path2909"
+             style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+             d="M 0,60 V 280"
+             transform="translate(118.11)"
+             class="xzl zl crisp"
+             inkscape:connector-curvature="0" />
+        </g>
+        <path
+           id="path2913"
+           class="xlines-below"
+           d=""
+           inkscape:connector-curvature="0" />
+        <path
+           id="path2915"
+           class="ylines-below"
+           d=""
+           inkscape:connector-curvature="0" />
+        <g
+           id="g2917"
+           class="overlines-below" />
+        <g
+           id="g2919"
+           class="xaxislayer-below" />
+        <g
+           id="g2921"
+           class="yaxislayer-below" />
+        <g
+           id="g2923"
+           class="overaxes-below" />
+        <g
+           id="g3021"
+           clip-path="url(#clipfbbe1bxyplot)"
+           transform="translate(83,60)"
+           class="plot">
+          <g
+             id="g3019"
+             class="scatterlayer mlayer">
+            <g
+               id="g2975"
+               style="opacity:1;stroke-miterlimit:2"
+               class="trace scatter traceb3207c">
+              <g
+                 id="g2925"
+                 class="fills" />
+              <g
+                 id="g2927"
+                 class="errorbars" />
+              <g
+                 id="g2929"
+                 class="lines" />
+              <g
+                 id="g2971"
+                 class="points">
+                <path
+                   id="path2931"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(16.85,136.98)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2933"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(44.25,167.06)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2935"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(53.38,185.65)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2937"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(62.51,178.91)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2939"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(71.64,192.25)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2941"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(80.77,160.51)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2943"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(89.91,165.72)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2945"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(99.04,179.01)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2947"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(108.17,170.45)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2949"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(117.3,124.28)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2951"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(126.43,100.38)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2953"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(135.57,14.75)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2955"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(144.7,106.11)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2957"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(153.83,38.97)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2959"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(162.96,45.98)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2961"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(172.09,114.17)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2963"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(181.23,106.45)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2965"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(199.49,114.76)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2967"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(217.75,157.02)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path2969"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(245.15,134.12)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+              </g>
+              <g
+                 id="g2973"
+                 class="text" />
+            </g>
+            <g
+               id="g2989"
+               style="opacity:1;stroke-miterlimit:2"
+               class="trace scatter traced44244">
+              <g
+                 id="g2977"
+                 class="fills" />
+              <g
+                 id="g2979"
+                 class="errorbars" />
+              <g
+                 id="g2983"
+                 class="lines">
+                <path
+                   id="path2981"
+                   style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+                   d="m 16.85,138.84 24.22,0.71 0.23,0.1 2.74,1.97 0.23,0.23 3.2,4.47 0.23,0.4 4.11,8.79 0.23,0.56 16.91,41.97 0.23,0.4 4.8,6.85 0.23,0.24 3.66,2.77 0.23,0.11 3.2,0.57 0.22,-0.02 2.97,-1.08 0.23,-0.14 3.2,-2.92 0.23,-0.28 3.66,-5.6 0.23,-0.43 4.79,-10.93 0.23,-0.62 5.26,-16.25 0.23,-0.8 7.31,-28.12 0.23,-0.93 13.71,-53.61 0.23,-0.73 5.48,-14.91 0.23,-0.5 4.12,-6.97 0.23,-0.28 3.19,-2.68 0.23,-0.1 2.75,-0.38 0.22,0.04 2.97,1.5 0.23,0.18 3.43,3.93 0.23,0.33 4.11,7.3 0.23,0.47 5.94,14.12 0.23,0.6 10.97,30.71 0.23,0.65 10.74,27.73 0.23,0.52 7.31,14.43 0.23,0.38 5.71,7.99 0.23,0.25 4.57,4.11 0.23,0.16 4.57,2 0.23,0.05 h 4.11 l 0.23,-0.05 3.89,-1.56 0.23,-0.14 4.8,-3.91 0.22,-0.24 5.26,-6.55 0.23,-0.33 7.08,-11.78 0.23,-0.42 15.77,-29.99"
+                   class="js-line"
+                   inkscape:connector-curvature="0" />
+              </g>
+              <g
+                 id="g2985"
+                 class="points" />
+              <g
+                 id="g2987"
+                 class="text" />
+            </g>
+            <g
+               id="g3003"
+               style="opacity:1;stroke-miterlimit:2"
+               class="trace scatter trace698897">
+              <g
+                 id="g2991"
+                 class="fills" />
+              <g
+                 id="g2993"
+                 class="errorbars" />
+              <g
+                 id="g2997"
+                 class="lines">
+                <path
+                   id="path2995"
+                   style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#00cc96;stroke-width:2px;stroke-opacity:1"
+                   d="m 16.85,126.64 25.14,0.71 0.23,0.08 3.2,1.95 0.22,0.2 3.66,4.24 0.23,0.33 4.34,7.43 0.23,0.44 17.6,34.23 0.23,0.32 4.34,5.21 0.23,0.22 4.11,2.94 0.23,0.11 3.88,0.9 h 0.23 l 3.66,-0.88 0.23,-0.1 4.11,-2.99 0.23,-0.22 4.11,-5.07 0.23,-0.34 4.8,-8.41 0.23,-0.46 5.48,-12.52 0.23,-0.58 7.77,-21.54 0.23,-0.67 15.54,-43.76 0.23,-0.54 5.94,-11.96 0.23,-0.38 4.57,-6.06 0.23,-0.23 3.88,-2.76 0.23,-0.09 3.43,-0.58 0.23,0.02 3.2,0.97 0.23,0.12 4.11,3.21 0.23,0.23 4.8,6.08 0.23,0.34 7.77,13.64 0.22,0.45 14.63,30.27 0.23,0.46 9.82,18.04 0.23,0.37 7.77,10.79 0.23,0.26 5.94,5.64 0.23,0.17 5.49,2.99 0.23,0.08 4.79,0.81 h 0.23 l 4.35,-0.71 0.22,-0.08 4.35,-2.04 0.22,-0.15 5.03,-3.92 0.23,-0.21 6.63,-7.33 0.23,-0.29 2.51,-3.3"
+                   class="js-line"
+                   inkscape:connector-curvature="0" />
+              </g>
+              <g
+                 id="g2999"
+                 class="points" />
+              <g
+                 id="g3001"
+                 class="text" />
+            </g>
+            <g
+               id="g3017"
+               style="opacity:1;stroke-miterlimit:2"
+               class="trace scatter trace47cbc1">
+              <g
+                 id="g3005"
+                 class="fills" />
+              <g
+                 id="g3007"
+                 class="errorbars" />
+              <g
+                 id="g3011"
+                 class="lines">
+                <path
+                   id="path3009"
+                   style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ab63fa;stroke-width:2px;stroke-opacity:1"
+                   d="m 16.85,126.58 25.14,0.74 0.23,0.09 3.2,2.02 0.22,0.2 3.43,4.04 0.23,0.34 4.34,7.53 0.23,0.45 17.6,35.01 0.23,0.33 5.02,6.01 0.23,0.21 4.35,2.82 0.22,0.09 3.66,0.57 0.23,-0.02 3.43,-1 0.23,-0.11 4.34,-3.4 0.23,-0.24 5.02,-6.82 0.23,-0.38 5.03,-9.69 0.23,-0.5 6.63,-16.46 0.22,-0.63 11.2,-32.82 0.23,-0.68 10.06,-27.04 0.22,-0.52 5.72,-11.15 0.23,-0.37 4.34,-5.58 0.23,-0.22 3.65,-2.56 0.23,-0.1 3.43,-0.62 0.23,0.02 3.43,1.04 0.22,0.12 3.89,3.01 0.23,0.23 4.34,5.31 0.23,0.33 5.94,9.79 0.23,0.42 9.37,18.67 0.23,0.47 14.17,27.86 0.22,0.4 8.46,12.9 0.23,0.3 6.4,6.94 0.23,0.2 5.48,3.75 0.23,0.11 5.03,1.58 0.22,0.03 4.58,-0.13 0.22,-0.04 5.03,-1.81 0.23,-0.12 5.03,-3.43 0.23,-0.19 6.62,-6.66 0.23,-0.26 3.43,-4.22"
+                   class="js-line"
+                   inkscape:connector-curvature="0" />
+              </g>
+              <g
+                 id="g3013"
+                 class="points" />
+              <g
+                 id="g3015"
+                 class="text" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="g3023"
+           class="overplot" />
+        <path
+           id="path3025"
+           style="fill:none"
+           d="M 0,0"
+           class="xlines-above crisp"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path3027"
+           style="fill:none"
+           d="M 0,0"
+           class="ylines-above crisp"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g3029"
+           class="overlines-above" />
+        <g
+           id="g3043"
+           class="xaxislayer-above">
+          <g
+             id="g3033"
+             class="xtick">
+            <text
+               id="text3031"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(118.11)"
+               y="293"
+               x="0">0</text>
+          </g>
+          <g
+             id="g3037"
+             class="xtick">
+            <text
+               id="text3035"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(194.21)"
+               y="293"
+               x="0">200</text>
+          </g>
+          <g
+             id="g3041"
+             class="xtick">
+            <text
+               id="text3039"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(270.31)"
+               y="293"
+               x="0">400</text>
+          </g>
+        </g>
+        <g
+           id="g3069"
+           class="yaxislayer-above">
+          <g
+             id="g3047"
+             class="ytick">
+            <text
+               id="text3045"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(0,260.28)"
+               y="4.1999998"
+               x="82">600</text>
+          </g>
+          <g
+             id="g3051"
+             class="ytick">
+            <text
+               id="text3049"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(0,222.04)"
+               y="4.1999998"
+               x="82">800</text>
+          </g>
+          <g
+             id="g3055"
+             class="ytick">
+            <text
+               id="text3053"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(0,183.8)"
+               y="4.1999998"
+               x="82">1000</text>
+          </g>
+          <g
+             id="g3059"
+             class="ytick">
+            <text
+               id="text3057"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(0,145.56)"
+               y="4.1999998"
+               x="82">1200</text>
+          </g>
+          <g
+             id="g3063"
+             class="ytick">
+            <text
+               id="text3061"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(0,107.32)"
+               y="4.1999998"
+               x="82">1400</text>
+          </g>
+          <g
+             id="g3067"
+             class="ytick">
+            <text
+               id="text3065"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(0,69.08)"
+               y="4.1999998"
+               x="82">1600</text>
+          </g>
+        </g>
+        <g
+           id="g3071"
+           class="overaxes-above" />
+      </g>
+    </g>
+    <g
+       class="g-xtitle"
+       id="g3203">
+      <text
+         class="xtitle"
+         x="214"
+         y="321.79999"
+         style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
+         id="text3201">Time, hours</text>
+    </g>
+    <g
+       class="g-ytitle"
+       transform="translate(3.453125)"
+       id="g3211">
+      <text
+         class="ytitle"
+         transform="rotate(-90,11.546875,170)"
+         x="11.546875"
+         y="170"
+         style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
+         id="text3209">
+        <tspan
+           class="line"
+           dy="0em"
+           x="11.546875"
+           y="170"
+           id="tspan3205">Platelets  concentration,</tspan>
+        <tspan
+           class="line"
+           dy="1.3em"
+           x="11.546875"
+           y="170"
+           id="tspan3207">1000/L</tspan>
+      </text>
+    </g>
+    <g
+       id="g9134">
+      <rect
+         class="bg"
+         style="fill:#ffffff;fill-opacity:1;stroke:#444444;stroke-width:0px;stroke-opacity:1;shape-rendering:crispEdges"
+         width="138"
+         height="132"
+         x="350.23999"
+         y="72"
+         id="rect3105" />
+      <g
+         class="traces"
+         transform="translate(350.24,113.1)"
+         style="opacity:1"
+         id="g3145">
+        <text
+           class="legendtext"
+           x="40"
+           y="-3.1199999"
+           style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+           id="text3129">
+          <tspan
+             class="line"
+             dy="0em"
+             x="40"
+             y="-3.1199999"
+             id="tspan3125">Prediction:</tspan>
+          <tspan
+             class="line"
+             dy="1.3em"
+             x="40"
+             y="-3.1199999"
+             id="tspan3127">Constant Noise</tspan>
+        </text>
+        <g
+           class="layers"
+           style="opacity:1"
+           id="g3141">
+          <g
+             class="legendfill"
+             id="g3131" />
+          <g
+             class="legendlines"
+             id="g3135">
+            <path
+               class="js-line"
+               d="M 5,0 H 35"
+               style="fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+               id="path3133"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             class="legendsymbols"
+             id="g3139">
+            <g
+               class="legendpoints"
+               id="g3137" />
+          </g>
+        </g>
+        <rect
+           class="legendtoggle"
+           x="0"
+           y="-17.1"
+           width="133"
+           height="34.200001"
+           style="fill:#000000;fill-opacity:0"
+           id="rect3143" />
+      </g>
+      <g
+         class="traces"
+         transform="translate(350.24,147.3)"
+         style="opacity:1"
+         id="g3167">
+        <text
+           class="legendtext"
+           x="40"
+           y="-3.1199999"
+           style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+           id="text3151">
+          <tspan
+             class="line"
+             dy="0em"
+             x="40"
+             y="-3.1199999"
+             id="tspan3147">Prediction:</tspan>
+          <tspan
+             class="line"
+             dy="1.3em"
+             x="40"
+             y="-3.1199999"
+             id="tspan3149">Relative Noise</tspan>
+        </text>
+        <g
+           class="layers"
+           style="opacity:1"
+           id="g3163">
+          <g
+             class="legendfill"
+             id="g3153" />
+          <g
+             class="legendlines"
+             id="g3157">
+            <path
+               class="js-line"
+               d="M 5,0 H 35"
+               style="fill:none;stroke:#00cc96;stroke-width:2px;stroke-opacity:1"
+               id="path3155"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             class="legendsymbols"
+             id="g3161">
+            <g
+               class="legendpoints"
+               id="g3159" />
+          </g>
+        </g>
+        <rect
+           class="legendtoggle"
+           x="0"
+           y="-17.1"
+           width="133"
+           height="34.200001"
+           style="fill:#000000;fill-opacity:0"
+           id="rect3165" />
+      </g>
+      <g
+         class="traces"
+         transform="translate(350.24,181.5)"
+         style="opacity:1"
+         id="g3189">
+        <text
+           class="legendtext"
+           x="40"
+           y="-3.1199999"
+           style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+           id="text3173">
+          <tspan
+             class="line"
+             dy="0em"
+             x="40"
+             y="-3.1199999"
+             id="tspan3169">Prediction:</tspan>
+          <tspan
+             class="line"
+             dy="1.3em"
+             x="40"
+             y="-3.1199999"
+             id="tspan3171">Combined Noise</tspan>
+        </text>
+        <g
+           class="layers"
+           style="opacity:1"
+           id="g3185">
+          <g
+             class="legendfill"
+             id="g3175" />
+          <g
+             class="legendlines"
+             id="g3179">
+            <path
+               class="js-line"
+               d="M 5,0 H 35"
+               style="fill:none;stroke:#ab63fa;stroke-width:2px;stroke-opacity:1"
+               id="path3177"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             class="legendsymbols"
+             id="g3183">
+            <g
+               class="legendpoints"
+               id="g3181" />
+          </g>
+        </g>
+        <rect
+           class="legendtoggle"
+           x="0"
+           y="-17.1"
+           width="133"
+           height="34.200001"
+           style="fill:#000000;fill-opacity:0"
+           id="rect3187" />
+      </g>
+      <g
+         class="traces"
+         transform="translate(350.52549,78.210526)"
+         style="opacity:1"
+         id="g7465-3">
+        <text
+           class="legendtext"
+           x="40"
+           y="-3.1199999"
+           style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+           id="text7449-6">
+          <tspan
+             class="line"
+             dy="0em"
+             x="40"
+             y="-3.1199999"
+             id="tspan7445-7">Observed</tspan>
+          <tspan
+             class="line"
+             dy="1.3em"
+             x="40"
+             y="-3.1199999"
+             id="tspan7447-5"> Values</tspan>
+        </text>
+        <g
+           class="layers"
+           style="opacity:1"
+           id="g7461-3">
+          <g
+             class="legendfill"
+             id="g7451-5" />
+          <g
+             class="legendlines"
+             id="g7453-6" />
+          <g
+             class="legendsymbols"
+             id="g7459-2">
+            <g
+               class="legendpoints"
+               id="g7457-9">
+              <path
+                 inkscape:connector-curvature="0"
+                 class="scatterpts"
+                 transform="translate(20)"
+                 d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                 style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                 id="path7455-1" />
+            </g>
+          </g>
+        </g>
+        <rect
+           class="legendtoggle"
+           x="0"
+           y="-17.1"
+           width="96.84375"
+           height="34.200001"
+           style="fill:#000000;fill-opacity:0"
+           id="rect7463-2" />
+      </g>
+    </g>
+  </g>
+  <g
+     id="g9415"
+     transform="translate(430,313.21632)">
+    <rect
+       id="rect7246"
+       style="fill:#ffffff;fill-opacity:1"
+       height="360"
+       width="500"
+       y="-313.21631"
+       x="0.67526323" />
+    <g
+       transform="translate(0.67526323,-313.21632)"
+       id="g7267"
+       class="bglayer">
+      <rect
+         id="rect7265"
+         style="fill:#e5ecf6;fill-opacity:1;stroke-width:0"
+         height="220"
+         width="297"
+         y="60"
+         x="83"
+         class="bg" />
+    </g>
+    <g
+       transform="translate(0.67526323,-313.21632)"
+       id="g7413"
+       class="cartesianlayer">
+      <g
+         id="g7411"
+         class="subplot xy">
+        <g
+           id="g7279"
+           class="layer-subplot">
+          <g
+             id="g7275"
+             class="shapelayer" />
+          <g
+             id="g7277"
+             class="imagelayer" />
+        </g>
+        <g
+           id="g7293"
+           class="gridlayer">
+          <g
+             id="g7285"
+             class="x">
+            <path
+               id="path7281"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 0,60 V 280"
+               transform="translate(202.89)"
+               class="xgrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path7283"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 0,60 V 280"
+               transform="translate(308.56)"
+               class="xgrid crisp"
+               inkscape:connector-curvature="0" />
+          </g>
+          <g
+             id="g7291"
+             class="y">
+            <path
+               id="path7287"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 83,0 H 380"
+               transform="translate(0,197.44)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path7289"
+               style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+               d="M 83,0 H 380"
+               transform="translate(0,110.87)"
+               class="ygrid crisp"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+        <g
+           id="g7297"
+           class="zerolinelayer">
+          <path
+             id="path7295"
+             style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+             d="M 0,60 V 280"
+             transform="translate(97.21)"
+             class="xzl zl crisp"
+             inkscape:connector-curvature="0" />
+        </g>
+        <path
+           id="path7299"
+           class="xlines-below"
+           d=""
+           inkscape:connector-curvature="0" />
+        <path
+           id="path7301"
+           class="ylines-below"
+           d=""
+           inkscape:connector-curvature="0" />
+        <g
+           id="g7303"
+           class="overlines-below" />
+        <g
+           id="g7305"
+           class="xaxislayer-below" />
+        <g
+           id="g7307"
+           class="yaxislayer-below" />
+        <g
+           id="g7309"
+           class="overaxes-below" />
+        <g
+           id="g7375"
+           clip-path="url(#clipcc3f47xyplot)"
+           transform="translate(83,60)"
+           class="plot">
+          <g
+             id="g7373"
+             class="scatterlayer mlayer">
+            <g
+               id="g7357"
+               style="opacity:1;stroke-miterlimit:2"
+               class="trace scatter traceb7406a">
+              <g
+                 id="g7311"
+                 class="fills" />
+              <g
+                 id="g7337"
+                 class="errorbars">
+                <g
+                   id="g7315"
+                   style="opacity:1"
+                   class="errorbar">
+                  <path
+                     id="path7313"
+                     style="vector-effect:non-scaling-stroke;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+                     d="m 14.6,29.44 h 8 m -4,0 v 8.96 m -4,0 h 8"
+                     class="yerror"
+                     inkscape:connector-curvature="0" />
+                </g>
+                <g
+                   id="g7319"
+                   style="opacity:1"
+                   class="errorbar">
+                  <path
+                     id="path7317"
+                     style="vector-effect:non-scaling-stroke;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+                     d="m 27.81,87.58 h 8 m -4,0 v 20 m -4,0 h 8"
+                     class="yerror"
+                     inkscape:connector-curvature="0" />
+                </g>
+                <g
+                   id="g7323"
+                   style="opacity:1"
+                   class="errorbar">
+                  <path
+                     id="path7321"
+                     style="vector-effect:non-scaling-stroke;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+                     d="m 142.31,157.32 h 8 m -4,0 v 24.61 m -4,0 h 8"
+                     class="yerror"
+                     inkscape:connector-curvature="0" />
+                </g>
+                <g
+                   id="g7327"
+                   style="opacity:1"
+                   class="errorbar">
+                  <path
+                     id="path7325"
+                     style="vector-effect:non-scaling-stroke;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+                     d="m 256.75,178.61 h 8 m -4,0 v 21.04 m -4,0 h 8"
+                     class="yerror"
+                     inkscape:connector-curvature="0" />
+                </g>
+                <g
+                   id="g7331"
+                   style="opacity:1"
+                   class="errorbar">
+                  <path
+                     id="path7329"
+                     style="vector-effect:non-scaling-stroke;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+                     d="m 265.58,177.33 h 8 m -4,0 v 15.86 m -4,0 h 8"
+                     class="yerror"
+                     inkscape:connector-curvature="0" />
+                </g>
+                <g
+                   id="g7335"
+                   style="opacity:1"
+                   class="errorbar">
+                  <path
+                     id="path7333"
+                     style="vector-effect:non-scaling-stroke;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+                     d="m 274.4,189.65 h 8 m -4,0 V 209 m -4,0 h 8"
+                     class="yerror"
+                     inkscape:connector-curvature="0" />
+                </g>
+              </g>
+              <g
+                 id="g7339"
+                 class="lines" />
+              <g
+                 id="g7353"
+                 class="points">
+                <path
+                   id="path7341"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(18.6,33.66)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path7343"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(31.81,96.27)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path7345"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(146.31,167.64)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path7347"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(260.75,187.67)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path7349"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(269.58,184.43)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+                <path
+                   id="path7351"
+                   style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                   d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                   transform="translate(278.4,198.09)"
+                   class="point"
+                   inkscape:connector-curvature="0" />
+              </g>
+              <g
+                 id="g7355"
+                 class="text" />
+            </g>
+            <g
+               id="g7371"
+               style="opacity:1;stroke-miterlimit:2"
+               class="trace scatter trace10a629">
+              <g
+                 id="g7359"
+                 class="fills" />
+              <g
+                 id="g7361"
+                 class="errorbars" />
+              <g
+                 id="g7365"
+                 class="lines">
+                <path
+                   id="path7363"
+                   style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+                   d="m 14.21,11 15.34,76.04 0.27,1.15 6.34,24.65 0.27,0.89 5.02,14.41 0.27,0.63 4.49,8.9 0.27,0.42 4.49,5.8 0.27,0.27 5.02,4.01 0.27,0.16 6.08,2.89 0.26,0.09 9.26,2.63 0.26,0.06 25.13,4.84 0.26,0.04 115.3,20.6 0.27,0.04 55.79,9.97 0.27,0.04 8.99,1.61"
+                   class="js-line"
+                   inkscape:connector-curvature="0" />
+              </g>
+              <g
+                 id="g7367"
+                 class="points" />
+              <g
+                 id="g7369"
+                 class="text" />
+            </g>
+          </g>
+        </g>
+        <g
+           id="g7377"
+           class="overplot" />
+        <path
+           id="path7379"
+           style="fill:none"
+           d="M 0,0"
+           class="xlines-above crisp"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path7381"
+           style="fill:none"
+           d="M 0,0"
+           class="ylines-above crisp"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g7383"
+           class="overlines-above" />
+        <g
+           id="g7397"
+           class="xaxislayer-above">
+          <g
+             id="g7387"
+             class="xtick">
+            <text
+               id="text7385"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(97.21)"
+               y="293"
+               x="0">0</text>
+          </g>
+          <g
+             id="g7391"
+             class="xtick">
+            <text
+               id="text7389"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(202.89)"
+               y="293"
+               x="0">2</text>
+          </g>
+          <g
+             id="g7395"
+             class="xtick">
+            <text
+               id="text7393"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(308.56)"
+               y="293"
+               x="0">4</text>
+          </g>
+        </g>
+        <g
+           id="g7407"
+           class="yaxislayer-above">
+          <g
+             id="g7401"
+             class="ytick">
+            <text
+               id="text7399"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(0,197.44)"
+               y="4.1999998"
+               x="82">100</text>
+          </g>
+          <g
+             id="g7405"
+             class="ytick">
+            <text
+               id="text7403"
+               style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+               transform="translate(0,110.87)"
+               y="4.1999998"
+               x="82">1000</text>
+          </g>
+        </g>
+        <g
+           id="g7409"
+           class="overaxes-above" />
+      </g>
+    </g>
+    <g
+       id="g9157">
+      <rect
+         class="bg"
+         style="fill:#ffffff;fill-opacity:1;stroke:#444444;stroke-width:0px;stroke-opacity:1;shape-rendering:crispEdges"
+         width="102"
+         height="64"
+         x="386.61526"
+         y="-253.21632"
+         id="rect7443" />
+      <g
+         class="traces"
+         transform="translate(386.61526,-231.11632)"
+         style="opacity:1"
+         id="g7465">
+        <text
+           class="legendtext"
+           x="40"
+           y="-3.1199999"
+           style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+           id="text7449">
+          <tspan
+             class="line"
+             dy="0em"
+             x="40"
+             y="-3.1199999"
+             id="tspan7445">Observed</tspan>
+          <tspan
+             class="line"
+             dy="1.3em"
+             x="40"
+             y="-3.1199999"
+             id="tspan7447"> Values</tspan>
+        </text>
+        <g
+           class="layers"
+           style="opacity:1"
+           id="g7461">
+          <g
+             class="legendfill"
+             id="g7451" />
+          <g
+             class="legendlines"
+             id="g7453" />
+          <g
+             class="legendsymbols"
+             id="g7459">
+            <g
+               class="legendpoints"
+               id="g7457">
+              <path
+                 inkscape:connector-curvature="0"
+                 class="scatterpts"
+                 transform="translate(20)"
+                 d="M 3,0 A 3,3 0 1 1 0,-3 3,3 0 0 1 3,0 Z"
+                 style="opacity:1;fill:#636efa;fill-opacity:1;stroke-width:0px"
+                 id="path7455" />
+            </g>
+          </g>
+        </g>
+        <rect
+           class="legendtoggle"
+           x="0"
+           y="-17.1"
+           width="96.84375"
+           height="34.200001"
+           style="fill:#000000;fill-opacity:0"
+           id="rect7463" />
+      </g>
+      <g
+         class="traces"
+         transform="translate(386.61526,-204.51632)"
+         style="opacity:1"
+         id="g7483">
+        <text
+           class="legendtext"
+           x="40"
+           y="4.6799998"
+           style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+           id="text7467">Prediction</text>
+        <g
+           class="layers"
+           style="opacity:1"
+           id="g7479">
+          <g
+             class="legendfill"
+             id="g7469" />
+          <g
+             class="legendlines"
+             id="g7473">
+            <path
+               inkscape:connector-curvature="0"
+               class="js-line"
+               d="M 5,0 H 35"
+               style="fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+               id="path7471" />
+          </g>
+          <g
+             class="legendsymbols"
+             id="g7477">
+            <g
+               class="legendpoints"
+               id="g7475" />
+          </g>
+        </g>
+        <rect
+           class="legendtoggle"
+           x="0"
+           y="-9.5"
+           width="96.84375"
+           height="19"
+           style="fill:#000000;fill-opacity:0"
+           id="rect7481" />
+      </g>
+    </g>
+    <g
+       transform="translate(0.67526323,-313.21632)"
+       class="g-xtitle"
+       id="g7497">
+      <text
+         class="xtitle"
+         x="231.5"
+         y="321.79999"
+         style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
+         id="text7495">Time, hours</text>
+    </g>
+    <g
+       class="g-ytitle"
+       transform="translate(4.1283882,-313.21632)"
+       id="g7505">
+      <text
+         class="ytitle"
+         transform="rotate(-90,11.546875,170)"
+         x="11.546875"
+         y="170"
+         style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
+         id="text7503">
+        <tspan
+           class="line"
+           dy="0em"
+           x="11.546875"
+           y="170"
+           id="tspan7499">Docetaxel concentration,</tspan>
+        <tspan
+           class="line"
+           dy="1.3em"
+           x="11.546875"
+           y="170"
+           id="tspan7501"> ng/mL</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
