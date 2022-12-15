@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 from scipy import integrate
 from scipy import linalg
 from collections.abc import Iterable
@@ -24,19 +25,30 @@ def perif_dydt(current_state, params):
         )
     return dP_dt
 
+
 def dose_dydt(current_state, params):
     dD_dt = -params["Q_dose"]*current_state["dose"]/params["Vol_dose"]
     return dD_dt
 
+
 def dose_iv(t):
     return 0
 
-def PK_dydt(y, t, params, comp=2, dose_comp=False):
+
+def PK_dydt(t, y, params, comp=2, dose_comp=False):
     if dose_comp:
-        current_state = {'central': y[0], "peripheral": np.asarray(y[1:-1]), "dose" : y[-1]}
+        current_state = {
+            'central': y[0],
+            "peripheral": np.asarray(y[1:-1]),
+            "dose": y[-1]
+        }
     else:
-        current_state = {'central': y[0], "peripheral": np.asarray(y[1:]), "dose" : dose_iv(t)}
-        
+        current_state = {
+            'central': y[0],
+            "peripheral": np.asarray(y[1:]),
+            "dose": dose_iv(t)
+        }
+
     dC_dt = np.asarray([central_dydt(current_state, params)])
     if comp > 1:
         dP_dt = perif_dydt(current_state, params)
@@ -46,17 +58,18 @@ def PK_dydt(y, t, params, comp=2, dose_comp=False):
         dD_dt = np.asarray([dose_dydt(current_state, params)])
     else:
         dD_dt = np.asarray([])
-        
+
     dy_dt = np.concatenate((dC_dt, dP_dt, dD_dt))
 
     return dy_dt
 
 
-def PK_result(dose, num_comp, parameter, times, dose_comp = False):
+def PK_result(dose, num_comp, parameter, times, dose_comp=False, contin=False, tol=1e0):
     if len(parameter) != 2*(num_comp + int(dose_comp)):
         raise ValueError(
-            'Expected ' +str(2*(num_comp + int(dose_comp))) + 'parameters, recieved '
-            + str(len(parameter)) + ' parameters.'
+            'Expected ' + str(2*(num_comp + int(dose_comp))) +
+            'parameters, recieved ' + str(len(parameter)) +
+            ' parameters.'
         )
     params = {
         "Vol_C": parameter[0],
@@ -73,18 +86,39 @@ def PK_result(dose, num_comp, parameter, times, dose_comp = False):
         params["Vol_dose"] = 1
         params["Q_dose"] = 1
         y_0[0] = dose
-    
-    results_amt = integrate.odeint(
-        PK_dydt,
-        y_0,
-        times,
-        args=(params, num_comp, dose_comp)
+
+    if contin:
+        t_span = (0, max(times))
+        results_amt = integrate.solve_ivp(
+            PK_dydt,
+            t_span,
+            y_0,
+            args=(params, num_comp, dose_comp),
+            dense_output=True,
+            rtol = 1e-3*tol, 
+            atol = 1e-6*tol 
         )
-    if dose_comp:
-        results_conc = results_amt/np.concatenate((np.asarray([params["Vol_C"]]), params["Vol_perif"], np.asarray([params["Vol_dose"]])))
+        return results_amt.sol
     else:
-        results_conc = results_amt/np.concatenate((np.asarray([params["Vol_C"]]), params["Vol_perif"]))
-    return results_conc
+        results_amt = integrate.odeint(
+            PK_dydt,
+            y_0,
+            times,
+            args=(params, num_comp, dose_comp),
+            tfirst=True
+            )
+        if dose_comp:
+            results_conc = results_amt/np.concatenate((
+                np.asarray([params["Vol_C"]]),
+                params["Vol_perif"],
+                np.asarray([params["Vol_dose"]])
+            ))
+        else:
+            results_conc = results_amt/np.concatenate((
+                np.asarray([params["Vol_C"]]),
+                params["Vol_perif"]
+            ))
+        return results_conc
 
 
 if __name__ == '__main__':
@@ -145,10 +179,9 @@ def solve_2_comp(dose, params, t):
             nu = eigvectors[0]
 
             def u_v(time):
-                ut_plus_ivt = (
-                    np.exp(b*time)*(np.cos(a*time) +
-                    j*np.sin(b*time))*nu
-                )
+                ut_plus_ivt = (np.exp(b*time)*(
+                    np.cos(a*time) + j*np.sin(b*time)
+                )*nu)
                 return (ut_plus_ivt.real, ut_plus_ivt.imag)
 
             u_0 = u_v(0)[0]
@@ -189,21 +222,99 @@ if __name__ == '__main__':
     plt.legend()
     plt.show()
 
+
 class PintsPKLinIV(pints.ForwardModel):
-    def __init__(self, dose, num_comp=2, dose_comp=False):
+    def __init__(
+        self, data=None, patient_info=None, num_comp=2, dose_comp=False
+    ):
         super(PintsPKLinIV, self).__init__()
         self.num_comp = num_comp
-        self.dose = dose
-        self.dose_comp=dose_comp
+        if data is None:
+            self.data = pd.DataFrame({'ID': [0]})
+            self.single_patient = True
+        else:
+            self.data = data
+            self.pseudotime = (
+                data['ID'] *
+                np.power(10, np.ceil(np.log10(data['TIME'].max())))
+                + data['TIME']
+            )
+            self.single_patient = False
+
+        if patient_info is None:
+            dose_amt = self.data.drop_duplicates(['ID', 'DOSE'])
+            dose_amt = dose_amt[['ID', 'DOSE']]
+            self.dose = dict(dose_amt.values)
+        elif isinstance(patient_info, pd.DataFrame):
+            # dose_amt = patient_info[['ID', 'AMT']]
+            dose_amt = patient_info.groupby(['DOSE'])['AMT'].mean()
+            dose_amt = patient_info[['ID', 'DOSE']].join(
+                dose_amt, on='DOSE', how='left'
+            )
+            self.dose = dict(dose_amt[['ID', 'AMT']].values)
+        else:
+            dose_amt = patient_info['AMT']
+            ids = self.data.ID.unique()
+            self.dose = dict(zip(ids, [dose_amt]*len(ids)))
+        self.dose_comp = dose_comp
+        # Things to help speed up the process
+        if not self.single_patient:
+            self._times = np.sort(self.data.TIME.unique())
+            self._unique_doses = set(self.dose.values())
+            self._results_masks = {}
+            for patient_id in self.data.ID.unique():
+                patient_times = self.data.loc[self.data['ID'] == patient_id]
+                patient_times = patient_times[['TIME']]
+                self._results_masks[patient_id] = np.isin(
+                    self._times, patient_times
+                )
+        else:
+            self._unique_doses = [dose_amt[0]]
+            self._times = [0, 10]
+
     def n_parameters(self):
         return 2*(self.num_comp + int(self.dose_comp))
+
     def simulate(self, parameter, times):
+        if self.single_patient:
+            times = times
+            return self.single_simulate(parameter, times, self.dose[0])
+        else:
+            results = {}
+            for dose_amt in self._unique_doses:
+                results[dose_amt] = np.asarray([
+                    self._times,
+                    self.single_simulate(parameter, self._times, dose_amt)
+                ])
+            all_result = np.asarray([0])
+            for patient_id in self.data.ID.unique():
+                indv_result = results[self.dose[patient_id]]
+                indv_result = indv_result[1, :]
+                indv_result = indv_result[self._results_masks[patient_id]]
+                all_result = np.concatenate((all_result, indv_result[:]))
+            return all_result[1:]
+
+    def single_simulate(self, parameter, times, dose_amt):
         if times[0] == 0:
-            return PK_result(self.dose, self.num_comp, parameter, times, dose_comp=self.dose_comp)[:,0]
-        elif times[0] > 0:  
-            # If the times do not start at 0 then odeint will begin simulation at the first timepoint.
-            # However our model assumes dosing happens at t=0 so we will need to add 0 to the times array and
-            # then ignore the result at t=0.
+            result = PK_result(
+                dose_amt,
+                self.num_comp,
+                parameter,
+                times,
+                dose_comp=self.dose_comp
+            )[:, 0]
+            return result
+        elif times[0] > 0:
+            # If the times do not start at 0 then odeint will begin simulation
+            # at the first timepoint. However our model assumes dosing happens
+            # at t=0 so we will need to add 0 to the times array and then
+            # ignore the result at t=0.
             times = np.concatenate((np.array([0]), times))
-            return PK_result(self.dose, self.num_comp, parameter, times, dose_comp=self.dose_comp)[1:,0]
-        
+            result = PK_result(
+                dose_amt,
+                self.num_comp,
+                parameter,
+                times,
+                dose_comp=self.dose_comp
+            )[1:, 0]
+            return result
