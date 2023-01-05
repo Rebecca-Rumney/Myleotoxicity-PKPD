@@ -1,0 +1,91 @@
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'PD_dayneka.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{351.82894135bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.57556379)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.13133664,0.27898407){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Response,\\$R$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{PD_dayneka.pdf}}%
+    \put(0.00075695,0.37594812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
+    \put(-0.00026646,0.49158484){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.25907375,0.49158484){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{PD_dayneka.pdf}}%
+    \put(0.36528105,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}−48\end{tabular}}}}%
+    \put(0.41079855,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.45630007,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}48\end{tabular}}}}%
+    \put(0.50181757,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}96\end{tabular}}}}%
+    \put(0.54733508,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.59285258,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}192\end{tabular}}}}%
+    \put(0.63835409,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}240\end{tabular}}}}%
+    \put(0.6838716,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.7293891,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}336\end{tabular}}}}%
+    \put(0.77489062,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}384\end{tabular}}}}%
+    \put(0.82040812,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.86592562,0.10711882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}480\end{tabular}}}}%
+    \put(0.36368226,0.17110233){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}400\end{tabular}}}}%
+    \put(0.36368226,0.26859644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}600\end{tabular}}}}%
+    \put(0.36368226,0.36607456){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
+    \put(0.36368226,0.46356867){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{PD_dayneka.pdf}}%
+    \put(0.95923091,0.39908954){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{PD_dayneka.pdf}}%
+    \put(0.95923091,0.36871256){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{PD_dayneka.pdf}}%
+    \put(0.95923091,0.33833558){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{PD_dayneka.pdf}}%
+    \put(0.62508415,0.06107373){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.13392454,0.41295238){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
+    \put(0.28599526,0.29951249){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.98823529}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0.25}\smash{\begin{tabular}[t]{c}Circulating blood cells,\\1000/L\end{tabular}}}}}%
+    \put(0.89409348,0.45809113){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.98823529}\makebox(0,0)[lt]{\lineheight{0.25}\smash{\begin{tabular}[t]{l}Dose\\amount, mg\end{tabular}}}}%
+    \put(0.13550806,0.17022886){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{out}$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

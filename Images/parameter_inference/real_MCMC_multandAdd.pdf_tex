@@ -1,0 +1,221 @@
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'real_MCMC_multandAdd.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{505.54373169bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.70121855)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.53518354,0.41500443){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}}%
+    \put(0.53795512,0.32166886){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}}%
+    \put(0.53628558,0.2294516){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}}%
+    \put(0.53743205,0.15352178){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}}%
+    \put(0.53523938,0.04538517){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}}%
+    \put(0.58081246,0.0022333){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}%
+    \put(0.67160783,0.00064296){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}%
+    \put(0.76650222,0.00317917){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0.86158846,0.00159934){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}%
+    \put(0.94308025,0.00065341){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}%
+    \put(0.00810537,0.4152257){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}}%
+    \put(0.00790979,0.3218901){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}}%
+    \put(0.00624023,0.22967287){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}}%
+    \put(0.00738671,0.15374302){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}}%
+    \put(0.00519406,0.04560641){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}}%
+    \put(0.06325794,0.00322439){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}%
+    \put(0.1540532,0.00163405){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}%
+    \put(0.24894759,0.00417026){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0.34403383,0.00259043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}%
+    \put(0.42552565,0.00164449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{real_MCMC_multandAdd.pdf}}%
+    \put(0.00447621,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{parameter}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{real_MCMC_multandAdd.pdf}}%
+    \put(0.10245733,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{mean}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{real_MCMC_multandAdd.pdf}}%
+    \put(0.19634023,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{std}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{real_MCMC_multandAdd.pdf}}%
+    \put(0.29022313,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$\hat{r}$}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{real_MCMC_multandAdd.pdf}}%
+    \put(0.38523715,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{ess}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{real_MCMC_multandAdd.pdf}}%
+    \put(0.00744332,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{real_MCMC_multandAdd.pdf}}%
+    \put(0.10245733,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}990.4804\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{real_MCMC_multandAdd.pdf}}%
+    \put(0.19634023,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10.9352\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{real_MCMC_multandAdd.pdf}}%
+    \put(0.29022313,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0013\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{real_MCMC_multandAdd.pdf}}%
+    \put(0.38523715,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2183.2471\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{real_MCMC_multandAdd.pdf}}%
+    \put(0.00744332,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{real_MCMC_multandAdd.pdf}}%
+    \put(0.10245733,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}87.7511\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{real_MCMC_multandAdd.pdf}}%
+    \put(0.19634023,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.477\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{real_MCMC_multandAdd.pdf}}%
+    \put(0.29022313,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0012\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{real_MCMC_multandAdd.pdf}}%
+    \put(0.38523715,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2363.5402\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{real_MCMC_multandAdd.pdf}}%
+    \put(0.00744332,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{real_MCMC_multandAdd.pdf}}%
+    \put(0.10245733,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4765\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{real_MCMC_multandAdd.pdf}}%
+    \put(0.19634023,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0511\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{real_MCMC_multandAdd.pdf}}%
+    \put(0.29022313,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0019\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{real_MCMC_multandAdd.pdf}}%
+    \put(0.38523715,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2299.2166\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{real_MCMC_multandAdd.pdf}}%
+    \put(0.00744332,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{real_MCMC_multandAdd.pdf}}%
+    \put(0.10245733,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}14.7895\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{real_MCMC_multandAdd.pdf}}%
+    \put(0.19634023,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0953\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{real_MCMC_multandAdd.pdf}}%
+    \put(0.29022313,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0004\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{real_MCMC_multandAdd.pdf}}%
+    \put(0.38523715,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3180.3221\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{real_MCMC_multandAdd.pdf}}%
+    \put(0.00744332,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, \textrm{PD}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{real_MCMC_multandAdd.pdf}}%
+    \put(0.10245733,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}195.4615\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{real_MCMC_multandAdd.pdf}}%
+    \put(0.19634023,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}7.595\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{real_MCMC_multandAdd.pdf}}%
+    \put(0.29022313,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.006\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{real_MCMC_multandAdd.pdf}}%
+    \put(0.38523715,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}950.1744\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{real_MCMC_multandAdd.pdf}}%
+    \put(0.00744332,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{real_MCMC_multandAdd.pdf}}%
+    \put(0.10245733,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{real_MCMC_multandAdd.pdf}}%
+    \put(0.19634023,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{real_MCMC_multandAdd.pdf}}%
+    \put(0.29022313,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{real_MCMC_multandAdd.pdf}}%
+    \put(0.38523715,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0.00270217,0.68824038){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.0029673,0.47327631){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.52445121,0.46762741){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{real_MCMC_multandAdd.pdf}}%
+    \put(0.62974663,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{mean}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{real_MCMC_multandAdd.pdf}}%
+    \put(0.72362953,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{std}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{real_MCMC_multandAdd.pdf}}%
+    \put(0.81751243,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$\hat{r}$}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{real_MCMC_multandAdd.pdf}}%
+    \put(0.91252645,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{ess}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{real_MCMC_multandAdd.pdf}}%
+    \put(0.62974663,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}987.7842\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{real_MCMC_multandAdd.pdf}}%
+    \put(0.72362953,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}11.0684\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{real_MCMC_multandAdd.pdf}}%
+    \put(0.81751243,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.002\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{real_MCMC_multandAdd.pdf}}%
+    \put(0.91252645,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2670.9419\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{real_MCMC_multandAdd.pdf}}%
+    \put(0.62974663,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}90.5867\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{real_MCMC_multandAdd.pdf}}%
+    \put(0.72362953,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.7492\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{real_MCMC_multandAdd.pdf}}%
+    \put(0.81751243,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.001\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{real_MCMC_multandAdd.pdf}}%
+    \put(0.91252645,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2729.2138\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{real_MCMC_multandAdd.pdf}}%
+    \put(0.62974663,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5179\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{real_MCMC_multandAdd.pdf}}%
+    \put(0.72362953,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0555\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{real_MCMC_multandAdd.pdf}}%
+    \put(0.81751243,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.001\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{real_MCMC_multandAdd.pdf}}%
+    \put(0.91252645,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2697.9292\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{real_MCMC_multandAdd.pdf}}%
+    \put(0.62974663,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}11.9318\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{real_MCMC_multandAdd.pdf}}%
+    \put(0.72362953,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.8859\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{real_MCMC_multandAdd.pdf}}%
+    \put(0.81751243,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{real_MCMC_multandAdd.pdf}}%
+    \put(0.91252645,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2397.5148\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{real_MCMC_multandAdd.pdf}}%
+    \put(0.62974663,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{real_MCMC_multandAdd.pdf}}%
+    \put(0.72362953,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=58]{real_MCMC_multandAdd.pdf}}%
+    \put(0.81751243,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=59]{real_MCMC_multandAdd.pdf}}%
+    \put(0.91252645,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=60]{real_MCMC_multandAdd.pdf}}%
+    \put(0.62974663,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2092\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=61]{real_MCMC_multandAdd.pdf}}%
+    \put(0.72362953,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0081\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=62]{real_MCMC_multandAdd.pdf}}%
+    \put(0.81751243,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0004\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=63]{real_MCMC_multandAdd.pdf}}%
+    \put(0.91252645,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2369.025\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=64]{real_MCMC_multandAdd.pdf}}%
+    \put(0.53160576,0.66428876){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{parameter}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=65]{real_MCMC_multandAdd.pdf}}%
+    \put(0.53473804,0.63844235){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=66]{real_MCMC_multandAdd.pdf}}%
+    \put(0.53473804,0.61167285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=67]{real_MCMC_multandAdd.pdf}}%
+    \put(0.53473804,0.58490335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=68]{real_MCMC_multandAdd.pdf}}%
+    \put(0.53473804,0.55905694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=69]{real_MCMC_multandAdd.pdf}}%
+    \put(0.53473804,0.53228745){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, \textrm{PD}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=70]{real_MCMC_multandAdd.pdf}}%
+    \put(0.53473804,0.50644104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}%
+    \put(0.53181537,0.68794034){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

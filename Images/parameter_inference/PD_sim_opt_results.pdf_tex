@@ -1,0 +1,198 @@
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'PD_sim_opt_results.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{411.53791809bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.77055367)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{PD_sim_opt_results.pdf}}%
+    \put(0.12475916,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.16698036,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.20920156,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.25142276,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.29364396,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0.09385526,0.1234854){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}500\end{tabular}}}}%
+    \put(0.09385526,0.21525398){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0.09385526,0.30702255){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1500\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{PD_sim_opt_results.pdf}}%
+    \put(0.34921903,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.39144023,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.43366144,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.47588264,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.51810384,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{PD_sim_opt_results.pdf}}%
+    \put(0.57367891,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.61590011,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.65812131,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.70034251,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.74256371,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{PD_sim_opt_results.pdf}}%
+    \put(0.79813878,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.84035998,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.88258118,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.92480238,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.96702358,0.08304107){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{PD_sim_opt_results.pdf}}%
+    \put(0.19864968,0.04367655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.42310957,0.04367655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.64756941,0.04367655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.87202932,0.04367655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{PD_sim_opt_results.pdf}}%
+    \put(0.19912209,0.40971206){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=0.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{PD_sim_opt_results.pdf}}%
+    \put(0.42328126,0.40971206){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=1.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{PD_sim_opt_results.pdf}}%
+    \put(0.64744043,0.40971206){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=2.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{PD_sim_opt_results.pdf}}%
+    \put(0.87159961,0.40971206){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=3.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{PD_sim_opt_results.pdf}}%
+    \put(0.11594786,0.00979842){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Constant Noise\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{PD_sim_opt_results.pdf}}%
+    \put(0.34051992,0.00979842){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Relative Noise\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{PD_sim_opt_results.pdf}}%
+    \put(0.56509197,0.00979842){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Combined Noise\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{PD_sim_opt_results.pdf}}%
+    \put(0.78601917,0.00979842){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Actual Parameters\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{PD_sim_opt_results.pdf}}%
+    \put(0.03767357,0.09889787){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Circulating blood cells, $10^3/\mu \textrm{L}$\end{tabular}}}}}%
+    \put(0.03065228,0.68747067){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.02189013,0.42085897){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.70085811){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Parameter}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.70085811){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Constant noise}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.70085811){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Relative noise}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.70085811){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Combined noise}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{PD_sim_opt_results.pdf}}%
+    \put(0.80351472,0.70085811){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Actual parameters}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.67258349){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$, $10^3/\mu \textrm{L}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.67258349){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}987.92\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.67258349){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}988.26\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.67258349){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}988.26\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{PD_sim_opt_results.pdf}}%
+    \put(0.80351472,0.67258349){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}983.1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.64430887){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MTT, $\textrm{hr}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.64430887){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}86.76\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.64430887){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.63\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.64430887){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.63\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{PD_sim_opt_results.pdf}}%
+    \put(0.80351472,0.64430887){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.26\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.61603425){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.61603425){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.45\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.61603425){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.44\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.61603425){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.44\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{PD_sim_opt_results.pdf}}%
+    \put(0.80351472,0.61603425){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.44\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.58775963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$, $\textrm{L}/\textrm{mg}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.58775963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}19.32\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.58775963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}19.25\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.58775963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}19.25\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{PD_sim_opt_results.pdf}}%
+    \put(0.80351472,0.58775963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.56049481){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, PD}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.56049481){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}166.64\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.56049481){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.56049481){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{PD_sim_opt_results.pdf}}%
+    \put(0.80351472,0.56049481){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}42.43\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.53222019){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.53222019){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.53222019){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.76\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.53222019){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.76\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{PD_sim_opt_results.pdf}}%
+    \put(0.80351472,0.53222019){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.50394557){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PD}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.50394557){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.50394557){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.9\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.50394557){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.9\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{PD_sim_opt_results.pdf}}%
+    \put(0.80351472,0.50394557){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.13\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{PD_sim_opt_results.pdf}}%
+    \put(0.1114668,0.47567095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{PD_sim_opt_results.pdf}}%
+    \put(0.28447878,0.47567095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2696.51\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{PD_sim_opt_results.pdf}}%
+    \put(0.45749076,0.47567095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3330.7\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=58]{PD_sim_opt_results.pdf}}%
+    \put(0.63050274,0.47567095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3126.53\end{tabular}}}}%
+    \put(0.80351472,0.47567095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

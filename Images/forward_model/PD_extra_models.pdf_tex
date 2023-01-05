@@ -1,0 +1,89 @@
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'PD_extra_models.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{503.68981934bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.54755991)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{PD_extra_models.pdf}}%
+    \put(0.40337249,0.07569367){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time\end{tabular}}}}%
+    \put(0.08629696,0.06499655){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_P$\end{tabular}}}}%
+    \put(0.20602141,0.06499649){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_M$\end{tabular}}}}%
+    \put(0.33470107,0.06499643){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_R$\end{tabular}}}}%
+    \put(0.06939647,0.13570691){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Proliferating \\cells, $P$\end{tabular}}}}%
+    \put(0.20346946,0.13519918){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Maturing\\cells, $M$\end{tabular}}}}%
+    \put(0.33824138,0.13690085){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating\\cells, $R$\end{tabular}}}}%
+    \put(0.00250018,0.52286237){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.00608227,0.23271356){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.45969825,0.51092207){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.11684819,0.19411705){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
+    \put(0.13474452,0.50337029){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
+    \put(0.4720786,0.28605721){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
+    \put(0.07960031,0.51053446){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
+    \put(0.10760535,0.44257204){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Proliferating \\cells, $P$\end{tabular}}}}%
+    \put(0.24925397,0.44376605){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating\\cells, $R$\end{tabular}}}}%
+    \put(0.16480956,0.41407089){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{tr}$\end{tabular}}}}%
+    \put(0.24342166,0.37825003){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{out}$\end{tabular}}}}%
+    \put(0.05030211,0.19433952){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
+    \put(0.66207692,0.40675125){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
+    \put(0.66201955,0.24759647){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Stem\end{tabular}}}}%
+    \put(0.76228923,0.24759647){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
+    \put(0.73904094,0.40863163){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
+    \put(0.84063035,0.24811462){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
+    \put(0.74705371,0.10363723){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
+    \put(0.66916088,0.1041449){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
+    \put(0.87001828,0.40794525){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
+    \put(0.97160891,0.24981629){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
+    \put(0.87803111,0.10653292){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
+    \put(0.62636888,0.02244339){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$Q_1$\end{tabular}}}}%
+    \put(0.7145398,0.02124926){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$Q_2$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

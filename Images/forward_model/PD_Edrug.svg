@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="main-svg"
+   width="366.29999"
+   height="206.87245"
+   viewBox="0 0 366.29999 206.87245"
+   version="1.1"
+   id="svg40750"
+   sodipodi:docname="PD_Edrug.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata40754">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="971"
+     id="namedview40752"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.8541911"
+     inkscape:cx="378.43724"
+     inkscape:cy="182.36281"
+     inkscape:window-x="1080"
+     inkscape:window-y="434"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg40750" />
+  <defs
+     id="defs-ac79a0">
+    <g
+       class="clips"
+       id="g40505">
+      <clipPath
+         id="clipac79a0xyplot"
+         class="plotclip">
+        <rect
+           width="320"
+           height="220"
+           id="rect40493"
+           x="0"
+           y="0" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipac79a0x">
+        <rect
+           x="80"
+           y="0"
+           width="320"
+           height="360"
+           id="rect40496" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipac79a0y">
+        <rect
+           x="0"
+           y="60"
+           width="500"
+           height="220"
+           id="rect40499" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipac79a0xy">
+        <rect
+           x="80"
+           y="60"
+           width="320"
+           height="220"
+           id="rect40502" />
+      </clipPath>
+    </g>
+    <g
+       class="gradients"
+       id="g40507" />
+    <g
+       id="g2836"
+       class="clips">
+      <clipPath
+         class="plotclip"
+         id="clip6aa867xyplot">
+        <rect
+           id="rect2824"
+           height="220"
+           width="340"
+           x="0"
+           y="0" />
+      </clipPath>
+      <clipPath
+         id="clip6aa867x"
+         class="axesclip">
+        <rect
+           id="rect2827"
+           height="360"
+           width="340"
+           y="0"
+           x="80" />
+      </clipPath>
+      <clipPath
+         id="clip6aa867y"
+         class="axesclip">
+        <rect
+           id="rect2830"
+           height="220"
+           width="500"
+           y="60"
+           x="0" />
+      </clipPath>
+      <clipPath
+         id="clip6aa867xy"
+         class="axesclip">
+        <rect
+           id="rect2833"
+           height="220"
+           width="340"
+           y="60"
+           x="80" />
+      </clipPath>
+    </g>
+    <g
+       id="g2838"
+       class="gradients" />
+    <g
+       id="g2840"
+       class="patterns" />
+    <g
+       id="g3019"
+       class="clips" />
+    <clipPath
+       id="legend6aa867">
+      <rect
+         id="rect3021"
+         y="0"
+         x="0"
+         height="67"
+         width="93" />
+    </clipPath>
+    <path
+       d="m 492,213 q -20,0 -20,13 0,4 5,24 5,20 5,35 0,31 -21,38 -21,7 -97,7 H 312 Q 311,328 277,192 243,56 243,52 q 0,-4 11,-4 11,0 80,-2 94,0 124,2 30,2 60,13 49,16 81,56 32,40 71,131 10,22 13,24 7,2 15,2 20,0 20,-13 Q 613,7 608,2 605,0 322,0 H 133 Q 31,0 31,11 q 0,2 3,14 4,16 8,18 4,2 23,3 27,0 60,3 14,3 19,12 2,5 71,281 69,276 70,280 0,7 -4,7 -8,3 -53,5 h -31 q -6,6 -6,8 0,2 2,17 4,17 10,21 h 554 q 7,-4 7,-11 0,-5 -13,-112 -13,-107 -14,-110 -2,-7 -20,-7 h -12 q -7,5 -7,13 l 3,23 q 3,24 3,52 0,30 -7,50 -7,20 -19,31 -12,11 -35,16 -23,5 -47,7 -24,2 -64,2 h -47 q -88,-1 -93,-3 -4,-2 -6,-9 -1,-3 -31,-123 -30,-120 -31,-122 23,-1 48,-1 h 26 q 66,0 91,15 25,15 45,81 4,16 6,18 2,2 17,3 5,0 8,0 3,0 5,-1 2,-1 2,-1 0,0 2,-4 2,-4 3,-4 L 544,351 q -33,-133 -36,-135 -3,-3 -16,-3 z"
+       id="MJMATHI-45"
+       inkscape:connector-curvature="0"
+       style="stroke-width:1" />
+    <path
+       d="m 21,287 q 1,6 3,16 2,10 12,38 10,28 20,47 10,19 32,37 22,18 44,17 22,-1 43,-7 21,-6 30,-18 9,-12 16,-22 7,-10 8,-19 l 2,-7 q 0,-2 1,-2 l 11,11 q 60,64 141,64 17,0 31,-2 14,-2 26,-7 12,-5 19,-10 7,-5 15,-12 8,-7 10,-13 2,-6 8,-13 6,-7 4,-12 -2,-5 3,-9 5,-4 2,-7 l 8,10 q 63,75 149,75 54,0 87,-27 33,-27 34,-79 0,-51 -38,-158 -38,-107 -38,-128 1,-14 5,-19 4,-5 15,-5 28,0 52,30 24,30 39,82 3,11 6,13 3,2 16,2 20,0 20,-8 0,-1 -4,-15 -8,-29 -22,-57 -14,-28 -46,-56 -32,-28 -69,-27 -47,0 -68,27 -21,27 -21,56 0,19 36,120 36,101 37,152 0,59 -44,59 h -5 Q 565,404 506,303 L 499,291 466,157 Q 433,26 428,16 q -13,-27 -43,-27 -13,0 -21,7 -8,7 -11,12 -3,5 -3,10 0,11 34,143 l 36,146 q 3,15 3,38 0,59 -44,59 h -5 Q 288,404 229,303 L 222,291 189,157 Q 156,26 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 38,164 39,154 39,161 3,15 3,27 0,36 -25,36 -22,0 -37,-28 Q 77,349 69,316 61,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="MJMATHI-6D"
+       inkscape:connector-curvature="0"
+       style="stroke-width:1" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="MJMATHI-61"
+       inkscape:connector-curvature="0"
+       style="stroke-width:1" />
+    <path
+       d="m 52,289 q 7,42 54,97 47,55 116,56 35,0 64,-18 29,-18 43,-45 42,63 101,63 37,0 64,-22 27,-22 28,-59 0,-29 -14,-47 -14,-18 -27,-22 -13,-4 -23,-4 -19,0 -31,11 -12,11 -12,29 0,46 50,63 -11,13 -40,13 -13,0 -19,-2 -38,-16 -56,-66 -60,-221 -60,-258 0,-28 16,-40 16,-12 35,-12 37,0 73,33 36,33 49,81 3,10 6,11 3,1 16,2 h 4 q 15,0 15,-8 0,-1 -2,-11 Q 486,77 440,33 394,-11 333,-11 263,-11 227,52 186,-10 133,-10 h -6 q -49,0 -70,26 -21,26 -22,55 0,32 19,52 19,20 45,20 43,0 43,-42 Q 142,81 130,66 118,51 107,46 96,41 94,41 l -3,-1 q 0,-1 6,-4 6,-3 16,-7 10,-4 19,-3 36,0 62,45 9,16 23,68 14,52 28,108 14,56 16,66 5,27 5,39 0,28 -15,40 -15,12 -34,12 -40,0 -75,-32 -35,-32 -49,-82 -2,-9 -5,-10 -3,-1 -16,-2 H 58 q -6,6 -6,11 z"
+       id="MJMATHI-78"
+       inkscape:connector-curvature="0"
+       style="stroke-width:1" />
+    <g
+       id="g40505-3"
+       class="clips">
+      <clipPath
+         class="plotclip"
+         id="clipac79a0xyplot-5">
+        <rect
+           y="0"
+           x="0"
+           id="rect40493-6"
+           height="220"
+           width="320" />
+      </clipPath>
+      <clipPath
+         id="clipac79a0x-2"
+         class="axesclip">
+        <rect
+           id="rect40496-9"
+           height="360"
+           width="320"
+           y="0"
+           x="80" />
+      </clipPath>
+      <clipPath
+         id="clipac79a0y-1"
+         class="axesclip">
+        <rect
+           id="rect40499-2"
+           height="220"
+           width="500"
+           y="60"
+           x="0" />
+      </clipPath>
+      <clipPath
+         id="clipac79a0xy-7"
+         class="axesclip">
+        <rect
+           id="rect40502-0"
+           height="220"
+           width="320"
+           y="60"
+           x="80" />
+      </clipPath>
+    </g>
+    <g
+       id="g40507-9"
+       class="gradients" />
+    <g
+       class="clips"
+       id="g2836-3">
+      <clipPath
+         id="clip6aa867xyplot-6"
+         class="plotclip">
+        <rect
+           y="0"
+           x="0"
+           width="340"
+           height="220"
+           id="rect2824-0" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip6aa867x-6">
+        <rect
+           x="80"
+           y="0"
+           width="340"
+           height="360"
+           id="rect2827-2" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip6aa867y-6">
+        <rect
+           x="0"
+           y="60"
+           width="500"
+           height="220"
+           id="rect2830-1" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip6aa867xy-8">
+        <rect
+           x="80"
+           y="60"
+           width="340"
+           height="220"
+           id="rect2833-7" />
+      </clipPath>
+    </g>
+    <g
+       class="gradients"
+       id="g2838-9" />
+    <g
+       class="patterns"
+       id="g2840-2" />
+    <g
+       class="clips"
+       id="g3019-0" />
+    <clipPath
+       id="legend6aa867-2">
+      <rect
+         width="93"
+         height="67"
+         x="0"
+         y="0"
+         id="rect3021-3" />
+    </clipPath>
+    <path
+       style="stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="MJMATHI-45-7"
+       d="m 492,213 q -20,0 -20,13 0,4 5,24 5,20 5,35 0,31 -21,38 -21,7 -97,7 H 312 Q 311,328 277,192 243,56 243,52 q 0,-4 11,-4 11,0 80,-2 94,0 124,2 30,2 60,13 49,16 81,56 32,40 71,131 10,22 13,24 7,2 15,2 20,0 20,-13 Q 613,7 608,2 605,0 322,0 H 133 Q 31,0 31,11 q 0,2 3,14 4,16 8,18 4,2 23,3 27,0 60,3 14,3 19,12 2,5 71,281 69,276 70,280 0,7 -4,7 -8,3 -53,5 h -31 q -6,6 -6,8 0,2 2,17 4,17 10,21 h 554 q 7,-4 7,-11 0,-5 -13,-112 -13,-107 -14,-110 -2,-7 -20,-7 h -12 q -7,5 -7,13 l 3,23 q 3,24 3,52 0,30 -7,50 -7,20 -19,31 -12,11 -35,16 -23,5 -47,7 -24,2 -64,2 h -47 q -88,-1 -93,-3 -4,-2 -6,-9 -1,-3 -31,-123 -30,-120 -31,-122 23,-1 48,-1 h 26 q 66,0 91,15 25,15 45,81 4,16 6,18 2,2 17,3 5,0 8,0 3,0 5,-1 2,-1 2,-1 0,0 2,-4 2,-4 3,-4 L 544,351 q -33,-133 -36,-135 -3,-3 -16,-3 z" />
+    <path
+       style="stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="MJMATHI-6D-5"
+       d="m 21,287 q 1,6 3,16 2,10 12,38 10,28 20,47 10,19 32,37 22,18 44,17 22,-1 43,-7 21,-6 30,-18 9,-12 16,-22 7,-10 8,-19 l 2,-7 q 0,-2 1,-2 l 11,11 q 60,64 141,64 17,0 31,-2 14,-2 26,-7 12,-5 19,-10 7,-5 15,-12 8,-7 10,-13 2,-6 8,-13 6,-7 4,-12 -2,-5 3,-9 5,-4 2,-7 l 8,10 q 63,75 149,75 54,0 87,-27 33,-27 34,-79 0,-51 -38,-158 -38,-107 -38,-128 1,-14 5,-19 4,-5 15,-5 28,0 52,30 24,30 39,82 3,11 6,13 3,2 16,2 20,0 20,-8 0,-1 -4,-15 -8,-29 -22,-57 -14,-28 -46,-56 -32,-28 -69,-27 -47,0 -68,27 -21,27 -21,56 0,19 36,120 36,101 37,152 0,59 -44,59 h -5 Q 565,404 506,303 L 499,291 466,157 Q 433,26 428,16 q -13,-27 -43,-27 -13,0 -21,7 -8,7 -11,12 -3,5 -3,10 0,11 34,143 l 36,146 q 3,15 3,38 0,59 -44,59 h -5 Q 288,404 229,303 L 222,291 189,157 Q 156,26 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 38,164 39,154 39,161 3,15 3,27 0,36 -25,36 -22,0 -37,-28 Q 77,349 69,316 61,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z" />
+    <path
+       style="stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="MJMATHI-61-9"
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z" />
+    <path
+       style="stroke-width:1"
+       inkscape:connector-curvature="0"
+       id="MJMATHI-78-2"
+       d="m 52,289 q 7,42 54,97 47,55 116,56 35,0 64,-18 29,-18 43,-45 42,63 101,63 37,0 64,-22 27,-22 28,-59 0,-29 -14,-47 -14,-18 -27,-22 -13,-4 -23,-4 -19,0 -31,11 -12,11 -12,29 0,46 50,63 -11,13 -40,13 -13,0 -19,-2 -38,-16 -56,-66 -60,-221 -60,-258 0,-28 16,-40 16,-12 35,-12 37,0 73,33 36,33 49,81 3,10 6,11 3,1 16,2 h 4 q 15,0 15,-8 0,-1 -2,-11 Q 486,77 440,33 394,-11 333,-11 263,-11 227,52 186,-10 133,-10 h -6 q -49,0 -70,26 -21,26 -22,55 0,32 19,52 19,20 45,20 43,0 43,-42 Q 142,81 130,66 118,51 107,46 96,41 94,41 l -3,-1 q 0,-1 6,-4 6,-3 16,-7 10,-4 19,-3 36,0 62,45 9,16 23,68 14,52 28,108 14,56 16,66 5,27 5,39 0,28 -15,40 -15,12 -34,12 -40,0 -75,-32 -35,-32 -49,-82 -2,-9 -5,-10 -3,-1 -16,-2 H 58 q -6,6 -6,11 z" />
+    <g
+       id="g40676-4"
+       class="clips" />
+    <clipPath
+       id="legendac79a0-7">
+      <rect
+         id="rect40678-8"
+         y="0"
+         x="0"
+         height="64"
+         width="82" />
+    </clipPath>
+    <path
+       d="m 492,213 q -20,0 -20,13 0,4 5,24 5,20 5,35 0,31 -21,38 -21,7 -97,7 H 312 Q 311,328 277,192 243,56 243,52 q 0,-4 11,-4 11,0 80,-2 94,0 124,2 30,2 60,13 49,16 81,56 32,40 71,131 10,22 13,24 7,2 15,2 20,0 20,-13 Q 613,7 608,2 605,0 322,0 H 133 Q 31,0 31,11 q 0,2 3,14 4,16 8,18 4,2 23,3 27,0 60,3 14,3 19,12 2,5 71,281 69,276 70,280 0,7 -4,7 -8,3 -53,5 h -31 q -6,6 -6,8 0,2 2,17 4,17 10,21 h 554 q 7,-4 7,-11 0,-5 -13,-112 -13,-107 -14,-110 -2,-7 -20,-7 h -12 q -7,5 -7,13 l 3,23 q 3,24 3,52 0,30 -7,50 -7,20 -19,31 -12,11 -35,16 -23,5 -47,7 -24,2 -64,2 h -47 q -88,-1 -93,-3 -4,-2 -6,-9 -1,-3 -31,-123 -30,-120 -31,-122 23,-1 48,-1 h 26 q 66,0 91,15 25,15 45,81 4,16 6,18 2,2 17,3 5,0 8,0 3,0 5,-1 2,-1 2,-1 0,0 2,-4 2,-4 3,-4 L 544,351 q -33,-133 -36,-135 -3,-3 -16,-3 z"
+       id="path3240"
+       inkscape:connector-curvature="0"
+       style="stroke-width:1" />
+    <path
+       d="m 21,287 q 1,6 3,16 2,10 12,38 10,28 20,47 10,19 32,37 22,18 44,17 22,-1 43,-7 21,-6 30,-18 9,-12 16,-22 7,-10 8,-19 l 2,-7 q 0,-2 1,-2 l 11,11 q 60,64 141,64 17,0 31,-2 14,-2 26,-7 12,-5 19,-10 7,-5 15,-12 8,-7 10,-13 2,-6 8,-13 6,-7 4,-12 -2,-5 3,-9 5,-4 2,-7 l 8,10 q 63,75 149,75 54,0 87,-27 33,-27 34,-79 0,-51 -38,-158 -38,-107 -38,-128 1,-14 5,-19 4,-5 15,-5 28,0 52,30 24,30 39,82 3,11 6,13 3,2 16,2 20,0 20,-8 0,-1 -4,-15 -8,-29 -22,-57 -14,-28 -46,-56 -32,-28 -69,-27 -47,0 -68,27 -21,27 -21,56 0,19 36,120 36,101 37,152 0,59 -44,59 h -5 Q 565,404 506,303 L 499,291 466,157 Q 433,26 428,16 q -13,-27 -43,-27 -13,0 -21,7 -8,7 -11,12 -3,5 -3,10 0,11 34,143 l 36,146 q 3,15 3,38 0,59 -44,59 h -5 Q 288,404 229,303 L 222,291 189,157 Q 156,26 151,16 138,-11 108,-11 95,-11 87,-5 79,1 76,7 q -3,6 -2,10 0,13 38,164 39,154 39,161 3,15 3,27 0,36 -25,36 -22,0 -37,-28 Q 77,349 69,316 61,283 57,280 55,278 41,278 H 27 q -6,6 -6,9 z"
+       id="path3242"
+       inkscape:connector-curvature="0"
+       style="stroke-width:1" />
+    <path
+       d="m 33,157 q 0,101 76,192 76,91 171,92 51,0 90,-49 16,30 46,30 13,0 23,-8 10,-8 10,-20 0,-13 -37,-160 -37,-147 -38,-166 0,-25 7,-33 7,-8 21,-9 9,1 20,9 21,20 41,96 6,20 10,21 2,1 10,1 h 4 q 19,0 19,-9 0,-6 -5,-27 Q 496,96 481,63 466,30 449,13 436,0 417,-8 q -8,-2 -24,-2 -34,0 -57,15 -23,15 -30,31 l -6,15 q -1,1 -4,-1 -2,-2 -4,-4 -59,-56 -120,-56 -55,0 -97,40 -42,40 -42,127 z m 318,171 q 0,6 -5,22 -5,16 -23,35 -18,19 -46,20 -35,0 -67,-31 -32,-31 -50,-81 -29,-79 -41,-164 0,-3 0,-11 0,-8 -1,-12 0,-45 18,-62 18,-17 43,-18 38,0 75,33 37,33 44,51 2,4 27,107 25,103 26,111 z"
+       id="path3244"
+       inkscape:connector-curvature="0"
+       style="stroke-width:1" />
+    <path
+       d="m 52,289 q 7,42 54,97 47,55 116,56 35,0 64,-18 29,-18 43,-45 42,63 101,63 37,0 64,-22 27,-22 28,-59 0,-29 -14,-47 -14,-18 -27,-22 -13,-4 -23,-4 -19,0 -31,11 -12,11 -12,29 0,46 50,63 -11,13 -40,13 -13,0 -19,-2 -38,-16 -56,-66 -60,-221 -60,-258 0,-28 16,-40 16,-12 35,-12 37,0 73,33 36,33 49,81 3,10 6,11 3,1 16,2 h 4 q 15,0 15,-8 0,-1 -2,-11 Q 486,77 440,33 394,-11 333,-11 263,-11 227,52 186,-10 133,-10 h -6 q -49,0 -70,26 -21,26 -22,55 0,32 19,52 19,20 45,20 43,0 43,-42 Q 142,81 130,66 118,51 107,46 96,41 94,41 l -3,-1 q 0,-1 6,-4 6,-3 16,-7 10,-4 19,-3 36,0 62,45 9,16 23,68 14,52 28,108 14,56 16,66 5,27 5,39 0,28 -15,40 -15,12 -34,12 -40,0 -75,-32 -35,-32 -49,-82 -2,-9 -5,-10 -3,-1 -16,-2 H 58 q -6,6 -6,11 z"
+       id="path3246"
+       inkscape:connector-curvature="0"
+       style="stroke-width:1" />
+    <g
+       id="g3868"
+       class="clips">
+      <clipPath
+         class="plotclip"
+         id="clipfaaba8xyplot">
+        <rect
+           id="rect3856"
+           height="220"
+           width="340" />
+      </clipPath>
+      <clipPath
+         id="clipfaaba8x"
+         class="axesclip">
+        <rect
+           id="rect3859"
+           height="360"
+           width="340"
+           y="0"
+           x="80" />
+      </clipPath>
+      <clipPath
+         id="clipfaaba8y"
+         class="axesclip">
+        <rect
+           id="rect3862"
+           height="220"
+           width="500"
+           y="60"
+           x="0" />
+      </clipPath>
+      <clipPath
+         id="clipfaaba8xy"
+         class="axesclip">
+        <rect
+           id="rect3865"
+           height="220"
+           width="340"
+           y="60"
+           x="80" />
+      </clipPath>
+    </g>
+    <g
+       id="g3870"
+       class="gradients" />
+    <g
+       id="g3872"
+       class="patterns" />
+    <g
+       id="g4051"
+       class="clips" />
+    <clipPath
+       id="legendfaaba8">
+      <rect
+         id="rect4053"
+         y="0"
+         x="0"
+         height="67"
+         width="93" />
+    </clipPath>
+    <path
+       d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"
+       id="MJMATHI-45-74"
+       stroke-width="1" />
+    <path
+       d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"
+       id="MJMATHI-6D-52"
+       stroke-width="1" />
+    <path
+       d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"
+       id="MJMATHI-61-5"
+       stroke-width="1" />
+    <path
+       d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"
+       id="MJMATHI-78-4"
+       stroke-width="1" />
+  </defs>
+  <g
+     class="layer-below"
+     id="g40518"
+     transform="translate(-62.5,-82.000128)">
+    <g
+       class="imagelayer"
+       id="g40514" />
+    <g
+       class="shapelayer"
+       id="g40516" />
+  </g>
+  <g
+     class="polarlayer"
+     id="g40660"
+     transform="translate(-62.5,-82.000128)" />
+  <g
+     class="ternarylayer"
+     id="g40662"
+     transform="translate(-62.5,-82.000128)" />
+  <g
+     class="geolayer"
+     id="g40664"
+     transform="translate(-62.5,-82.000128)" />
+  <g
+     class="funnelarealayer"
+     id="g40666"
+     transform="translate(-62.5,-82.000128)" />
+  <g
+     class="pielayer"
+     id="g40668"
+     transform="translate(-62.5,-82.000128)" />
+  <g
+     class="treemaplayer"
+     id="g40670"
+     transform="translate(-62.5,-82.000128)" />
+  <g
+     class="sunburstlayer"
+     id="g40672"
+     transform="translate(-62.5,-82.000128)" />
+  <g
+     class="glimages"
+     id="g40674"
+     transform="translate(-62.5,-82.000128)" />
+  <defs
+     id="topdefs-ac79a0">
+    <g
+       class="clips"
+       id="g40676" />
+    <clipPath
+       id="legendac79a0">
+      <rect
+         width="82"
+         height="64"
+         x="0"
+         y="0"
+         id="rect40678" />
+    </clipPath>
+  </defs>
+  <g
+     class="layer-above"
+     id="g40686"
+     transform="translate(-62.5,-82.000128)">
+    <g
+       class="imagelayer"
+       id="g40682" />
+    <g
+       class="shapelayer"
+       id="g40684" />
+  </g>
+  <rect
+     class="scrollbar"
+     rx="15"
+     ry="2.25"
+     width="0"
+     height="0"
+     x="304.79999"
+     y="7.9999056"
+     style="fill:#808ba4;fill-opacity:1;stroke-width:0.75"
+     id="rect40734" />
+  <g
+     id="g40738"
+     class="g-gtitle"
+     transform="matrix(0.75,0,0,0.75,0,-37.000126)" />
+  <g
+     class="layer-below"
+     id="g2851"
+     transform="translate(56.220342,233.8339)">
+    <g
+       class="imagelayer"
+       id="g2847" />
+    <g
+       class="shapelayer"
+       id="g2849" />
+  </g>
+  <g
+     class="polarlayer"
+     id="g2999"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="smithlayer"
+     id="g3001"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="ternarylayer"
+     id="g3003"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="geolayer"
+     id="g3005"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="funnelarealayer"
+     id="g3007"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="pielayer"
+     id="g3009"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="iciclelayer"
+     id="g3011"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="treemaplayer"
+     id="g3013"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="sunburstlayer"
+     id="g3015"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="glimages"
+     id="g3017"
+     transform="translate(56.220342,233.8339)" />
+  <g
+     class="layer-above"
+     id="g3029"
+     transform="translate(56.220342,233.8339)">
+    <g
+       class="imagelayer"
+       id="g3025" />
+    <g
+       class="shapelayer"
+       id="g3027" />
+  </g>
+  <g
+     class="bglayer"
+     id="g3877"
+     transform="matrix(0.76914991,0,0,0.76914991,-18.632261,-43.238983)">
+    <rect
+       class="bg"
+       x="80"
+       y="60"
+       width="340"
+       height="220"
+       style="fill:#e5ecf6;fill-opacity:1;stroke-width:0"
+       id="rect3875" />
+  </g>
+  <g
+     class="layer-below"
+     id="g3883"
+     transform="translate(-211.16905,-80.451976)">
+    <g
+       class="imagelayer"
+       id="g3879" />
+    <g
+       class="shapelayer"
+       id="g3881" />
+  </g>
+  <g
+     class="cartesianlayer"
+     id="g4029"
+     transform="matrix(0.76914991,0,0,0.76914991,-18.632261,-43.238983)">
+    <g
+       class="subplot xy"
+       id="g4027">
+      <g
+         class="layer-subplot"
+         id="g3889">
+        <g
+           class="shapelayer"
+           id="g3885" />
+        <g
+           class="imagelayer"
+           id="g3887" />
+      </g>
+      <g
+         class="minor-gridlayer"
+         id="g3895">
+        <g
+           class="x"
+           id="g3891" />
+        <g
+           class="y"
+           id="g3893" />
+      </g>
+      <g
+         class="gridlayer"
+         id="g3917">
+        <g
+           class="x"
+           id="g3903">
+          <path
+             inkscape:connector-curvature="0"
+             class="xgrid crisp"
+             transform="translate(157.25)"
+             d="M 0,60 V 280"
+             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+             id="path3897" />
+          <path
+             inkscape:connector-curvature="0"
+             class="xgrid crisp"
+             transform="translate(234.5)"
+             d="M 0,60 V 280"
+             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+             id="path3899" />
+          <path
+             inkscape:connector-curvature="0"
+             class="xgrid crisp"
+             transform="translate(311.75)"
+             d="M 0,60 V 280"
+             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+             id="path3901" />
+        </g>
+        <g
+           class="y"
+           id="g3915">
+          <path
+             inkscape:connector-curvature="0"
+             class="ygrid crisp"
+             transform="translate(0,229.4)"
+             d="M 80,0 H 389"
+             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+             id="path3905" />
+          <path
+             inkscape:connector-curvature="0"
+             class="ygrid crisp"
+             transform="translate(0,189.8)"
+             d="M 80,0 H 389"
+             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+             id="path3907" />
+          <path
+             inkscape:connector-curvature="0"
+             class="ygrid crisp"
+             transform="translate(0,150.2)"
+             d="M 80,0 H 389"
+             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+             id="path3909" />
+          <path
+             inkscape:connector-curvature="0"
+             class="ygrid crisp"
+             transform="translate(0,110.6)"
+             d="M 80,0 H 389"
+             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+             id="path3911" />
+          <path
+             inkscape:connector-curvature="0"
+             class="ygrid crisp"
+             transform="translate(0,71)"
+             d="M 80,0 H 389"
+             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+             id="path3913" />
+        </g>
+      </g>
+      <g
+         class="zerolinelayer"
+         id="g3923">
+        <path
+           inkscape:connector-curvature="0"
+           class="xzl zl crisp"
+           transform="translate(80)"
+           d="M 0,60 V 280"
+           style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+           id="path3919" />
+        <path
+           inkscape:connector-curvature="0"
+           class="yzl zl crisp"
+           transform="translate(0,269)"
+           d="M 80,0 H 389"
+           style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+           id="path3921" />
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         d=""
+         class="xlines-below"
+         id="path3925" />
+      <path
+         inkscape:connector-curvature="0"
+         d=""
+         class="ylines-below"
+         id="path3927" />
+      <g
+         class="overlines-below"
+         id="g3929" />
+      <g
+         class="xaxislayer-below"
+         id="g3931" />
+      <g
+         class="yaxislayer-below"
+         id="g3933" />
+      <g
+         class="overaxes-below"
+         id="g3935" />
+      <g
+         class="plot"
+         transform="translate(80,60)"
+         clip-path="url(#clipfaaba8xyplot)"
+         id="g3967">
+        <g
+           class="scatterlayer mlayer"
+           id="g3965">
+          <g
+             class="trace scatter trace790e6c"
+             style="opacity:1;stroke-miterlimit:2"
+             id="g3949">
+            <g
+               class="fills"
+               id="g3937" />
+            <g
+               class="errorbars"
+               id="g3939" />
+            <g
+               class="lines"
+               id="g3943">
+              <path
+                 inkscape:connector-curvature="0"
+                 class="js-line"
+                 d="M 0,209 309,11"
+                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+                 id="path3941" />
+            </g>
+            <g
+               class="points"
+               id="g3945" />
+            <g
+               class="text"
+               id="g3947" />
+          </g>
+          <g
+             class="trace scatter tracec1168d"
+             style="opacity:1;stroke-miterlimit:2"
+             id="g3963">
+            <g
+               class="fills"
+               id="g3951" />
+            <g
+               class="errorbars"
+               id="g3953" />
+            <g
+               class="lines"
+               id="g3957">
+              <path
+                 inkscape:connector-curvature="0"
+                 class="js-line"
+                 d="m 0,209 12.48,-14.8 3.13,-3.37 12.48,-12.29 3.12,-2.82 15.61,-12.77 3.12,-2.32 15.61,-10.61 3.12,-1.94 18.72,-10.62 3.13,-1.61 21.84,-10.22 3.12,-1.32 24.97,-9.6 3.13,-1.08 24.97,-7.93 3.12,-0.91 31.21,-8.19 3.12,-0.74 34.33,-7.38 3.12,-0.61 40.58,-7.11 3.12,-0.49 L 309,77"
+                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+                 id="path3955" />
+            </g>
+            <g
+               class="points"
+               id="g3959" />
+            <g
+               class="text"
+               id="g3961" />
+          </g>
+        </g>
+      </g>
+      <g
+         class="overplot"
+         id="g3969" />
+      <path
+         inkscape:connector-curvature="0"
+         class="xlines-above crisp"
+         d="M 0,0"
+         style="fill:none"
+         id="path3971" />
+      <path
+         inkscape:connector-curvature="0"
+         class="ylines-above crisp"
+         d="M 0,0"
+         style="fill:none"
+         id="path3973" />
+      <g
+         class="overlines-above"
+         id="g3975" />
+      <g
+         class="xaxislayer-above"
+         id="g3997">
+        <g
+           class="xtick"
+           id="g3979">
+          <text
+             x="0"
+             y="293"
+             transform="translate(80)"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             id="text3977">0.0</text>
+        </g>
+        <g
+           class="xtick"
+           id="g3983">
+          <text
+             x="0"
+             y="293"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(157.25)"
+             id="text3981">0.5</text>
+        </g>
+        <g
+           class="xtick"
+           id="g3987">
+          <text
+             x="0"
+             y="293"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(234.5)"
+             id="text3985">1.0</text>
+        </g>
+        <g
+           class="xtick"
+           id="g3991">
+          <text
+             x="0"
+             y="293"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(311.75)"
+             id="text3989">1.5</text>
+        </g>
+        <g
+           class="xtick"
+           id="g3995">
+          <text
+             x="0"
+             y="293"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(389)"
+             id="text3993">2.0</text>
+        </g>
+      </g>
+      <g
+         class="yaxislayer-above"
+         id="g4023">
+        <g
+           class="ytick"
+           id="g4001">
+          <text
+             x="79"
+             y="4.1999998"
+             transform="translate(0,269)"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             id="text3999">0.0</text>
+        </g>
+        <g
+           class="ytick"
+           id="g4005">
+          <text
+             x="79"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(0,229.4)"
+             id="text4003">0.2</text>
+        </g>
+        <g
+           class="ytick"
+           id="g4009">
+          <text
+             x="79"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(0,189.8)"
+             id="text4007">0.4</text>
+        </g>
+        <g
+           class="ytick"
+           id="g4013">
+          <text
+             x="79"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(0,150.2)"
+             id="text4011">0.6</text>
+        </g>
+        <g
+           class="ytick"
+           id="g4017">
+          <text
+             x="79"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(0,110.6)"
+             id="text4015">0.8</text>
+        </g>
+        <g
+           class="ytick"
+           id="g4021">
+          <text
+             x="79"
+             y="4.1999998"
+             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;opacity:1;fill:#2a3f5f;fill-opacity:1"
+             transform="translate(0,71)"
+             id="text4019">1.0</text>
+        </g>
+      </g>
+      <g
+         class="overaxes-above"
+         id="g4025" />
+    </g>
+  </g>
+  <g
+     class="polarlayer"
+     id="g4031"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="smithlayer"
+     id="g4033"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="ternarylayer"
+     id="g4035"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="geolayer"
+     id="g4037"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="funnelarealayer"
+     id="g4039"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="pielayer"
+     id="g4041"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="iciclelayer"
+     id="g4043"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="treemaplayer"
+     id="g4045"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="sunburstlayer"
+     id="g4047"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="glimages"
+     id="g4049"
+     transform="translate(-211.16905,-80.451976)" />
+  <g
+     class="layer-above"
+     id="g4061"
+     transform="translate(-211.16905,-80.451976)">
+    <g
+       class="imagelayer"
+       id="g4057" />
+    <g
+       class="shapelayer"
+       id="g4059" />
+  </g>
+  <g
+     id="g4085"
+     class="groups"
+     transform="matrix(0.76914991,0,0,0.76914991,294.41175,2.9100116)">
+    <g
+       id="g4083"
+       style="opacity:1"
+       transform="translate(0,32.7)"
+       class="traces">
+      <g
+         id="g4079"
+         style="opacity:1"
+         class="layers">
+        <g
+           id="g4069"
+           class="legendfill" />
+        <g
+           id="g4073"
+           class="legendlines">
+          <path
+             id="path4071"
+             style="fill:none;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+             d="M 5,0 H 35"
+             class="js-line"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           id="g4077"
+           class="legendsymbols">
+          <g
+             id="g4075"
+             class="legendpoints" />
+        </g>
+      </g>
+      <rect
+         id="rect4081"
+         style="fill:#000000;fill-opacity:0"
+         height="19"
+         width="75.046875"
+         y="-9.5"
+         x="0"
+         class="legendtoggle" />
+      <text
+         id="text4067"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         y="4.6799998"
+         x="40"
+         class="legendtext">Linear</text>
+    </g>
+  </g>
+  <g
+     id="g4118"
+     style="opacity:1"
+     class="layers"
+     transform="matrix(0.76914991,0,0,0.76914991,294.41175,42.675062)">
+    <g
+       id="g4108"
+       class="legendfill" />
+    <g
+       id="g4112"
+       class="legendlines">
+      <path
+         id="path4110"
+         style="fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+         d="M 5,0 H 35"
+         class="js-line"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g4116"
+       class="legendsymbols">
+      <g
+         id="g4114"
+         class="legendpoints" />
+    </g>
+  </g>
+  <rect
+     class="scrollbar"
+     rx="15.382998"
+     ry="2.3074498"
+     width="0"
+     height="0"
+     style="fill:#808ba4;fill-opacity:1;stroke-width:0.7691499"
+     x="294.41174"
+     y="2.9100115"
+     id="rect4128" />
+  <g
+     id="g4132"
+     class="g-gtitle"
+     transform="matrix(0.76914991,0,0,0.76914991,-18.632261,-43.238983)" />
+  <g
+     id="g4136"
+     class="g-xtitle"
+     transform="matrix(0.76914991,0,0,0.76914991,-18.632261,-43.238983)">
+    <text
+       id="text4134"
+       style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
+       y="321.79999"
+       x="234.5"
+       class="xtitle">Drug Concentration, mg/L</text>
+  </g>
+  <g
+     id="g4140"
+     class="g-ytitle"
+     transform="matrix(0.76914991,0,0,0.76914991,-18.632261,-43.238983)">
+    <text
+       id="text4138"
+       style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
+       y="170"
+       x="37.278126"
+       transform="rotate(-90,37.278125,170)"
+       class="ytitle">Drug effect</text>
+  </g>
+  <text
+     id="text40712"
+     style="font-size:9.21381855px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1;stroke-width:0.76781827"
+     y="45.38039"
+     x="322.33734"
+     class="legendtext">$E_\textrm{max}$</text>
+  <text
+     id="text4065"
+     style="font-size:10.76809883px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1;stroke-width:0.7691499"
+     y="16.908541"
+     x="295.95004"
+     class="legendtitletext">Relation Type</text>
+</svg>

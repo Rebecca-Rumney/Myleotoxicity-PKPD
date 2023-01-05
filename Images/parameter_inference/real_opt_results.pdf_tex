@@ -1,0 +1,208 @@
+%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'real_opt_results.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{459.16410828bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.63024843)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{real_opt_results.pdf}}%
+    \put(0.09472452,0.32192454){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.20675167,0.32192454){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.31877882,0.32192454){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}10\end{tabular}}}}%
+    \put(0.07722639,0.37287441){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
+    \put(0.07722639,0.43325763){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}100\end{tabular}}}}%
+    \put(0.07722639,0.49364084){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{real_opt_results.pdf}}%
+    \put(0.20675167,0.29963642){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.02807656,0.42909588){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Drug concentration, mg/L\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{real_opt_results.pdf}}%
+    \put(0.34239642,0.53190213){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose, mg\end{tabular}}}}%
+    \put(0.37954328,0.51315273){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{real_opt_results.pdf}}%
+    \put(0.37954328,0.49457929){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{real_opt_results.pdf}}%
+    \put(0.37954328,0.47600586){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}15.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{real_opt_results.pdf}}%
+    \put(0.37954328,0.41158536){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Prediction\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{real_opt_results.pdf}}%
+    \put(0.37801002,0.44306131){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{0.25}\smash{\begin{tabular}[t]{l}Observed\\Values\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{real_opt_results.pdf}}%
+    \put(0.14596761,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.18879404,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.23163025,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.27446646,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.12349375,0.0977204){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}500\end{tabular}}}}%
+    \put(0.12349375,0.15776148){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0.12349375,0.21779278){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1500\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{real_opt_results.pdf}}%
+    \put(0.30974133,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.35256776,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.39540397,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.43824018,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{real_opt_results.pdf}}%
+    \put(0.47351504,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.51634148,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.55917769,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.6020139,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{real_opt_results.pdf}}%
+    \put(0.63728876,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.68011519,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.7229514,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.76578761,0.02991759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{real_opt_results.pdf}}%
+    \put(0.19993566,0.00176418){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.36370939,0.00176418){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.52748308,0.00176418){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.6912568,0.00176418){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{real_opt_results.pdf}}%
+    \put(0.19975787,0.26355186){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=0.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{real_opt_results.pdf}}%
+    \put(0.36398615,0.26355186){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=5.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{real_opt_results.pdf}}%
+    \put(0.52766455,0.26355186){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=10.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{real_opt_results.pdf}}%
+    \put(0.69091528,0.26355186){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=15.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{real_opt_results.pdf}}%
+    \put(0.50992572,0.50931596){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Parameter\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{real_opt_results.pdf}}%
+    \put(0.63480815,0.48194459){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}989.96\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{real_opt_results.pdf}}%
+    \put(0.63480815,0.45474314){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}87.65\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{real_opt_results.pdf}}%
+    \put(0.63480815,0.42979111){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.47\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{real_opt_results.pdf}}%
+    \put(0.63480815,0.40520663){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}15.03\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{real_opt_results.pdf}}%
+    \put(0.63480815,0.37966924){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}193.77\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{real_opt_results.pdf}}%
+    \put(0.63480815,0.36405068){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{real_opt_results.pdf}}%
+    \put(0.63480815,0.33944835){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0.6348081,0.30422896){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-2048.08\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{real_opt_results.pdf}}%
+    \put(0.62563747,0.50931596){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Constant\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{real_opt_results.pdf}}%
+    \put(0.75969051,0.48194459){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}989.7\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{real_opt_results.pdf}}%
+    \put(0.75969051,0.45474314){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}89.49\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{real_opt_results.pdf}}%
+    \put(0.75969051,0.42979111){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{real_opt_results.pdf}}%
+    \put(0.75969051,0.40520663){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}12.85\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{real_opt_results.pdf}}%
+    \put(0.75969051,0.38946966){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{real_opt_results.pdf}}%
+    \put(0.75969051,0.35425026){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.77\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{real_opt_results.pdf}}%
+    \put(0.75969051,0.32964793){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.99\end{tabular}}}}%
+    \put(0.75969056,0.30422896){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-2381.33\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{real_opt_results.pdf}}%
+    \put(0.75051983,0.50931596){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Multiplicative\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{real_opt_results.pdf}}%
+    \put(0.88457293,0.48194459){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}989.58\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{real_opt_results.pdf}}%
+    \put(0.88457293,0.45474314){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}88.12\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{real_opt_results.pdf}}%
+    \put(0.88457293,0.42979111){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.48\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{real_opt_results.pdf}}%
+    \put(0.88457293,0.40520663){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}14.77\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{real_opt_results.pdf}}%
+    \put(0.88457293,0.37966924){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}193.08\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{real_opt_results.pdf}}%
+    \put(0.88457293,0.35425026){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.81\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{real_opt_results.pdf}}%
+    \put(0.88457293,0.32964793){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.88457292,0.30422896){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-2373.39\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{real_opt_results.pdf}}%
+    \put(0.87540226,0.50931596){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Combined\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{real_opt_results.pdf}}%
+    \put(0.51286413,0.4826401){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{real_opt_results.pdf}}%
+    \put(0.5145149,0.45717617){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{real_opt_results.pdf}}%
+    \put(0.51286413,0.4318642){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{real_opt_results.pdf}}%
+    \put(0.51286413,0.40647625){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{real_opt_results.pdf}}%
+    \put(0.51286413,0.38108832){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, \textrm{PD}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{real_opt_results.pdf}}%
+    \put(0.51286413,0.35570037){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{real_opt_results.pdf}}%
+    \put(0.5128641,0.33031241){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{real_opt_results.pdf}}%
+    \put(0.51408666,0.30418918){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{real_opt_results.pdf}}%
+    \put(0.18535867,0.58427869){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.6838\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{real_opt_results.pdf}}%
+    \put(0.29093399,0.58427869){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.7789\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{real_opt_results.pdf}}%
+    \put(0.39650931,0.58427869){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.0892\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{real_opt_results.pdf}}%
+    \put(0.50208463,0.58427869){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.7038\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{real_opt_results.pdf}}%
+    \put(0.60765995,0.58427869){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3127\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{real_opt_results.pdf}}%
+    \put(0.80937782,0.22080449){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Constant Noise\end{tabular}}}}%
+    \put(0.80812685,0.19823973){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Relative Noise\end{tabular}}}}%
+    \put(0.80654962,0.17672814){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Combined Noise\end{tabular}}}}%
+    \put(0.14532982,0.6013834){\color[rgb]{0.24313725,0.31764706,0.43137255}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.1808893,0.61101499){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_c$, L\end{tabular}}}}%
+    \put(0.28549723,0.61126212){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$, L/hr\end{tabular}}}}%
+    \put(0.39142957,0.61216753){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_1$, L\end{tabular}}}}%
+    \put(0.49917272,0.61126212){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_1$, L/hr\end{tabular}}}}%
+    \put(0.60238888,0.61216753){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0.74515162,0.5333973){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Noise Model\end{tabular}}}}%
+    \put(0.01654735,0.5589281){\color[rgb]{0.24313725,0.31764706,0.43137255}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.48709423,0.53629293){\color[rgb]{0.24313725,0.31764706,0.43137255}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.05179699,0.26467149){\color[rgb]{0.24313725,0.31764706,0.43137255}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
+    \put(0.04925614,0.12998902){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating blood cells,\\$10^3$/mcL\end{tabular}}}}}%
+  \end{picture}%
+\endgroup%
