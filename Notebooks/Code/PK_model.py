@@ -627,11 +627,6 @@ class ChiPKLin(chi.MechanisticModel):
         # Get parameters whose output sensitivities are computed
         parameters = []
         for param_id, param in enumerate(self._parameter_names):
-            if param_id < self._n_states:
-                # Convert initial value parameters to the correct syntax
-                parameters.append('init(' + param + ')')
-                continue
-
             # Other parameters can be appended without modification
             parameters.append(param)
 

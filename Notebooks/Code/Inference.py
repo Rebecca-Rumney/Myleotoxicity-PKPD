@@ -383,7 +383,9 @@ class SamplingController(chi.InferenceController):
 
         return xr.Dataset(container, attrs=attrs)
 
-    def run(self, n_iterations, hyperparameters=None, log_to_screen=False):
+    def run(
+        self, n_iterations, sigma0=None, hyperparameters=None
+    ):
         """
         Runs the sampling routine and returns the sampled parameter values in
         form of a :class:`xarray.Dataset` with :class:`xarray.DataArray`
@@ -414,24 +416,22 @@ class SamplingController(chi.InferenceController):
         self._required_iters = n_iterations
 
         # Run sampling routine
-        chains = self.MCMC_run()
+        chains, divergent_iters = self.MCMC_run(
+            sigma0=sigma0, hyperparameters=hyperparameters
+        )
         chains = np.asarray(chains)
-        # If Hamiltonian Monte Carlo, get number of divergent
-        # iterations # TODO: Implement
-        divergent_iters = None
-        if issubclass(
-                self._sampler, (pints.HamiltonianMCMC, pints.NoUTurnMCMC)):
-            divergent_iters = None
-            # [s.divergent_iterations() for s in sampler.samplers()]
 
         # Format chains
-        chains = self._format_chains(chains, divergent_iters)
+        self.chains = self._format_chains(chains, divergent_iters)
+        return self.chains
 
     def set_stop_criterion(self, max_iterations=10000, r_hat=None):
         self._max_iters = max_iterations
         self._r_hat = r_hat
 
-    def MCMC_run(self, save_point_like=None, hyper_parameters=None):
+    def MCMC_run(
+        self, save_point_like=None, sigma0=None, hyperparameters=None
+    ):
         samplers = []
 
         # Apply a transformation (if given). From this point onward the MCMC
@@ -443,39 +443,40 @@ class SamplingController(chi.InferenceController):
             # Convert initial positions
             x0 = [self._transform.to_search(x) for x in self._initial_params]
 
-            # # Convert sigma0, if provided
-            # if sigma0 is not None:
-            #     sigma0 = np.asarray(sigma0)
-            #     n_parameters = log_pdf.n_parameters()
-            #     # Make sure sigma0 is a (covariance) matrix
-            #     if np.product(sigma0.shape) == n_parameters:
-            #         # Convert from 1d array
-            #         sigma0 = sigma0.reshape((n_parameters,))
-            #         sigma0 = np.diag(sigma0)
-            #     elif sigma0.shape != (n_parameters, n_parameters):
-            #         # Check if 2d matrix of correct size
-            #         raise ValueError(
-            #             'sigma0 must be either a (d, d) matrix or a (d, ) '
-            #             'vector, where d is the number of parameters.')
-            #     sigma0 = self._transform.convert_covariance_matrix(sigma0, x0[0])
+            # Convert sigma0, if provided
+            if sigma0 is not None:
+                sigma0 = np.asarray(sigma0)
+                n_parameters = log_pdf.n_parameters()
+                # Make sure sigma0 is a (covariance) matrix
+                if np.product(sigma0.shape) == n_parameters:
+                    # Convert from 1d array
+                    sigma0 = sigma0.reshape((n_parameters,))
+                    sigma0 = np.diag(sigma0)
+                elif sigma0.shape != (n_parameters, n_parameters):
+                    # Check if 2d matrix of correct size
+                    raise ValueError(
+                        'sigma0 must be either a (d, d) matrix or a (d, ) '
+                        'vector, where d is the number of parameters.')
+                sigma0 = self._transform.convert_covariance_matrix(
+                    sigma0, x0[0]
+                )
         else:
             log_pdf = self._log_posterior
             x0 = self._initial_params
-        
+
         for i in range(0, self._n_runs):
             point = x0[i]
-            samplers.append(pints.HaarioBardenetACMC(point))
-            samplers[-1].set_initial_phase(True)
+            samplers.append(self._sampler(point, sigma0=sigma0))
+            if samplers[-1].needs_initial_phase():
+                samplers[-1].set_initial_phase(True)
+
         num_initial = 0.1*self._required_iters
         list_sample = [[]]*self._n_runs
         if save_point_like is not None:
             list_pointwise = [[]]*self._n_runs
-            log_likelihood = self._log_posterior.get_log_likelihood()
-        if self._r_hat is None:
-            final_iteration = min(
-                num_initial+self._required_iters, self._max_iters)
-        else:
-            final_iteration = self._max_iters
+            # log_likelihood = log_pdf.get_log_likelihood()
+        
+        final_iteration = self._max_iters
         timer = pints.Timer()
 
         print("iter", end=' ')
@@ -484,60 +485,97 @@ class SamplingController(chi.InferenceController):
         print('\t', "R_hat", '\t\t', "Time")
 
         i = 0
-        x = -9
         r_hat = np.NaN
+
+        # Create evaluator object
+        f = log_pdf
+        if samplers[0].needs_sensitivities():
+            f = f.evaluateS1
+        evaluator = pints.SequentialEvaluator(f)
+        print_func = [None]*self._n_runs
+        chain_lengths = [0]*self._n_runs
+        n_return = 0
 
         while i < final_iteration:
             # update each chain and pointwise using ask/tell
-            for chain, alg in enumerate(samplers):
-                if i == num_initial:
-                    alg.set_initial_phase(False)
-                theta_hat = alg.ask()
-                try:
-                    lp = log_pdf(theta_hat)
-                except:
-                    print("Error for parameters:", theta_hat)
-                    raise
-                theta_g, _, accepted = alg.tell(lp)
-                if self._transform:
-                    model_theta_g = self._transform.to_model(theta_g)
-                else:
-                    model_theta_g = theta_g
-                list_sample[chain] = list_sample[chain]+[model_theta_g]
-                if save_point_like is not None:
-                    if accepted:
-                        list_pointwise[chain] = (
-                            list_pointwise[chain] +
-                            [log_likelihood.compute_pointwise_ll(model_theta_g)]
-                        )
-                    else:
-                        list_pointwise[chain] = (
-                            list_pointwise[chain] + [list_pointwise[chain][-1]]
-                        )
-            if i == num_initial:
-                print("...........................")
+            if (i == num_initial) & samplers[-1].needs_initial_phase():
+                print("\n...........................")
                 print("End of Initial Phase")
                 print("...........................")
+                for sampler in samplers:
+                    sampler.set_initial_phase(False)
+            
+            theta_hat = [alg.ask() for alg in samplers]
+            try:
+                fxs = evaluator.evaluate(theta_hat)
+                fxs_iterator = iter(fxs)
+                for chain, alg in enumerate(samplers):
+                    # lp = fxs(theta_hat)
+                    reply = alg.tell(next(fxs_iterator))
+                    if reply is not None:
+                        theta_g, f_theta, accepted = reply
+                        if self._transform:
+                            model_theta_g = self._transform.to_model(theta_g)
+                        else:
+                            model_theta_g = theta_g
+                        list_sample[chain] = list_sample[chain]+[model_theta_g]
+                        chain_lengths[chain] += 1
+                        if issubclass(
+                            self._sampler,
+                            (pints.HamiltonianMCMC, pints.NoUTurnMCMC)
+                        ):
+                            print_func[chain] = round(
+                                chain_lengths[chain]/i, 4
+                            )
+                        else:
+                            print_func[chain] = round(f_theta[0], 4)
 
+                        # if save_point_like is not None:
+                        #     if accepted:
+                        #         list_pointwise[chain] = (
+                        #             list_pointwise[chain] +
+                        #             [log_likelihood.compute_pointwise_ll(
+                        #                 model_theta_g
+                        #             )]
+                        #         )
+                        #     else:
+                        #         list_pointwise[chain] = (
+                        #             list_pointwise[chain] +
+                        #             [list_pointwise[chain][-1]]
+                        #         )
+            except:
+                print("Error for iteration", i, ", parameters:", theta_hat)
+                raise
+            
+            n_return = np.min(chain_lengths)
             if self._r_hat is not None:
                 if i == num_initial + self._required_iters:
-                    print("...........................")
+                    print("\n...........................")
                     print("Sart of Convergence Testing")
                     print("...........................")
                 # Have the chains converged?
-                if i >= num_initial+self._required_iters:
+                test_r_hat = n_return > 0
+                test_r_hat = test_r_hat & (i >= num_initial)
+                test_r_hat = test_r_hat & (i % 100 == 0)
+                if test_r_hat:
+                    samples_test = [list[-n_return:] for list in list_sample]
                     r_hat = pints.rhat(
-                        np.asarray(list_sample)[:, -self._required_iters:, :])
-                    if np.all(r_hat <= self._r_hat):
+                        np.asarray(samples_test))
+                    # [:, -self._required_iters:, :])
+                    terminate = (n_return >= num_initial+self._required_iters)
+                    terminate = terminate & np.all(r_hat <= self._r_hat)
+                    if terminate:
                         final_iteration = i
                         print("complete")
-            i+=1
-            # Print Output
-            if i % 50 == 0:
-                print_string = str(i) + ' \t'
-                for alg in samplers:
-                    print_string += str(round(float(alg.acceptance_rate()), 4))
-                    print_string += '     \t'
+            elif n_return >= num_initial+self._required_iters:
+                final_iteration = i
+                print("complete")
+
+            i += 1
+            if (i < 10) or (i % 100 == 0):
+                print_string = str(i+1) + ' \t'
+                for chain in range(0, self._n_runs):
+                    print_string += str(print_func[chain])+'     \t'
                 if self._r_hat is not None:
                     print_string += str(round(np.average(r_hat), 4))
                     print_string += '     \t'
@@ -548,10 +586,21 @@ class SamplingController(chi.InferenceController):
                     end='        ',
                     flush=True
                 )
-        
+
         if save_point_like is not None:
             np.savez_compressed(save_point_like, *list_pointwise)
-        return list_sample
+
+        # If Hamiltonian Monte Carlo, get number of divergent
+        # iterations # TODO: Implement
+        divergent_iters = None
+        if issubclass(
+                self._sampler, (pints.HamiltonianMCMC, pints.NoUTurnMCMC)):
+            divergent_iters = [
+                s.divergent_iterations() for s in sampler.samplers()
+            ]
+        return_samples = [list[-n_return:] for list in list_sample]
+
+        return return_samples, divergent_iters
 
 
 class OptimisationController(chi.OptimisationController):

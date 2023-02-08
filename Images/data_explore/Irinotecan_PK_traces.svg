@@ -1,0 +1,1518 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="main-svg"
+   width="500"
+   height="360"
+   style=""
+   viewBox="0 0 500 360"
+   version="1.1"
+   id="svg2511"
+   sodipodi:docname="Irinotecan_PK_traces.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2513"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.1694444"
+     inkscape:cx="249.83355"
+     inkscape:cy="180"
+     inkscape:window-width="1920"
+     inkscape:window-height="964"
+     inkscape:window-x="1080"
+     inkscape:window-y="434"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2511" />
+  <rect
+     x="0"
+     y="0"
+     width="500"
+     height="360"
+     style="fill: rgb(255, 255, 255); fill-opacity: 1;"
+     id="rect1910" />
+  <defs
+     id="defs-7ad8d6">
+    <g
+       class="clips"
+       id="g1924">
+      <clipPath
+         id="clip7ad8d6xyplot"
+         class="plotclip">
+        <rect
+           width="316"
+           height="220"
+           id="rect1912" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip7ad8d6x">
+        <rect
+           x="80"
+           y="0"
+           width="316"
+           height="360"
+           id="rect1915" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip7ad8d6y">
+        <rect
+           x="0"
+           y="60"
+           width="500"
+           height="220"
+           id="rect1918" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clip7ad8d6xy">
+        <rect
+           x="80"
+           y="60"
+           width="316"
+           height="220"
+           id="rect1921" />
+      </clipPath>
+    </g>
+    <g
+       class="gradients"
+       id="g1926" />
+    <g
+       class="patterns"
+       id="g1928" />
+  </defs>
+  <g
+     class="bglayer"
+     id="g1933">
+    <rect
+       class="bg"
+       x="80"
+       y="60"
+       width="316"
+       height="220"
+       style="fill: rgb(229, 236, 246); fill-opacity: 1; stroke-width: 0;"
+       id="rect1931" />
+  </g>
+  <g
+     class="layer-below"
+     id="g1939">
+    <g
+       class="imagelayer"
+       id="g1935" />
+    <g
+       class="shapelayer"
+       id="g1937" />
+  </g>
+  <g
+     class="cartesianlayer"
+     id="g2411">
+    <g
+       class="subplot xy"
+       id="g2409">
+      <g
+         class="layer-subplot"
+         id="g1945">
+        <g
+           class="shapelayer"
+           id="g1941" />
+        <g
+           class="imagelayer"
+           id="g1943" />
+      </g>
+      <g
+         class="minor-gridlayer"
+         id="g2015">
+        <g
+           class="x"
+           id="g1947" />
+        <g
+           class="y"
+           id="g2013">
+          <path
+             class="ygrid crisp"
+             transform="translate(0,269.88)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1949" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,260.44)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1951" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,253.75)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1953" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,248.55)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1955" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,244.31)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1957" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,240.72)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1959" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,237.62)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1961" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,234.88)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1963" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,216.29)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1965" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,206.86)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1967" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,200.16)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1969" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,194.97)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1971" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,190.73)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1973" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,187.14)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1975" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,184.03)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1977" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,181.29000000000002)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1979" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,162.70999999999998)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1981" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,153.26999999999998)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1983" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,146.57999999999998)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1985" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,141.38)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1987" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,137.14)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1989" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,133.55)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1991" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,130.45)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1993" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,127.71)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1995" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,109.12)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1997" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,99.69)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path1999" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,92.99000000000001)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2001" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,87.8)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2003" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,83.56)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2005" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,79.97)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2007" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,76.86)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2009" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,74.12)"
+             d="M80,0h316"
+             style="stroke: rgb(238, 242, 249); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2011" />
+        </g>
+      </g>
+      <g
+         class="gridlayer"
+         id="g2033">
+        <g
+           class="x"
+           id="g2021">
+          <path
+             class="xgrid crisp"
+             transform="translate(213.72,0)"
+             d="M0,60v220"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2017" />
+          <path
+             class="xgrid crisp"
+             transform="translate(329.96000000000004,0)"
+             d="M0,60v220"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2019" />
+        </g>
+        <g
+           class="y"
+           id="g2031">
+          <path
+             class="ygrid crisp"
+             transform="translate(0,232.42)"
+             d="M80,0h316"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2023" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,178.84)"
+             d="M80,0h316"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2025" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,125.25)"
+             d="M80,0h316"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2027" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,71.67)"
+             d="M80,0h316"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path2029" />
+        </g>
+      </g>
+      <g
+         class="zerolinelayer"
+         id="g2037">
+        <path
+           class="xzl zl crisp"
+           transform="translate(97.49,0)"
+           d="M0,60v220"
+           style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;"
+           id="path2035" />
+      </g>
+      <path
+         class="xlines-below"
+         id="path2039" />
+      <path
+         class="ylines-below"
+         id="path2041" />
+      <g
+         class="overlines-below"
+         id="g2043" />
+      <g
+         class="xaxislayer-below"
+         id="g2045" />
+      <g
+         class="yaxislayer-below"
+         id="g2047" />
+      <g
+         class="overaxes-below"
+         id="g2049" />
+      <g
+         class="plot"
+         transform="translate(80,60)"
+         clip-path="url(#clip7ad8d6xyplot)"
+         id="g2365">
+        <g
+           class="scatterlayer mlayer"
+           id="g2363">
+          <g
+             class="trace scatter trace525947"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2075">
+            <g
+               class="fills"
+               id="g2051" />
+            <g
+               class="errorbars"
+               id="g2053" />
+            <g
+               class="lines"
+               id="g2057">
+              <path
+                 class="js-line"
+                 d="M19.55,58.27L30.08,58.44L38.8,84.84L114.35,90.84L294.51,205.25L296.45,190.44"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(239, 85, 59); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2055" />
+            </g>
+            <g
+               class="points"
+               id="g2071">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(19.55,58.27)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2059" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(30.08,58.44)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2061" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(38.8,84.84)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2063" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(114.35,90.84)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2065" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(294.51,205.25)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2067" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(296.45,190.44)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2069" />
+            </g>
+            <g
+               class="text"
+               id="g2073" />
+          </g>
+          <g
+             class="trace scatter trace52f233"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2101">
+            <g
+               class="fills"
+               id="g2077" />
+            <g
+               class="errorbars"
+               id="g2079" />
+            <g
+               class="lines"
+               id="g2083">
+              <path
+                 class="js-line"
+                 d="M19.55,61.4L30.08,65.39L38.8,87.77L114.35,100.38L294.51,198.37L296.45,205.25"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(239, 85, 59); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2081" />
+            </g>
+            <g
+               class="points"
+               id="g2097">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(19.55,61.4)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2085" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(30.08,65.39)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2087" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(38.8,87.77)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2089" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(114.35,100.38)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2091" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(294.51,198.37)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2093" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(296.45,205.25)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2095" />
+            </g>
+            <g
+               class="text"
+               id="g2099" />
+          </g>
+          <g
+             class="trace scatter traceefb60d"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2127">
+            <g
+               class="fills"
+               id="g2103" />
+            <g
+               class="errorbars"
+               id="g2105" />
+            <g
+               class="lines"
+               id="g2109">
+              <path
+                 class="js-line"
+                 d="M19.55,55.36L30.08,61.21L38.8,91.34L114.35,103.54L294.51,197.05L296.45,205.25"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(239, 85, 59); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2107" />
+            </g>
+            <g
+               class="points"
+               id="g2123">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(19.55,55.36)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2111" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(30.08,61.21)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2113" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(38.8,91.34)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2115" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(114.35,103.54)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2117" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(294.51,197.05)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2119" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(296.45,205.25)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2121" />
+            </g>
+            <g
+               class="text"
+               id="g2125" />
+          </g>
+          <g
+             class="trace scatter trace29ac68"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2153">
+            <g
+               class="fills"
+               id="g2129" />
+            <g
+               class="errorbars"
+               id="g2131" />
+            <g
+               class="lines"
+               id="g2135">
+              <path
+                 class="js-line"
+                 d="M19.55,54.61L30.08,58.62L38.8,83.22L114.35,97.7L294.51,205.25L296.45,193.29"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(239, 85, 59); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2133" />
+            </g>
+            <g
+               class="points"
+               id="g2149">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(19.55,54.61)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2137" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(30.08,58.62)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2139" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(38.8,83.22)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2141" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(114.35,97.7)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2143" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(294.51,205.25)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2145" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(296.45,193.29)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2147" />
+            </g>
+            <g
+               class="text"
+               id="g2151" />
+          </g>
+          <g
+             class="trace scatter trace6d7d6a"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2179">
+            <g
+               class="fills"
+               id="g2155" />
+            <g
+               class="errorbars"
+               id="g2157" />
+            <g
+               class="lines"
+               id="g2161">
+              <path
+                 class="js-line"
+                 d="M19.55,58.79L30.08,70.48L38.8,81.9L114.35,102.36L294.51,195.13L296.45,194.28"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(239, 85, 59); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2159" />
+            </g>
+            <g
+               class="points"
+               id="g2175">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(19.55,58.79)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2163" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(30.08,70.48)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2165" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(38.8,81.9)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2167" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(114.35,102.36)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2169" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(294.51,195.13)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2171" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(296.45,194.28)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2173" />
+            </g>
+            <g
+               class="text"
+               id="g2177" />
+          </g>
+          <g
+             class="trace scatter trace0d5561"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2205">
+            <g
+               class="fills"
+               id="g2181" />
+            <g
+               class="errorbars"
+               id="g2183" />
+            <g
+               class="lines"
+               id="g2187">
+              <path
+                 class="js-line"
+                 d="M19.55,59.15L30.08,57.76L38.8,79.64L114.35,89.35L294.51,191.79L296.45,205.25"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(239, 85, 59); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2185" />
+            </g>
+            <g
+               class="points"
+               id="g2201">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(19.55,59.15)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2189" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(30.08,57.76)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2191" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(38.8,79.64)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2193" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(114.35,89.35)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2195" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(294.51,191.79)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2197" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(296.45,205.25)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                 id="path2199" />
+            </g>
+            <g
+               class="text"
+               id="g2203" />
+          </g>
+          <g
+             class="trace scatter trace65070a"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2231">
+            <g
+               class="fills"
+               id="g2207" />
+            <g
+               class="errorbars"
+               id="g2209" />
+            <g
+               class="lines"
+               id="g2213">
+              <path
+                 class="js-line"
+                 d="M25.25,26.62L32.99,20.51L36.87,30.1L62.04,22.72L129.85,62.83L273.2,138.59"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(0, 204, 150); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2211" />
+            </g>
+            <g
+               class="points"
+               id="g2227">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(25.25,26.62)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2215" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(32.99,20.51)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2217" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(36.87,30.1)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2219" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(62.04,22.72)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2221" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(129.85,62.83)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2223" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(273.2,138.59)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2225" />
+            </g>
+            <g
+               class="text"
+               id="g2229" />
+          </g>
+          <g
+             class="trace scatter trace09224c"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2257">
+            <g
+               class="fills"
+               id="g2233" />
+            <g
+               class="errorbars"
+               id="g2235" />
+            <g
+               class="lines"
+               id="g2239">
+              <path
+                 class="js-line"
+                 d="M25.25,23.56L32.99,23.67L36.87,26.14L62.04,17.36L129.85,46.38L273.2,145.43"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(0, 204, 150); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2237" />
+            </g>
+            <g
+               class="points"
+               id="g2253">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(25.25,23.56)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2241" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(32.99,23.67)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2243" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(36.87,26.14)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2245" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(62.04,17.36)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2247" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(129.85,46.38)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2249" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(273.2,145.43)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2251" />
+            </g>
+            <g
+               class="text"
+               id="g2255" />
+          </g>
+          <g
+             class="trace scatter traceb70622"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2283">
+            <g
+               class="fills"
+               id="g2259" />
+            <g
+               class="errorbars"
+               id="g2261" />
+            <g
+               class="lines"
+               id="g2265">
+              <path
+                 class="js-line"
+                 d="M25.25,21.87L36.87,23.02L62.04,14.86L129.85,39.69L273.2,144.36"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(0, 204, 150); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2263" />
+            </g>
+            <g
+               class="points"
+               id="g2279">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(25.25,21.87)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2267" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(32.99,22.31)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2269" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(36.87,23.02)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2271" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(62.04,14.86)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2273" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(129.85,39.69)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2275" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(273.2,144.36)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2277" />
+            </g>
+            <g
+               class="text"
+               id="g2281" />
+          </g>
+          <g
+             class="trace scatter trace4b90e4"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2309">
+            <g
+               class="fills"
+               id="g2285" />
+            <g
+               class="errorbars"
+               id="g2287" />
+            <g
+               class="lines"
+               id="g2291">
+              <path
+                 class="js-line"
+                 d="M25.25,22.38L32.99,18.52L36.87,26.18L62.04,14.75L129.85,45.27L273.2,140.05"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(0, 204, 150); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2289" />
+            </g>
+            <g
+               class="points"
+               id="g2305">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(25.25,22.38)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2293" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(32.99,18.52)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2295" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(36.87,26.18)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2297" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(62.04,14.75)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2299" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(129.85,45.27)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2301" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(273.2,140.05)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2303" />
+            </g>
+            <g
+               class="text"
+               id="g2307" />
+          </g>
+          <g
+             class="trace scatter trace876211"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2335">
+            <g
+               class="fills"
+               id="g2311" />
+            <g
+               class="errorbars"
+               id="g2313" />
+            <g
+               class="lines"
+               id="g2317">
+              <path
+                 class="js-line"
+                 d="M25.25,21.23L32.99,17.81L36.87,21.87L62.04,16.95L129.85,50.94L273.2,147.65"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(0, 204, 150); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2315" />
+            </g>
+            <g
+               class="points"
+               id="g2331">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(25.25,21.23)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2319" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(32.99,17.81)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2321" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(36.87,21.87)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2323" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(62.04,16.95)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2325" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(129.85,50.94)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2327" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(273.2,147.65)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2329" />
+            </g>
+            <g
+               class="text"
+               id="g2333" />
+          </g>
+          <g
+             class="trace scatter trace4c922f"
+             style="stroke-miterlimit: 2; opacity: 1;"
+             id="g2361">
+            <g
+               class="fills"
+               id="g2337" />
+            <g
+               class="errorbars"
+               id="g2339" />
+            <g
+               class="lines"
+               id="g2343">
+              <path
+                 class="js-line"
+                 d="M25.25,24.51L32.99,24.07L36.87,25L62.04,16.69L129.85,51.84L273.2,167.42"
+                 style="vector-effect: non-scaling-stroke; fill: none; stroke: rgb(0, 204, 150); stroke-opacity: 1; stroke-width: 2px; opacity: 1;"
+                 id="path2341" />
+            </g>
+            <g
+               class="points"
+               id="g2357">
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(25.25,24.51)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2345" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(32.99,24.07)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2347" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(36.87,25)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2349" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(62.04,16.69)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2351" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(129.85,51.84)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2353" />
+              <path
+                 class="point plotly-customdata"
+                 transform="translate(273.2,167.42)"
+                 d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                 style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                 id="path2355" />
+            </g>
+            <g
+               class="text"
+               id="g2359" />
+          </g>
+        </g>
+      </g>
+      <g
+         class="overplot"
+         id="g2367" />
+      <path
+         class="xlines-above crisp"
+         d="M0,0"
+         style="fill: none;"
+         id="path2369" />
+      <path
+         class="ylines-above crisp"
+         d="M0,0"
+         style="fill: none;"
+         id="path2371" />
+      <g
+         class="overlines-above"
+         id="g2373" />
+      <g
+         class="xaxislayer-above"
+         id="g2387">
+        <g
+           class="xtick"
+           id="g2377">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="293"
+             transform="translate(97.49,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre; opacity: 1;"
+             id="text2375">0</text>
+        </g>
+        <g
+           class="xtick"
+           id="g2381">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="293"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre; opacity: 1;"
+             transform="translate(213.72,0)"
+             id="text2379">10</text>
+        </g>
+        <g
+           class="xtick"
+           id="g2385">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="293"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre; opacity: 1;"
+             transform="translate(329.96000000000004,0)"
+             id="text2383">20</text>
+        </g>
+      </g>
+      <g
+         class="yaxislayer-above"
+         id="g2405">
+        <g
+           class="ytick"
+           id="g2391">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,232.42)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre; opacity: 1;"
+             id="text2389">10</text>
+        </g>
+        <g
+           class="ytick"
+           id="g2395">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre; opacity: 1;"
+             transform="translate(0,178.84)"
+             id="text2393">100</text>
+        </g>
+        <g
+           class="ytick"
+           id="g2399">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre; opacity: 1;"
+             transform="translate(0,125.25)"
+             id="text2397">1000</text>
+        </g>
+        <g
+           class="ytick"
+           id="g2403">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre; opacity: 1;"
+             transform="translate(0,71.67)"
+             id="text2401">10k</text>
+        </g>
+      </g>
+      <g
+         class="overaxes-above"
+         id="g2407" />
+    </g>
+  </g>
+  <g
+     class="polarlayer"
+     id="g2413" />
+  <g
+     class="smithlayer"
+     id="g2415" />
+  <g
+     class="ternarylayer"
+     id="g2417" />
+  <g
+     class="geolayer"
+     id="g2419" />
+  <g
+     class="funnelarealayer"
+     id="g2421" />
+  <g
+     class="pielayer"
+     id="g2423" />
+  <g
+     class="iciclelayer"
+     id="g2425" />
+  <g
+     class="treemaplayer"
+     id="g2427" />
+  <g
+     class="sunburstlayer"
+     id="g2429" />
+  <g
+     class="glimages"
+     id="g2431" />
+  <defs
+     id="topdefs-7ad8d6">
+    <g
+       class="clips"
+       id="g2433" />
+    <clipPath
+       id="legend7ad8d6">
+      <rect
+         width="86"
+         height="67"
+         x="0"
+         y="0"
+         id="rect2435" />
+    </clipPath>
+  </defs>
+  <g
+     class="layer-above"
+     id="g2443">
+    <g
+       class="imagelayer"
+       id="g2439" />
+    <g
+       class="shapelayer"
+       id="g2441" />
+  </g>
+  <g
+     class="infolayer"
+     id="g2509">
+    <g
+       class="legend"
+       pointer-events="all"
+       transform="translate(402.32,60)"
+       id="g2497">
+      <rect
+         class="bg"
+         shape-rendering="crispEdges"
+         style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;"
+         width="86"
+         height="67"
+         x="0"
+         y="0"
+         id="rect2445" />
+      <g
+         class="scrollbox"
+         transform=""
+         clip-path="url(#legend7ad8d6)"
+         id="g2493">
+        <text
+           class="legendtitletext"
+           text-anchor="start"
+           x="2"
+           y="18.2"
+           style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 14px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+           id="text2447">Dose, mg/kg</text>
+        <g
+           class="groups"
+           transform=""
+           id="g2469">
+          <g
+             class="traces"
+             transform="translate(0,32.7)"
+             style="opacity: 1;"
+             id="g2467">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text2449">34.0</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g2463">
+              <g
+                 class="legendfill"
+                 id="g2451" />
+              <g
+                 class="legendlines"
+                 id="g2455">
+                <path
+                   class="js-line"
+                   d="M5,0h30"
+                   style="fill: none; stroke: rgb(239, 85, 59); stroke-opacity: 1; stroke-width: 2px;"
+                   id="path2453" />
+              </g>
+              <g
+                 class="legendsymbols"
+                 id="g2461">
+                <g
+                   class="legendpoints"
+                   id="g2459">
+                  <path
+                     class="scatterpts"
+                     transform="translate(20,0)"
+                     d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                     style="opacity: 1; stroke-width: 0px; fill: rgb(239, 85, 59); fill-opacity: 1;"
+                     id="path2457" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="63.921875"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect2465" />
+          </g>
+        </g>
+        <g
+           class="groups"
+           transform=""
+           id="g2491">
+          <g
+             class="traces"
+             transform="translate(0,51.7)"
+             style="opacity: 1;"
+             id="g2489">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text2471">68.0</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g2485">
+              <g
+                 class="legendfill"
+                 id="g2473" />
+              <g
+                 class="legendlines"
+                 id="g2477">
+                <path
+                   class="js-line"
+                   d="M5,0h30"
+                   style="fill: none; stroke: rgb(0, 204, 150); stroke-opacity: 1; stroke-width: 2px;"
+                   id="path2475" />
+              </g>
+              <g
+                 class="legendsymbols"
+                 id="g2483">
+                <g
+                   class="legendpoints"
+                   id="g2481">
+                  <path
+                     class="scatterpts"
+                     transform="translate(20,0)"
+                     d="M3,0A3,3 0 1,1 0,-3A3,3 0 0,1 3,0Z"
+                     style="opacity: 1; stroke-width: 0px; fill: rgb(0, 204, 150); fill-opacity: 1;"
+                     id="path2479" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="63.921875"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect2487" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="scrollbar"
+         rx="20"
+         ry="3"
+         width="0"
+         height="0"
+         style="fill: rgb(128, 139, 164); fill-opacity: 1;"
+         x="0"
+         y="0"
+         id="rect2495" />
+    </g>
+    <g
+       class="g-gtitle"
+       id="g2499" />
+    <g
+       class="g-xtitle"
+       id="g2503">
+      <text
+         class="xtitle"
+         x="238"
+         y="321.8"
+         text-anchor="middle"
+         style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 14px; fill: rgb(42, 63, 95); opacity: 1; font-weight: normal; white-space: pre;"
+         id="text2501">Time, hours</text>
+    </g>
+    <g
+       class="g-ytitle"
+       id="g2507">
+      <text
+         class="ytitle"
+         transform="rotate(-90,26.746875000000003,170)"
+         x="26.746875000000003"
+         y="170"
+         text-anchor="middle"
+         style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 14px; fill: rgb(42, 63, 95); opacity: 1; font-weight: normal; white-space: pre;"
+         id="text2505">Irinotecan concentration, ng/mL</text>
+    </g>
+  </g>
+</svg>
