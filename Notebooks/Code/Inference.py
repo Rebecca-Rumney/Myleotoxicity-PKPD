@@ -464,18 +464,20 @@ class SamplingController(chi.InferenceController):
             log_pdf = self._log_posterior
             x0 = self._initial_params
 
+        num_initial = 0.1*self._required_iters
         for i in range(0, self._n_runs):
             point = x0[i]
             samplers.append(self._sampler(point, sigma0=sigma0))
             if samplers[-1].needs_initial_phase():
                 samplers[-1].set_initial_phase(True)
+            if isinstance(samplers[-1], (pints.NoUTurnMCMC)):
+                samplers[-1].set_number_adaption_steps(num_initial)
 
-        num_initial = 0.1*self._required_iters
         list_sample = [[]]*self._n_runs
         if save_point_like is not None:
             list_pointwise = [[]]*self._n_runs
             # log_likelihood = log_pdf.get_log_likelihood()
-        
+
         final_iteration = self._max_iters
         timer = pints.Timer()
 
@@ -495,16 +497,17 @@ class SamplingController(chi.InferenceController):
         print_func = [None]*self._n_runs
         chain_lengths = [0]*self._n_runs
         n_return = 0
+        print_rhat_start = True
 
         while i < final_iteration:
             # update each chain and pointwise using ask/tell
-            if (i == num_initial) & samplers[-1].needs_initial_phase():
+            if (i == num_initial) & samplers[0].needs_initial_phase():
                 print("\n...........................")
                 print("End of Initial Phase")
                 print("...........................")
                 for sampler in samplers:
                     sampler.set_initial_phase(False)
-            
+
             theta_hat = [alg.ask() for alg in samplers]
             try:
                 fxs = evaluator.evaluate(theta_hat)
@@ -546,13 +549,17 @@ class SamplingController(chi.InferenceController):
             except:
                 print("Error for iteration", i, ", parameters:", theta_hat)
                 raise
-            
+
             n_return = np.min(chain_lengths)
             if self._r_hat is not None:
-                if i == num_initial + self._required_iters:
+                if (
+                    (n_return >= num_initial + self._required_iters) &
+                    print_rhat_start
+                ):
                     print("\n...........................")
                     print("Sart of Convergence Testing")
                     print("...........................")
+                    print_rhat_start = False
                 # Have the chains converged?
                 test_r_hat = n_return > 0
                 test_r_hat = test_r_hat & (i >= num_initial)
@@ -596,7 +603,7 @@ class SamplingController(chi.InferenceController):
         if issubclass(
                 self._sampler, (pints.HamiltonianMCMC, pints.NoUTurnMCMC)):
             divergent_iters = [
-                s.divergent_iterations() for s in sampler.samplers()
+                s.divergent_iterations() for s in samplers
             ]
         return_samples = [list[-n_return:] for list in list_sample]
 

@@ -1,0 +1,142 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'PK_many_timepoints_population-Vc_MLE.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{378.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.67310036)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.15575168,0.6287477){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$, L/hr\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.29634574,0.6287477){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\log(V_{c, typ})$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.43892,0.6287477){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.57951406,0.6287477){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_1$, L/hr\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.72208831,0.6287477){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_1$, L\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.86268237,0.6287477){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.01515762,0.58518335){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Optimised}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.15575168,0.58518335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.8019\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.29634574,0.58518335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.2606\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.43892,0.58518335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3135\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.57951406,0.58518335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.3194\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.72208831,0.58518335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.9651\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.86268237,0.58518335){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0877\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.01515762,0.54161899){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.15575168,0.54161899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.29634574,0.54161899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.3857\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.43892,0.54161899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.57951406,0.54161899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.72208831,0.54161899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.9\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.86268237,0.54161899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0.03159702,0.48363667){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.10983378,0.03879815){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.23930095,0.03879815){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0.36876812,0.03879815){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.4982353,0.03879815){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3\end{tabular}}}}%
+    \put(0.62770247,0.03879815){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
+    \put(0.75716965,0.03879815){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.10850181,0.05134528){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.01\end{tabular}}}}%
+    \put(0.10850181,0.20665261){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
+    \put(0.10850181,0.36195994){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.7767762,0.45567713){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose 1.0 mg\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.43028984){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Typical simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.40498247){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Individual simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.3796751){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.35436773){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Population model\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.7767762,0.31462184){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose 2.0 mg\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.28923455){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Typical simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.26392718){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Individual simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.23861981){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.21331244){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Population model\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.7767762,0.17356655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose 3.0 mg\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.14817927){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Typical simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.1228719){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Individual simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.09756453){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.82339504,0.07225716){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Population model\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{PK_many_timepoints_population-Vc_MLE.pdf}}%
+    \put(0.43350171,0.00043752){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.0437932,0.26922841){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Drug concentration, mg/L\end{tabular}}}}}%
+    \put(0.04383207,0.62536242){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
