@@ -499,7 +499,7 @@ class SamplingController(chi.InferenceController):
         n_return = 0
         print_rhat_start = True
 
-        while i < final_iteration:
+        while n_return < final_iteration:
             # update each chain and pointwise using ask/tell
             if (i == num_initial) & samplers[0].needs_initial_phase():
                 print("\n...........................")
@@ -507,45 +507,50 @@ class SamplingController(chi.InferenceController):
                 print("...........................")
                 for sampler in samplers:
                     sampler.set_initial_phase(False)
-
-            theta_hat = [alg.ask() for alg in samplers]
+            
+            chains_to_evaluate = [chain for chain, length in enumerate(chain_lengths) if length == n_return]
+            theta_hat = [alg.ask() for alg in np.asarray(samplers)[chains_to_evaluate]]
             try:
                 fxs = evaluator.evaluate(theta_hat)
                 fxs_iterator = iter(fxs)
-                for chain, alg in enumerate(samplers):
-                    # lp = fxs(theta_hat)
-                    reply = alg.tell(next(fxs_iterator))
-                    if reply is not None:
-                        theta_g, f_theta, accepted = reply
-                        if self._transform:
-                            model_theta_g = self._transform.to_model(theta_g)
-                        else:
-                            model_theta_g = theta_g
-                        list_sample[chain] = list_sample[chain]+[model_theta_g]
-                        chain_lengths[chain] += 1
-                        if issubclass(
-                            self._sampler,
-                            (pints.HamiltonianMCMC, pints.NoUTurnMCMC)
-                        ):
-                            print_func[chain] = round(
-                                chain_lengths[chain]/i, 4
-                            )
-                        else:
-                            print_func[chain] = round(f_theta[0], 4)
+                for chain in chains_to_evaluate:
+                    alg = samplers[chain]
+                    if chain_lengths[chain]==n_return:
+                        lp = next(fxs_iterator)
+                        reply = alg.tell(lp)
+                        if reply is not None:
+                            theta_g, f_theta, accepted = reply
+                            if self._transform:
+                                model_theta_g = self._transform.to_model(theta_g)
+                            else:
+                                model_theta_g = theta_g
+                            list_sample[chain] = list_sample[chain]+[model_theta_g]
+                            chain_lengths[chain] += 1
+                            if issubclass(
+                                self._sampler,
+                                (pints.HamiltonianMCMC, pints.NoUTurnMCMC)
+                            ):
+                                print_func[chain] = round(
+                                    chain_lengths[chain]/i, 4
+                                )
+                            else:
+                                print_func[chain] = round(f_theta[0], 4)
 
-                        # if save_point_like is not None:
-                        #     if accepted:
-                        #         list_pointwise[chain] = (
-                        #             list_pointwise[chain] +
-                        #             [log_likelihood.compute_pointwise_ll(
-                        #                 model_theta_g
-                        #             )]
-                        #         )
-                        #     else:
-                        #         list_pointwise[chain] = (
-                        #             list_pointwise[chain] +
-                        #             [list_pointwise[chain][-1]]
-                        #         )
+                            # if save_point_like is not None:
+                            #     if accepted:
+                            #         list_pointwise[chain] = (
+                            #             list_pointwise[chain] +
+                            #             [log_likelihood.compute_pointwise_ll(
+                            #                 model_theta_g
+                            #             )]
+                            #         )
+                            #     else:
+                            #         list_pointwise[chain] = (
+                            #             list_pointwise[chain] +
+                            #             [list_pointwise[chain][-1]]
+                            #         )
+#                         else:
+#                             print(reply, alg._next)
             except:
                 print("Error for iteration", i, ", parameters:", theta_hat)
                 raise
@@ -562,8 +567,8 @@ class SamplingController(chi.InferenceController):
                     print_rhat_start = False
                 # Have the chains converged?
                 test_r_hat = n_return > 0
-                test_r_hat = test_r_hat & (i >= num_initial)
-                test_r_hat = test_r_hat & (i % 100 == 0)
+                test_r_hat = test_r_hat & (n_return >= num_initial)
+                test_r_hat = test_r_hat & (n_return % 100 == 0)
                 if test_r_hat:
                     samples_test = [list[-n_return:] for list in list_sample]
                     r_hat = pints.rhat(
@@ -572,14 +577,14 @@ class SamplingController(chi.InferenceController):
                     terminate = (n_return >= num_initial+self._required_iters)
                     terminate = terminate & np.all(r_hat <= self._r_hat)
                     if terminate:
-                        final_iteration = i
+                        final_iteration = n_return
                         print("complete")
             elif n_return >= num_initial+self._required_iters:
-                final_iteration = i
+                final_iteration = n_return
                 print("complete")
 
             i += 1
-            if (i < 10) or (i % 100 == 0):
+            if (n_return < 10) or (n_return % 100 == 0):
                 print_string = str(i+1) + ' \t'
                 for chain in range(0, self._n_runs):
                     print_string += str(print_func[chain])+'     \t'
