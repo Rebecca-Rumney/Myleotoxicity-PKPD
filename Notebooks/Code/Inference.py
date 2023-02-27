@@ -470,8 +470,6 @@ class SamplingController(chi.InferenceController):
             samplers.append(self._sampler(point, sigma0=sigma0))
             if samplers[-1].needs_initial_phase():
                 samplers[-1].set_initial_phase(True)
-            if isinstance(samplers[-1], (pints.NoUTurnMCMC)):
-                samplers[-1].set_number_adaption_steps(num_initial)
 
         list_sample = [[]]*self._n_runs
         if save_point_like is not None:
