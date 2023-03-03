@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 from scipy import integrate, linalg, interpolate
 from collections.abc import Iterable
@@ -124,6 +123,7 @@ def PK_result(dose, num_comp, parameter, times, dose_comp=False, contin=False, t
 
 
 if __name__ == '__main__':
+    import matplotlib.pyplot as plt
     # Params:
     k_dose = 1
     k_perif = 0.5

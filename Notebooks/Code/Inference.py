@@ -464,7 +464,7 @@ class SamplingController(chi.InferenceController):
             log_pdf = self._log_posterior
             x0 = self._initial_params
 
-        num_initial = 0.1*self._required_iters
+        num_initial = 50
         for i in range(0, self._n_runs):
             point = x0[i]
             samplers.append(self._sampler(point, sigma0=sigma0))
@@ -528,9 +528,7 @@ class SamplingController(chi.InferenceController):
                                 self._sampler,
                                 (pints.HamiltonianMCMC, pints.NoUTurnMCMC)
                             ):
-                                print_func[chain] = round(
-                                    chain_lengths[chain]/i, 4
-                                )
+                                print_func[chain] = chain_lengths[chain]
                             else:
                                 print_func[chain] = round(f_theta[0], 4)
 
@@ -564,9 +562,8 @@ class SamplingController(chi.InferenceController):
                     print("...........................")
                     print_rhat_start = False
                 # Have the chains converged?
-                test_r_hat = n_return > 0
-                test_r_hat = test_r_hat & (n_return >= num_initial)
-                test_r_hat = test_r_hat & (n_return % 100 == 0)
+                test_r_hat = n_return >= num_initial
+                test_r_hat = test_r_hat & (n_return % 20 == 0)
                 if test_r_hat:
                     samples_test = [list[-n_return:] for list in list_sample]
                     r_hat = pints.rhat(
@@ -582,8 +579,8 @@ class SamplingController(chi.InferenceController):
                 print("complete")
 
             i += 1
-            if (n_return < 10) or (n_return % 100 == 0):
-                print_string = str(i+1) + ' \t'
+            if (n_return < 10) or (n_return % 20 == 0):
+                print_string = str(n_return) + ' \t'
                 for chain in range(0, self._n_runs):
                     print_string += str(print_func[chain])+'     \t'
                 if self._r_hat is not None:
