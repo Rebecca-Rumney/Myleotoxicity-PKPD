@@ -1,0 +1,336 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'PKPD_many_timepoints_multi_run_opt_results.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{703.31774139bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.56046912)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.04939517,0.1780511){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.01\end{tabular}}}}%
+    \put(0.04939517,0.2146411){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
+    \put(0.04939517,0.2512311){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.04939517,0.2878211){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.3511597,0.16411512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.37517832,0.16411512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0.39919694,0.16411512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.42321555,0.16411512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3\end{tabular}}}}%
+    \put(0.44723417,0.16411512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
+    \put(0.47125279,0.16411512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.41160294,0.14941938){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.05738966,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.08140828,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0.1054269,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.12944552,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3\end{tabular}}}}%
+    \put(0.15346413,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
+    \put(0.17748275,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.04939517,0.05137432){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.01\end{tabular}}}}%
+    \put(0.04939517,0.08502849){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
+    \put(0.04939517,0.11867764){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.04939517,0.15233181){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
+    \put(0.11803731,0.01672661){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.204334,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.22835262,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0.25237124,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.27638986,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3\end{tabular}}}}%
+    \put(0.30040848,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
+    \put(0.32442709,0.03117993){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.26498166,0.01672661){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.01654094,0.16084781){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Drug concentration, mg/L\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.9455874,0.18562906){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}500\end{tabular}}}}%
+    \put(0.9455874,0.20535684){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}750\end{tabular}}}}%
+    \put(0.9455874,0.22508965){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1000\end{tabular}}}}%
+    \put(0.9455874,0.24481743){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1250\end{tabular}}}}%
+    \put(0.9455874,0.26455024){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1500\end{tabular}}}}%
+    \put(0.9455874,0.28427803){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1750\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.57379957,0.14934077){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.53115499,0.16446275){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.56239525,0.16446275){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.59363552,0.16446275){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.62487578,0.16446275){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67811238,0.03155632){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.70935264,0.03155632){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.7405929,0.03155632){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.77183316,0.03155632){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.72714216,0.01710299){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.94483022,0.05316593){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}500\end{tabular}}}}%
+    \put(0.94483022,0.07229149){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}750\end{tabular}}}}%
+    \put(0.94483022,0.09141706){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1000\end{tabular}}}}%
+    \put(0.94483022,0.11054262){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1250\end{tabular}}}}%
+    \put(0.94483022,0.12966819){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1500\end{tabular}}}}%
+    \put(0.94483022,0.14879375){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1750\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.82505672,0.03155632){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.85629698,0.03155632){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.88753724,0.03155632){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.91877751,0.03155632){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.8740865,0.01710299){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.98770961,0.17052776){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Blood cell concentration, $10^3$/$\mu$L\end{tabular}}}}}%
+    \put(0.33837772,0.12613816){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose 1.0 mg\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.36773473,0.11015117){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Typical simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.36773473,0.09421451){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Individual simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.36773473,0.07827784){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.49794354,0.12575014){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose 2.0 mg\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.52730055,0.10976315){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Typical simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.52730055,0.09382649){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Individual simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.52730055,0.07788983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.41816064,0.05190316){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose 3.0 mg\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.44751766,0.03591617){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Typical simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.44751766,0.0199795){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Individual simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.44751766,0.00404284){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.08948698,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$, L/ mg\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.17331023,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$, L/hr\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.25600073,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\log(V_{c, typ})$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.33982398,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.42251448,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_1$, L/hr\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.50633773,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_1$, L\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.58902823,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$, $10^3$/$\mu$L\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67285148,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.75554199,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MTT, hr\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.83936523,0.54033635){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.92146748,0.54031117){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, PD}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.00679648,0.50913055){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.08948698,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20.266468\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.17331023,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.819308\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.25600073,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.367142\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.33982398,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.318523\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.42251448,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.34203\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.50633773,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.950541\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.58902823,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}983.484638\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67285148,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.436434\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.75554199,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.051198\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.83936523,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.088355\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.92205574,0.50913055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}41.898853\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.00679648,0.47691812){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 2}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.08948698,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20.165768\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.17331023,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.80651\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.25600073,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.379456\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.33982398,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.31152\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.42251448,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.313051\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.50633773,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.898908\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.58902823,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}983.34334\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67285148,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.43696\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.75554199,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.094815\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.83936523,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.088374\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.92205574,0.47691812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}41.833124\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.00679648,0.44571232){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 3}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.08948698,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.949006\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.17331023,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.81913\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=58]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.25600073,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.365031\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=59]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.33982398,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.319119\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=60]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.42251448,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.342095\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=61]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.50633773,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.952031\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=62]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.58902823,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}971.224093\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=63]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67285148,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.913769\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=64]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.75554199,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}641.237518\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=65]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.83936523,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.088266\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=66]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.92205574,0.44571232){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}262.740342\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=67]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.00679648,0.41450653){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 4}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=68]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.08948698,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}17.809264\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=69]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.17331023,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.450088\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=70]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.25600073,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.138773\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=71]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.33982398,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.711945\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=72]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.42251448,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.424376\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=73]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.50633773,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.504191\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=74]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.58902823,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}983.226741\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=75]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67285148,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.453219\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=76]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.75554199,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}87.072294\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=77]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.83936523,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.288288\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=78]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.92205574,0.41450653){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}57.062239\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=79]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.00679648,0.38330073){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 5}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=80]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.08948698,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20.263222\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=81]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.17331023,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.819329\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=82]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.25600073,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.365627\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=83]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.33982398,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.311728\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=84]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.42251448,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.340788\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=85]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.50633773,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.948344\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=86]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.58902823,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}983.18703\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=87]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67285148,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.436736\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=88]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.75554199,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.068423\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=89]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.83936523,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.088616\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=90]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.92205574,0.38330073){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}41.934816\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=91]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.00679648,0.3510883){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Mean}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=92]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.08948698,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}16.490746\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=93]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.17331023,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.742873\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=94]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.25600073,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.323206\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=95]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.33982398,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.394567\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=96]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.42251448,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.152468\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=97]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.50633773,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.650803\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=98]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.58902823,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}980.893168\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=99]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67285148,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.735423\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=100]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.75554199,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}196.70485\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=101]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.83936523,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.12838\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=102]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.92205574,0.3510883){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}89.093875\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=103]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.00679648,0.3198825){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=104]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.08948698,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}20.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=105]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.17331023,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=106]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.25600073,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-0.385662\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=107]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.33982398,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=108]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.42251448,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=109]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.50633773,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.9\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=110]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.58902823,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}983.1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=111]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.67285148,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.44\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=112]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.75554199,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.26\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=113]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.83936523,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=114]{PKPD_many_timepoints_multi_run_opt_results.pdf}}%
+    \put(0.92205574,0.3198825){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}42.43\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
