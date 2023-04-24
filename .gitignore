@@ -14,5 +14,8 @@ Reports/
 # idea
 .idea
 
+# Temporary matlab files
+.tmp
+
 # =4.2.0 (not sure what this does)
 =4.2.0
