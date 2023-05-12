@@ -410,204 +410,236 @@ class SamplingController(chi.InferenceController):
         :type log_to_screen: bool, optional
         """
 
+        # # Configure sampling routine
+        # self._required_iters = n_iterations
+
+        # # Run sampling routine
+        # chains, divergent_iters = self.MCMC_run(
+        #     sigma0=sigma0, hyperparameters=hyperparameters
+        # )
+        # chains = np.asarray(chains)
+
+        # # Format chains
+        # self.chains = self._format_chains(chains, divergent_iters)
+
+
+        # Set up sampler
+        sampler = pints.MCMCController(
+            log_pdf=self._log_posterior,
+            chains=self._n_runs,
+            x0=self._initial_params,
+            method=self._sampler,
+            transformation=self._transform)
+
         # Configure sampling routine
-        # self._log_to_screen(log_to_screen)
-        # self._log_interval(iters=20, warm_up=3)
-        self._required_iters = n_iterations
+        sampler.set_log_to_screen(True)
+        sampler.set_log_interval(iters=20, warm_up=3)
+        sampler.set_max_iterations(iterations=n_iterations)
+        sampler.set_parallel(self._parallel_evaluation)
+
+        if hyperparameters:
+            for s in sampler.samplers():
+                s.set_hyper_parameters(hyperparameters)
 
         # Run sampling routine
-        chains, divergent_iters = self.MCMC_run(
-            sigma0=sigma0, hyperparameters=hyperparameters
-        )
-        chains = np.asarray(chains)
+        chains = sampler.run()
+
+        # If Hamiltonian Monte Carlo, get number of divergent
+        # iterations
+        divergent_iters = None
+        if issubclass(
+                self._sampler, (pints.HamiltonianMCMC, pints.NoUTurnMCMC)):
+            divergent_iters = [
+                s.divergent_iterations() for s in sampler.samplers()]
 
         # Format chains
         self.chains = self._format_chains(chains, divergent_iters)
+
         return self.chains
 
     def set_stop_criterion(self, max_iterations=10000, r_hat=None):
         self._max_iters = max_iterations
         self._r_hat = r_hat
 
-    def MCMC_run(
-        self, save_point_like=None, sigma0=None, hyperparameters=None
-    ):
-        samplers = []
+#     def MCMC_run(
+#         self, save_point_like=None, sigma0=None, hyperparameters=None
+#     ):
+#         samplers = []
 
-        # Apply a transformation (if given). From this point onward the MCMC
-        # sampler will see only the transformed search space and will know
-        # nothing about the model parameter space.
-        if self._transform is not None:
-            # Convert log pdf
-            log_pdf = self._transform.convert_log_pdf(self._log_posterior)
-            # Convert initial positions
-            x0 = [self._transform.to_search(x) for x in self._initial_params]
+#         # Apply a transformation (if given). From this point onward the MCMC
+#         # sampler will see only the transformed search space and will know
+#         # nothing about the model parameter space.
+#         if self._transform is not None:
+#             # Convert log pdf
+#             log_pdf = self._transform.convert_log_pdf(self._log_posterior)
+#             # Convert initial positions
+#             x0 = [self._transform.to_search(x) for x in self._initial_params]
 
-            # Convert sigma0, if provided
-            if sigma0 is not None:
-                sigma0 = np.asarray(sigma0)
-                n_parameters = log_pdf.n_parameters()
-                # Make sure sigma0 is a (covariance) matrix
-                if np.product(sigma0.shape) == n_parameters:
-                    # Convert from 1d array
-                    sigma0 = sigma0.reshape((n_parameters,))
-                    sigma0 = np.diag(sigma0)
-                elif sigma0.shape != (n_parameters, n_parameters):
-                    # Check if 2d matrix of correct size
-                    raise ValueError(
-                        'sigma0 must be either a (d, d) matrix or a (d, ) '
-                        'vector, where d is the number of parameters.')
-                sigma0 = self._transform.convert_covariance_matrix(
-                    sigma0, x0[0]
-                )
-        else:
-            log_pdf = self._log_posterior
-            x0 = self._initial_params
+#             # Convert sigma0, if provided
+#             if sigma0 is not None:
+#                 sigma0 = np.asarray(sigma0)
+#                 n_parameters = log_pdf.n_parameters()
+#                 # Make sure sigma0 is a (covariance) matrix
+#                 if np.product(sigma0.shape) == n_parameters:
+#                     # Convert from 1d array
+#                     sigma0 = sigma0.reshape((n_parameters,))
+#                     sigma0 = np.diag(sigma0)
+#                 elif sigma0.shape != (n_parameters, n_parameters):
+#                     # Check if 2d matrix of correct size
+#                     raise ValueError(
+#                         'sigma0 must be either a (d, d) matrix or a (d, ) '
+#                         'vector, where d is the number of parameters.')
+#                 sigma0 = self._transform.convert_covariance_matrix(
+#                     sigma0, x0[0]
+#                 )
+#         else:
+#             log_pdf = self._log_posterior
+#             x0 = self._initial_params
 
-        num_initial = 50
-        for i in range(0, self._n_runs):
-            point = x0[i]
-            samplers.append(self._sampler(point, sigma0=sigma0))
-            if samplers[-1].needs_initial_phase():
-                samplers[-1].set_initial_phase(True)
+#         num_initial = 50
+#         for i in range(0, self._n_runs):
+#             point = x0[i]
+#             samplers.append(self._sampler(point, sigma0=sigma0))
+#             if samplers[-1].needs_initial_phase():
+#                 samplers[-1].set_initial_phase(True)
 
-        list_sample = [[]]*self._n_runs
-        if save_point_like is not None:
-            list_pointwise = [[]]*self._n_runs
-            # log_likelihood = log_pdf.get_log_likelihood()
+#         list_sample = [[]]*self._n_runs
+#         if save_point_like is not None:
+#             list_pointwise = [[]]*self._n_runs
+#             # log_likelihood = log_pdf.get_log_likelihood()
 
-        final_iteration = self._max_iters
-        timer = pints.Timer()
+#         final_iteration = self._max_iters
+#         timer = pints.Timer()
 
-        print("iter", end=' ')
-        for chain in range(len(samplers)):
-            print('\t', "chain "+str(chain), end=' ')
-        print('\t', "R_hat", '\t\t', "Time")
+#         print("iter", end=' ')
+#         for chain in range(len(samplers)):
+#             print('\t', "chain "+str(chain), end=' ')
+#         print('\t', "R_hat", '\t\t', "Time")
 
-        i = 0
-        r_hat = np.NaN
+#         i = 0
+#         r_hat = np.NaN
 
-        # Create evaluator object
-        f = log_pdf
-        if samplers[0].needs_sensitivities():
-            f = f.evaluateS1
-        evaluator = pints.SequentialEvaluator(f)
-        print_func = [None]*self._n_runs
-        chain_lengths = [0]*self._n_runs
-        n_return = 0
-        print_rhat_start = True
+#         # Create evaluator object
+#         f = log_pdf
+#         if samplers[0].needs_sensitivities():
+#             f = f.evaluateS1
+#         evaluator = pints.SequentialEvaluator(f)
+#         print_func = [None]*self._n_runs
+#         chain_lengths = [0]*self._n_runs
+#         n_return = 0
+#         print_rhat_start = True
 
-        while n_return < final_iteration:
-            # update each chain and pointwise using ask/tell
-            if (i == num_initial) & samplers[0].needs_initial_phase():
-                print("\n...........................")
-                print("End of Initial Phase")
-                print("...........................")
-                for sampler in samplers:
-                    sampler.set_initial_phase(False)
+#         while n_return < final_iteration:
+#             # update each chain and pointwise using ask/tell
+#             if (i == num_initial) & samplers[0].needs_initial_phase():
+#                 print("\n...........................")
+#                 print("End of Initial Phase")
+#                 print("...........................")
+#                 for sampler in samplers:
+#                     sampler.set_initial_phase(False)
             
-            chains_to_evaluate = [chain for chain, length in enumerate(chain_lengths) if length == n_return]
-            theta_hat = [alg.ask() for alg in np.asarray(samplers)[chains_to_evaluate]]
-            try:
-                fxs = evaluator.evaluate(theta_hat)
-                fxs_iterator = iter(fxs)
-                for chain in chains_to_evaluate:
-                    alg = samplers[chain]
-                    if chain_lengths[chain]==n_return:
-                        lp = next(fxs_iterator)
-                        reply = alg.tell(lp)
-                        if reply is not None:
-                            theta_g, f_theta, accepted = reply
-                            if self._transform:
-                                model_theta_g = self._transform.to_model(theta_g)
-                            else:
-                                model_theta_g = theta_g
-                            list_sample[chain] = list_sample[chain]+[model_theta_g]
-                            chain_lengths[chain] += 1
-                            if issubclass(
-                                self._sampler,
-                                (pints.HamiltonianMCMC, pints.NoUTurnMCMC)
-                            ):
-                                print_func[chain] = chain_lengths[chain]
-                            else:
-                                print_func[chain] = round(f_theta[0], 4)
+#             chains_to_evaluate = [chain for chain, length in enumerate(chain_lengths) if length == n_return]
+#             theta_hat = [alg.ask() for alg in np.asarray(samplers)[chains_to_evaluate]]
+#             try:
+#                 fxs = evaluator.evaluate(theta_hat)
+#                 fxs_iterator = iter(fxs)
+#                 for chain in chains_to_evaluate:
+#                     alg = samplers[chain]
+#                     if chain_lengths[chain]==n_return:
+#                         lp = next(fxs_iterator)
+#                         reply = alg.tell(lp)
+#                         if reply is not None:
+#                             theta_g, f_theta, accepted = reply
+#                             if self._transform:
+#                                 model_theta_g = self._transform.to_model(theta_g)
+#                             else:
+#                                 model_theta_g = theta_g
+#                             list_sample[chain] = list_sample[chain]+[model_theta_g]
+#                             chain_lengths[chain] += 1
+#                             if issubclass(
+#                                 self._sampler,
+#                                 (pints.HamiltonianMCMC, pints.NoUTurnMCMC)
+#                             ):
+#                                 print_func[chain] = chain_lengths[chain]
+#                             else:
+#                                 print_func[chain] = round(f_theta[0], 4)
 
-                            # if save_point_like is not None:
-                            #     if accepted:
-                            #         list_pointwise[chain] = (
-                            #             list_pointwise[chain] +
-                            #             [log_likelihood.compute_pointwise_ll(
-                            #                 model_theta_g
-                            #             )]
-                            #         )
-                            #     else:
-                            #         list_pointwise[chain] = (
-                            #             list_pointwise[chain] +
-                            #             [list_pointwise[chain][-1]]
-                            #         )
-#                         else:
-#                             print(reply, alg._next)
-            except:
-                print("Error for iteration", i, ", parameters:", theta_hat)
-                raise
+#                             # if save_point_like is not None:
+#                             #     if accepted:
+#                             #         list_pointwise[chain] = (
+#                             #             list_pointwise[chain] +
+#                             #             [log_likelihood.compute_pointwise_ll(
+#                             #                 model_theta_g
+#                             #             )]
+#                             #         )
+#                             #     else:
+#                             #         list_pointwise[chain] = (
+#                             #             list_pointwise[chain] +
+#                             #             [list_pointwise[chain][-1]]
+#                             #         )
+# #                         else:
+# #                             print(reply, alg._next)
+#             except:
+#                 print("Error for iteration", i, ", parameters:", theta_hat)
+#                 raise
 
-            n_return = np.min(chain_lengths)
-            if self._r_hat is not None:
-                if (
-                    (n_return >= num_initial + self._required_iters) &
-                    print_rhat_start
-                ):
-                    print("\n...........................")
-                    print("Sart of Convergence Testing")
-                    print("...........................")
-                    print_rhat_start = False
-                # Have the chains converged?
-                test_r_hat = n_return >= num_initial
-                test_r_hat = test_r_hat & (n_return % 20 == 0)
-                if test_r_hat:
-                    samples_test = [list[-n_return:] for list in list_sample]
-                    r_hat = pints.rhat(
-                        np.asarray(samples_test))
-                    # [:, -self._required_iters:, :])
-                    terminate = (n_return >= num_initial+self._required_iters)
-                    terminate = terminate & np.all(r_hat <= self._r_hat)
-                    if terminate:
-                        final_iteration = n_return
-                        print("complete")
-            elif n_return >= num_initial+self._required_iters:
-                final_iteration = n_return
-                print("complete")
+#             n_return = np.min(chain_lengths)
+#             if self._r_hat is not None:
+#                 if (
+#                     (n_return >= num_initial + self._required_iters) &
+#                     print_rhat_start
+#                 ):
+#                     print("\n...........................")
+#                     print("Sart of Convergence Testing")
+#                     print("...........................")
+#                     print_rhat_start = False
+#                 # Have the chains converged?
+#                 test_r_hat = n_return >= num_initial
+#                 test_r_hat = test_r_hat & (n_return % 20 == 0)
+#                 if test_r_hat:
+#                     samples_test = [list[-n_return:] for list in list_sample]
+#                     r_hat = pints.rhat(
+#                         np.asarray(samples_test))
+#                     # [:, -self._required_iters:, :])
+#                     terminate = (n_return >= num_initial+self._required_iters)
+#                     terminate = terminate & np.all(r_hat <= self._r_hat)
+#                     if terminate:
+#                         final_iteration = n_return
+#                         print("complete")
+#             elif n_return >= num_initial+self._required_iters:
+#                 final_iteration = n_return
+#                 print("complete")
 
-            i += 1
-            if (n_return < 10) or (n_return % 20 == 0):
-                print_string = str(n_return) + ' \t'
-                for chain in range(0, self._n_runs):
-                    print_string += str(print_func[chain])+'     \t'
-                if self._r_hat is not None:
-                    print_string += str(round(np.average(r_hat), 4))
-                    print_string += '     \t'
-                print_string += timer.format(timer.time())
-                print(
-                    "\r" + print_string,
-                    sep=' ',
-                    end='        ',
-                    flush=True
-                )
+#             i += 1
+#             if (n_return < 10) or (n_return % 20 == 0):
+#                 print_string = str(n_return) + ' \t'
+#                 for chain in range(0, self._n_runs):
+#                     print_string += str(print_func[chain])+'     \t'
+#                 if self._r_hat is not None:
+#                     print_string += str(round(np.average(r_hat), 4))
+#                     print_string += '     \t'
+#                 print_string += timer.format(timer.time())
+#                 print(
+#                     "\r" + print_string,
+#                     sep=' ',
+#                     end='        ',
+#                     flush=True
+#                 )
 
-        if save_point_like is not None:
-            np.savez_compressed(save_point_like, *list_pointwise)
+#         if save_point_like is not None:
+#             np.savez_compressed(save_point_like, *list_pointwise)
 
-        # If Hamiltonian Monte Carlo, get number of divergent
-        # iterations # TODO: Implement
-        divergent_iters = None
-        if issubclass(
-                self._sampler, (pints.HamiltonianMCMC, pints.NoUTurnMCMC)):
-            divergent_iters = [
-                s.divergent_iterations() for s in samplers
-            ]
-        return_samples = [list[-n_return:] for list in list_sample]
+#         # If Hamiltonian Monte Carlo, get number of divergent
+#         # iterations # TODO: Implement
+#         divergent_iters = None
+#         if issubclass(
+#                 self._sampler, (pints.HamiltonianMCMC, pints.NoUTurnMCMC)):
+#             divergent_iters = [
+#                 s.divergent_iterations() for s in samplers
+#             ]
+#         return_samples = [list[-n_return:] for list in list_sample]
 
-        return return_samples, divergent_iters
+#         return return_samples, divergent_iters
 
 
 class OptimisationController(chi.OptimisationController):
