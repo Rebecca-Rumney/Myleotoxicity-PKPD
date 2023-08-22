@@ -1,0 +1,479 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'large_data_old_MPE_results.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{498.88851929bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.62603019)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{large_data_old_MPE_results.pdf}}%
+    \put(0.04888831,0.61306974){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: One Mixed-Effects Parameters\end{tabular}}}}%
+    \put(0.55525244,0.61306974){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: Two Mixed-Effects Parameters\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{large_data_old_MPE_results.pdf}}%
+    \put(0.07766348,0.53827604){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{large_data_old_MPE_results.pdf}}%
+    \put(0.14837311,0.53827604){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{K_{cl}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805796,0.53827604){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{large_data_old_MPE_results.pdf}}%
+    \put(0.28876758,0.53827604){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845243,0.53827604){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607142,0.53827604){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Score\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394717,0.50751957){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{large_data_old_MPE_results.pdf}}%
+    \put(0.07766348,0.50751957){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.532\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{large_data_old_MPE_results.pdf}}%
+    \put(0.14837311,0.50751957){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805796,0.50751957){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.701\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{large_data_old_MPE_results.pdf}}%
+    \put(0.28876758,0.50751957){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845243,0.50751957){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607142,0.50751957){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-inf\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394717,0.4760308){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Converged}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{large_data_old_MPE_results.pdf}}%
+    \put(0.07766348,0.4760308){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.389\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{large_data_old_MPE_results.pdf}}%
+    \put(0.14837311,0.4760308){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.057\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805796,0.4760308){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.664\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{large_data_old_MPE_results.pdf}}%
+    \put(0.28876758,0.4760308){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.229\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845243,0.4760308){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607142,0.4760308){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}12134.33\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394717,0.44527434){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{large_data_old_MPE_results.pdf}}%
+    \put(0.07766348,0.44527434){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{large_data_old_MPE_results.pdf}}%
+    \put(0.14837311,0.44527434){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805796,0.44527434){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{large_data_old_MPE_results.pdf}}%
+    \put(0.28876758,0.44527434){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845243,0.44527434){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{large_data_old_MPE_results.pdf}}%
+    \put(0.07766352,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{large_data_old_MPE_results.pdf}}%
+    \put(0.14837315,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{K_{cl}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{large_data_old_MPE_results.pdf}}%
+    \put(0.218058,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{large_data_old_MPE_results.pdf}}%
+    \put(0.28876762,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845247,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394721,0.18415137){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394721,0.15266261){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Converged}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394721,0.12190614){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{large_data_old_MPE_results.pdf}}%
+    \put(0.07809393,0.18415137){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.532\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{large_data_old_MPE_results.pdf}}%
+    \put(0.07809393,0.15266261){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.365\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{large_data_old_MPE_results.pdf}}%
+    \put(0.07809393,0.12190614){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{large_data_old_MPE_results.pdf}}%
+    \put(0.15120931,0.18415137){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{large_data_old_MPE_results.pdf}}%
+    \put(0.15120931,0.15266261){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.206\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{large_data_old_MPE_results.pdf}}%
+    \put(0.15120931,0.12190614){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805799,0.18415137){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.701\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805799,0.1526626){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.645\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805799,0.12190613){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845247,0.18415137){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845247,0.1526626){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.138\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845247,0.12190613){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607146,0.18415137){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-inf\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607146,0.1526626){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}11125.52\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607146,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Score\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{large_data_old_MPE_results.pdf}}%
+    \put(0.0776635,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{large_data_old_MPE_results.pdf}}%
+    \put(0.14837313,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{K_{cl}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805798,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{large_data_old_MPE_results.pdf}}%
+    \put(0.2887676,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845245,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607144,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Score\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394719,0.04320553){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Converged}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=58]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394719,0.01244906){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=59]{large_data_old_MPE_results.pdf}}%
+    \put(0.0776635,0.04303352){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.134\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=60]{large_data_old_MPE_results.pdf}}%
+    \put(0.0776635,0.01244906){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=61]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805797,0.04303352){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.303\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=62]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805797,0.01244906){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=63]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845246,0.04303352){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.789\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=64]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845246,0.01244906){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=65]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607144,0.04303352){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5859.37\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=66]{large_data_old_MPE_results.pdf}}%
+    \put(0.07766348,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=67]{large_data_old_MPE_results.pdf}}%
+    \put(0.14837311,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{K_{cl}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=68]{large_data_old_MPE_results.pdf}}%
+    \put(0.21805796,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=69]{large_data_old_MPE_results.pdf}}%
+    \put(0.28876758,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=70]{large_data_old_MPE_results.pdf}}%
+    \put(0.35845243,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=71]{large_data_old_MPE_results.pdf}}%
+    \put(0.42607142,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Score\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=72]{large_data_old_MPE_results.pdf}}%
+    \put(0.09562346,0.32381929){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.532\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=73]{large_data_old_MPE_results.pdf}}%
+    \put(0.21796837,0.32381929){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.701\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=74]{large_data_old_MPE_results.pdf}}%
+    \put(0.28867799,0.32381929){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=75]{large_data_old_MPE_results.pdf}}%
+    \put(0.35836285,0.32381929){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=76]{large_data_old_MPE_results.pdf}}%
+    \put(0.42598184,0.32381929){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-inf\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=77]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394717,0.32367524){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=78]{large_data_old_MPE_results.pdf}}%
+    \put(0.09562346,0.29215851){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.388\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=79]{large_data_old_MPE_results.pdf}}%
+    \put(0.21796837,0.29215851){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.664\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=80]{large_data_old_MPE_results.pdf}}%
+    \put(0.28867799,0.29215851){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.235\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=81]{large_data_old_MPE_results.pdf}}%
+    \put(0.35836285,0.29215851){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.092\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=82]{large_data_old_MPE_results.pdf}}%
+    \put(0.42598184,0.29215851){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}12059.16\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=83]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394717,0.29218648){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Converged}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=84]{large_data_old_MPE_results.pdf}}%
+    \put(0.09562346,0.26157405){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=85]{large_data_old_MPE_results.pdf}}%
+    \put(0.21796837,0.26157405){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=86]{large_data_old_MPE_results.pdf}}%
+    \put(0.28867799,0.26157405){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=87]{large_data_old_MPE_results.pdf}}%
+    \put(0.35836285,0.26157405){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=88]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394717,0.26143001){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=89]{large_data_old_MPE_results.pdf}}%
+    \put(0.65523719,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{K_{cl}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=90]{large_data_old_MPE_results.pdf}}%
+    \put(0.72492204,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=91]{large_data_old_MPE_results.pdf}}%
+    \put(0.79563167,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=92]{large_data_old_MPE_results.pdf}}%
+    \put(0.86531652,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=93]{large_data_old_MPE_results.pdf}}%
+    \put(0.93602614,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Score\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=94]{large_data_old_MPE_results.pdf}}%
+    \put(0.51081126,0.04621221){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Converged}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=95]{large_data_old_MPE_results.pdf}}%
+    \put(0.51081126,0.01268708){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=96]{large_data_old_MPE_results.pdf}}%
+    \put(0.58445305,0.0450269){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.986\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=97]{large_data_old_MPE_results.pdf}}%
+    \put(0.58445305,0.01308651){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=98]{large_data_old_MPE_results.pdf}}%
+    \put(0.72484754,0.04616002){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.694\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=99]{large_data_old_MPE_results.pdf}}%
+    \put(0.72484754,0.01308651){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=100]{large_data_old_MPE_results.pdf}}%
+    \put(0.86524199,0.04616002){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.13\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=101]{large_data_old_MPE_results.pdf}}%
+    \put(0.86524199,0.01308651){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=102]{large_data_old_MPE_results.pdf}}%
+    \put(0.93595162,0.0450269){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2994.7\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=103]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395464,0.07538393){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=104]{large_data_old_MPE_results.pdf}}%
+    \put(0.65523722,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{K_{cl}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=105]{large_data_old_MPE_results.pdf}}%
+    \put(0.72492207,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=106]{large_data_old_MPE_results.pdf}}%
+    \put(0.79563169,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=107]{large_data_old_MPE_results.pdf}}%
+    \put(0.86531654,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=108]{large_data_old_MPE_results.pdf}}%
+    \put(0.51081128,0.18415137){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=109]{large_data_old_MPE_results.pdf}}%
+    \put(0.51081128,0.15266261){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Converged}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=110]{large_data_old_MPE_results.pdf}}%
+    \put(0.51081128,0.12190614){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=111]{large_data_old_MPE_results.pdf}}%
+    \put(0.58445307,0.18455081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.545\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=112]{large_data_old_MPE_results.pdf}}%
+    \put(0.65516268,0.18455081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=113]{large_data_old_MPE_results.pdf}}%
+    \put(0.72484753,0.18455081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.713\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=114]{large_data_old_MPE_results.pdf}}%
+    \put(0.865242,0.18455081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=115]{large_data_old_MPE_results.pdf}}%
+    \put(0.93595163,0.18455081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-inf\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=116]{large_data_old_MPE_results.pdf}}%
+    \put(0.58445307,0.15261043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.401\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=117]{large_data_old_MPE_results.pdf}}%
+    \put(0.65516268,0.15261043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.347\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=118]{large_data_old_MPE_results.pdf}}%
+    \put(0.72484753,0.15261043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.706\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=119]{large_data_old_MPE_results.pdf}}%
+    \put(0.865242,0.15261043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.294\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=120]{large_data_old_MPE_results.pdf}}%
+    \put(0.93595163,0.15261043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}9355.89\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=121]{large_data_old_MPE_results.pdf}}%
+    \put(0.58445307,0.12230558){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=122]{large_data_old_MPE_results.pdf}}%
+    \put(0.65516268,0.12230558){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=123]{large_data_old_MPE_results.pdf}}%
+    \put(0.72484753,0.12230558){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=124]{large_data_old_MPE_results.pdf}}%
+    \put(0.865242,0.12230558){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=125]{large_data_old_MPE_results.pdf}}%
+    \put(0.93602616,0.215601){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Score\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=126]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395465,0.21490784){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=127]{large_data_old_MPE_results.pdf}}%
+    \put(0.51009666,0.55827497){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=128]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395887,0.55827497){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.545\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=129]{large_data_old_MPE_results.pdf}}%
+    \put(0.65481435,0.55827497){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=130]{large_data_old_MPE_results.pdf}}%
+    \put(0.72464298,0.55827497){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.713\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=131]{large_data_old_MPE_results.pdf}}%
+    \put(0.79549851,0.55827497){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=132]{large_data_old_MPE_results.pdf}}%
+    \put(0.86532705,0.55827497){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=133]{large_data_old_MPE_results.pdf}}%
+    \put(0.93618263,0.55827497){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-inf\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=134]{large_data_old_MPE_results.pdf}}%
+    \put(0.51009666,0.53181729){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 2}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=135]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395887,0.53181729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.147\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=136]{large_data_old_MPE_results.pdf}}%
+    \put(0.65481435,0.53181729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.47\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=137]{large_data_old_MPE_results.pdf}}%
+    \put(0.72464298,0.53181729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.482\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=138]{large_data_old_MPE_results.pdf}}%
+    \put(0.79549851,0.53181729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.964\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=139]{large_data_old_MPE_results.pdf}}%
+    \put(0.86532705,0.53181729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=140]{large_data_old_MPE_results.pdf}}%
+    \put(0.93618263,0.53181729){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4932.47\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=141]{large_data_old_MPE_results.pdf}}%
+    \put(0.51009666,0.50535961){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 7}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=142]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395887,0.50535961){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.323\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=143]{large_data_old_MPE_results.pdf}}%
+    \put(0.65481435,0.50535961){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.402\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=144]{large_data_old_MPE_results.pdf}}%
+    \put(0.72464298,0.50535961){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.631\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=145]{large_data_old_MPE_results.pdf}}%
+    \put(0.79549851,0.50535961){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.339\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=146]{large_data_old_MPE_results.pdf}}%
+    \put(0.86532705,0.50535961){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.699\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=147]{large_data_old_MPE_results.pdf}}%
+    \put(0.93618263,0.50535961){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4714.51\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=148]{large_data_old_MPE_results.pdf}}%
+    \put(0.51009666,0.478167){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 8}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=149]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395887,0.478167){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.255\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=150]{large_data_old_MPE_results.pdf}}%
+    \put(0.65481435,0.478167){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.22\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=151]{large_data_old_MPE_results.pdf}}%
+    \put(0.72464298,0.478167){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.085\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=152]{large_data_old_MPE_results.pdf}}%
+    \put(0.79549851,0.478167){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.241\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=153]{large_data_old_MPE_results.pdf}}%
+    \put(0.86532705,0.478167){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.844\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=154]{large_data_old_MPE_results.pdf}}%
+    \put(0.93618263,0.478167){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6000.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=155]{large_data_old_MPE_results.pdf}}%
+    \put(0.51009666,0.45170932){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 10}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=156]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395887,0.45170932){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.218\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=157]{large_data_old_MPE_results.pdf}}%
+    \put(0.65481435,0.45170932){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.43\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=158]{large_data_old_MPE_results.pdf}}%
+    \put(0.72464298,0.45170932){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.263\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=159]{large_data_old_MPE_results.pdf}}%
+    \put(0.79549851,0.45170932){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.325\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=160]{large_data_old_MPE_results.pdf}}%
+    \put(0.86532705,0.45170932){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.684\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=161]{large_data_old_MPE_results.pdf}}%
+    \put(0.93618263,0.45170932){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6880.82\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=162]{large_data_old_MPE_results.pdf}}%
+    \put(0.50954449,0.42422934){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Converged}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=163]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395887,0.42525162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.432\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=164]{large_data_old_MPE_results.pdf}}%
+    \put(0.65481435,0.42525162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.372\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=165]{large_data_old_MPE_results.pdf}}%
+    \put(0.72464298,0.42525162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.723\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=166]{large_data_old_MPE_results.pdf}}%
+    \put(0.79549851,0.42525162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.272\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=167]{large_data_old_MPE_results.pdf}}%
+    \put(0.86532705,0.42525162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.252\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=168]{large_data_old_MPE_results.pdf}}%
+    \put(0.93618263,0.42525162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}9736.27\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=169]{large_data_old_MPE_results.pdf}}%
+    \put(0.51009666,0.39879396){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=170]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395887,0.39879396){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=171]{large_data_old_MPE_results.pdf}}%
+    \put(0.65481435,0.39879396){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=172]{large_data_old_MPE_results.pdf}}%
+    \put(0.72464298,0.39879396){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=173]{large_data_old_MPE_results.pdf}}%
+    \put(0.79549851,0.39879396){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=174]{large_data_old_MPE_results.pdf}}%
+    \put(0.86532705,0.39879396){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=175]{large_data_old_MPE_results.pdf}}%
+    \put(0.65523719,0.58690375){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{K_{cl}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=176]{large_data_old_MPE_results.pdf}}%
+    \put(0.72492204,0.58690375){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=177]{large_data_old_MPE_results.pdf}}%
+    \put(0.79563167,0.58690375){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=178]{large_data_old_MPE_results.pdf}}%
+    \put(0.86531651,0.58690375){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=179]{large_data_old_MPE_results.pdf}}%
+    \put(0.93602614,0.58690375){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Score\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=180]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395462,0.58690375){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=181]{large_data_old_MPE_results.pdf}}%
+    \put(0.58445307,0.32407467){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.545\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=182]{large_data_old_MPE_results.pdf}}%
+    \put(0.72484753,0.32407467){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.713\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=183]{large_data_old_MPE_results.pdf}}%
+    \put(0.79555715,0.32407467){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=184]{large_data_old_MPE_results.pdf}}%
+    \put(0.86524202,0.32407467){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=185]{large_data_old_MPE_results.pdf}}%
+    \put(0.93595163,0.32407467){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-inf\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=186]{large_data_old_MPE_results.pdf}}%
+    \put(0.58445307,0.2921343){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.277\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=187]{large_data_old_MPE_results.pdf}}%
+    \put(0.72484753,0.2921343){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.651\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=188]{large_data_old_MPE_results.pdf}}%
+    \put(0.79555715,0.2921343){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.391\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=189]{large_data_old_MPE_results.pdf}}%
+    \put(0.86524202,0.2921343){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.367\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=190]{large_data_old_MPE_results.pdf}}%
+    \put(0.93595163,0.2921343){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}8762.21\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=191]{large_data_old_MPE_results.pdf}}%
+    \put(0.58445307,0.26182945){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=192]{large_data_old_MPE_results.pdf}}%
+    \put(0.72484753,0.26182945){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=193]{large_data_old_MPE_results.pdf}}%
+    \put(0.79555715,0.26182945){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=194]{large_data_old_MPE_results.pdf}}%
+    \put(0.86524202,0.26182945){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=195]{large_data_old_MPE_results.pdf}}%
+    \put(0.50918029,0.32226585){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Run 1}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=196]{large_data_old_MPE_results.pdf}}%
+    \put(0.50918029,0.26002062){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{True}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=197]{large_data_old_MPE_results.pdf}}%
+    \put(0.6552372,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{K_{cl}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=198]{large_data_old_MPE_results.pdf}}%
+    \put(0.72492205,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=199]{large_data_old_MPE_results.pdf}}%
+    \put(0.79563168,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=200]{large_data_old_MPE_results.pdf}}%
+    \put(0.86531652,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=201]{large_data_old_MPE_results.pdf}}%
+    \put(0.93602615,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Score\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=202]{large_data_old_MPE_results.pdf}}%
+    \put(0.58395463,0.35443171){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=203]{large_data_old_MPE_results.pdf}}%
+    \put(0.5095445,0.29332432){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Converged}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=204]{large_data_old_MPE_results.pdf}}%
+    \put(0.00702151,0.53885334){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{A}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=205]{large_data_old_MPE_results.pdf}}%
+    \put(0.00702151,0.35500902){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{C}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=206]{large_data_old_MPE_results.pdf}}%
+    \put(0.00394721,0.21548515){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{E}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=207]{large_data_old_MPE_results.pdf}}%
+    \put(0.00702153,0.07596124){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{G}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=208]{large_data_old_MPE_results.pdf}}%
+    \put(0.50959002,0.58500451){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{B}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=209]{large_data_old_MPE_results.pdf}}%
+    \put(0.51081124,0.35500902){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{D}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=210]{large_data_old_MPE_results.pdf}}%
+    \put(0.51081126,0.21548515){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{F}\end{tabular}}}}%
+    \put(0.51081124,0.07596124){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{H}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
