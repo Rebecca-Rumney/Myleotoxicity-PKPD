@@ -1,0 +1,10 @@
+Cl_pop,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+V1_pop,nan,0.00229965,nan,nan,4.389e-08,-2.244e-09,nan,-9.84652e-06,-3.06346e-07,1.36863e-05
+Q_pop,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+S_pop,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+R0_pop,nan,4.389e-08,nan,nan,8.43139e-07,-1.137e-09,nan,-1.29042e-07,-2.41878e-09,-1.18819e-08
+gamma_pop,nan,-2.244e-09,nan,nan,-1.137e-09,2.1745e-08,nan,1.26456e-12,-2.48612e-11,3.11272e-08
+MTT_pop,nan,nan,nan,nan,nan,nan,nan,nan,nan,nan
+omega_V1,nan,-9.84652e-06,nan,nan,-1.29042e-07,1.26456e-12,nan,0.00117659,-1.53186e-07,4.84096e-07
+bPK_central_drug_concentration,nan,-3.06346e-07,nan,nan,-2.41878e-09,-2.48612e-11,nan,-1.53186e-07,1.83715e-06,-8.48303e-08
+acirculating_R,nan,1.36863e-05,nan,nan,-1.18819e-08,3.11272e-08,nan,4.84096e-07,-8.48303e-08,0.394863

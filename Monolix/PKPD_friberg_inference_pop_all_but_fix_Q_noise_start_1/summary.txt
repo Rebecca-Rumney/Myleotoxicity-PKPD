@@ -1,0 +1,142 @@
+********************************************************************************
+*          PKPD_friberg_inference_pop_but_fix_Q_noise_start_1.mlxtran          *
+*          June 30, 2023 at 14:29:20                                           *
+*          Monolix version : 2023R1                                            *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------     se_sa    rse(%)
+Cl_pop                         :      2.82   0.00684     0.243
+V1_pop                         :     0.692    0.0334      4.83
+Q_pop                          :      2.34                    
+V2_pop                         :      4.95     0.037     0.747
+S_pop                          :      20.1     0.175     0.873
+R0_pop                         :       983       1.5     0.152
+gamma_pop                      :     0.435   0.00532      1.22
+MTT_pop                        :        85     0.349     0.411
+
+Standard Deviation of the Random Effects -
+omega_Cl                       :   0.00366   0.00254      69.3
+omega_V1                       :     0.321    0.0342      10.7
+omega_V2                       :    0.0132   0.00901      68.4
+omega_S                        :    0.0126   0.00621      49.2
+omega_R0                       :   0.00154   0.00281       183
+omega_gamma                    :   0.00804    0.0086       107
+omega_MTT                      :   0.00206   0.00135      65.4
+
+Error Model Parameters -------------------
+bPK_central_drug_concentration :    0.0888   0.00136      1.54
+acirculating_R                 :      41.6     0.642      1.54
+
+Elapsed time (seconds):       74
+CPU time     (seconds):  2.4e+02
+Exploratory phase iterations:      405 (Autostop)
+Smoothing phase iterations:         96 (Autostop)
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
+
+
+Estimation of the individual parameters by Conditional Distribution ------------
+              min        Q1    median        Q3       max
+Cl    :      2.81      2.82      2.82      2.82      2.83
+V1    :     0.325     0.554     0.651     0.927      1.32
+Q     :      2.34      2.34      2.34      2.34      2.34
+V2    :      4.89      4.94      4.95      4.97      5.01
+S     :        20        20      20.1      20.1      20.3
+R0    :       982       983       983       983       984
+gamma :     0.432     0.434     0.435     0.436     0.438
+MTT   :      84.9        85        85        85      85.1
+
+Elapsed time (seconds):      8.3
+CPU time     (seconds):       27
+Iterations:       60 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+
+Estimation of the individual parameters by Conditional Mode --------------------
+              min        Q1    median        Q3       max
+Cl    :      2.81      2.82      2.82      2.82      2.83
+V1    :     0.323     0.554     0.648     0.927      1.31
+Q     :      2.34      2.34      2.34      2.34      2.34
+V2    :       4.9      4.94      4.95      4.97      5.01
+S     :        20        20      20.1      20.1      20.3
+R0    :       982       983       983       983       984
+gamma :     0.431     0.435     0.435     0.436     0.438
+MTT   :      84.9        85        85        85      85.1
+
+Elapsed time (seconds):      1.1
+CPU time     (seconds):        5
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE FISHER INFORMATION MATRIX ____________________________________
+
+
+Estimation of the Fisher information matrix by Stochastic Approximation --------
+
+Correlation Matrix :
+                        Cl_pop         1
+                        V1_pop 0.0096869         1
+                        V2_pop  -0.65903  0.037756         1
+                         S_pop   -0.3025  0.028229   0.33131         1
+                        R0_pop   0.63092-0.0063883  -0.53723   -0.4664         1
+                     gamma_pop    0.5351 -0.022106  -0.44708  -0.74576   0.43075         1
+                       MTT_pop   0.54822 -0.024242    -0.474  -0.70548   0.42592   0.97045         1
+                      omega_Cl  -0.52111 -0.015802   0.22526   0.19578  -0.39051  -0.37624  -0.34413         1
+                      omega_V1-0.0022143 0.0016805 0.0045017 -0.010789 -0.016953  0.024201   0.02676  0.012024         1
+                      omega_V2   0.26784  0.023886 -0.019786   0.14392   0.32194  -0.14176  -0.15847  -0.52828 -0.026272         1
+                       omega_S  0.051778 -0.018765 -0.098551  -0.21652 -0.051223   0.32443   0.33361 0.0032686 0.0074789  -0.43144         1
+                      omega_R0     0.686 -0.025783  -0.64467  -0.44324   0.62041   0.67203   0.70029  -0.36863 0.0072733   0.10614   0.25755         1
+                   omega_gamma   0.48512 -0.034033  -0.50583  -0.71268   0.51191   0.86671   0.87484  -0.22965  0.018322  -0.16637    0.3459   0.76387         1
+                     omega_MTT -0.096675 -0.013951   0.06092    0.0434  -0.28157   0.10244   0.11989   0.12545  0.025343  -0.43127   0.43941   0.13983  0.086558         1
+bPK_central_drug_concentration   0.11938-0.00055983 -0.030586 -0.053454  0.075355  0.091497  0.088601  -0.12119 -0.002749  0.029478  0.025389  0.080566  0.064989  0.015155         1
+                acirculating_R  -0.13556 0.0067809   0.12951   0.13968  -0.12821  -0.18736   -0.1941  0.064006-0.0037034  0.023546  -0.08723  -0.19565  -0.20662 -0.030801 -0.017662         1
+
+                               min       max   max/min
+Eigen values           :     0.026       5.6   2.2e+02
+
+Elapsed time (seconds):       16
+CPU time     (seconds):       54
+Iterations:      118 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE LOG-LIKELIHOOD _______________________________________________
+
+                                                            (is)
+-2 x log-likelihood                       (OFV) :        5563.11
+Akaike Information Criteria               (AIC) :        5595.11
+Corrected Bayesian Information Criteria  (BICc) :        5665.47
+Bayesian Information Criteria             (BIC) :        5624.02
+
+Elapsed time                          (seconds) :          26.66
+CPU time                              (seconds) :          77.00
+MonteCarlo size (is):    10000 (Fixed number of iterations)
+
+
+[Importance Sampling] Standard error        : 0.170
+                      Sampling distribution : T-distribution with 5 degrees of freedom
+
+ _______________________________________________________________________________
+
+DATASET INFORMATION
+Number of individuals: 45
+Number of observations (obsid PK_central_drug_concentration): 2250
+Number of observations (obsid circulating_R): 2250
+Number of doses: 45
+

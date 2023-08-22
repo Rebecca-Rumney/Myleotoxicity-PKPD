@@ -1,0 +1,43 @@
+DESCRIPTION:
+PKPD model. The PK data must be tagged with the lowest OBSERVATION ID value.
+The administration is via a bolus.
+The PK model has a central compartment (volume V1), a peripheral compartment (volume V2, intercompartmental clearance Q), and a linear elimination (clearance Cl).
+The PD model is an indirect turnover model with full inhibition (Imax=1) of the production (baseline response R0, degradation rate kout, and half-maximal inhibitory concentration IC50).
+
+[LONGITUDINAL]
+input = {Cl, V1, Q, V2, S, R0, gamma, MTT}
+
+PK:
+;====== PK part of the model
+
+; Parameter transformations
+V = V1
+k12 = Q/V1
+k21 = Q/V2
+
+; PK model definition
+Cc = pkmodel(V, Cl, k12, k21)
+
+EQUATION:
+;====== PD part of the model
+
+; Initial values
+P_0 = R0
+T1_0 = R0
+T2_0 = R0
+T3_0 = R0
+R_0 = R0
+
+; Parameter transformation
+ktr = 4 / MTT
+
+; ODE for the response
+
+ddt_P = ktr * (1 - S*Cc) * P * (R0/R)^gamma - ktr * P
+ddt_T1 = ktr * P - ktr * T1
+ddt_T2 = ktr * T1 - ktr * T2
+ddt_T3 = ktr * T2 - ktr * T3
+ddt_R = ktr * T3 - ktr * R
+
+OUTPUT:
+output = {Cc, R}

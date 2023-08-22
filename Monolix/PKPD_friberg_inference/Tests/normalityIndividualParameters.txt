@@ -1,0 +1,9 @@
+parameter,statistics,p-value,test
+Cl,0.976907,0.341041,Shapiro-Wilk
+V1,0.984121,0.95737,Shapiro-Wilk
+Q,0.978321,0.727105,Shapiro-Wilk
+V2,0.980609,0.991816,Shapiro-Wilk
+S,0.969398,0.411883,Shapiro-Wilk
+R0,0.970971,0.504418,Shapiro-Wilk
+gamma,0.970709,0.189194,Shapiro-Wilk
+MTT,0.970636,0.290266,Shapiro-Wilk

@@ -1,0 +1,88 @@
+********************************************************************************
+*                          fixed_effects.mlxtran                               *
+*                          July 18, 2023 at 14:43:57                           *
+*                          Monolix version : 2023R1                            *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------     se_sa    rse(%)
+V_pop  :                              1.72    0.0491      2.85
+Cl_pop :                              2.02    0.0519      2.57
+
+Error Model Parameters -------------------
+b      :                              1.15     0.033      2.87
+
+Elapsed time (seconds):       23
+CPU time     (seconds):       45
+Exploratory phase iterations:      500 (Stopped at the maximum number of iterations/auto-stop criteria have not been reached)
+Smoothing phase iterations:        200 (Stopped at the maximum number of iterations)
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
+
+
+Estimation of the individual parameters by Conditional Mode --------------------
+           min        Q1    median        Q3       max
+V  :      1.72      1.72      1.72      1.72      1.72
+Cl :      2.02      2.02      2.02      2.02      2.02
+
+Elapsed time (seconds):    0.007
+CPU time     (seconds):        0
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE FISHER INFORMATION MATRIX ____________________________________
+
+
+Estimation of the Fisher information matrix by Stochastic Approximation --------
+
+Correlation Matrix :
+ V_pop         1
+Cl_pop   0.97706         1
+     b   0.64334   0.74845         1
+
+                               min       max   max/min
+Eigen values           :     0.012       2.6   2.2e+02
+
+Elapsed time (seconds):    0.062
+CPU time     (seconds):     0.14
+Iterations:        1 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE LOG-LIKELIHOOD _______________________________________________
+
+                                                            (is)
+-2 x log-likelihood                       (OFV) :       -6034.96
+Akaike Information Criteria               (AIC) :       -6028.96
+Corrected Bayesian Information Criteria  (BICc) :       -6011.80
+Bayesian Information Criteria             (BIC) :       -6023.54
+
+Elapsed time                          (seconds) :           0.01
+CPU time                              (seconds) :           0.00
+MonteCarlo size (is):        1 (Fixed number of iterations)
+
+
+[Importance Sampling] Standard error        : 0.000
+                      Sampling distribution : T-distribution with 5 degrees of freedom
+
+ _______________________________________________________________________________
+
+DATASET INFORMATION
+Number of individuals: 45
+Number of observations (central_drug_conc): 2250
+Number of doses: 45
+

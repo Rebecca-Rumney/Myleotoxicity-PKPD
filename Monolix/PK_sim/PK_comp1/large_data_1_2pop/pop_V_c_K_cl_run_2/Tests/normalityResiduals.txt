@@ -1,0 +1,4 @@
+residuals,statistics,p-value,test
+IWRES_central_drug_conc,0.99929,0.628634,Shapiro-Wilk
+PWRES_central_drug_conc,0.942322,<2.2e-16,Shapiro-Wilk
+NPDE_central_drug_conc,0.973098,<2.2e-16,Shapiro-Wilk

@@ -1,0 +1,79 @@
+<DATAFILE>
+
+[FILEINFO]
+file='../Data_and_parameters/PD_sim/large_data_1pop/mono_data.csv'
+delimiter = comma
+header={ID, Time, Observable, Value, Dose_group, Duration, Dose}
+
+[CONTENT]
+ID = {use=identifier}
+Time = {use=time}
+Observable = {use=observationtype}
+Value = {use=observation, yname={'PK_central_drug_concentration', 'circulating_R'}, type={continuous, continuous}}
+Duration = {use=infusiontime}
+Dose = {use=amount}
+
+[SETTINGS]
+dataType = {'PK_central_drug_concentration'=plasma, 'circulating_R'=plasma}
+
+<MODEL>
+
+[INDIVIDUAL]
+input = {Cl_pop, Q_pop, R0_pop, V1_pop, omega_V1, V2_pop, MTT_pop, S_pop, gamma_pop, omega_Cl, omega_V2, omega_S, omega_R0, omega_gamma, omega_MTT}
+
+DEFINITION:
+Cl = {distribution=logNormal, typical=Cl_pop, sd=omega_Cl}
+Q = {distribution=logNormal, typical=Q_pop, no-variability}
+R0 = {distribution=logNormal, typical=R0_pop, sd=omega_R0}
+V1 = {distribution=logNormal, typical=V1_pop, sd=omega_V1}
+V2 = {distribution=logNormal, typical=V2_pop, sd=omega_V2}
+MTT = {distribution=logNormal, typical=MTT_pop, sd=omega_MTT}
+S = {distribution=logNormal, typical=S_pop, sd=omega_S}
+gamma = {distribution=logNormal, typical=gamma_pop, sd=omega_gamma}
+
+[LONGITUDINAL]
+input = {bPK_central_drug_concentration, acirculating_R}
+
+file = 'PKPD_Friberg_model.txt'
+
+DEFINITION:
+yPK_central_drug_concentration = {distribution=normal, prediction=Cc, errorModel=proportional(bPK_central_drug_concentration)}
+ycirculating_R = {distribution=normal, prediction=R, errorModel=constant(acirculating_R)}
+
+<FIT>
+data = {'PK_central_drug_concentration', 'circulating_R'}
+model = {yPK_central_drug_concentration, ycirculating_R}
+
+<PARAMETER>
+Cl_pop = {value=2.893, method=MLE}
+MTT_pop = {value=85.23999999999999, method=MLE}
+Q_pop = {value=2.34107, method=FIXED}
+R0_pop = {value=980.8, method=MLE}
+S_pop = {value=20.72, method=MLE}
+V1_pop = {value=0.836, method=MLE}
+V2_pop = {value=6.544, method=MLE}
+acirculating_R = {value=1, method=MLE}
+bPK_central_drug_concentration = {value=1, method=MLE}
+cPK_central_drug_concentration = {value=1, method=FIXED}
+gamma_pop = {value=0.44, method=MLE}
+omega_Cl = {value=1, method=MLE}
+omega_MTT = {value=1, method=MLE}
+omega_R0 = {value=1, method=MLE}
+omega_S = {value=1, method=MLE}
+omega_V1 = {value=1, method=MLE}
+omega_V2 = {value=1, method=MLE}
+omega_gamma = {value=1, method=MLE}
+
+<MONOLIX>
+
+[TASKS]
+populationParameters()
+individualParameters(method = {conditionalMean, conditionalMode })
+fim(method = StochasticApproximation)
+logLikelihood(method = ImportanceSampling)
+plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, covariatemodeldiagnosis, obspred, vpc, npc, residualsscatter, residualsdistribution, randomeffects, predictiondistribution, likelihoodcontribution, saemresults, condmeanresults, fisher, likelihoodresults })
+
+[SETTINGS]
+GLOBAL:
+exportpath = 'PKPD_friberg_inference_pop_V_C_fix_Q_noise_start_1'
+
