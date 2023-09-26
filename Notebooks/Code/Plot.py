@@ -24,6 +24,16 @@ class Plot_Models():
         self.PD_y_label = "Blood cell concentration, 10^3/microL"
         self.dose_unit = 'mg/Kg'
         self.dose_group_label = 'Dose, ' + self.dose_unit
+
+        self.default_colour = {
+            "base": "rebeccapurple", "individual": "viridis",
+            "zero dose": "turbo"
+        }
+
+        self.base_colour = self.default_colour["base"]
+        self.ind_colour_scale = self.default_colour["individual"]
+        self.ind_0_colour_scale = self.default_colour["zero dose"]
+
         if data is None:
             self.data_set = False
             self.n_ind = 0
@@ -42,6 +52,50 @@ class Plot_Models():
             if not self.data_set:
                 self.n_ind = self.pop_model.n_ids()
             self.n_ind_params = self.n_ind*self.pop_model.n_hierarchical_dim()
+
+    def set_colour(self, colour_scheme):
+
+        if colour_scheme is None:
+            colour_scheme = self.default_colour
+
+        if "base" in colour_scheme.keys():
+            self.base_colour = colour_scheme["base"]
+            if self.base_colour is None:
+                self.base_colour = self.default_colour["base"]
+        if "individual" in colour_scheme.keys():
+            self.ind_colour_scale = colour_scheme["individual"]
+            if self.ind_colour_scale is None:
+                self.ind_colour_scale = self.default_colour["individual"]
+        if "zero dose individual" in colour_scheme.keys():
+            self.ind_0_colour_scale = colour_scheme["zero dose"]
+            if self.ind_0_colour_scale is None:
+                self.ind_0_colour_scale = self.default_colour["zero dose"]
+
+        if self.data_set:
+            # Set up the colour scheme for individuals
+            diff_0_colour = self.ind_0_colour_scale != self.ind_colour_scale
+            if (0.0 in self.dose_groups) and diff_0_colour:
+                cols = [pxclrs.sample_colorscale(
+                    pxclrs.get_colorscale(self.ind_0_colour_scale),
+                    int(self.n_ids_per_dose.at[0.0]),
+                    low=0.8,
+                    high=1.0)
+                ]
+                n_drug_groups = len(self.dose_groups)-1
+            else:
+                cols = []
+                n_drug_groups = len(self.dose_groups)
+
+            for i, group in enumerate(self.dose_groups[-n_drug_groups:]):
+                col_low = 1.5*i/(n_drug_groups*1.5-0.5)
+                col_high = (1.5*i+1)/(n_drug_groups*1.5-0.5)
+                cols.append(pxclrs.sample_colorscale(
+                    pxclrs.get_colorscale(self.ind_colour_scale),
+                    int(self.n_ids_per_dose.at[group]),
+                    low=col_low,
+                    high=col_high
+                ))
+            self.ind_colours = np.asarray(cols)
 
     def set_data(self, df):
         """
@@ -88,31 +142,9 @@ class Plot_Models():
             {self.dose_group_label: 'category'}, errors="raise"
         )
 
-        # Set up the colour scheme
-        if 0.0 in self.dose_groups:
-            print("0 dose group")
-            cols = [pxclrs.sample_colorscale(
-                pxclrs.get_colorscale("turbo"),
-                int(self.n_ids_per_dose.at[0.0]),
-                low=0.8,
-                high=1.0)
-            ]
-            n_drug_groups = len(self.dose_groups)-1
-        else:
-            cols = []
-            n_drug_groups = len(self.dose_groups)
-
-        for i, group in enumerate(self.dose_groups[-n_drug_groups:]):
-            col_low = 1.5*i/(n_drug_groups*1.5-0.5)
-            col_high = (1.5*i+1)/(n_drug_groups*1.5-0.5)
-            cols.append(pxclrs.sample_colorscale(
-                pxclrs.get_colorscale("viridis"),
-                int(self.n_ids_per_dose.at[group]),
-                low=col_low,
-                high=col_high
-            ))
-        self.ind_colours = np.asarray(cols)
         self.data_set = True
+        # Set up the colours for each individual
+        self.set_colour({})
 
     def plot_prior(
             self, pop_params=None, individual_parameters=None,
@@ -194,12 +226,12 @@ class Plot_Models():
         dist_colour = 'lightgrey'
         if individual_parameters is None:
             individual_parameters = {}
-            dist_colour = 'rebeccapurple'
+            dist_colour = self.base_colour
 
         if self.data_set:
             ind_colour_selection = self.ind_colours
         else:
-            ind_colour_selection = ["rebeccapurple"]*max(
+            ind_colour_selection = [self.base_colour]*max(
                 [len(n) for n in individual_parameters.values()], default=0
             )
 
@@ -564,7 +596,7 @@ class Plot_Models():
                     else:
                         ind_params_dose = plot_ind_params
                         ids = len(plot_ind_params)
-                        ind_colours = ["rebeccapurple"]*len(ids)
+                        ind_colours = [self.base_colour]*len(ids)
 
                     for i_pat, pat_param in enumerate(ind_params_dose):
                         ind_dose = dose_amts.iloc[d_il+i_pat]
@@ -819,7 +851,7 @@ class Plot_Models():
     def plot_param_function(
             self, function, params_ref, profile=None, pairwise=False,
             individual_parameters=False, param_names=None, bounds=(None, None),
-            n_evals=50,
+            force_bounds=(False, False), n_evals=50,
     ):
         """
         Plot a function around a point in parameter space. Each parameter in
@@ -913,12 +945,12 @@ class Plot_Models():
         # Set up colours
         pop_colour = 'darkgrey'
         if not individual_parameters:
-            pop_colour = 'rebeccapurple'
+            pop_colour = self.base_colour
 
         if self.data_set:
             ind_colour_selection = self.ind_colours
         else:
-            ind_colour_selection = ["rebeccapurple"]*self.n_ind
+            ind_colour_selection = [self.base_colour]*self.n_ind
         if pairwise:
             pair_colour = "dense"
 
@@ -931,6 +963,15 @@ class Plot_Models():
             upper_bound = 1.5*params_ref[self.n_ind_params:]
         else:
             upper_bound = bounds[1]
+
+        if isinstance(force_bounds[0], bool):
+            force_lower_bounds = [force_bounds[0]]*len(lower_bound)
+        else:
+            force_lower_bounds = force_bounds[0]
+        if isinstance(force_bounds[1], bool):
+            force_upper_bounds = [force_bounds[1]]*len(lower_bound)
+        else:
+            force_upper_bounds = force_bounds[1]
 
         # Begin plotting
 
@@ -951,46 +992,54 @@ class Plot_Models():
             x_min = lower_bound[i_param]
             i_check = 0
             j_check = 0
-            while i_check == 0 and j_check <= 20:
-                x_check = np.linspace(param_ref_i, x_min, 10)[1:]
-                for x in x_check:
-                    _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - 2*1.92):
-                        x_min = x_check[i_check]
-                        break
-                    i_check += 1
-                j_check += 1
+            if not force_lower_bounds[i_param]:
+                while i_check == 0 and j_check <= 20:
+                    x_check = np.linspace(param_ref_i, x_min, 20)[1:]
+                    for x in x_check:
+                        _, score = slice_function(x, i_param+self.n_ind_params)
+                        if score < (ref_score - 3*1.92):
+                            x_min = x_check[i_check]
+                            break
+                        i_check += 1
+                    j_check += 1
             x_max = upper_bound[i_param]
             i_check = 0
             j_check = 0
-            while i_check == 0 and j_check <= 20:
-                x_check = np.linspace(param_ref_i, x_max, 10)[1:]
-                for x in x_check:
-                    _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - 2*1.92):
-                        x_max = x_check[i_check]
-                        break
-                    i_check += 1
-                j_check += 1
+            if not force_upper_bounds[i_param]:
+                while i_check == 0 and j_check <= 20:
+                    x_check = np.linspace(param_ref_i, x_max, 20)[1:]
+                    for x in x_check:
+                        _, score = slice_function(x, i_param+self.n_ind_params)
+                        if score < (ref_score - 3*1.92):
+                            x_max = x_check[i_check]
+                            break
+                        i_check += 1
+                    j_check += 1
             param_ranges[i_param] = (x_min, x_max)
             x_values = np.linspace(x_min, x_max, n_evals)
 
             # Calculate function
             if profile:
-                # Optimise from the centre for profile likelihoods
                 curr = params_ref.copy()
-                lower_incl = (x_values <= param_ref_i)
-                x_values_lower = x_values[lower_incl][::-1]
-                x_values_upper = x_values[np.logical_not(lower_incl)]
-                x_values = np.concatenate((x_values_lower, x_values_upper))
+            # Start from the centre, useful for profile likelihoods
+            lower_incl = (x_values <= param_ref_i)
+            x_values_lower = x_values[lower_incl][::-1]
+            x_values_upper = x_values[np.logical_not(lower_incl)]
+            x_values = np.concatenate((x_values_lower, x_values_upper))
             result = np.empty_like(x_values)
             for i_x, x in enumerate(x_values):
-                if profile and x > param_ref_i:
-                    # Reset start point for second half
-                    curr = params_ref.copy()
+                if profile and i_x == len(x_values_lower):
+                        # Reset start point for second half
+                        curr = params_ref.copy()
                 curr, result[i_x] = f(x, i_param+self.n_ind_params)
+            max_score = np.max(result)
+            
+            # Get result at the param_ref
+            param_ref_y = result[0] - max_score
+
+            # Sort the results for plotting
             sort = np.argsort(x_values)
-            result = result[sort] - ref_score  # Normalise the result
+            result = result[sort] - max_score  # Normalise the result
             x_values = x_values[sort]
             args = [i_param+self.n_ind_params, i_param+self.n_ind_params]
 
@@ -1008,19 +1057,19 @@ class Plot_Models():
                 col=col
             )
 
-            # Plot reference line
-            fig.add_trace(
-                go.Scatter(
-                    name='Parameter Reference',
-                    x=[param_ref_i]*2,
-                    y=[np.min(result), 0],
-                    mode='lines',
-                    line=dict(color='black'),
-                    showlegend=plot_num == 0
-                ),
-                row=row,
-                col=col
-            )
+            # # Plot reference line
+            # fig.add_trace(
+            #     go.Scatter(
+            #         name='Parameter Reference',
+            #         x=[param_ref_i]*2,
+            #         y=[np.min(result), param_ref_y],
+            #         mode='lines',
+            #         line=dict(color=pop_colour),
+            #         showlegend=plot_num == 0
+            #     ),
+            #     row=row,
+            #     col=col
+            # )
 
             # Format axis
             if plot_num == 0 or not pairwise:
@@ -1107,7 +1156,8 @@ class Plot_Models():
                                     line_start = False
                                 else:
                                     curr, result[j_y, i_x] = f([x, y], args)
-                    result = result - ref_score  # Normalise result
+                    max_score = np.max(result)
+                    result = result - max_score  # Normalise result
                     # Plot Heatmap
                     fig.add_trace(
                         go.Heatmap(

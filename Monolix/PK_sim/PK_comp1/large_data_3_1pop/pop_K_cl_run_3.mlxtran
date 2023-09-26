@@ -1,0 +1,62 @@
+<DATAFILE>
+
+[FILEINFO]
+file='data.csv'
+delimiter = comma
+header={ID, Time, Observable, Value, Dose_group, Duration, Dose}
+
+[CONTENT]
+ID = {use=identifier}
+Time = {use=time}
+Observable = {use=observationtype}
+Value = {use=observation, yname='central_drug_conc', type=continuous}
+Duration = {use=infusiontime}
+Dose = {use=amount}
+
+[SETTINGS]
+dataType = {'central_drug_conc'=plasma}
+
+<MODEL>
+
+[INDIVIDUAL]
+input = {Cl_pop, V_pop, omega_Cl}
+
+DEFINITION:
+Cl = {distribution=logNormal, typical=Cl_pop, sd=omega_Cl}
+V = {distribution=logNormal, typical=V_pop, no-variability}
+
+[LONGITUDINAL]
+input = {b}
+
+file = 'lib:bolus_1cpt_VCl.txt'
+
+DEFINITION:
+central_drug_conc = {distribution=normal, prediction=Cc, errorModel=proportional(b)}
+
+<FIT>
+data = 'central_drug_conc'
+model = central_drug_conc
+
+<PARAMETER>
+Cl_pop = {value=2.92, method=MLE}
+V_pop = {value=6.001, method=MLE}
+b = {value=1, method=MLE}
+c = {value=1, method=FIXED}
+omega_Cl = {value=1, method=MLE}
+
+<MONOLIX>
+
+[TASKS]
+populationParameters()
+individualParameters(method = {conditionalMean, conditionalMode })
+fim(method = StochasticApproximation)
+logLikelihood(method = ImportanceSampling)
+plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, covariatemodeldiagnosis, obspred, vpc, residualsscatter, residualsdistribution, randomeffects, saemresults })
+
+[SETTINGS]
+GLOBAL:
+exportpath = 'pop_K_cl_run_3'
+
+POPULATION:
+variability = firstStage
+
