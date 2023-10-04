@@ -847,6 +847,66 @@ class Plot_Models():
             xbest = optimiser.xbest()
 
         return xbest, sign*fbest
+    
+    def f_over_param_range(
+            self, f, i_param, param_range, params_ref, pairwise=False, normalise=True,
+            individual_parameters=False, n_evals=50
+    ):
+        if pairwise:
+            pass
+        else:
+            x_values = np.linspace(param_range[0], param_range[1], n_evals)
+
+            curr = params_ref.copy()
+
+            # Start from the centre, useful for profile likelihoods
+            lower_incl = x_values <= params_ref[i_param+self.n_ind_params]
+            x_values_lower = x_values[lower_incl][::-1]
+            x_values_upper = x_values[np.logical_not(lower_incl)]
+            x_values = np.concatenate((x_values_lower, x_values_upper))
+            result = np.empty_like(x_values)
+            param_values = np.empty((len(x_values), len(curr)))
+            for i_x, x in enumerate(x_values):
+                if i_x == len(x_values_lower):
+                    # Reset start point for second half
+                    curr = params_ref.copy()
+                curr, result[i_x] = f(x, i_param+self.n_ind_params, curr=curr)
+                param_values[i_x] = curr
+            max_score = np.max(result)
+
+            # Sort the results for plotting
+            sort = np.argsort(x_values)
+            result = result[sort] - max_score  # Normalise the result
+            x_values = x_values[sort]
+            param_values = param_values[sort]
+
+            return x_values, result, param_values
+
+    def create_function_for_plotting(self, function, params_ref, profile=None):
+
+        def slice_function(param_value, param_arg, curr=None):
+            slice_param = params_ref.copy()
+            slice_param[param_arg] = param_value
+            score = function(slice_param)
+            return slice_param, score
+
+        if profile is not None:
+            def profile_function(param_value, param_arg, curr):
+                minimise = profile == "minimum"
+                opt_param, score = self.optimise(
+                    function,
+                    curr,
+                    fix=(param_arg, param_value),
+                    minimise=minimise
+                )
+                return opt_param, score
+
+            profile = True
+            f = profile_function
+        else:
+            profile = False
+            f = slice_function
+        return f
 
     def plot_param_function(
             self, function, params_ref, profile=None, pairwise=False,
@@ -898,29 +958,14 @@ class Plot_Models():
         """
 
         # Create function
-        def slice_function(param_value, param_arg):
-            slice_param = params_ref.copy()
-            slice_param[param_arg] = param_value
-            score = function(slice_param)
-            return slice_param, score
+        slice_function = self.create_function_for_plotting(function, params_ref, profile=None)
 
         if profile is not None:
-            minimise = profile == "minimum"
-
-            def profile_function(param_value, param_arg):
-                opt_param, score = self.optimise(
-                    function,
-                    curr,
-                    fix=(param_arg, param_value),
-                    minimise=minimise
-                )
-                return opt_param, score
-
+            f = self.create_function_for_plotting(function, params_ref, profile=profile)
             profile = True
-            f = profile_function
         else:
-            profile = False
             f = slice_function
+            profile = False
         ref_score = function(params_ref)
 
         # Set the parameter names
@@ -1016,31 +1061,9 @@ class Plot_Models():
                         i_check += 1
                     j_check += 1
             param_ranges[i_param] = (x_min, x_max)
-            x_values = np.linspace(x_min, x_max, n_evals)
 
             # Calculate function
-            if profile:
-                curr = params_ref.copy()
-            # Start from the centre, useful for profile likelihoods
-            lower_incl = (x_values <= param_ref_i)
-            x_values_lower = x_values[lower_incl][::-1]
-            x_values_upper = x_values[np.logical_not(lower_incl)]
-            x_values = np.concatenate((x_values_lower, x_values_upper))
-            result = np.empty_like(x_values)
-            for i_x, x in enumerate(x_values):
-                if profile and i_x == len(x_values_lower):
-                        # Reset start point for second half
-                        curr = params_ref.copy()
-                curr, result[i_x] = f(x, i_param+self.n_ind_params)
-            max_score = np.max(result)
-            
-            # Get result at the param_ref
-            param_ref_y = result[0] - max_score
-
-            # Sort the results for plotting
-            sort = np.argsort(x_values)
-            result = result[sort] - max_score  # Normalise the result
-            x_values = x_values[sort]
+            x_values, result, _ = self.f_over_param_range(f, i_param, param_ranges[i_param], params_ref, n_evals=n_evals)
             args = [i_param+self.n_ind_params, i_param+self.n_ind_params]
 
             # Plot function
@@ -1232,6 +1255,182 @@ class Plot_Models():
             template='plotly_white',
             width=1000,
             height=750,
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1
+            )
+        )
+        return fig
+    
+    def plot_ind_profile_ll(
+            self, log_likelihood, i_param, params_ref,
+            param_name=None, bounds=(None, None),
+            force_bounds=(False, False), n_evals=50,
+    ):
+        # Create function
+        slice_function = self.create_function_for_plotting(log_likelihood, params_ref, profile=None)
+        f = self.create_function_for_plotting(log_likelihood, params_ref, profile="maximise")
+        ref_score = log_likelihood(params_ref)
+        param_ref_i = params_ref[i_param+self.n_ind_params]
+
+        # Set name if not provided
+        if (param_name is None) and (self.pop_model is not None):
+            param_name = self.pop_model.get_parameter_names()[i_param]
+        elif param_name is None:
+            param_name = 'Parameter ' + str(i_param+1)
+
+        # Create subplots
+        n_rows = 3
+        n_cols = 1
+        fig = make_subplots(rows=n_rows, cols=n_cols, shared_xaxes=True)
+
+        # Set up colours
+        pop_colour = 'darkgrey'
+        if self.data_set:
+            ind_colour_selection = self.ind_colours
+        else:
+            ind_colour_selection = [self.base_colour]*self.n_ind
+
+        # Set up param range
+        if bounds[0] is None:
+            lower_bound = 0.5*param_ref_i
+        else:
+            lower_bound = bounds[0]
+        if bounds[1] is None:
+            upper_bound = 1.5*param_ref_i
+        else:
+            upper_bound = bounds[1]
+        
+        x_min = lower_bound
+        i_check = 0
+        j_check = 0
+        if not force_bounds[0]:
+            while i_check == 0 and j_check <= 20:
+                x_check = np.linspace(param_ref_i, x_min, 20)[1:]
+                for x in x_check:
+                    _, score = slice_function(x, i_param+self.n_ind_params)
+                    if score < (ref_score - 6*1.92):
+                        x_min = x_check[i_check]
+                        break
+                    i_check += 1
+                j_check += 1
+        x_max = upper_bound
+        i_check = 0
+        j_check = 0
+        if not force_bounds[1]:
+            while i_check == 0 and j_check <= 20:
+                x_check = np.linspace(param_ref_i, x_max, 20)[1:]
+                for x in x_check:
+                    _, score = slice_function(x, i_param+self.n_ind_params)
+                    if score < (ref_score - 6*1.92):
+                        x_max = x_check[i_check]
+                        break
+                    i_check += 1
+                j_check += 1
+        param_range = (x_min, x_max)
+
+        # Calculate function
+        x_values, result, params_result = self.f_over_param_range(f, i_param, param_range, params_ref, n_evals=n_evals)
+        fig.add_trace(
+            go.Scatter(
+                name='Population Log-likelihood',
+                x=x_values,
+                y=result,
+                mode='lines',
+                line=dict(color=pop_colour),
+            ),
+            row=1,
+            col=1
+        )
+        # create matrix of pointwise loglikelihoods of shape (n_x_values, n_ind)
+        ind_ll = np.empty((x_values.shape[0], self.n_ind))
+        for i_vec, param_vec in enumerate(params_result):
+            if param_vec[i_param+self.n_ind_params] != x_values[i_vec]:
+                raise ValueError(
+                    "Incorrect param vector provided for "
+                    + str(i_vec) +"th parameter vector:"
+                    + str(param_vec[i_param+self.n_ind_params]) + "!=" + str(x_values[i_vec])
+                )
+            pll = np.array(log_likelihood.compute_pointwise_ll(param_vec, per_individual=True))
+            full_ll = log_likelihood(param_vec)
+            if np.abs(np.sum(pll) - full_ll) > 1e-3:
+                raise ValueError(
+                    "Incorrect pointwise log-likelihood calculated for "
+                    + str(i_vec) +"th parameter vector:"
+                    + str(np.sum(pll)) + "!=" + str(full_ll)
+                )
+            if pll.shape != (self.n_ind, ):
+                raise ValueError(
+                    "individual log-likelihood is wrong shape. Should be "
+                    + str((self.n_ind, ))
+                    + "but is " + str(pll.shape)
+                )
+            ind_ll[i_vec] = pll
+        result_from_ind_ll = np.sum(ind_ll, axis=1)
+        max_result = np.max(result_from_ind_ll)
+        result_from_ind_ll -= max_result
+        check_ind_ll = np.abs(result_from_ind_ll - result) > 1e-2
+        if np.any(check_ind_ll):
+            raise ValueError(
+                "Incorrect profile log-likelihood calculated for "
+                + str(np.argwhere(check_ind_ll)) +"th parameter vectors:"
+                + str(ind_ll[check_ind_ll])
+            )
+        ind_ll = ind_ll - np.array(log_likelihood.compute_pointwise_ll(params_ref, per_individual=True)) # np.max(ind_ll, axis=0)  # (max_result/self.n_ind)
+        for i_ind in range(0, self.n_ind):
+            ind_colour = ind_colour_selection.flatten()[i_ind]
+            fig.add_trace(
+                go.Scatter(
+                    name='Individual Log-likelihoods',
+                    x=x_values,
+                    y=ind_ll[:, i_ind],
+                    mode='lines',
+                    line=dict(color=ind_colour, width=1),
+                    showlegend=False
+                ),
+                row=2,
+                col=1
+            )
+            fig.add_trace(
+                go.Scatter(
+                    name='Individual Parameter optimised',
+                    x=x_values,
+                    y=params_result[:, i_ind]-params_ref[i_ind],
+                    mode='lines',
+                    line=dict(color=ind_colour, width=1),
+                    showlegend=False
+                ),
+                row=3,
+                col=1
+            )
+        
+        pop_model = log_likelihood.get_population_model()
+        sp_dims = pop_model.get_special_dims()[0]
+
+        n_params = pop_model.n_parameters()
+        non_mix_params = np.asarray([range(x, y) for _, _, x, y, _ in sp_dims]).flatten()
+        mix_params = [x + self.n_ind for x in range(0, n_params) if x not in non_mix_params]
+        for typ_param in mix_params[::2]:
+            fig.add_trace(
+                go.Scatter(
+                    name='Population Parameter optimised',
+                    x=x_values,
+                    y=np.exp(params_result[:, typ_param])-np.exp(params_ref[typ_param]),
+                    mode='lines',
+                    line = dict(color=pop_colour),
+                    showlegend=False
+                ),
+                row=3,
+                col=1
+            )
+        
+        fig.update_layout(
+            template='plotly_white',
+            width=500,
+            height=1200,
             legend=dict(
                 orientation="h",
                 yanchor="bottom",

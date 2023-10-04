@@ -9,9 +9,10 @@ import matplotlib.pyplot as plt
 import arviz as az
 import arviz.labels as azl
 from cycler import cycler
+import myokit
 
 
-class Plot_Models_copy():
+class Plot_Models():
 
     def __init__(
             self, pop_model=None, error_models=None, mech_model=None,
@@ -23,6 +24,16 @@ class Plot_Models_copy():
         self.PD_y_label = "Blood cell concentration, 10^3/microL"
         self.dose_unit = 'mg/Kg'
         self.dose_group_label = 'Dose, ' + self.dose_unit
+
+        self.default_colour = {
+            "base": "rebeccapurple", "individual": "viridis",
+            "zero dose": "turbo"
+        }
+
+        self.base_colour = self.default_colour["base"]
+        self.ind_colour_scale = self.default_colour["individual"]
+        self.ind_0_colour_scale = self.default_colour["zero dose"]
+
         if data is None:
             self.data_set = False
             self.n_ind = 0
@@ -41,6 +52,50 @@ class Plot_Models_copy():
             if not self.data_set:
                 self.n_ind = self.pop_model.n_ids()
             self.n_ind_params = self.n_ind*self.pop_model.n_hierarchical_dim()
+
+    def set_colour(self, colour_scheme):
+
+        if colour_scheme is None:
+            colour_scheme = self.default_colour
+
+        if "base" in colour_scheme.keys():
+            self.base_colour = colour_scheme["base"]
+            if self.base_colour is None:
+                self.base_colour = self.default_colour["base"]
+        if "individual" in colour_scheme.keys():
+            self.ind_colour_scale = colour_scheme["individual"]
+            if self.ind_colour_scale is None:
+                self.ind_colour_scale = self.default_colour["individual"]
+        if "zero dose individual" in colour_scheme.keys():
+            self.ind_0_colour_scale = colour_scheme["zero dose"]
+            if self.ind_0_colour_scale is None:
+                self.ind_0_colour_scale = self.default_colour["zero dose"]
+
+        if self.data_set:
+            # Set up the colour scheme for individuals
+            diff_0_colour = self.ind_0_colour_scale != self.ind_colour_scale
+            if (0.0 in self.dose_groups) and diff_0_colour:
+                cols = [pxclrs.sample_colorscale(
+                    pxclrs.get_colorscale(self.ind_0_colour_scale),
+                    int(self.n_ids_per_dose.at[0.0]),
+                    low=0.8,
+                    high=1.0)
+                ]
+                n_drug_groups = len(self.dose_groups)-1
+            else:
+                cols = []
+                n_drug_groups = len(self.dose_groups)
+
+            for i, group in enumerate(self.dose_groups[-n_drug_groups:]):
+                col_low = 1.5*i/(n_drug_groups*1.5-0.5)
+                col_high = (1.5*i+1)/(n_drug_groups*1.5-0.5)
+                cols.append(pxclrs.sample_colorscale(
+                    pxclrs.get_colorscale(self.ind_colour_scale),
+                    int(self.n_ids_per_dose.at[group]),
+                    low=col_low,
+                    high=col_high
+                ))
+            self.ind_colours = np.asarray(cols)
 
     def set_data(self, df):
         """
@@ -87,42 +142,9 @@ class Plot_Models_copy():
             {self.dose_group_label: 'category'}, errors="raise"
         )
 
-        # Set up the colour scheme
-        if 0.0 in self.dose_groups:
-            print("0 dose group")
-            cols = [pxclrs.sample_colorscale(
-                pxclrs.get_colorscale("turbo"),
-                int(self.n_ids_per_dose.at[0.0]),
-                low=0.8,
-                high=1.0)
-            ]
-            n_drug_groups = len(self.dose_groups)-1
-        else:
-            cols = []
-            n_drug_groups = len(self.dose_groups)
-
-        for i, group in enumerate(self.dose_groups[-n_drug_groups:]):
-            col_low = 1.5*i/(n_drug_groups*1.5-0.5)
-            col_high = (1.5*i+1)/(n_drug_groups*1.5-0.5)
-            cols.append(pxclrs.sample_colorscale(
-                pxclrs.get_colorscale("viridis"),
-                int(self.n_ids_per_dose.at[group]),
-                low=col_low,
-                high=col_high
-            ))
-        self.ind_colours = np.asarray(cols)
         self.data_set = True
-
-    # def set_loglikelihoods(problem):
-    #     ids = self.df_PK_graph.ID.unique()
-
-    #     # Create log-likelihoods
-    #     log_likelihood = problem._create_log_likelihood(ids)
-    #     if problem._population_model is not None:
-    #         # Compose HierarchicalLogLikelihoods
-    #         log_likelihood = problem._create_hierarchical_log_likelihood(
-    #             log_likelihood)
-    #     self.log_likelihood = log_likelihood
+        # Set up the colours for each individual
+        self.set_colour({})
 
     def plot_prior(
             self, pop_params=None, individual_parameters=None,
@@ -204,12 +226,12 @@ class Plot_Models_copy():
         dist_colour = 'lightgrey'
         if individual_parameters is None:
             individual_parameters = {}
-            dist_colour = 'rebeccapurple'
+            dist_colour = self.base_colour
 
         if self.data_set:
             ind_colour_selection = self.ind_colours
         else:
-            ind_colour_selection = ["rebeccapurple"]*max(
+            ind_colour_selection = [self.base_colour]*max(
                 [len(n) for n in individual_parameters.values()], default=0
             )
 
@@ -496,40 +518,52 @@ class Plot_Models_copy():
                         start=0, stop=500+avg_dose_time, num=n_times
                     )
                 # Simulate population distribution of measurements
-                pop_measurements = np.empty(shape=(n_sim_ids, n_times))
+                pop_samples = np.empty(shape=(n_sim_ids, n_times))
 
+                fail_sim = False
                 for i_sample, ind_sim_param in enumerate(sim_parameters):
-                    result = self.mech_model.simulate(
-                        ind_sim_param[:n_params], more_times
-                    )[PK_PD]
-                    error_params = ind_sim_param[n_params:]
-                    if self.error_model is None:
-                        pop_measurements[i_sample] = result
-                    elif isinstance(self.error_model, chi.ErrorModel):
-                        pop_measurements[i_sample] = self.error_model.sample(
-                            error_params[PK_PD:PK_PD+1], result
-                        )[:, 0]
-                    else:
-                        error_model = self.error_model[PK_PD]
-                        pop_measurements[i_sample] = error_model.sample(
-                            error_params[PK_PD:PK_PD+1], result
-                        )[:,  0]
-
-                fifth = np.percentile(pop_measurements, q=5, axis=0)
-                ninety_fifth = np.percentile(pop_measurements, q=95, axis=0)
+                    try:
+                        result = self.mech_model.simulate(
+                            ind_sim_param[:n_params], more_times
+                        )[PK_PD]
+                        error_params = ind_sim_param[n_params:]
+                        if self.error_model is None:
+                            pop_samples[i_sample] = result
+                        elif isinstance(self.error_model, chi.ErrorModel):
+                            pop_samples[i_sample] = self.error_model.sample(
+                                error_params[PK_PD:PK_PD+1], result
+                            )[:, 0]
+                        else:
+                            error_model = self.error_model[PK_PD]
+                            pop_samples[i_sample] = error_model.sample(
+                                error_params[PK_PD:PK_PD+1], result
+                            )[:,  0]
+                    except myokit.SimulationError:
+                        fail_sim = True
+                if fail_sim:
+                    Warning(
+                        "Some simulations failed when determining percentiles"
+                    )
+                pop_samples = pop_samples[~np.isnan(pop_samples).any(axis=1)]
 
                 trace_col = self.ind_colours[i, int(n_per_dose.at[group]/2)]
-                fig.add_trace(go.Scatter(
-                    x=np.hstack([more_times, more_times[::-1]])-avg_dose_time,
-                    y=np.hstack([fifth, ninety_fifth[::-1]]),
-                    line=dict(width=0, color=trace_col),
-                    fill='toself',
-                    name='Population model',
-                    legendgroup=group,
-                    text=r"90% bulk probability",
-                    hoverinfo='text',
-                    showlegend=first_graph
-                ), row=row, col=col)
+                if pop_samples.ndim == 2:
+                    fifth = np.percentile(pop_samples, q=5, axis=0)
+                    ninety_fifth = np.percentile(pop_samples, q=95, axis=0)
+
+                    fig.add_trace(go.Scatter(
+                        x=np.hstack(
+                            [more_times, more_times[::-1]]
+                        )-avg_dose_time,
+                        y=np.hstack([fifth, ninety_fifth[::-1]]),
+                        line=dict(width=0, color=trace_col),
+                        fill='toself',
+                        name='Population model',
+                        legendgroup=group,
+                        text=r"90% bulk probability",
+                        hoverinfo='text',
+                        showlegend=first_graph
+                    ), row=row, col=col)
 
                 # Plot the curve from the parameters provided
                 more_values = self.mech_model.simulate(
@@ -562,7 +596,7 @@ class Plot_Models_copy():
                     else:
                         ind_params_dose = plot_ind_params
                         ids = len(plot_ind_params)
-                        ind_colours = ["rebeccapurple"]*len(ids)
+                        ind_colours = [self.base_colour]*len(ids)
 
                     for i_pat, pat_param in enumerate(ind_params_dose):
                         ind_dose = dose_amts.iloc[d_il+i_pat]
@@ -813,11 +847,71 @@ class Plot_Models_copy():
             xbest = optimiser.xbest()
 
         return xbest, sign*fbest
+    
+    def f_over_param_range(
+            self, f, i_param, param_range, params_ref, pairwise=False, normalise=True,
+            individual_parameters=False, n_evals=50, record_param_opt=False
+    ):
+        if pairwise:
+            pass
+        else:
+            x_values = np.linspace(param_range[0], param_range[1], n_evals)
+
+            curr = params_ref.copy()
+
+            # Start from the centre, useful for profile likelihoods
+            lower_incl = x_values <= params_ref[i_param+self.n_ind_params]
+            x_values_lower = x_values[lower_incl][::-1]
+            x_values_upper = x_values[np.logical_not(lower_incl)]
+            x_values = np.concatenate((x_values_lower, x_values_upper))
+            result = np.empty_like(x_values)
+            param_values = np.empty((len(x_values), len(curr)))
+            for i_x, x in enumerate(x_values):
+                if i_x == len(x_values_lower):
+                    # Reset start point for second half
+                    curr = params_ref.copy()
+                curr, result[i_x] = f(x, i_param+self.n_ind_params, curr=curr)
+                param_values[i_x] = curr
+            max_score = np.max(result)
+
+            # Sort the results for plotting
+            sort = np.argsort(x_values)
+            result = result[sort] - max_score  # Normalise the result
+            x_values = x_values[sort]
+            param_values = param_values[sort]
+
+            return x_values, result, param_values
+
+    def create_function_for_plotting(self, function, params_ref, profile=None):
+
+        def slice_function(param_value, param_arg, curr=None):
+            slice_param = params_ref.copy()
+            slice_param[param_arg] = param_value
+            score = function(slice_param)
+            return slice_param, score
+
+        if profile is not None:
+            def profile_function(param_value, param_arg, curr):
+                minimise = profile == "minimum"
+                opt_param, score = self.optimise(
+                    function,
+                    curr,
+                    fix=(param_arg, param_value),
+                    minimise=minimise
+                )
+                return opt_param, score
+
+            profile = True
+            f = profile_function
+        else:
+            profile = False
+            f = slice_function
+        return f
 
     def plot_param_function(
             self, function, params_ref, profile=None, pairwise=False,
             individual_parameters=False, param_names=None, bounds=(None, None),
-            n_evals=50,
+            force_bounds=(False, False), n_evals=50,
     ):
         """
         Plot a function around a point in parameter space. Each parameter in
@@ -864,29 +958,14 @@ class Plot_Models_copy():
         """
 
         # Create function
-        def slice_function(param_value, param_arg):
-            slice_param = params_ref.copy()
-            slice_param[param_arg] = param_value
-            score = function(slice_param)
-            return slice_param, score
+        slice_function = self.create_function_for_plotting(function, params_ref, profile=None)
 
         if profile is not None:
-            minimise = profile == "minimum"
-
-            def profile_function(param_value, param_arg):
-                opt_param, score = self.optimise(
-                    function,
-                    curr,
-                    fix=(param_arg, param_value),
-                    minimise=minimise
-                )
-                return opt_param, score
-
+            f = self.create_function_for_plotting(function, params_ref, profile=profile)
             profile = True
-            f = profile_function
         else:
-            profile = False
             f = slice_function
+            profile = False
         ref_score = function(params_ref)
 
         # Set the parameter names
@@ -911,12 +990,12 @@ class Plot_Models_copy():
         # Set up colours
         pop_colour = 'darkgrey'
         if not individual_parameters:
-            pop_colour = 'rebeccapurple'
+            pop_colour = self.base_colour
 
         if self.data_set:
             ind_colour_selection = self.ind_colours
         else:
-            ind_colour_selection = ["rebeccapurple"]*self.n_ind
+            ind_colour_selection = [self.base_colour]*self.n_ind
         if pairwise:
             pair_colour = "dense"
 
@@ -929,6 +1008,15 @@ class Plot_Models_copy():
             upper_bound = 1.5*params_ref[self.n_ind_params:]
         else:
             upper_bound = bounds[1]
+
+        if isinstance(force_bounds[0], bool):
+            force_lower_bounds = [force_bounds[0]]*len(lower_bound)
+        else:
+            force_lower_bounds = force_bounds[0]
+        if isinstance(force_bounds[1], bool):
+            force_upper_bounds = [force_bounds[1]]*len(lower_bound)
+        else:
+            force_upper_bounds = force_bounds[1]
 
         # Begin plotting
 
@@ -949,47 +1037,33 @@ class Plot_Models_copy():
             x_min = lower_bound[i_param]
             i_check = 0
             j_check = 0
-            while i_check == 0 and j_check <= 20:
-                x_check = np.linspace(param_ref_i, x_min, 10)[1:]
-                for x in x_check:
-                    _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - 2*1.92):
-                        x_min = x_check[i_check]
-                        break
-                    i_check += 1
-                j_check += 1
+            if not force_lower_bounds[i_param]:
+                while i_check == 0 and j_check <= 20:
+                    x_check = np.linspace(param_ref_i, x_min, 20)[1:]
+                    for x in x_check:
+                        _, score = slice_function(x, i_param+self.n_ind_params)
+                        if score < (ref_score - 3*1.92):
+                            x_min = x_check[i_check]
+                            break
+                        i_check += 1
+                    j_check += 1
             x_max = upper_bound[i_param]
             i_check = 0
             j_check = 0
-            while i_check == 0 and j_check <= 20:
-                x_check = np.linspace(param_ref_i, x_max, 10)[1:]
-                for x in x_check:
-                    _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - 2*1.92):
-                        x_max = x_check[i_check]
-                        break
-                    i_check += 1
-                j_check += 1
+            if not force_upper_bounds[i_param]:
+                while i_check == 0 and j_check <= 20:
+                    x_check = np.linspace(param_ref_i, x_max, 20)[1:]
+                    for x in x_check:
+                        _, score = slice_function(x, i_param+self.n_ind_params)
+                        if score < (ref_score - 3*1.92):
+                            x_max = x_check[i_check]
+                            break
+                        i_check += 1
+                    j_check += 1
             param_ranges[i_param] = (x_min, x_max)
-            x_values = np.linspace(x_min, x_max, n_evals)
 
             # Calculate function
-            if profile:
-                # Optimise from the centre for profile likelihoods
-                curr = params_ref.copy()
-                lower_incl = (x_values <= param_ref_i)
-                x_values_lower = x_values[lower_incl][::-1]
-                x_values_upper = x_values[not lower_incl]
-                x_values = np.concatenate((x_values_lower, x_values_upper))
-            result = np.empty_like(x_values)
-            for i_x, x in enumerate(x_values):
-                if profile and x > param_ref_i:
-                    # Reset start point for second half
-                    curr = params_ref.copy()
-                curr, result[i_x] = f(x, i_param+self.n_ind_params)
-            sort = np.argsort(x_values)
-            result = result[sort] - ref_score  # Normalise the result
-            x_values = x_values[sort]
+            x_values, result, _ = self.f_over_param_range(f, i_param, param_ranges[i_param], params_ref, n_evals=n_evals)
             args = [i_param+self.n_ind_params, i_param+self.n_ind_params]
 
             # Plot function
@@ -1006,19 +1080,19 @@ class Plot_Models_copy():
                 col=col
             )
 
-            # Plot reference line
-            fig.add_trace(
-                go.Scatter(
-                    name='Parameter Reference',
-                    x=[param_ref_i]*2,
-                    y=[np.min(result), 0],
-                    mode='lines',
-                    line=dict(color='black'),
-                    showlegend=plot_num == 0
-                ),
-                row=row,
-                col=col
-            )
+            # # Plot reference line
+            # fig.add_trace(
+            #     go.Scatter(
+            #         name='Parameter Reference',
+            #         x=[param_ref_i]*2,
+            #         y=[np.min(result), param_ref_y],
+            #         mode='lines',
+            #         line=dict(color=pop_colour),
+            #         showlegend=plot_num == 0
+            #     ),
+            #     row=row,
+            #     col=col
+            # )
 
             # Format axis
             if plot_num == 0 or not pairwise:
@@ -1071,7 +1145,7 @@ class Plot_Models_copy():
                     n_y_lower = np.count_nonzero(
                         y_values <= params_ref[ij_param[1]+self.n_ind_params]
                     )
-                    left = range(n_x_left)[::-1],
+                    left = range(n_x_left)[::-1]
                     right = range(n_x_left, len(x_values))
                     lower = range(n_y_lower)[::-1]
                     upper = range(n_y_lower, len(y_values))
@@ -1098,14 +1172,15 @@ class Plot_Models_copy():
                                     curr, result[j_y, i_x] = self.optimise(
                                         function,
                                         line_optimum,
-                                        fix=(args, [x, y]),
+                                        fix=[args, [x, y]],
                                         minimise=minimise
                                     )
                                     line_optimum = curr
                                     line_start = False
                                 else:
                                     curr, result[j_y, i_x] = f([x, y], args)
-                    result = result - ref_score  # Normalise result
+                    max_score = np.max(result)
+                    result = result - max_score  # Normalise result
                     # Plot Heatmap
                     fig.add_trace(
                         go.Heatmap(
@@ -1180,6 +1255,182 @@ class Plot_Models_copy():
             template='plotly_white',
             width=1000,
             height=750,
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1
+            )
+        )
+        return fig
+    
+    def plot_ind_profile_ll(
+            self, log_likelihood, i_param, params_ref,
+            param_name=None, bounds=(None, None),
+            force_bounds=(False, False), n_evals=50,
+    ):
+        # Create function
+        slice_function = self.create_function_for_plotting(log_likelihood, params_ref, profile=None)
+        f = self.create_function_for_plotting(log_likelihood, params_ref, profile="maximise")
+        ref_score = log_likelihood(params_ref)
+        param_ref_i = params_ref[i_param+self.n_ind_params]
+
+        # Set name if not provided
+        if (param_name is None) and (self.pop_model is not None):
+            param_name = self.pop_model.get_parameter_names()[i_param]
+        elif param_name is None:
+            param_name = 'Parameter ' + str(i_param+1)
+
+        # Create subplots
+        n_rows = 3
+        n_cols = 1
+        fig = make_subplots(rows=n_rows, cols=n_cols, shared_xaxes=True)
+
+        # Set up colours
+        pop_colour = 'darkgrey'
+        if self.data_set:
+            ind_colour_selection = self.ind_colours
+        else:
+            ind_colour_selection = [self.base_colour]*self.n_ind
+
+        # Set up param range
+        if bounds[0] is None:
+            lower_bound = 0.5*param_ref_i
+        else:
+            lower_bound = bounds[0]
+        if bounds[1] is None:
+            upper_bound = 1.5*param_ref_i
+        else:
+            upper_bound = bounds[1]
+        
+        x_min = lower_bound
+        i_check = 0
+        j_check = 0
+        if not force_bounds[0]:
+            while i_check == 0 and j_check <= 20:
+                x_check = np.linspace(param_ref_i, x_min, 20)[1:]
+                for x in x_check:
+                    _, score = slice_function(x, i_param+self.n_ind_params)
+                    if score < (ref_score - 6*1.92):
+                        x_min = x_check[i_check]
+                        break
+                    i_check += 1
+                j_check += 1
+        x_max = upper_bound
+        i_check = 0
+        j_check = 0
+        if not force_bounds[1]:
+            while i_check == 0 and j_check <= 20:
+                x_check = np.linspace(param_ref_i, x_max, 20)[1:]
+                for x in x_check:
+                    _, score = slice_function(x, i_param+self.n_ind_params)
+                    if score < (ref_score - 6*1.92):
+                        x_max = x_check[i_check]
+                        break
+                    i_check += 1
+                j_check += 1
+        param_range = (x_min, x_max)
+
+        # Calculate function
+        x_values, result, params_result = self.f_over_param_range(f, i_param, param_range, params_ref, n_evals=n_evals)
+        fig.add_trace(
+            go.Scatter(
+                name='Population Log-likelihood',
+                x=x_values,
+                y=result,
+                mode='lines',
+                line=dict(color=pop_colour),
+            ),
+            row=1,
+            col=1
+        )
+        # create matrix of pointwise loglikelihoods of shape (n_x_values, n_ind)
+        ind_ll = np.empty((x_values.shape[0], self.n_ind))
+        for i_vec, param_vec in enumerate(params_result):
+            if param_vec[i_param+self.n_ind_params] != x_values[i_vec]:
+                raise ValueError(
+                    "Incorrect param vector provided for "
+                    + str(i_vec) +"th parameter vector:"
+                    + str(param_vec[i_param+self.n_ind_params]) + "!=" + str(x_values[i_vec])
+                )
+            pll = np.array(log_likelihood.compute_pointwise_ll(param_vec, per_individual=True))
+            full_ll = log_likelihood(param_vec)
+            if np.abs(np.sum(pll) - full_ll) > 1e-3:
+                raise ValueError(
+                    "Incorrect pointwise log-likelihood calculated for "
+                    + str(i_vec) +"th parameter vector:"
+                    + str(np.sum(pll)) + "!=" + str(full_ll)
+                )
+            if pll.shape != (self.n_ind, ):
+                raise ValueError(
+                    "individual log-likelihood is wrong shape. Should be "
+                    + str((self.n_ind, ))
+                    + "but is " + str(pll.shape)
+                )
+            ind_ll[i_vec] = pll
+        result_from_ind_ll = np.sum(ind_ll, axis=1)
+        max_result = np.max(result_from_ind_ll)
+        result_from_ind_ll -= max_result
+        check_ind_ll = np.abs(result_from_ind_ll - result) > 1e-2
+        if np.any(check_ind_ll):
+            raise ValueError(
+                "Incorrect profile log-likelihood calculated for "
+                + str(np.argwhere(check_ind_ll)) +"th parameter vectors:"
+                + str(ind_ll[check_ind_ll])
+            )
+        ind_ll = ind_ll - np.array(log_likelihood.compute_pointwise_ll(params_ref, per_individual=True)) # np.max(ind_ll, axis=0)  # (max_result/self.n_ind)
+        for i_ind in range(0, self.n_ind):
+            ind_colour = ind_colour_selection.flatten()[i_ind]
+            fig.add_trace(
+                go.Scatter(
+                    name='Individual Log-likelihoods',
+                    x=x_values,
+                    y=ind_ll[:, i_ind],
+                    mode='lines',
+                    line=dict(color=ind_colour, width=1),
+                    showlegend=False
+                ),
+                row=2,
+                col=1
+            )
+            fig.add_trace(
+                go.Scatter(
+                    name='Individual Parameter optimised',
+                    x=x_values,
+                    y=params_result[:, i_ind]-params_ref[i_ind],
+                    mode='lines',
+                    line=dict(color=ind_colour, width=1),
+                    showlegend=False
+                ),
+                row=3,
+                col=1
+            )
+        
+        pop_model = log_likelihood.get_population_model()
+        sp_dims = pop_model.get_special_dims()[0]
+
+        n_params = pop_model.n_parameters()
+        non_mix_params = np.asarray([range(x, y) for _, _, x, y, _ in sp_dims]).flatten()
+        mix_params = [x + self.n_ind for x in range(0, n_params) if x not in non_mix_params]
+        for typ_param in mix_params[::2]:
+            fig.add_trace(
+                go.Scatter(
+                    name='Population Parameter optimised',
+                    x=x_values,
+                    y=np.exp(params_result[:, typ_param])-np.exp(params_ref[typ_param]),
+                    mode='lines',
+                    line = dict(color=pop_colour),
+                    showlegend=False
+                ),
+                row=3,
+                col=1
+            )
+        
+        fig.update_layout(
+            template='plotly_white',
+            width=500,
+            height=1200,
             legend=dict(
                 orientation="h",
                 yanchor="bottom",
