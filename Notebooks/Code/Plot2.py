@@ -10,6 +10,7 @@ import arviz as az
 import arviz.labels as azl
 from cycler import cycler
 import myokit
+from scipy.optimize import minimize
 
 
 class Plot_Models():
@@ -25,35 +26,76 @@ class Plot_Models():
         self.dose_unit = 'mg/Kg'
         self.dose_group_label = 'Dose, ' + self.dose_unit
 
+        self.data_set = False
+        # Initilise the default colour scheme
         self.default_colour = {
             "base": "rebeccapurple", "individual": "viridis",
-            "zero dose": "turbo"
+            "zero dose": "turbo", "heat": "dense"
         }
-
-        self.base_colour = self.default_colour["base"]
-        self.ind_colour_scale = self.default_colour["individual"]
-        self.ind_0_colour_scale = self.default_colour["zero dose"]
-
+        self.set_colour(self.default_colour)
+        # Set the data
         if data is None:
-            self.data_set = False
             self.n_ind = 0
         else:
             self.set_data(data)
             self.n_ind = np.sum(self.n_ids_per_dose)
-        self.pop_model = pop_model
+
+        # Set the non-pop models
         self.mech_model = mech_model
         self.error_model = error_models
         self.prior_model = prior_model
 
+        # Set the pop model and get the mixed-effects/individual parameters
+        self.pop_model = pop_model
         if self.pop_model is None:
-            # TODO: How to tell number of ind params when there is no pop_model
             self.n_ind_params = 0
+            self.ME_param_args = []
         else:
             if not self.data_set:
                 self.n_ind = self.pop_model.n_ids()
             self.n_ind_params = self.n_ind*self.pop_model.n_hierarchical_dim()
 
+            # Find the M-E parameters
+            sp_dims = self.pop_model.get_special_dims()[0]
+            n_params = self.pop_model.n_parameters()
+            non_mix_params = np.asarray(
+                [range(x, y) for _, _, x, y, _ in sp_dims]
+            ).flatten()
+            self.ME_param_args = [
+                x + self.n_ind_params for x in range(0, n_params)
+                if x not in non_mix_params
+            ]
+
     def set_colour(self, colour_scheme):
+        """
+        Sets the colour schemes for plots.
+
+        Parameters
+        ----------
+
+        colour_scheme
+            Dict with labels as keys and plotly compatible colours or colour
+            scales as values. The following labels may be supplied:
+                - "base": Determines the colour used for most graphs where
+                individuals are not plotted. Single plotly compatible colour
+                must be provided. Defaults to css colour rebeccapurple.
+                - "individual": Determines the colours used for graphs where
+                individuals are compared. A plotly colour scale must be
+                provided. Colour for each indvidual is selected from the scale,
+                grouping individuals in the same dose group. Defaults to
+                viridis.
+                - "zero dose": Determines the colours used for graphs where
+                individuals in the control group are compared. A plotly colour
+                scale must be provided. If this scale is the same as
+                "individual" then it will act as another dose group when
+                selecting from "individual", otherwise it will ignore these
+                control group individuals when selecting others from
+                "individual" and instead select colours from "zero dose".
+                Defaults to "turbo".
+                - "heat": Determines the colours used for heat maps
+                (unidirectional). A plotly colour scale must be provided.
+                Defaults to "Dense".
+        """
 
         if colour_scheme is None:
             colour_scheme = self.default_colour
@@ -66,13 +108,17 @@ class Plot_Models():
             self.ind_colour_scale = colour_scheme["individual"]
             if self.ind_colour_scale is None:
                 self.ind_colour_scale = self.default_colour["individual"]
-        if "zero dose individual" in colour_scheme.keys():
+        if "zero dose" in colour_scheme.keys():
             self.ind_0_colour_scale = colour_scheme["zero dose"]
             if self.ind_0_colour_scale is None:
                 self.ind_0_colour_scale = self.default_colour["zero dose"]
+        if "heat" in colour_scheme.keys():
+            self.heat_colour_scale = colour_scheme["heat"]
+            if self.heat_colour_scale is None:
+                self.heat_colour_scale = self.default_colour["zero dose"]
 
         if self.data_set:
-            # Set up the colour scheme for individuals
+            # Set up the colours for individuals
             diff_0_colour = self.ind_0_colour_scale != self.ind_colour_scale
             if (0.0 in self.dose_groups) and diff_0_colour:
                 cols = [pxclrs.sample_colorscale(
@@ -100,6 +146,12 @@ class Plot_Models():
     def set_data(self, df):
         """
         Sets the data to plot.
+
+        Parameters
+        ----------
+
+        df
+            Pandas data frame containing the data.
         """
         dose_info = df[~np.isnan(df["Dose"])].groupby(["ID"])
         dose_amts = dose_info["Dose"]
@@ -150,6 +202,7 @@ class Plot_Models():
             self, pop_params=None, individual_parameters=None,
             param_names=None, bounds=(None, None)
     ):
+        # TODO: introduce option for histogram vs. function
         plot = self.plot_param_dist(
             self.prior_model,
             pop_params=pop_params,
@@ -768,7 +821,7 @@ class Plot_Models():
             )
         return fig
 
-    def optimise(self, function, start, fix=None, minimise=False):
+    def optimise(self, function, start, fix=None, minimise=False, method='Nelder-Mead'):
 
         # PINTS optimisers minimise.
         # To maximise the function, f, we will need to minimise -f
@@ -777,8 +830,44 @@ class Plot_Models():
         else:
             sign = -1
 
+        # Check whether there are any mixed effects parameters
+        has_hierarchy = len(self.ME_param_args) > 0
+        if has_hierarchy:
+            # Find the arguments of the population level parameters and tile them for calculations on the individual level parameters
+            typ_args = np.tile(self.ME_param_args[::2], self.n_ind)
+            omega_args = np.tile(self.ME_param_args[1::2], self.n_ind)
+
+            # Define function to convert from [individual params, population params] to [individual eta*omega, population params] and vice versa
+            def transform_ind_to_eta(param, reverse=False):
+                typ_params = param[typ_args]
+                omega_params = param[omega_args]
+                trans_param = param.copy()
+                if reverse:
+                    eta_params = param[:self.n_ind_params]
+                    ind_params = np.exp((eta_params*omega_params + typ_params))
+                    trans_param[:self.n_ind_params] = ind_params
+                else:
+                    ind_params = param[:self.n_ind_params]
+                    eta_params = (np.log(ind_params) - typ_params)/omega_params
+                    trans_param[:self.n_ind_params] = eta_params
+
+                return param
+        else:
+            def transform_ind_to_eta(param, reverse=False):
+                return param
+
+        # Transform start point into [eta, pop]
+        opt_start = start.copy()
+        opt_start = transform_ind_to_eta(opt_start)
+        if any(np.abs(transform_ind_to_eta(opt_start, reverse=True) - start) > 1e-10):
+            raise ValueError(
+                "Transform function is inaccurate: difference of" +
+                str(transform_ind_to_eta(opt_start, reverse=True) - start)
+            )
+
         if fix is not None:
             fix = np.asarray(fix)
+            # If there are fixed params, determine what values need to be deleted and inserted
             if len(fix.shape) == 1:
                 delete_arg = int(fix[0])
                 insert_arg = int(fix[0])
@@ -789,68 +878,98 @@ class Plot_Models():
                 delete_arg = fix[0].astype(int)
                 fix_values = fix[1]
 
-            opt_start = np.delete(start, delete_arg)
+            # Delete fixed values from the starting point
+            opt_start = np.delete(opt_start, delete_arg)
 
-            def minimise_func(reduced_params):
-                full_params = np.insert(reduced_params, insert_arg, fix_values)
-                return sign*function(full_params)
+            # Create the function to minimise
+            class minimise_func(pints.ErrorMeasure):
+                def __init__(self):
+                    super(minimise_func, self).__init__()
+                def __call__(self, reduced_params):
+                    # insert the fixed values to the correct spots
+                    full_params_trans = np.insert(reduced_params, insert_arg, fix_values)
+                    # transform parameters back from [eta, pop] to [ind, pop]
+                    full_params = transform_ind_to_eta(full_params_trans, reverse=True)
+                    return sign*function(full_params)
+                def n_parameters(self):
+                    return len(opt_start)
         else:
-            def minimise_func(full_params):
-                return sign*function(full_params)
-        optimiser = pints.NelderMead(opt_start)
-        significant_change = 1e-4
+            class minimise_func(pints.ErrorMeasure):
+                def __call__(self, full_params):
+                    full_params = transform_ind_to_eta(full_params, reverse=True)
+                    return sign*function(full_params)
+                def n_parameters(self):
+                    return start-len(fix_values)
+        significant_change = 1e-11  # 1e-4
         max_iters = 10000
         max_unchanged_iters = 200
+        func = minimise_func()
+        if method == "PINTS":
+            optimiser = pints.OptimisationController(func, opt_start, method=pints.NelderMead)
+            optimiser.set_max_iterations(max_iters)
+            optimiser.set_max_unchanged_iterations(iterations= max_unchanged_iters, threshold=significant_change)
+            optimiser.set_log_to_screen(False)
+            xbest, fbest = optimiser.run()
+            # optimiser = pints.NelderMead(opt_start)
+            # fbest = float('inf')
+            # running = True
+            # iteration = 0
+            # unchanged_iters = 0
+            # while running:
+            #     # Ask for points to evaluate
+            #     xs = optimiser.ask()
 
-        fbest = float('inf')
-        running = True
-        iteration = 0
-        unchanged_iters = 0
-        while running:
-            # Ask for points to evaluate
-            xs = optimiser.ask()
+            #     # Evaluate the function at these points
+            #     fs = [minimise_func(x) for x in xs]
 
-            # Evaluate the function at these points
-            fs = [minimise_func(x) for x in xs]
+            #     # Tell the optimiser the evaluations; allowing it to update its
+            #     # internal state.
+            #     optimiser.tell(fs)
 
-            # Tell the optimiser the evaluations; allowing it to update its
-            # internal state.
-            optimiser.tell(fs)
+            #     # Check if new best found
+            #     fnew = optimiser.fbest()
+            #     if fnew < fbest:
+            #         # Check if this counts as a significant change
+            #         if np.abs(fnew - fbest) < significant_change:
+            #             unchanged_iters += 1
+            #         else:
+            #             unchanged_iters = 0
 
-            # Check if new best found
-            fnew = optimiser.fbest()
-            if fnew < fbest:
-                # Check if this counts as a significant change
-                if np.abs(fnew - fbest) < significant_change:
-                    unchanged_iters += 1
-                else:
-                    unchanged_iters = 0
+            #         # Update best
+            #         fbest = fnew
+            #     else:
+            #         unchanged_iters += 1
+            #     iteration += 1
+            #     # Check stopping criteria
+            #     if iteration >= max_iters:
+            #         running = False
+            #     if unchanged_iters >= max_unchanged_iters:
+            #         running = False
 
-                # Update best
-                fbest = fnew
-            else:
-                unchanged_iters += 1
-            iteration += 1
-            # Check stopping criteria
-            if iteration >= max_iters:
-                running = False
-            if unchanged_iters >= max_unchanged_iters:
-                running = False
-
-            # Check for optimiser issues
-            if optimiser.stop():
-                running = False
+            #     # Check for optimiser issues
+            #     if optimiser.stop():
+            #         running = False
+        else:
+            options = {'maxiter': max_iters}
+            if method in ["Nelder-Mead"]:
+                options['fatol'] = significant_change
+            if method in ["Powell", "L-BFGS-B", "TNC"]:
+                options['ftol'] = significant_change/(minimise_func(opt_start))
+            result = minimize(func, opt_start, method=method)
+            xbest = result.x
+            fbest = result.fun
 
         if fix is not None:
-            xbest = np.insert(optimiser.xbest(), insert_arg, fix_values)
-        else:
-            xbest = optimiser.xbest()
+            xbest = np.insert(xbest, insert_arg, fix_values)
 
+        xbest = transform_ind_to_eta(xbest, reverse=True)
+        # if not result.success:
+        #     print(result.status, result.message)
         return xbest, sign*fbest
-    
+
     def f_over_param_range(
-            self, f, i_param, param_range, params_ref, pairwise=False, normalise=True,
-            individual_parameters=False, n_evals=50, record_param_opt=False
+            self, f, i_param, param_range, params_ref, pairwise=False,
+            normalise=True, individual_parameters=False, n_evals=50
     ):
         if pairwise:
             pass
@@ -882,7 +1001,7 @@ class Plot_Models():
 
             return x_values, result, param_values
 
-    def create_function_for_plotting(self, function, params_ref, profile=None):
+    def create_plot_func(self, function, params_ref, profile=None, method='Nelder-Mead'):
 
         def slice_function(param_value, param_arg, curr=None):
             slice_param = params_ref.copy()
@@ -897,7 +1016,8 @@ class Plot_Models():
                     function,
                     curr,
                     fix=(param_arg, param_value),
-                    minimise=minimise
+                    minimise=minimise,
+                    method=method
                 )
                 return opt_param, score
 
@@ -958,10 +1078,14 @@ class Plot_Models():
         """
 
         # Create function
-        slice_function = self.create_function_for_plotting(function, params_ref, profile=None)
+        slice_function = self.create_plot_func(
+            function, params_ref, profile=None
+        )
 
         if profile is not None:
-            f = self.create_function_for_plotting(function, params_ref, profile=profile)
+            f = self.create_plot_func(
+                function, params_ref, profile=profile
+            )
             profile = True
         else:
             f = slice_function
@@ -996,8 +1120,6 @@ class Plot_Models():
             ind_colour_selection = self.ind_colours
         else:
             ind_colour_selection = [self.base_colour]*self.n_ind
-        if pairwise:
-            pair_colour = "dense"
 
         # Set up bounds
         if bounds[0] is None:
@@ -1037,12 +1159,14 @@ class Plot_Models():
             x_min = lower_bound[i_param]
             i_check = 0
             j_check = 0
+            view_aim = 3*1.92
+
             if not force_lower_bounds[i_param]:
                 while i_check == 0 and j_check <= 20:
                     x_check = np.linspace(param_ref_i, x_min, 20)[1:]
                     for x in x_check:
                         _, score = slice_function(x, i_param+self.n_ind_params)
-                        if score < (ref_score - 3*1.92):
+                        if score < (ref_score - view_aim):
                             x_min = x_check[i_check]
                             break
                         i_check += 1
@@ -1055,7 +1179,7 @@ class Plot_Models():
                     x_check = np.linspace(param_ref_i, x_max, 20)[1:]
                     for x in x_check:
                         _, score = slice_function(x, i_param+self.n_ind_params)
-                        if score < (ref_score - 3*1.92):
+                        if score < (ref_score - view_aim):
                             x_max = x_check[i_check]
                             break
                         i_check += 1
@@ -1063,7 +1187,9 @@ class Plot_Models():
             param_ranges[i_param] = (x_min, x_max)
 
             # Calculate function
-            x_values, result, _ = self.f_over_param_range(f, i_param, param_ranges[i_param], params_ref, n_evals=n_evals)
+            x_values, result, _ = self.f_over_param_range(
+                f, i_param, param_ranges[i_param], params_ref, n_evals=n_evals
+            )
             args = [i_param+self.n_ind_params, i_param+self.n_ind_params]
 
             # Plot function
@@ -1168,7 +1294,11 @@ class Plot_Models():
                             line_start = True
                             for j_y in j_range:
                                 y = y_values[j_y]
-                                if line_start and profile:
+                                if line_start and (profile is not None):
+                                    if profile == "minimise":
+                                        minimise = True
+                                    else:
+                                        minimise = False
                                     curr, result[j_y, i_x] = self.optimise(
                                         function,
                                         line_optimum,
@@ -1189,9 +1319,9 @@ class Plot_Models():
                             x=x_values,
                             y=y_values,
                             showlegend=plot_num == 1,
-                            colorscale=pair_colour,
-                            zmin=- 1.92,
-                            zmax=+ 1.92
+                            colorscale=self.heat_colour_scale,
+                            zmin=-1.92,
+                            zmax=+1.92
                         ),
                         row=row,
                         col=col
@@ -1264,15 +1394,19 @@ class Plot_Models():
             )
         )
         return fig
-    
+
     def plot_ind_profile_ll(
             self, log_likelihood, i_param, params_ref,
             param_name=None, bounds=(None, None),
-            force_bounds=(False, False), n_evals=50,
+            force_bounds=(False, False), n_evals=50, method='Nelder-Mead'
     ):
         # Create function
-        slice_function = self.create_function_for_plotting(log_likelihood, params_ref, profile=None)
-        f = self.create_function_for_plotting(log_likelihood, params_ref, profile="maximise")
+        slice_function = self.create_plot_func(
+            log_likelihood, params_ref, profile=None
+        )
+        f = self.create_plot_func(
+            log_likelihood, params_ref, profile="maximise", method=method
+        )
         ref_score = log_likelihood(params_ref)
         param_ref_i = params_ref[i_param+self.n_ind_params]
 
@@ -1303,7 +1437,9 @@ class Plot_Models():
             upper_bound = 1.5*param_ref_i
         else:
             upper_bound = bounds[1]
-        
+
+        view_aim = 3*1.92
+
         x_min = lower_bound
         i_check = 0
         j_check = 0
@@ -1312,7 +1448,7 @@ class Plot_Models():
                 x_check = np.linspace(param_ref_i, x_min, 20)[1:]
                 for x in x_check:
                     _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - 6*1.92):
+                    if score < (ref_score - view_aim):
                         x_min = x_check[i_check]
                         break
                     i_check += 1
@@ -1325,7 +1461,7 @@ class Plot_Models():
                 x_check = np.linspace(param_ref_i, x_max, 20)[1:]
                 for x in x_check:
                     _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - 6*1.92):
+                    if score < (ref_score - view_aim):
                         x_max = x_check[i_check]
                         break
                     i_check += 1
@@ -1333,7 +1469,9 @@ class Plot_Models():
         param_range = (x_min, x_max)
 
         # Calculate function
-        x_values, result, params_result = self.f_over_param_range(f, i_param, param_range, params_ref, n_evals=n_evals)
+        x_values, result, params_result = self.f_over_param_range(
+            f, i_param, param_range, params_ref, n_evals=n_evals
+        )
         fig.add_trace(
             go.Scatter(
                 name='Population Log-likelihood',
@@ -1345,21 +1483,25 @@ class Plot_Models():
             row=1,
             col=1
         )
-        # create matrix of pointwise loglikelihoods of shape (n_x_values, n_ind)
+        # create matrix of pointwise loglikelihoods of shape
+        # (n_x_values, n_ind)
         ind_ll = np.empty((x_values.shape[0], self.n_ind))
         for i_vec, param_vec in enumerate(params_result):
             if param_vec[i_param+self.n_ind_params] != x_values[i_vec]:
                 raise ValueError(
                     "Incorrect param vector provided for "
-                    + str(i_vec) +"th parameter vector:"
-                    + str(param_vec[i_param+self.n_ind_params]) + "!=" + str(x_values[i_vec])
+                    + str(i_vec) + "th parameter vector:"
+                    + str(param_vec[i_param+self.n_ind_params])
+                    + "!=" + str(x_values[i_vec])
                 )
-            pll = np.array(log_likelihood.compute_pointwise_ll(param_vec, per_individual=True))
+            pll = np.array(log_likelihood.compute_pointwise_ll(
+                param_vec, per_individual=True
+            ))
             full_ll = log_likelihood(param_vec)
             if np.abs(np.sum(pll) - full_ll) > 1e-3:
                 raise ValueError(
                     "Incorrect pointwise log-likelihood calculated for "
-                    + str(i_vec) +"th parameter vector:"
+                    + str(i_vec) + "th parameter vector:"
                     + str(np.sum(pll)) + "!=" + str(full_ll)
                 )
             if pll.shape != (self.n_ind, ):
@@ -1376,10 +1518,12 @@ class Plot_Models():
         if np.any(check_ind_ll):
             raise ValueError(
                 "Incorrect profile log-likelihood calculated for "
-                + str(np.argwhere(check_ind_ll)) +"th parameter vectors:"
+                + str(np.argwhere(check_ind_ll)) + "th parameter vectors:"
                 + str(ind_ll[check_ind_ll])
             )
-        ind_ll = ind_ll - np.array(log_likelihood.compute_pointwise_ll(params_ref, per_individual=True)) # np.max(ind_ll, axis=0)  # (max_result/self.n_ind)
+        ind_ll = ind_ll - np.array(log_likelihood.compute_pointwise_ll(
+            params_ref, per_individual=True)
+        )
         for i_ind in range(0, self.n_ind):
             ind_colour = ind_colour_selection.flatten()[i_ind]
             fig.add_trace(
@@ -1406,27 +1550,25 @@ class Plot_Models():
                 row=3,
                 col=1
             )
-        
-        pop_model = log_likelihood.get_population_model()
-        sp_dims = pop_model.get_special_dims()[0]
 
-        n_params = pop_model.n_parameters()
-        non_mix_params = np.asarray([range(x, y) for _, _, x, y, _ in sp_dims]).flatten()
-        mix_params = [x + self.n_ind for x in range(0, n_params) if x not in non_mix_params]
-        for typ_param in mix_params[::2]:
+        for typ_param in self.ME_param_args[::2]:
+            norm_res = (
+                np.exp(params_result[:, typ_param])
+                - np.exp(params_ref[typ_param])
+            )
             fig.add_trace(
                 go.Scatter(
                     name='Population Parameter optimised',
                     x=x_values,
-                    y=np.exp(params_result[:, typ_param])-np.exp(params_ref[typ_param]),
+                    y=norm_res,
                     mode='lines',
-                    line = dict(color=pop_colour),
+                    line=dict(color=pop_colour),
                     showlegend=False
                 ),
                 row=3,
                 col=1
             )
-        
+
         fig.update_layout(
             template='plotly_white',
             width=500,

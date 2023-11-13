@@ -1,0 +1,163 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'll_comparison_model_V_c_powell.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{500.84736501bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.40413301)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.04812566,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.78\end{tabular}}}}%
+    \put(0.11919986,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.8\end{tabular}}}}%
+    \put(0.19027406,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.82\end{tabular}}}}%
+    \put(0.02975055,0.2330048){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.02975055,0.26382031){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.02975055,0.29464284){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.02975055,0.32545835){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.02975055,0.35627386){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.25202155,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.29261982,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.5\end{tabular}}}}%
+    \put(0.33321809,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
+    \put(0.37381637,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6.5\end{tabular}}}}%
+    \put(0.41441464,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.47590196,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
+    \put(0.53813046,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.3\end{tabular}}}}%
+    \put(0.60035896,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.68942406,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.085\end{tabular}}}}%
+    \put(0.7529776,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.09\end{tabular}}}}%
+    \put(0.81653114,0.2268192){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.095\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.03035559,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.3\end{tabular}}}}%
+    \put(0.08779821,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.4\end{tabular}}}}%
+    \put(0.14524689,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
+    \put(0.20268951,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.6\end{tabular}}}}%
+    \put(0.02975055,0.02652543){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.02975055,0.05734094){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.02975055,0.08816347){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.02975055,0.11897898){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.02975055,0.14979449){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.30506552,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
+    \put(0.36132831,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.4175911,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.49787101,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.4\end{tabular}}}}%
+    \put(0.56416539,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.6\end{tabular}}}}%
+    \put(0.63045371,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.70875513,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
+    \put(0.77774194,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.25\end{tabular}}}}%
+    \put(0.84672875,0.02033983){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.3\end{tabular}}}}%
+    \put(0.88627117,0.32538806){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}CMA-ES run result\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.31199062){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.29863536){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.2852801){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.27192484){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.25856958){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.24521432){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 7\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.23185905){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.88627117,0.21088427){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mononlix run result\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.19748683){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.18413157){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.17077631){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.15742105){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.14406579){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.13071053){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 7\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.11735526){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.09745682){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Confidence Interval\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.90744762,0.07707247){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-generating\\parameter\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.03338079,0.39499006){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: V_c\end{tabular}}}}%
+    \put(0.11919833,0.20657545){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.33869219,0.20657545){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.55818602,0.20657545){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.77767993,0.20657545){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.11919833,0.00009609){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.33869219,0.00009609){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.55818602,0.00009609){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.77767993,0.00009609){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.00643567,0.29790083){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Log-Likelihood Score\end{tabular}}}}}%
+    \put(0.23484444,0.29790085){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Log-Likelihood Score\end{tabular}}}}}%
+    \put(0.45433827,0.29790085){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Log-Likelihood Score\end{tabular}}}}}%
+    \put(0.6738321,0.29790083){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Log-Likelihood Score\end{tabular}}}}}%
+    \put(0.00643567,0.09142144){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Log-Likelihood Score\end{tabular}}}}}%
+    \put(0.23484444,0.09142144){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Log-Likelihood Score\end{tabular}}}}}%
+    \put(0.45433827,0.09142148){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Log-Likelihood Score\end{tabular}}}}}%
+    \put(0.6738321,0.09142144){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Log-Likelihood Score\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.11911704,0.36476499){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$K_{cl}$, L/hr\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.33874704,0.36476499){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_{c, typ}$, L\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.55819741,0.36476499){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{ll_comparison_model_V_c_powell.pdf}}%
+    \put(0.77752488,0.36476499){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_{m, PK}$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

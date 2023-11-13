@@ -10,6 +10,581 @@ import arviz as az
 import arviz.labels as azl
 from cycler import cycler
 import myokit
+from scipy.optimize import minimize, brentq
+from scipy.interpolate import interp1d, make_interp_spline, PPoly
+from scipy.interpolate import UnivariateSpline, PchipInterpolator
+
+
+class ProfileLogLikelihood():
+
+    def __init__(self, log_likelihood, params_ref, opts) -> None:
+        self.set_options(opts, reset=True)
+        self.slice_func = self.create_plot_func(
+            log_likelihood, params_ref, profile=False
+        )
+        if self.opts['slice']:
+            self.f = self.slice_func
+        else:
+            self.f = self.create_plot_func(
+                log_likelihood, params_ref, profile=True
+            )
+        self.MLE = params_ref.copy()
+        self.ref_score = log_likelihood(params_ref)
+        self.l_star = self.ref_score - self.opts['alpha']
+        self.param_range = {}
+        self.result = {}
+
+    def run(self, i_param, n_points=100, opts=None):
+        opts = self.opts.copy()
+        if opts is not None:
+            opts.update(opts)
+        if i_param not in self.param_range.keys():
+            self.set_param_range(i_param, adapt=True)
+
+        # Reset results
+        self.result[i_param] = {}
+
+        if opts['method'] == 'quadratic approx.':
+            CI = self.ci_poly_approx(i_param, opts=opts)
+            profile_ll = self.ll_from_ci(i_param, opts=opts)
+        elif opts['method'] == 'piecewise calc.':
+            profile_ll = self.ll_piecewise(i_param, opts=opts)
+            CI = self.ci_from_ll(i_param, opts=opts)
+        elif opts['method'] == 'sequential calc.':
+            profile_ll = self.ll_sequential(i_param, opts=opts)
+            CI = self.ci_from_ll(i_param, opts=opts)
+        else:
+            raise NameError(
+                'Unknown profile likelihood method'
+            )
+
+        # Get points
+        param_range = self.param_range[i_param][0]
+        x_values = np.linspace(
+            param_range[0], param_range[1], n_points
+        )
+        ll_values = profile_ll(x_values)
+
+        return np.array([x_values, ll_values])
+
+    def ll_sequential(self, i_param, opts=None):
+        opts = self.opts.copy()
+        if opts is not None:
+            opts.update(opts)
+
+        param_range = self.param_range[i_param][0]
+        x_rec = np.linspace(param_range[0], param_range[1], opts['max_N_opts'])
+
+        # Start from the centre, for more accurate extrapolating
+        lower = x_rec <= self.MLE[i_param]
+        x_lower = x_rec[lower][::-1]
+        x_upper = x_rec[np.logical_not(lower)]
+        # x_rec = np.concatenate((x_lower, x_upper))
+        ll_rec = [np.empty_like(x_lower), np.empty_like(x_upper)]
+        param_rec = [
+            np.empty_like(x_lower, len(self.MLE)),
+            np.empty_like(x_upper, len(self.MLE))
+        ]
+        proj_rec = param_rec.copy()
+
+        LU = 0
+        for x_LU in (x_lower, x_upper):
+            for i_x, x in enumerate(x_LU):
+                if i_x <= 1:
+                    # Set current approximation of optimum parameters to MLE
+                    curr = self.MLE.copy()
+                elif opts['interp']>0:
+                    if i_x > opts['interp']+1:
+                        k = opts['interp']
+                    else:
+                        k = (i_x-1)
+
+                    x_interp = x_LU[i_x-1-k: i_x]
+                    param_interp = param_rec[LU][i_x-1-k: i_x]
+
+                    if LU==0:
+                        x_interp = x_interp[::-1]
+                        param_interp = param_interp[::-1]
+                    interpolator = make_interp_spline(
+                        x_interp,
+                        param_interp,
+                        k=k, axis=0
+                    )
+                    curr = interpolator(x)
+
+                else:
+                    curr = param_rec[LU][i_x-1]
+                proj_rec[LU][i_x] = curr
+                param_rec[LU][i_x], ll_rec[LU][i_x] = self.f(x, i_param, curr=curr)
+            LU = 1
+
+        x_rec = np.concatenate((x_lower[::-1], x_upper))
+        ll_rec = np.concatenate((ll_rec[0][::-1], ll_rec[1]))
+        param_rec = np.concatenate((param_rec[0][::-1], param_rec[1]))
+        proj_rec = np.concatenate((proj_rec[0][::-1], proj_rec[1]))
+
+        if opts['normalise']:
+            ll_rec = ll_rec - self.l_star  # Normalise the result
+        param_interpolator = PchipInterpolator(
+                x_rec, param_rec, k=opts['interp'], axis=0
+            )
+        ll_interpolator = PchipInterpolator(
+                x_rec, ll_rec, k=opts['interp']
+            )
+
+        result = self.result[i_param]
+        result.update({
+            'opt points': (x_rec, ll_rec, param_rec),
+            'projected optimum': proj_rec,
+            'profile ll': ll_interpolator,
+            'profile param': param_interpolator
+        })
+        self.result[i_param] = result
+
+        return ll_interpolator
+
+    def ll_piecewise(self, i_param, opts=None):
+        opts = self.opts.copy()
+        if opts is not None:
+            opts.update(opts)
+
+        param_range = self.param_range[i_param][0]
+        x_rec = [param_range[0], self.MLE[i_param], param_range[1]]
+        param_rec = [None, self.MLE, None]
+        ll_rec = [None, self.ref_score, None]
+        param_rec[0], ll_rec[0] = self.f(x_rec[0], i_param, curr=self.MLE)
+        param_rec[2], ll_rec[2] = self.f(x_rec[2], i_param, curr=self.MLE)
+
+        proj_rec = [self.MLE, self.MLE, self.MLE]
+        stop_criteria = [False]*len(x_rec)
+        n_del = 1
+
+        while len(x_rec) <= self.opts['max_N_opts']:
+            x_insert = []
+            insert_args = []
+            ll_insert = []
+            param_insert = []
+
+            # Determine where to add new points
+            if x_rec[0] != param_range[0]:
+                insert_args += [0, 0]
+                x_insert.append(param_range[0])
+                x_insert.append((param_range[0]+x_rec[0])*0.5)
+            for i in range(1, len(x_rec)):
+                skip = stop_criteria[i-1] and stop_criteria[i]
+                if len(x_rec) > self.opts['min_N_opts']+1 and skip:
+                    continue
+                else:
+                    insert_args += [i]
+                    x_insert.append((x_rec[i-1] + x_rec[i])*0.5)
+            if x_rec[-1] != param_range[1]:
+                insert_args += [len(x_rec), len(x_rec)]
+                x_insert.append((param_range[1]+x_rec[-1])*0.5)
+                x_insert.append(param_range[1])
+            x_insert = np.asarray(x_insert)
+
+            # Create intitial prediction using interpolation
+            interpolator = make_interp_spline(
+                    x_rec, param_rec,
+                    k=opts['interp'], axis=0
+                )
+            proj_values = interpolator(x_insert)
+            proj_rec = np.insert(proj_rec, insert_args, proj_values)
+
+            # Maximise other params and Generate profile ll score
+            for i, x in enumerate(x_insert):
+                param_value, ll = self.f(x, i_param, curr=proj_values[i])
+                ll_insert.append(ll)
+                param_insert.append(param_value)
+
+            arg_delete = None
+            if len(x_rec) >= opts['min_N_opts']:
+                # Whether the approximation is good
+                interpolator = PchipInterpolator(
+                        x_insert, param_insert,
+                        k=opts['interp'], axis=0
+                    )
+                error = np.sum(np.abs(interpolator(x_rec) - param_rec), axis=1)
+                error_new = np.sum(np.abs(proj_values - np.asarray(param_insert)), axis=1)
+                stop_criteria = error <= 1e-2
+                stop_criteria = np.insert(stop_criteria, insert_args, error_new<= 1e-2)
+
+                # Find outliers
+                arg_delete = np.argpartition(error, len(error)-n_del)[-n_del:]
+                arg_delete = arg_delete[np.logical_not(stop_criteria[arg_delete])]
+                arg_delete += np.count_nonzero(np.tile(insert_args, (n_del, 1)).transpose() <= arg_delete, axis=0)
+
+            else:
+                stop_criteria += [False]*len(x_insert)
+
+            # Insert the new values into arrays
+            x_rec = np.insert(x_rec, insert_args, x_insert)
+            ll_rec = np.insert(ll_rec, insert_args, ll_insert)
+            param_rec = np.insert(param_rec, insert_args, param_insert, axis=0)
+
+            if arg_delete is not None:
+                # Delete Outliers
+                x_rec = np.delete(x_rec, arg_delete)
+                ll_rec = np.delete(ll_rec, arg_delete)
+                param_rec = np.delete(param_rec, arg_delete, axis=0)
+                proj_rec = np.delete(proj_rec, arg_delete, axis=0)
+                stop_criteria = np.delete(stop_criteria, arg_delete)
+
+            if np.all(stop_criteria):
+                break
+
+        if opts['normalise']:
+            ll_rec = ll_rec - self.l_star  # Normalise the result
+        param_interpolator = PchipInterpolator(
+                x_rec, param_rec, k=opts['interp'], axis=0
+            )
+        ll_interpolator = PchipInterpolator(
+                x_rec, ll_rec, k=opts['interp']
+            )
+
+        result = self.result[i_param]
+        result.update({
+            'opt points': (x_rec, ll_rec, param_rec),
+            'projected optimum': proj_rec,
+            'profile ll': ll_interpolator,
+            'profile param': param_interpolator
+        })
+        self.result[i_param] = result
+
+        return ll_interpolator
+
+    def ll_from_ci(self, i_param, CI = None, opts=None):
+        opts = self.opts.copy()
+        opts['interp'] = 2
+        if opts is not None:
+            opts.update(opts)
+
+        result = self.result[i_param]
+        
+        if CI is None:
+            x_CI, ll_CI, params_CI = result['CI']
+        else:
+            x_CI, ll_CI, params_CI = CI
+        
+        if 'opt_points' in result.keys() and CI is None:
+            x_rec, ll_rec, param_rec = result['opt points']
+        else:
+            x_rec = x_CI.copy()
+            ll_rec = ll_CI.copy()
+            param_rec = params_CI.copy()
+
+        param_range = self.param_range[i_param][0],
+        if opts['approx shape N']>0:
+            x_shape_points = np.linspace(param_range[0], param_range[1], opts['approx shape N'])
+            param_interpolator = make_interp_spline(
+                    x_CI, ll_CI, k=opts['interp'], axis=0
+                )
+            for x in x_shape_points:
+                param, ll = self.f(x, i_param, curr=param_interpolator(x))
+                param_rec = np.append(param_rec, [param], axis=0)
+                x_rec = np.append(x_rec, x)
+                if opts['normalise']:
+                    ll = ll - self.l_star
+                ll_rec = np.append(ll_rec, ll)
+
+            sort_args = np.argsort(x_rec)
+            x_rec = x_rec[sort_args]
+            ll_rec = ll_rec[sort_args]
+            param_rec = param_rec[sort_args]
+            result['opt points'] =(x_rec, ll_rec, param_rec)
+
+        # ll_interpolator = UnivariateSpline(
+        #         x_anchors, ll_anchors,
+        #         w=weights, s=1e-4*len(weights)
+        #     )
+        ll_interpolator = PchipInterpolator(x_rec, ll_rec, extrapolate=True)
+        param_interpolator = PchipInterpolator(
+                x_rec, param_rec, axis=0, extrapolate=True
+            )
+
+        result['profile ll'] = ll_interpolator
+        result['profile param'] = param_interpolator
+
+        self.result[i_param] = result
+
+        return ll_interpolator
+
+    def ci_from_ll(self, i_param, opts=None):
+        opts = self.opts.copy()
+        if opts is not None:
+            opts.update(opts)
+        result = self.result[i_param]
+
+        ll_interpolator = result['profile ll']
+        param_interpolator = result['profile param']
+        param_range = self.param_range[i_param][0]
+        if opts['normalise']:
+            roots = np.sort(ll_interpolator.roots(extrapolate=False))
+        else:
+            roots = np.sort(ll_interpolator.solve(y=self.l_star, extrapolate=False))
+
+        x_CI = [param_range[0], self.MLE[i_param], param_range[1]]
+        if len(roots) <= 2:
+            identifiable_CI = ['unident', 'unident']
+            for x in roots:
+                if x < self.MLE[i_param]:
+                    x_CI[0] = x
+                    identifiable_CI[0] = 'ident'
+                else:
+                    x_CI[2] = x
+                    identifiable_CI[1] = 'ident'
+        else:
+            identifiable_CI = [None, None]
+        ll_CI = ll_interpolator(x_CI)
+        param_CI = param_interpolator(x_CI)
+            
+        result['CI']= (x_CI, ll_CI, param_CI)
+        result['identifiabilty']= identifiable_CI
+        self.result[i_param] = result
+        return x_CI, ll_CI, param_CI
+
+    def ci_poly_approx(self, i_param, opts=None):
+        opts = self.opts.copy()
+        if opts is not None:
+            opts.update(opts)
+        result = self.result[i_param]
+        
+        # First step: Estimate CI using slice function
+        param_range = self.param_range[i_param][0]
+        x_CI = [param_range[0], self.MLE[i_param], param_range[1]]
+        param_CI = [None, self.MLE, None]
+        ll_CI = [None, self.ref_score, None]
+
+        def solve_slice(x, L_U):
+            param_CI[L_U+1], ll = self.slice_func(x, i_param)
+            return ll - self.l_star
+        x_CI[0] = brentq(solve_slice, x_CI[0], x_CI[1], args=(-1))
+        x_CI[2] = brentq(solve_slice, x_CI[1], x_CI[2], args=(1))
+
+        # Optimise at this point to find the log-likelihood
+        param_CI[0], ll_CI[0] = self.f(x_CI[0], i_param, curr=param_CI[0])
+        param_CI[2], ll_CI[2] = self.f(x_CI[2], i_param, curr=param_CI[2])
+
+        x_rec = x_CI.copy()
+        ll_rec = ll_CI.copy()
+        param_rec = param_CI.copy()
+        proj_rec = [self.MLE, self.MLE, self.MLE]
+
+        identifiable_CI = [None]*2
+        unchanged_iters_L = 0
+        unchanged_iters_U = 0
+
+        # Iteratively estimate CI approximating space as polynomial
+        while len(x_rec) <= self.opts['max_N_opts']:
+            # Solve LL(x)-L_star=0 assuming polynomial
+            poly_spline = PPoly.from_spline(make_interp_spline(
+                x_CI, ll_CI - self.l_star,
+                k=opts['interp'], axis=0
+            ))
+            roots = np.sort(poly_spline.roots())
+            
+            # Approximate maximum parameters.
+            interpolator = make_interp_spline(
+                    x_CI, param_CI,
+                    k=opts['interp'], axis=0
+                )
+            if identifiable_CI[0] is None:
+                approx_param = interpolator(roots[0])
+                # Calculate true max params and likelihood at the lower root
+                param_CI[0], ll_CI[0] = self.f(roots[0], i_param, curr=approx_param)
+                x_CI[0] = roots[0]
+
+                # Record these values
+                param_rec = np.insert(param_rec, 0, param_CI[0], axis=0)
+                proj_rec = np.insert(proj_rec, 0, approx_param, axis=0)
+                ll_rec = np.insert(ll_rec, 0, ll_CI[0])
+                x_rec = np.insert(x_rec, 0, x_CI[0])
+
+                # Check termination status
+                if np.abs(ll_CI[0]-self.l_star) < opts['T_ident']:
+                    identifiable_CI[0] = 'Ident'
+                elif np.abs(ll_rec[0] - ll_rec[1]) < opts['T_unident']:
+                    unchanged_iters_L += 1
+                    if unchanged_iters_L >= 5:
+                        identifiable_CI[0] = 'Unident'
+                else:
+                    unchanged_iters_L = 0
+
+            if identifiable_CI[1] is None:
+                approx_param = interpolator(roots[0])
+                # Calculate true max params and likelihood at the upper root
+                param_CI[2], ll_CI[2] = self.f(roots[1], i_param, curr=approx_param)
+                x_CI[2] = roots[1]
+                
+                # Record these values
+                param_rec = np.insert(param_rec, len(x_rec), param_CI[2], axis=0)
+                proj_rec = np.insert(proj_rec, len(x_rec),  approx_param, axis=0)
+                ll_rec = np.insert(ll_rec, len(x_rec), ll_CI[2])
+                x_rec = np.insert(x_rec, len(x_rec), roots[1])
+
+                # Check termination status
+                if np.abs(ll_CI[2]-self.l_star) < opts['T_ident']:
+                    identifiable_CI[1] = 'Ident'
+                elif np.abs(ll_rec[-1] - ll_rec[-2]) < opts['T_unident']:
+                    unchanged_iters_U += 1
+                    if unchanged_iters_U >= opts['unchanged_iters']:
+                        identifiable_CI[1] = 'Unident'
+                else:
+                    unchanged_iters_U = 0
+
+            if all(identifiable_CI):
+                break
+
+        if opts['normalise']:  # Normalise the result
+            ll_rec = ll_rec - self.l_star
+            ll_CI = ll_CI - self.l_star
+
+        # Sort the results for interpolation
+        sort = np.argsort(x_rec)
+        x_rec = x_rec[sort]
+        ll_rec = ll_rec[sort]
+        param_rec = param_rec[sort]
+
+        result.update({
+            'CI': (x_CI, ll_CI, param_CI),
+            'opt points': (x_rec, ll_rec, param_rec),
+            'identifiabilty': identifiable_CI,
+            'projected optimum': proj_rec
+        })
+        self.result[i_param] = result
+        return x_CI, ll_CI, param_CI
+
+    def set_options(self, opts, reset=False):
+        if reset:
+            self.opts = {
+                'optimiser': 'Powell',
+                'method': 'quadratic approx.',
+                'minimise': False,
+                'transformation': None,
+                'normalise': True,
+                'slice': False,
+                'alpha': 1.92,
+                'view_aim': 3*1.92,
+                'interp': 2,
+                'T_ident': 1e-3,
+                'T_unident': 1e-4,
+                'max_N_opts': 50,
+                'min_N_opts': 10,
+                'unchanged_iters': 5,
+                'approx shape N': 10,
+            }
+        self.opts.update(opts)
+
+    def create_func(self, function, params_ref, profile=True):
+        if profile:
+            def profile_function(param_value, param_arg, curr):
+                opt_param, score = self.optimise(
+                    function,
+                    curr,
+                    fix=(param_arg, param_value)
+                )
+                return opt_param, score
+            f = profile_function
+        else:
+            def slice_function(param_value, param_arg, curr=None):
+                slice_param = params_ref.copy()
+                slice_param[param_arg] = param_value
+                score = function(slice_param)
+                return slice_param, score
+            f = slice_function
+        return f
+
+    def max_likelihood_estimate(self, n_runs=1, param_ref=None):
+        """
+        Finds and sets the maximum likelihood estimate (MLE).
+
+        Parameters
+        ----------
+
+        n_runs
+            The number of runs of the optimisation to determine the MLE. All
+            results are retuned but only the best result is saved as the MLE.
+
+        param_ref
+            The starting point of the optisation. NDArray of shape (n_params, )
+            or (n_runs, n_params). If none is given, the reference params
+            initialised will be used
+        """
+        # return f
+        pass  # Set up param range
+
+    def set_param_range(self, i_param, bounds=None, adapt=False):
+        """
+        Sets the range in which profile likelihood is calculated.
+
+        Parameters
+        ----------
+
+        i_param
+            The parameter or list of parameters, theta_i, for which the
+            param_range is calculated for.
+        bounds
+            The bounds of the parameter range. NDArray of shape (2, ) or
+            (len(i_param), 2). If None is given or either bound is None, 0.5*MLE_i and 1.5*MLE_i will be used.
+        adapt
+            Whether the bounds of the range should be shrunk to better view
+            the loglikelihood curve around MLE. Aims to view between ll(MLE) and ll(MLE)-3*1.92. Can be changed in set_opts.
+        """
+        if bounds is None:
+            bounds = np.full((len(i_param), 2), None)
+        
+        bounds = np.array(bounds)
+        if bounds.ndim == 1:
+            if len(bounds) > 2:
+                raise TypeError()
+            elif len(bounds) == 1:
+                if bounds[0] is None:
+                    bounds = np.full((len(i_param), 2), None)
+                else:
+                    raise TypeError(
+                        "Bounds must be of shape (2, ), or (len(i_param), 2)"
+                    )
+            else:
+                bounds[0]=[bounds[0]]*len(i_param)
+                bounds[1]=[bounds[1]]*len(i_param)
+                bounds = np.array(bounds).transpose()
+        elif bounds.shape != (len(i_param), 2):
+            raise TypeError(
+                "Bounds must be of shape (2, ), or (len(i_param), 2)"
+            )
+        
+        bounds[bounds[:,0]==None, 0]=0.5*(self.MLE[i_param])[bounds[:,0]==None]
+        bounds[bounds[:,1]==None, 1]=1.5*(self.MLE[i_param])[bounds[:,1]==None]
+
+        if adapt:
+            for j_param, bound in enumerate(bounds):
+                x_min = bound[0]
+                i_check = 0
+                j_check = 0
+                while i_check == 0 and j_check <= 20:
+                    x_check = np.linspace(self.MLE[i_param], x_min, 20)[1:]
+                    for x in x_check:
+                        _, score = self.slice_func(x, i_param)
+                        if score-self.l_star < (self.opts['view_aim']):
+                            x_min = x_check[i_check]
+                            break
+                        i_check += 1
+                    j_check += 1
+                x_max = bound[1]
+                i_check = 0
+                j_check = 0
+                while i_check == 0 and j_check <= 20:
+                    x_check = np.linspace(self.MLE[i_param], x_max, 20)[1:]
+                    for x in x_check:
+                        _, score = self.slice_func(x, i_param)
+                        if score-self.l_star < (self.opts['view_aim']):
+                            x_max = x_check[i_check]
+                            break
+                        i_check += 1
+                    j_check += 1
+                bounds[j_param] = [x_min, x_max]
+
+        self.param_range.update(dict(zip(i_param, zip(bounds, [adapt]*len(i_param)))))
 
 
 class Plot_Models():
@@ -25,35 +600,76 @@ class Plot_Models():
         self.dose_unit = 'mg/Kg'
         self.dose_group_label = 'Dose, ' + self.dose_unit
 
+        self.data_set = False
+        # Initilise the default colour scheme
         self.default_colour = {
             "base": "rebeccapurple", "individual": "viridis",
-            "zero dose": "turbo"
+            "zero dose": "turbo", "heat": "dense"
         }
-
-        self.base_colour = self.default_colour["base"]
-        self.ind_colour_scale = self.default_colour["individual"]
-        self.ind_0_colour_scale = self.default_colour["zero dose"]
-
+        self.set_colour(self.default_colour)
+        # Set the data
         if data is None:
-            self.data_set = False
             self.n_ind = 0
         else:
             self.set_data(data)
             self.n_ind = np.sum(self.n_ids_per_dose)
-        self.pop_model = pop_model
+
+        # Set the non-pop models
         self.mech_model = mech_model
         self.error_model = error_models
         self.prior_model = prior_model
 
+        # Set the pop model and get the mixed-effects/individual parameters
+        self.pop_model = pop_model
         if self.pop_model is None:
-            # TODO: How to tell number of ind params when there is no pop_model
             self.n_ind_params = 0
+            self.ME_param_args = []
         else:
             if not self.data_set:
                 self.n_ind = self.pop_model.n_ids()
             self.n_ind_params = self.n_ind*self.pop_model.n_hierarchical_dim()
 
+            # Find the M-E parameters
+            sp_dims = self.pop_model.get_special_dims()[0]
+            n_params = self.pop_model.n_parameters()
+            non_mix_params = np.asarray(
+                [range(x, y) for _, _, x, y, _ in sp_dims]
+            ).flatten()
+            self.ME_param_args = [
+                x + self.n_ind_params for x in range(0, n_params)
+                if x not in non_mix_params
+            ]
+
     def set_colour(self, colour_scheme):
+        """
+        Sets the colour schemes for plots.
+
+        Parameters
+        ----------
+
+        colour_scheme
+            Dict with labels as keys and plotly compatible colours or colour
+            scales as values. The following labels may be supplied:
+                - "base": Determines the colour used for most graphs where
+                individuals are not plotted. Single plotly compatible colour
+                must be provided. Defaults to css colour rebeccapurple.
+                - "individual": Determines the colours used for graphs where
+                individuals are compared. A plotly colour scale must be
+                provided. Colour for each indvidual is selected from the scale,
+                grouping individuals in the same dose group. Defaults to
+                viridis.
+                - "zero dose": Determines the colours used for graphs where
+                individuals in the control group are compared. A plotly colour
+                scale must be provided. If this scale is the same as
+                "individual" then it will act as another dose group when
+                selecting from "individual", otherwise it will ignore these
+                control group individuals when selecting others from
+                "individual" and instead select colours from "zero dose".
+                Defaults to "turbo".
+                - "heat": Determines the colours used for heat maps
+                (unidirectional). A plotly colour scale must be provided.
+                Defaults to "Dense".
+        """
 
         if colour_scheme is None:
             colour_scheme = self.default_colour
@@ -66,13 +682,17 @@ class Plot_Models():
             self.ind_colour_scale = colour_scheme["individual"]
             if self.ind_colour_scale is None:
                 self.ind_colour_scale = self.default_colour["individual"]
-        if "zero dose individual" in colour_scheme.keys():
+        if "zero dose" in colour_scheme.keys():
             self.ind_0_colour_scale = colour_scheme["zero dose"]
             if self.ind_0_colour_scale is None:
                 self.ind_0_colour_scale = self.default_colour["zero dose"]
+        if "heat" in colour_scheme.keys():
+            self.heat_colour_scale = colour_scheme["heat"]
+            if self.heat_colour_scale is None:
+                self.heat_colour_scale = self.default_colour["zero dose"]
 
         if self.data_set:
-            # Set up the colour scheme for individuals
+            # Set up the colours for individuals
             diff_0_colour = self.ind_0_colour_scale != self.ind_colour_scale
             if (0.0 in self.dose_groups) and diff_0_colour:
                 cols = [pxclrs.sample_colorscale(
@@ -100,6 +720,12 @@ class Plot_Models():
     def set_data(self, df):
         """
         Sets the data to plot.
+
+        Parameters
+        ----------
+
+        df
+            Pandas data frame containing the data.
         """
         dose_info = df[~np.isnan(df["Dose"])].groupby(["ID"])
         dose_amts = dose_info["Dose"]
@@ -150,6 +776,7 @@ class Plot_Models():
             self, pop_params=None, individual_parameters=None,
             param_names=None, bounds=(None, None)
     ):
+        # TODO: introduce option for histogram vs. function
         plot = self.plot_param_dist(
             self.prior_model,
             pop_params=pop_params,
@@ -768,7 +1395,10 @@ class Plot_Models():
             )
         return fig
 
-    def optimise(self, function, start, fix=None, minimise=False):
+    def optimise(
+            self, function, start, fix=None, minimise=False, method='Powell',
+            transform_ind=True
+        ):
 
         # PINTS optimisers minimise.
         # To maximise the function, f, we will need to minimise -f
@@ -777,8 +1407,44 @@ class Plot_Models():
         else:
             sign = -1
 
+        # Check whether there are any mixed effects parameters
+        has_hierarchy = len(self.ME_param_args) > 0
+        if has_hierarchy and transform_ind:
+            # Find the arguments of the population level parameters and tile them for calculations on the individual level parameters
+            typ_args = np.tile(self.ME_param_args[::2], self.n_ind)
+            omega_args = np.tile(self.ME_param_args[1::2], self.n_ind)
+
+            # Define function to convert from [individual params, population params] to [individual eta*omega, population params] and vice versa
+            def transform_ind_to_eta(param, reverse=False):
+                typ_params = param[typ_args]
+                omega_params = param[omega_args]
+                trans_param = param.copy()
+                if reverse:
+                    eta_params = param[:self.n_ind_params]
+                    ind_params = np.exp((eta_params*omega_params + typ_params))
+                    trans_param[:self.n_ind_params] = ind_params
+                else:
+                    ind_params = param[:self.n_ind_params]
+                    eta_params = (np.log(ind_params) - typ_params)/omega_params
+                    trans_param[:self.n_ind_params] = eta_params
+
+                return param
+        else:
+            def transform_ind_to_eta(param, reverse=False):
+                return param
+
+        # Transform start point into [eta, pop]
+        opt_start = start.copy()
+        opt_start = transform_ind_to_eta(opt_start)
+        if any(np.abs(transform_ind_to_eta(opt_start, reverse=True) - start) > 1e-10):
+            raise ValueError(
+                "Transform function is inaccurate: difference of" +
+                str(transform_ind_to_eta(opt_start, reverse=True) - start)
+            )
+
         if fix is not None:
             fix = np.asarray(fix)
+            # If there are fixed params, determine what values need to be deleted and inserted
             if len(fix.shape) == 1:
                 delete_arg = int(fix[0])
                 insert_arg = int(fix[0])
@@ -789,115 +1455,403 @@ class Plot_Models():
                 delete_arg = fix[0].astype(int)
                 fix_values = fix[1]
 
-            opt_start = np.delete(start, delete_arg)
+            # Delete fixed values from the starting point
+            opt_start = np.delete(opt_start, delete_arg)
 
+            # Create the function to minimise
             def minimise_func(reduced_params):
-                full_params = np.insert(reduced_params, insert_arg, fix_values)
+                # insert the fixed values to the correct spots
+                full_params_trans = np.insert(reduced_params, insert_arg, fix_values)
+                # transform parameters back from [eta, pop] to [ind, pop]
+                full_params = transform_ind_to_eta(full_params_trans, reverse=True)
                 return sign*function(full_params)
         else:
             def minimise_func(full_params):
+                full_params = transform_ind_to_eta(full_params, reverse=True)
                 return sign*function(full_params)
-        optimiser = pints.NelderMead(opt_start)
-        significant_change = 1e-4
+        significant_change = 1e-11  # 1e-4
         max_iters = 10000
         max_unchanged_iters = 200
+        if method == "PINTS" or method == "CMAES":
+            if method == "PINTS":
+                optimiser = pints.NelderMead(opt_start)
+            elif method == "CMAES":
+                optimiser = pints.CMAES(opt_start)
+            fbest = float('inf')
+            running = True
+            iteration = 0
+            unchanged_iters = 0
+            while running:
+                # Ask for points to evaluate
+                xs = optimiser.ask()
 
-        fbest = float('inf')
-        running = True
-        iteration = 0
-        unchanged_iters = 0
-        while running:
-            # Ask for points to evaluate
-            xs = optimiser.ask()
+                # Evaluate the function at these points
+                fs = [minimise_func(x) for x in xs]
 
-            # Evaluate the function at these points
-            fs = [minimise_func(x) for x in xs]
+                # Tell the optimiser the evaluations; allowing it to update its
+                # internal state.
+                optimiser.tell(fs)
 
-            # Tell the optimiser the evaluations; allowing it to update its
-            # internal state.
-            optimiser.tell(fs)
+                # Check if new best found
+                fnew = optimiser.fbest()
+                if fnew < fbest:
+                    # Check if this counts as a significant change
+                    if np.abs(fnew - fbest) < significant_change:
+                        unchanged_iters += 1
+                    else:
+                        unchanged_iters = 0
 
-            # Check if new best found
-            fnew = optimiser.fbest()
-            if fnew < fbest:
-                # Check if this counts as a significant change
-                if np.abs(fnew - fbest) < significant_change:
-                    unchanged_iters += 1
+                    # Update best
+                    fbest = fnew
                 else:
-                    unchanged_iters = 0
+                    unchanged_iters += 1
+                iteration += 1
+                # Check stopping criteria
+                if iteration >= max_iters:
+                    running = False
+                if unchanged_iters >= max_unchanged_iters:
+                    running = False
 
-                # Update best
-                fbest = fnew
-            else:
-                unchanged_iters += 1
-            iteration += 1
-            # Check stopping criteria
-            if iteration >= max_iters:
-                running = False
-            if unchanged_iters >= max_unchanged_iters:
-                running = False
-
-            # Check for optimiser issues
-            if optimiser.stop():
-                running = False
+                # Check for optimiser issues
+                if optimiser.stop():
+                    running = False
+            xbest = optimiser.xbest()
+        else:
+            options = {'maxiter': max_iters}
+            # if method in ["Nelder-Mead"]:
+            #     options['fatol'] = significant_change
+            # if method in ["Powell", "L-BFGS-B", "TNC"]:
+            #     options['ftol'] = significant_change # /np.abs(minimise_func(opt_start))
+            result = minimize(minimise_func, opt_start, method=method, options=options)
+            xbest = result.x
+            fbest = result.fun
 
         if fix is not None:
-            xbest = np.insert(optimiser.xbest(), insert_arg, fix_values)
-        else:
-            xbest = optimiser.xbest()
+            xbest = np.insert(xbest, insert_arg, fix_values)
 
+        xbest = transform_ind_to_eta(xbest, reverse=True)
+        # if not result.success:
+        #     print(result.status, result.message)
         return xbest, sign*fbest
-    
-    def f_over_param_range(
-            self, f, i_param, param_range, params_ref, pairwise=False, normalise=True,
-            individual_parameters=False, n_evals=50
+
+    def f_over_param_range_sequential(
+            self, f, i_param, param_range, params_ref, pairwise=False,
+            normalise=True, individual_parameters=False, n_evals=50,
+            extrapolate=0, return_proj=False
     ):
         if pairwise:
             pass
         else:
             x_values = np.linspace(param_range[0], param_range[1], n_evals)
 
-            curr = params_ref.copy()
-
             # Start from the centre, useful for profile likelihoods
             lower_incl = x_values <= params_ref[i_param+self.n_ind_params]
             x_values_lower = x_values[lower_incl][::-1]
             x_values_upper = x_values[np.logical_not(lower_incl)]
             x_values = np.concatenate((x_values_lower, x_values_upper))
-            result = np.empty_like(x_values)
-            param_values = np.empty((len(x_values), len(curr)))
-            for i_x, x in enumerate(x_values):
-                if i_x == len(x_values_lower):
-                    # Reset start point for second half
-                    curr = params_ref.copy()
-                curr, result[i_x] = f(x, i_param+self.n_ind_params, curr=curr)
-                param_values[i_x] = curr
-            max_score = np.max(result)
+            ll_result = np.empty_like(x_values)
+            param_values = np.empty((len(x_values), len(params_ref)))
+            if return_proj:
+                proj = np.empty((len(x_values), len(params_ref)))
+
+            upper = False
+            for x_val_set in (x_values_lower, x_values_upper):
+                for i_x, x in enumerate(x_val_set):
+                    if i_x<=1:
+                        # Set current approximation of optimum parameters to MLE
+                        curr = params_ref.copy()
+                    elif extrapolate>0:
+                        if i_x>extrapolate+1:
+                            k = extrapolate
+                        else:
+                            k = (i_x-1)
+
+                        if upper:
+                            x_interp = x_val_set[i_x-1-k:i_x]
+                            param_interp = param_values[i_x+len(x_values_lower)-1-k:i_x+len(x_values_lower)]
+                        else:
+                            x_interp = x_val_set[i_x-1-k: i_x]
+                            param_interp = param_values[i_x-1-k: i_x]
+                            x_interp = x_interp[::-1]
+                            param_interp = param_interp[::-1]
+
+                        extrapolator = make_interp_spline(
+                            x_interp,
+                            param_interp,
+                            k=k, axis=0
+                        )
+                        curr = extrapolator(x)
+                        # if i_x == len(x_values_lower):
+                        #     # Reset start point for second half
+                        #     extrapolator = make_interp_spline(
+                        #         x_values[0:extrapolate+1], param_values[0:extrapolate+1],
+                        #         k=extrapolate, axis=0
+                        #     )
+
+                    else:
+                        curr = param_values[i_x+upper*len(x_values_lower)-1]
+                    if return_proj:
+                        proj[i_x+upper*len(x_values_lower)] = curr
+                    param_values[i_x+upper*len(x_values_lower)], ll_result[i_x+upper*len(x_values_lower)] = f(x, i_param+self.n_ind_params, curr=curr)
+                upper = True
+
+            if normalise:
+                l_star = np.max(ll_result)-1.92
+                ll_result = ll_result - l_star  # Normalise the result
 
             # Sort the results for plotting
             sort = np.argsort(x_values)
-            result = result[sort] - max_score  # Normalise the result
+            ll_result = ll_result[sort]
             x_values = x_values[sort]
             param_values = param_values[sort]
 
-            return x_values, result, param_values
 
-    def create_function_for_plotting(self, function, params_ref, profile=None):
+            if return_proj:
+                proj = proj[sort]
+                return x_values, ll_result, param_values, proj
 
+            return x_values, ll_result, param_values
+
+    def f_over_param_range_piecewise(
+            self, f, i_param, param_range, params_anchors, pairwise=False,
+            normalise=True, individual_parameters=False, n_evals=50,
+            interpolate=1, return_proj=False
+    ):
+        if pairwise:
+            pass
+        else:
+            x_values = np.asarray(params_anchors[0])
+            ll_result =  np.asarray(params_anchors[1])
+            param_values = np.asarray(params_anchors[2])
+            if return_proj:
+                proj_rec = param_values.copy()
+            stop_criteria = [False]*len(x_values)
+            max_opts = 100
+            min_opts = 10
+            n_del = 2
+
+            while len(x_values) <= max_opts:
+                x_insert = []
+                insert_args = []
+                ll_insert = []
+                param_insert = []
+                extrapolate = False
+                # Determine where to add new points
+                if x_values[0] !=  param_range[0]:
+                    insert_args += [0, 0]
+                    x_insert.append(param_range[0])
+                    x_insert.append((param_range[0]+x_values[0])*0.5)
+                    extrapolate = True
+                for i in range(1, len(x_values)):
+                    skip = stop_criteria[i-1] and stop_criteria[i]
+                    if len(x_values) > min_opts+1 and skip:
+                        continue
+                    else:
+                        insert_args += [i]
+                        x_insert.append((x_values[i-1] + x_values[i])*0.5)
+                if x_values[-1] !=  param_range[1]:
+                    insert_args += [len(x_values), len(x_values)]
+                    x_insert.append((param_range[1]+x_values[-1])*0.5)
+                    x_insert.append(param_range[1])
+                    extrapolate = True
+                x_insert = np.asarray(x_insert)
+
+                # Create intitial prediction using interpolation
+                if extrapolate:
+                    interpolator = interp1d(
+                            x_values, param_values,
+                            kind=interpolate, axis=0, fill_value='extrapolate'
+                        )
+                else:
+                    interpolator = make_interp_spline(
+                            x_values, param_values,
+                            k=interpolate, axis=0
+                        )
+                    
+                proj_values = interpolator(x_insert)
+                if return_proj:
+                    proj_rec = np.insert(proj_rec, insert_args, proj_values)
+
+                # Maximise other params and Generate profile ll score
+                for i, x in enumerate(x_insert):
+                    param_value, ll = f(x, i_param+self.n_ind_params, curr=proj_values[i])
+                    ll_insert.append(ll)
+                    param_insert.append(param_value)
+
+                arg_delete = None
+                if len(x_values) >= min_opts:
+                    # Check if the approximation of previous values is better
+
+                    interpolator = make_interp_spline(
+                            x_insert, param_insert,
+                            k=interpolate, axis=0
+                        )
+                    # n_del += 1
+                    error = np.sum(np.abs(interpolator(x_values) - param_values), axis=1)
+                    error_new = np.sum(np.abs(proj_values - np.asarray(param_insert)), axis=1)
+                    
+                    stop_criteria = error <= 1e-2
+                    arg_delete = np.argpartition(error, len(error)-n_del)[-n_del:] # np.argmax(error)
+                    arg_delete = arg_delete[np.logical_not(stop_criteria[arg_delete])]
+                    arg_delete += np.count_nonzero(np.tile(insert_args, (n_del, 1)).transpose() <= arg_delete, axis=0)
+
+                    # max_error = 0
+                    # for i, x in enumerate(x_values):
+                    #     if x not in x_insert and not all(stop_criteria[i-1:i+1]):
+                    #         stop_criteria[i] = False
+                    #         mask = [True]*len(x_values)
+                    #         view = slice(max(0, i-(interpolate+2)), min(i+(interpolate+3), len(x_values)+1))
+                    #         mask[view] = [True]*len(mask[view])
+                    #         mask[i] = False
+                    #         interpolator = make_interp_spline(
+                    #                 x_values[mask], param_values[mask],
+                    #                 k=interpolate, axis=0
+                    #             )
+                    #         error = np.sum(np.abs(interpolator(x) - param_values[i]))
+                    #         if  error <= 1e-2:
+                    #             stop_criteria[i] = True
+                    #         elif error > max_error:
+                    #             max_error = error
+                    #             arg_delete = i
+                    # Check similarity between projection and optisised
+                    # stop_insert = np.sum(np.abs(proj_values - np.asarray(param_insert)), axis=1) < 1e-2
+                    stop_criteria = np.insert(stop_criteria, insert_args, error_new<= 1e-2) 
+                else:
+                    stop_criteria += [False]*len(x_insert)
+
+                # Insert the new values into arrays
+                x_values = np.insert(x_values, insert_args, x_insert)
+                ll_result = np.insert(ll_result, insert_args, ll_insert)
+                param_values = np.insert(param_values, insert_args, param_insert, axis=0)
+
+
+                if arg_delete is not None:
+                    # Slowly remove potential errors to smooth curve
+                    x_values = np.delete(x_values, arg_delete)
+                    ll_result = np.delete(ll_result, arg_delete)
+                    param_values = np.delete(param_values, arg_delete, axis=0)
+                    stop_criteria = np.delete(stop_criteria, arg_delete)
+
+                if np.all(stop_criteria) and len(x_values) > min_opts+1:
+                    break
+
+            if normalise:
+                max_score = np.max(ll_result)
+                ll_result = ll_result - max_score  # Normalise the result
+
+            if return_proj:
+                return x_values, ll_result, param_values, proj_rec
+
+            return x_values, ll_result, param_values
+
+    def f_over_param_range_poly_approx(
+            self, f, i_param, param_range, params_anchors, l_star, pairwise=False,
+            individual_parameters=False, max_evals=50, interpolate=2, normalise=True
+    ):
+        if pairwise:
+            pass
+        else:
+            x_values = np.asarray(params_anchors[0])
+            ll_values = np.asarray(params_anchors[1])
+            param_values = np.asarray(params_anchors[2])
+            x_rec = x_values.copy()
+            ll_rec = ll_values.copy()
+            param_rec = param_values.copy()
+
+
+            stop_criteria = [None]*2
+            T_ident = 1e-3
+            T_unident = 1e-4
+            unchanged_iters_L = 0
+            unchanged_iters_U = 0
+
+            while len(x_rec) <= max_evals:
+                # Solve LL(x)-L_star=0 approximating space as polynomial
+                poly_spline = PPoly.from_spline(make_interp_spline(
+                    x_values, ll_values - l_star,
+                    k=interpolate, axis=0
+                ))
+                roots = np.sort(poly_spline.roots())
+
+                # Find optimum of parameters at the roots.
+                interpolator = make_interp_spline(
+                        x_values, param_values,
+                        k=interpolate, axis=0
+                    )
+                if stop_criteria[0] is None:
+                    param_values[0], ll_values[0] = f(roots[0], i_param+self.n_ind_params, curr=interpolator(roots[0]))
+                    x_values[0] = roots[0]
+
+                    param_rec = np.insert(param_rec, 0, param_values[0], axis=0)
+                    ll_rec = np.insert(ll_rec, 0, ll_values[0])
+                    x_rec = np.insert(x_rec, 0, x_values[0])
+
+                    if np.abs(ll_values[0]-l_star) < T_ident:
+                        stop_criteria[0] = 'Ident'
+                    elif np.abs(ll_rec[0] - ll_rec[1]) < T_unident:
+                        unchanged_iters_L += 1
+                        if unchanged_iters_L >= 5:
+                            stop_criteria[0] = 'Unident'
+                    else:
+                        unchanged_iters_L = 0
+
+                if stop_criteria[1] is None:
+                    param_values[2], ll_values[2] = f(roots[1], i_param+self.n_ind_params, curr=interpolator(roots[1]))
+                    x_values[2] = roots[1]
+                    
+                    param_rec = np.insert(param_rec, len(x_rec), param_values[2], axis=0)
+                    ll_rec = np.insert(ll_rec, len(x_rec), ll_values[2])
+                    x_rec = np.insert(x_rec, len(x_rec), roots[1])
+
+                    if np.abs(ll_values[2]-l_star) < T_ident:
+                        stop_criteria[1] = 'Ident'
+                    elif np.abs(ll_rec[-1] - ll_rec[-2]) < T_unident:
+                        unchanged_iters_U += 1
+                        if unchanged_iters_U >= 5:
+                            stop_criteria[1] = 'Unident'
+                    else:
+                        unchanged_iters_U = 0
+
+                if all(stop_criteria):
+                    break
+
+            if normalise:
+                max_score = np.max(ll_rec)
+                ll_rec = ll_rec - l_star  # Normalise the result
+
+            print("Termination status:", stop_criteria)
+
+            # # Sort the results for plotting
+            # sort = np.argsort(x_rec)
+            # x_rec = x_rec[sort]
+            # ll_rec = ll_rec[sort]
+            # param_rec = param_rec[sort]
+
+            return x_rec, ll_rec, param_rec
+
+    def create_plot_func(self, function, params_ref, profile=False, profile_opts=None):
         def slice_function(param_value, param_arg, curr=None):
             slice_param = params_ref.copy()
             slice_param[param_arg] = param_value
             score = function(slice_param)
             return slice_param, score
 
-        if profile is not None:
+        if profile:
+            opts = {
+                'method': 'Powell',
+                'minimise': False,
+                'transform_ind': True
+            }
+            if profile_opts is not None:
+                opts.update(profile_opts)
             def profile_function(param_value, param_arg, curr):
-                minimise = profile == "minimum"
                 opt_param, score = self.optimise(
                     function,
                     curr,
                     fix=(param_arg, param_value),
-                    minimise=minimise
+                    minimise=opts['minimise'],
+                    method=opts['method'],
+                    transform_ind=opts['transform_ind']
                 )
                 return opt_param, score
 
@@ -909,9 +1863,9 @@ class Plot_Models():
         return f
 
     def plot_param_function(
-            self, function, params_ref, profile=None, pairwise=False,
+            self, function, params_ref, profile=False, pairwise=False,
             individual_parameters=False, param_names=None, bounds=(None, None),
-            force_bounds=(False, False), n_evals=50,
+            force_bounds=(False, False), n_evals=50, profile_opts = None
     ):
         """
         Plot a function around a point in parameter space. Each parameter in
@@ -958,14 +1912,16 @@ class Plot_Models():
         """
 
         # Create function
-        slice_function = self.create_function_for_plotting(function, params_ref, profile=None)
+        slice_function = self.create_plot_func(
+            function, params_ref, profile=None
+        )
 
-        if profile is not None:
-            f = self.create_function_for_plotting(function, params_ref, profile=profile)
-            profile = True
+        if profile:
+            f = self.create_plot_func(
+                function, params_ref, profile=profile, profile_opts=profile_opts
+            )
         else:
             f = slice_function
-            profile = False
         ref_score = function(params_ref)
 
         # Set the parameter names
@@ -996,8 +1952,6 @@ class Plot_Models():
             ind_colour_selection = self.ind_colours
         else:
             ind_colour_selection = [self.base_colour]*self.n_ind
-        if pairwise:
-            pair_colour = "dense"
 
         # Set up bounds
         if bounds[0] is None:
@@ -1037,12 +1991,14 @@ class Plot_Models():
             x_min = lower_bound[i_param]
             i_check = 0
             j_check = 0
+            view_aim = 3*1.92
+
             if not force_lower_bounds[i_param]:
                 while i_check == 0 and j_check <= 20:
                     x_check = np.linspace(param_ref_i, x_min, 20)[1:]
                     for x in x_check:
                         _, score = slice_function(x, i_param+self.n_ind_params)
-                        if score < (ref_score - 3*1.92):
+                        if score < (ref_score - view_aim):
                             x_min = x_check[i_check]
                             break
                         i_check += 1
@@ -1055,7 +2011,7 @@ class Plot_Models():
                     x_check = np.linspace(param_ref_i, x_max, 20)[1:]
                     for x in x_check:
                         _, score = slice_function(x, i_param+self.n_ind_params)
-                        if score < (ref_score - 3*1.92):
+                        if score < (ref_score - view_aim):
                             x_max = x_check[i_check]
                             break
                         i_check += 1
@@ -1063,7 +2019,16 @@ class Plot_Models():
             param_ranges[i_param] = (x_min, x_max)
 
             # Calculate function
-            x_values, result, _ = self.f_over_param_range(f, i_param, param_ranges[i_param], params_ref, n_evals=n_evals)
+            if profile_opts is None:
+                extrapolate = 0
+            elif 'projection' in profile_opts:
+                extrapolate = profile_opts['projection']
+            else:
+                extrapolate = 0
+            x_values, result, _, _ = self.f_over_param_range_sequential(
+                f, i_param, param_ranges[i_param], params_ref, n_evals=n_evals,
+                extrapolate=extrapolate
+            )
             args = [i_param+self.n_ind_params, i_param+self.n_ind_params]
 
             # Plot function
@@ -1168,7 +2133,11 @@ class Plot_Models():
                             line_start = True
                             for j_y in j_range:
                                 y = y_values[j_y]
-                                if line_start and profile:
+                                if line_start and (profile is not None):
+                                    if profile == "minimise":
+                                        minimise = True
+                                    else:
+                                        minimise = False
                                     curr, result[j_y, i_x] = self.optimise(
                                         function,
                                         line_optimum,
@@ -1189,9 +2158,9 @@ class Plot_Models():
                             x=x_values,
                             y=y_values,
                             showlegend=plot_num == 1,
-                            colorscale=pair_colour,
-                            zmin=- 1.92,
-                            zmax=+ 1.92
+                            colorscale=self.heat_colour_scale,
+                            zmin=-1.92,
+                            zmax=+1.92
                         ),
                         row=row,
                         col=col
@@ -1264,15 +2233,22 @@ class Plot_Models():
             )
         )
         return fig
-    
-    def plot_ind_profile_ll(
+
+    def plot_single_profile_ll(
             self, log_likelihood, i_param, params_ref,
             param_name=None, bounds=(None, None),
-            force_bounds=(False, False), n_evals=50,
+            force_bounds=(False, False), n_evals=50, profile_opts=None,
+            show=["ll", "ind_ll", "ind_param_0"]
     ):
+        # Potential Show: "ll", "ind_ll", "param_i", "ind_param_i", "deriv_i"
+
         # Create function
-        slice_function = self.create_function_for_plotting(log_likelihood, params_ref, profile=None)
-        f = self.create_function_for_plotting(log_likelihood, params_ref, profile="maximise")
+        slice_function = self.create_plot_func(
+            log_likelihood, params_ref, profile=False
+        )
+        f = self.create_plot_func(
+            log_likelihood, params_ref, profile=True, profile_opts=profile_opts
+        )
         ref_score = log_likelihood(params_ref)
         param_ref_i = params_ref[i_param+self.n_ind_params]
 
@@ -1283,7 +2259,7 @@ class Plot_Models():
             param_name = 'Parameter ' + str(i_param+1)
 
         # Create subplots
-        n_rows = 3
+        n_rows = len(show)
         n_cols = 1
         fig = make_subplots(rows=n_rows, cols=n_cols, shared_xaxes=True)
 
@@ -1303,7 +2279,9 @@ class Plot_Models():
             upper_bound = 1.5*param_ref_i
         else:
             upper_bound = bounds[1]
-        
+
+        view_aim = 3*1.92
+
         x_min = lower_bound
         i_check = 0
         j_check = 0
@@ -1312,7 +2290,7 @@ class Plot_Models():
                 x_check = np.linspace(param_ref_i, x_min, 20)[1:]
                 for x in x_check:
                     _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - 6*1.92):
+                    if score < (ref_score - view_aim):
                         x_min = x_check[i_check]
                         break
                     i_check += 1
@@ -1325,7 +2303,7 @@ class Plot_Models():
                 x_check = np.linspace(param_ref_i, x_max, 20)[1:]
                 for x in x_check:
                     _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - 6*1.92):
+                    if score < (ref_score - view_aim):
                         x_max = x_check[i_check]
                         break
                     i_check += 1
@@ -1333,100 +2311,279 @@ class Plot_Models():
         param_range = (x_min, x_max)
 
         # Calculate function
-        x_values, result, params_result = self.f_over_param_range(f, i_param, param_range, params_ref, n_evals=n_evals)
-        fig.add_trace(
-            go.Scatter(
-                name='Population Log-likelihood',
-                x=x_values,
-                y=result,
-                mode='lines',
-                line=dict(color=pop_colour),
-            ),
-            row=1,
-            col=1
-        )
-        # create matrix of pointwise loglikelihoods of shape (n_x_values, n_ind)
-        ind_ll = np.empty((x_values.shape[0], self.n_ind))
-        for i_vec, param_vec in enumerate(params_result):
-            if param_vec[i_param+self.n_ind_params] != x_values[i_vec]:
-                raise ValueError(
-                    "Incorrect param vector provided for "
-                    + str(i_vec) +"th parameter vector:"
-                    + str(param_vec[i_param+self.n_ind_params]) + "!=" + str(x_values[i_vec])
-                )
-            pll = np.array(log_likelihood.compute_pointwise_ll(param_vec, per_individual=True))
-            full_ll = log_likelihood(param_vec)
-            if np.abs(np.sum(pll) - full_ll) > 1e-3:
-                raise ValueError(
-                    "Incorrect pointwise log-likelihood calculated for "
-                    + str(i_vec) +"th parameter vector:"
-                    + str(np.sum(pll)) + "!=" + str(full_ll)
-                )
-            if pll.shape != (self.n_ind, ):
-                raise ValueError(
-                    "individual log-likelihood is wrong shape. Should be "
-                    + str((self.n_ind, ))
-                    + "but is " + str(pll.shape)
-                )
-            ind_ll[i_vec] = pll
-        result_from_ind_ll = np.sum(ind_ll, axis=1)
-        max_result = np.max(result_from_ind_ll)
-        result_from_ind_ll -= max_result
-        check_ind_ll = np.abs(result_from_ind_ll - result) > 1e-2
-        if np.any(check_ind_ll):
-            raise ValueError(
-                "Incorrect profile log-likelihood calculated for "
-                + str(np.argwhere(check_ind_ll)) +"th parameter vectors:"
-                + str(ind_ll[check_ind_ll])
-            )
-        ind_ll = ind_ll - np.array(log_likelihood.compute_pointwise_ll(params_ref, per_individual=True)) # np.max(ind_ll, axis=0)  # (max_result/self.n_ind)
-        for i_ind in range(0, self.n_ind):
-            ind_colour = ind_colour_selection.flatten()[i_ind]
-            fig.add_trace(
-                go.Scatter(
-                    name='Individual Log-likelihoods',
-                    x=x_values,
-                    y=ind_ll[:, i_ind],
-                    mode='lines',
-                    line=dict(color=ind_colour, width=1),
-                    showlegend=False
-                ),
-                row=2,
-                col=1
-            )
-            fig.add_trace(
-                go.Scatter(
-                    name='Individual Parameter optimised',
-                    x=x_values,
-                    y=params_result[:, i_ind]-params_ref[i_ind],
-                    mode='lines',
-                    line=dict(color=ind_colour, width=1),
-                    showlegend=False
-                ),
-                row=3,
-                col=1
-            )
-        
-        pop_model = log_likelihood.get_population_model()
-        sp_dims = pop_model.get_special_dims()[0]
+        if 'quadratic approx' in profile_opts:
+            quad_approx = profile_opts['quadratic approx']
+        else:
+            quad_approx = False
+        if 'piecewise approx' in profile_opts:
+            piece_approx = profile_opts['piecewise approx']
+        else:
+            piece_approx = False
 
-        n_params = pop_model.n_parameters()
-        non_mix_params = np.asarray([range(x, y) for _, _, x, y, _ in sp_dims]).flatten()
-        mix_params = [x + self.n_ind for x in range(0, n_params) if x not in non_mix_params]
-        for typ_param in mix_params[::2]:
-            fig.add_trace(
-                go.Scatter(
-                    name='Population Parameter optimised',
-                    x=x_values,
-                    y=np.exp(params_result[:, typ_param])-np.exp(params_ref[typ_param]),
-                    mode='lines',
-                    line = dict(color=pop_colour),
-                    showlegend=False
-                ),
-                row=3,
-                col=1
+        if quad_approx:
+            interp = 2  # Use Quadratic approximation
+
+            # First step: Estimate CI using slice function
+            l_star = ref_score - 1.92
+            x_anchors = [param_range[0], params_ref[i_param+self.n_ind_params], param_range[1]]
+            param_anchors = [None, params_ref, None]
+
+            def solve_slice(x, L_U):
+                param_anchors[L_U+1], ll = slice_function(x, i_param+self.n_ind_params)
+                return ll - l_star
+
+            x_anchors[0] = brentq(solve_slice, x_anchors[0], x_anchors[1], args=(-1))
+            x_anchors[2] = brentq(solve_slice, x_anchors[1], x_anchors[2], args=(1))
+            ll_anchors = [None, ref_score, None]
+
+            # Optimise at this point to find true profile log-likelihood points
+            param_anchors[0], ll_anchors[0] = self.optimise(
+                log_likelihood, param_anchors[0], fix=(i_param+self.n_ind_params, x_anchors[0]), minimise=False, method='powell',
+                transform_ind=True
             )
-        
+            param_anchors[2], ll_anchors[2] = self.optimise(
+                log_likelihood, param_anchors[2], fix=(i_param+self.n_ind_params, x_anchors[2]), minimise=False, method='powell',
+                transform_ind=True
+            )
+            # Iterative Steps:
+            x_CI_estimates, LL_CI_estimates, params_CI_estimates = self.f_over_param_range_poly_approx(
+                f, i_param, param_range, [x_anchors, ll_anchors, param_anchors], l_star, max_evals=n_evals, interpolate=interp
+            )
+            
+            # # Reset the anchors to the CIs
+            # x_anchors[0] = x_CI_estimates[0]
+            # x_anchors[2] = x_CI_estimates[-1]
+            # ll_anchors[0] = LL_CI_estimates[0]
+            # ll_anchors[1] = (LL_CI_estimates[x_CI_estimates==params_ref[i_param+self.n_ind_params]])[0]
+            # ll_anchors[2] = LL_CI_estimates[-1]
+            # param_anchors[0] = params_CI_estimates[0]
+            # param_anchors[2] = params_CI_estimates[-1]
+
+            # Reset the anchors to the CIs
+            sort_args = np.argsort(x_CI_estimates)
+            x_anchors = x_CI_estimates.copy()[sort_args]
+            ll_anchors = LL_CI_estimates.copy()[sort_args]
+            param_anchors = params_CI_estimates.copy()[sort_args]
+            # ll_anchors[1] = (LL_CI_estimates[x_CI_estimates==params_ref[i_param+self.n_ind_params]])[0]
+
+            # Build interpolated spline for plotting in between
+            CI_points = [x_CI_estimates[0], params_ref[i_param+self.n_ind_params], x_CI_estimates[-1]]
+            
+            ll_interpolator = make_interp_spline(
+                    CI_points,
+                    ll_anchors[np.isin(x_anchors, CI_points)],
+                    k=interp
+                )
+            param_interpolator = make_interp_spline(
+                    CI_points,
+                    param_anchors[np.isin(x_anchors, CI_points)],
+                    k=interp, axis=0
+                )
+            # view_range = PPoly.from_spline(interpolator).solve(-4)
+            view_range = param_range
+
+            # Add extra points to interpolator to determine shape
+            if 'approx shape' in profile_opts:
+                if profile_opts['approx shape']:
+                    x_shape_points = np.linspace(view_range[0], view_range[-1], 10)
+                    for x in x_shape_points:
+                        params, ll = f(x, i_param+self.n_ind_params, curr=param_interpolator(x))
+
+                        param_anchors = np.append(param_anchors, [params], axis=0)
+                        x_anchors = np.append(x_anchors, x)
+                        if 'normalise' in profile_opts:
+                            if profile_opts['normalise']:
+                                ll = ll - l_star
+                        else:
+                            ll = ll - l_star
+                        ll_anchors = np.append(ll_anchors, ll)
+
+                    sort_args = np.argsort(x_anchors)
+
+                    x_anchors = x_anchors[sort_args]
+                    ll_anchors = ll_anchors[sort_args]
+                    param_anchors = param_anchors[sort_args]
+
+            weights = np.ones(len(x_anchors))
+            weights[np.isin(x_anchors, CI_points)] = 8
+            weights[x_anchors==params_ref[i_param+self.n_ind_params]] = 20
+            inf_result = np.logical_not(np.isfinite(ll_anchors))
+            if np.any(inf_result):
+                ll_anchors[inf_result] = 2
+                weights[inf_result] = 0
+            ll_interpolator = UnivariateSpline(
+                    x_anchors, ll_anchors,
+                    w=weights, s=1e-4*len(weights)
+                )
+            param_interpolator = make_interp_spline(
+                    x_anchors, param_anchors,
+                    k=interp, axis=0
+                )
+
+            # Get points to plot
+            x_values = np.linspace(view_range[0], view_range[-1], 100)
+            result = ll_interpolator(x_values)
+            params_result = param_interpolator(x_values)
+
+        elif piece_approx:
+            if 'projection' in profile_opts:
+                interp = profile_opts['projection']
+
+            else:
+                interp = profile_opts['projection']
+            print("Projecting piecewise", interp, n_evals)
+            x_anchors = [param_range[0], params_ref[i_param+self.n_ind_params], param_range[1]]
+            param_anchors = [None, params_ref, None]
+            ll_anchors = [None, ref_score, None]
+            param_anchors[0], ll_anchors[0] = self.optimise(
+                log_likelihood, params_ref, fix=(i_param+self.n_ind_params, x_anchors[0]), minimise=False, method='powell',
+                transform_ind=True
+            )
+            param_anchors[2], ll_anchors[2] = self.optimise(
+                log_likelihood, params_ref, fix=(i_param+self.n_ind_params, x_anchors[2]), minimise=False, method='powell',
+                transform_ind=True
+            )
+            x_values, result, params_result = self.f_over_param_range_piecewise(
+                f, i_param, param_range, [x_anchors, ll_anchors, param_anchors], n_evals=n_evals, interpolate=interp
+            )
+        elif 'projection' in profile_opts:
+            extrap = profile_opts['projection']
+            print("Projecting sequentially", extrap, n_evals)
+            x_values, result, params_result = self.f_over_param_range_sequential(
+                f, i_param, param_range, params_ref, n_evals=n_evals, extrapolate=extrap
+            )
+        else:
+            print("Not Projecting sequentially", n_evals)
+            x_values, result, params_result = self.f_over_param_range_sequential(
+                f, i_param, param_range, params_ref, n_evals=n_evals, extrapolate=0
+            )
+        y_ax_names = []
+        for row, graph_type in enumerate(show):
+            if graph_type == "ll":
+                fig.add_trace(
+                    go.Scatter(
+                        name='Population Log-likelihood',
+                        x=x_values,
+                        y=result,
+                        mode='lines',
+                        line=dict(color=self.base_colour),
+                    ),
+                    row=row+1,
+                    col=1
+                )
+                if quad_approx:
+                    fig.add_trace(
+                        go.Scatter(
+                            name='Estimates of CI',
+                            x=x_anchors,
+                            y=ll_anchors,
+                            mode='markers',
+                            marker=dict(color=self.base_colour, symbol="star-diamond", opacity=0.5),
+                        ),
+                        row=row+1,
+                        col=1
+                    )
+
+
+                y_ax_names.append("Log-Likelihood")
+            elif graph_type == "ind_ll":
+                # create matrix of pointwise loglikelihoods of shape
+                # (n_x_values, n_ind)
+                ind_ll = np.empty((x_values.shape[0], self.n_ind))
+                for i_vec, param_vec in enumerate(params_result):
+                    pll = np.array(log_likelihood.compute_pointwise_ll(
+                        param_vec, per_individual=True
+                    ))
+                    full_ll = log_likelihood(param_vec)
+                    if np.abs(np.sum(pll) - full_ll) > 1e-3:
+                        raise ValueError(
+                            "Incorrect pointwise log-likelihood calculated for "
+                            + str(i_vec) + "th parameter vector:"
+                            + str(np.sum(pll)) + "!=" + str(full_ll)
+                        )
+                    if pll.shape != (self.n_ind, ):
+                        raise ValueError(
+                            "individual log-likelihood is wrong shape. Should be "
+                            + str((self.n_ind, ))
+                            + "but is " + str(pll.shape)
+                        )
+                    ind_ll[i_vec] = pll
+                ind_ll = ind_ll - np.array(log_likelihood.compute_pointwise_ll(
+                    params_ref, per_individual=True)
+                )
+                for i_ind in range(0, self.n_ind):
+                    ind_colour = ind_colour_selection.flatten()[i_ind]
+                    fig.add_trace(
+                        go.Scatter(
+                            name='Individual Log-likelihoods',
+                            x=x_values,
+                            y=ind_ll[:, i_ind],
+                            mode='lines',
+                            line=dict(color=ind_colour, width=1),
+                            showlegend=False
+                        ),
+                        row=row+1,
+                        col=1
+                    )
+            elif graph_type.startswith("ind_param"):
+                ind_param = np.arange(self.n_ind_params)[int(graph_type[-1])::int(len(self.ME_param_args)/2)]
+                typ_param = self.ME_param_args[int(graph_type[-1])*2]
+                for i_ind in range(0, self.n_ind):
+                    ind_colour = ind_colour_selection.flatten()[i_ind]
+                    param_arg = ind_param[i_ind]
+                    fig.add_trace(
+                        go.Scatter(
+                            name='Individual Parameter optimised',
+                            x=x_values,
+                            y=params_result[:, param_arg]-params_ref[param_arg],
+                            mode='lines',
+                            line=dict(color=ind_colour, width=1),
+                            showlegend=False
+                        ),
+                        row=row+1,
+                        col=1
+                    )
+
+                norm_res = (
+                    np.exp(params_result[:, typ_param])
+                    - np.exp(params_ref[typ_param])
+                )
+                fig.add_trace(
+                    go.Scatter(
+                        name='Population Parameter optimised',
+                        x=x_values,
+                        y=norm_res,
+                        mode='lines',
+                        line=dict(color=pop_colour),
+                        showlegend=False
+                    ),
+                    row=row+1,
+                    col=1
+                )
+
+            elif graph_type.startswith("deriv"):
+                y_deriv = {0: result}
+                x_deriv = {0: x_values}
+                n_deriv = int(graph_type[-1])
+                for deriv in range(1, n_deriv+1):
+                    x = x_deriv[deriv-1]
+                    dy = np.diff(y_deriv[deriv-1], 1)
+                    dx = np.diff(x, 1)
+                    y_deriv[deriv] = dy/dx
+                    x_deriv[deriv] = 0.5*(x[:-1]+x[1:])
+                fig.add_trace(
+                    go.Scatter(
+                        name=str(deriv)+'th Derivative',
+                        x=x_deriv[n_deriv],
+                        y=y_deriv[n_deriv],
+                        mode='lines',
+                        line=dict(color=self.base_colour),
+                        showlegend=False
+                    ),
+                    row=row+1,
+                    col=1
+                )
+
         fig.update_layout(
             template='plotly_white',
             width=500,
