@@ -1,0 +1,149 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'comparison_of_convergence.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{412.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.40717427)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.33454544){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Dataset}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.33454544){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{All params M-E}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.33454544){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$ M-E}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.33454544){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$ M-E}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.33454544){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{F-E}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.29454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1 (1 M-E param)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.29454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.29454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.29454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.29454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.25454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2 (1 M-E param)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.25454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.25454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.25454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.25454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.21454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3 (1 M-E param)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.21454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.21454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.21454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.21454544){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.17272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4 (1 M-E param)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.17272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.17272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.17272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.17272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.13272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5 (2 M-E params)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.13272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.13272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.13272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.13272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.09272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6 (2 M-E params)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.09272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.09272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6, 3, 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.09272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.09272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.05272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}7 (2 M-E params)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.05272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.05272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1, 8, 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.05272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.05272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{comparison_of_convergence.pdf}}%
+    \put(0.01454545,0.01272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}8 (2 M-E params)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{comparison_of_convergence.pdf}}%
+    \put(0.21454545,0.01272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{comparison_of_convergence.pdf}}%
+    \put(0.41454545,0.01272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{comparison_of_convergence.pdf}}%
+    \put(0.61454545,0.01272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{comparison_of_convergence.pdf}}%
+    \put(0.81454545,0.01272726){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{comparison_of_convergence.pdf}}%
+    \put(0.51817693,0.37631341){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Assumptions}\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

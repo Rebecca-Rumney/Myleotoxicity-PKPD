@@ -1,0 +1,2 @@
+parameter,statistics,p-value,test
+Cl,0.910367,0.0035812,Shapiro-Wilk

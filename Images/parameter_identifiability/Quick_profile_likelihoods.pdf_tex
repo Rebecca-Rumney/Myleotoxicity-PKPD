@@ -1,0 +1,157 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Quick_profile_likelihoods.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{548.76379395bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.73311996)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Quick_profile_likelihoods.pdf}}%
+    \put(0.54383962,0.71757348){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Log-Likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Quick_profile_likelihoods.pdf}}%
+    \put(0.71683114,0.71757348){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Parameter Reference\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Quick_profile_likelihoods.pdf}}%
+    \put(0.89715137,0.67103866){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−1.5\end{tabular}}}}%
+    \put(0.82494183,0.67085183){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−1\end{tabular}}}}%
+    \put(0.73960187,0.67103867){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−0.5\end{tabular}}}}%
+    \put(0.67009482,0.67098068){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.58591579,0.67103866){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.5\end{tabular}}}}%
+    \put(0.51349231,0.67085184){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.42823744,0.67103868){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Quick_profile_likelihoods.pdf}}%
+    \put(0.13432973,0.00818352){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$S$\end{tabular}}}}%
+    \put(0.01296347,0.66535643){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Normalised\\Log-likelihood\\Value\end{tabular}}}}}%
+    \put(0.03106159,0.58408242){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$K_{cl}$\end{tabular}}}}}%
+    \put(0.03042274,0.5028084){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_{c,typ}$\end{tabular}}}}}%
+    \put(0.03042274,0.4215344){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\omega_{V_c}$\end{tabular}}}}}%
+    \put(0.03042274,0.34026038){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R_{0, typ}$\end{tabular}}}}}%
+    \put(0.03042274,0.25898637){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\gamma$\end{tabular}}}}}%
+    \put(0.03192591,0.17771236){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}MTT\end{tabular}}}}}%
+    \put(0.03042274,0.09643835){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_{c, PD}$\end{tabular}}}}}%
+    \put(0.24127007,0.00972423){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$K_{cl}$\end{tabular}}}}%
+    \put(0.36562082,0.01098689){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_{c,typ}$\end{tabular}}}}%
+    \put(0.47929764,0.0109869){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0.59504894,0.01098689){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R_{0, typ}$\end{tabular}}}}%
+    \put(0.70937233,0.0109869){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\gamma$\end{tabular}}}}%
+    \put(0.82387636,0.00728911){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}MTT\end{tabular}}}}%
+    \put(0.94103839,0.01098689){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_{c, PD}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Quick_profile_likelihoods.pdf}}%
+    \put(0.09517754,0.63794146){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−8\end{tabular}}}}%
+    \put(0.09517754,0.64958058){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−6\end{tabular}}}}%
+    \put(0.09517754,0.66120874){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.09517754,0.67284786){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.09517754,0.68448698){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Quick_profile_likelihoods.pdf}}%
+    \put(0.09517754,0.56485756){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2.8\end{tabular}}}}%
+    \put(0.09517754,0.58115892){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2.81\end{tabular}}}}%
+    \put(0.09517754,0.59746027){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2.82\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{Quick_profile_likelihoods.pdf}}%
+    \put(0.09517754,0.47754565){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.5\end{tabular}}}}%
+    \put(0.09517754,0.49699537){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.4\end{tabular}}}}%
+    \put(0.09517754,0.51645607){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{Quick_profile_likelihoods.pdf}}%
+    \put(0.09517754,0.39662921){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.25\end{tabular}}}}%
+    \put(0.09517754,0.40878392){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.3\end{tabular}}}}%
+    \put(0.09517754,0.42092766){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.35\end{tabular}}}}%
+    \put(0.09517754,0.43308236){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.4\end{tabular}}}}%
+    \put(0.09517754,0.44523708){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.45\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{Quick_profile_likelihoods.pdf}}%
+    \put(0.09517754,0.32693503){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}982\end{tabular}}}}%
+    \put(0.09517754,0.34659319){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}984\end{tabular}}}}%
+    \put(0.09517754,0.36625134){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}986\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{Quick_profile_likelihoods.pdf}}%
+    \put(0.09517754,0.23916236){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.438\end{tabular}}}}%
+    \put(0.09517754,0.25719698){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.44\end{tabular}}}}%
+    \put(0.09517754,0.27523158){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.442\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{Quick_profile_likelihoods.pdf}}%
+    \put(0.09517754,0.15251961){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}85.1\end{tabular}}}}%
+    \put(0.09517754,0.16511312){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}85.2\end{tabular}}}}%
+    \put(0.09517754,0.17771759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}85.3\end{tabular}}}}%
+    \put(0.09517754,0.19032207){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}85.4\end{tabular}}}}%
+    \put(0.09517754,0.20292655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}85.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{Quick_profile_likelihoods.pdf}}%
+    \put(0.13143324,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20\end{tabular}}}}%
+    \put(0.1666797,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20.2\end{tabular}}}}%
+    \put(0.09517754,0.06666669){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}40\end{tabular}}}}%
+    \put(0.09517754,0.07974287){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}41\end{tabular}}}}%
+    \put(0.09517754,0.09283004){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}42\end{tabular}}}}%
+    \put(0.09517754,0.10590621){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}43\end{tabular}}}}%
+    \put(0.09517754,0.11898241){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}44\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{Quick_profile_likelihoods.pdf}}%
+    \put(0.22950052,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.8\end{tabular}}}}%
+    \put(0.25800046,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.81\end{tabular}}}}%
+    \put(0.2865004,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.82\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{Quick_profile_likelihoods.pdf}}%
+    \put(0.33360127,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}−0.5\end{tabular}}}}%
+    \put(0.36760813,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}−0.4\end{tabular}}}}%
+    \put(0.40161499,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}−0.3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{Quick_profile_likelihoods.pdf}}%
+    \put(0.44229845,0.06243571){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.25\end{tabular}}}}}%
+    \put(0.46354723,0.06243571){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.3\end{tabular}}}}}%
+    \put(0.48478509,0.06243571){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.35\end{tabular}}}}}%
+    \put(0.5060229,0.06243571){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{Quick_profile_likelihoods.pdf}}%
+    \put(0.58377383,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}982\end{tabular}}}}%
+    \put(0.6181427,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}984\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{Quick_profile_likelihoods.pdf}}%
+    \put(0.6804918,0.06243571){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.438\end{tabular}}}}}%
+    \put(0.71201943,0.06243574){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.44\end{tabular}}}}}%
+    \put(0.74354708,0.06243574){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.442\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{Quick_profile_likelihoods.pdf}}%
+    \put(0.78575544,0.06243566){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.1\end{tabular}}}}}%
+    \put(0.8077831,0.06243566){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.2\end{tabular}}}}}%
+    \put(0.82981077,0.06243566){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.3\end{tabular}}}}}%
+    \put(0.85183844,0.06243566){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}85.4\end{tabular}}}}}%
+    \put(0.92133991,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}41\end{tabular}}}}%
+    \put(0.94466203,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}42\end{tabular}}}}%
+    \put(0.96799512,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}43\end{tabular}}}}%
+    \put(0.99131725,0.05585374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}44\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,3 @@
+eta,statistics,p-value
+eta_V,0.894718,0.000995441
+eta_Cl,0.914953,0.00430415

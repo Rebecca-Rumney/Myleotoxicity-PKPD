@@ -1,0 +1,7 @@
+residuals,statistics,p-value,test
+IWRES_yPK_central_drug_concentration,0.999417,0.872061,Shapiro-Wilk
+PWRES_yPK_central_drug_concentration,0.998685,0.0793297,Shapiro-Wilk
+NPDE_yPK_central_drug_concentration,0.998773,0.109171,Shapiro-Wilk
+IWRES_ycirculating_R,0.999121,0.467021,Shapiro-Wilk
+PWRES_ycirculating_R,0.998915,0.179367,Shapiro-Wilk
+NPDE_ycirculating_R,0.998793,0.116978,Shapiro-Wilk

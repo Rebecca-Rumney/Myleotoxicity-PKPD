@@ -70,7 +70,7 @@ def maximum_likelihood(
             transformation=transformation,
             # boundaries=noise_bound
         )
-        
+
         def cb(i, opt):
             params = transformation.to_model(opt.xbest())
             if noise == 'Multiplicative' or noise == 'Multiplicative-fix eta':
@@ -123,7 +123,7 @@ def bayesian_inference(
         'Multiplicative-fix eta': [0, 1, None],
         'Constant': [None, 1, 0]
     }
-    # unchanged_threshold = 1e-4 
+    # unchanged_threshold = 1e-4
     num_iterations = len(start_point)*5000  # 5000 iterations per parameter
     num_samples = len(start_point)*2250  # 2250 final samples per parameter
 
@@ -214,6 +214,7 @@ class SamplingController(chi.InferenceController):
 
         # Set default sampler
         self._sampler = pints.HaarioBardenetACMC
+        self.chains = None
 
     def set_sampler(self, sampler):
         """
@@ -242,7 +243,7 @@ class SamplingController(chi.InferenceController):
         population_model = log_likelihood.get_population_model()
         dims = []
         current_dim = 0
-        
+
         if individual_parameters is not None:
             individual_parameters = np.atleast_2d(individual_parameters)
             if individual_parameters.shape[1] != n_bottom:
@@ -278,7 +279,7 @@ class SamplingController(chi.InferenceController):
                     parameters=population_parameters[i, :],
                     n_samples=n_ids, covariates=covariates))
                 # Remove pooled dimensions
-                # (Pooled and heterogen. dimensions do not count as bottom 
+                # (Pooled and heterogen. dimensions do not count as bottom
                 # parameters)
                 for idx, bottom_params in enumerate(bottom_parameters):
                     bottom_parameters[idx] = bottom_params[:, dims].flatten()
@@ -384,7 +385,11 @@ class SamplingController(chi.InferenceController):
         return xr.Dataset(container, attrs=attrs)
 
     def run(
-        self, n_iterations, sigma0=None, hyperparameters=None
+        self,
+        n_iterations,
+        hyperparameters=None,
+        log_to_screen=False,
+        reset=True
     ):
         """
         Runs the sampling routine and returns the sampled parameter values in
@@ -400,7 +405,7 @@ class SamplingController(chi.InferenceController):
 
         :param n_iterations: A non-negative integer number which sets the
             number of iterations of the MCMC runs.
-        :type n_iterations: int, optional
+        :type n_iterations: int
         :param hyperparameters: A list of hyperparameters for the sampling
             method. If ``None`` the default hyperparameters are set.
         :type hyperparameters: list[float], optional
@@ -408,206 +413,87 @@ class SamplingController(chi.InferenceController):
             the progress of the runs to the screen. The progress is printed
             every 500 iterations.
         :type log_to_screen: bool, optional
+        :param reset: A boolean flag which determines whether the chains are
+            reset or the new samples are added to the existing chains.
+        :type log_to_screen: bool, optional
         """
 
+        if reset or (self.chains is None):
+            initial_points = self._initial_params
+        else:
+            prev_params = self.chains.sel({'draw': max(self.chains.draw)})
+            prev_pop_params = []
+            prev_ind_params = []
+            for var in prev_params.data_vars:
+                last_sample = prev_params[var]
+                if 'individual' in last_sample.dims:
+                    prev_ind_params.append(last_sample.values)
+                else:
+                    prev_pop_params.append(last_sample.values)
+            prev_pop_params = np.asarray(prev_pop_params).transpose()
+            prev_ind_params = np.asarray(prev_ind_params).transpose(1, 2, 0)
+            initial_points = self.make_initial_point(
+                self._n_runs,
+                prev_pop_params,
+                prev_ind_params.reshape((self._n_runs, -1))
+            )
+
+        # Set up sampler
+        # TODO: Allow R-hat to be incorporated
+        sampler = pints.MCMCController(
+            log_pdf=self._log_posterior,
+            chains=self._n_runs,
+            x0=initial_points,
+            method=self._sampler,
+            transformation=self._transform)
+
         # Configure sampling routine
-        # self._log_to_screen(log_to_screen)
-        # self._log_interval(iters=20, warm_up=3)
-        self._required_iters = n_iterations
+        sampler.set_log_to_screen(log_to_screen)
+        sampler.set_log_interval(iters=20, warm_up=3)
+        sampler.set_max_iterations(iterations=n_iterations)
+        sampler.set_parallel(self._parallel_evaluation)
+
+        if hyperparameters:
+            for s in sampler.samplers():
+                s.set_hyper_parameters(hyperparameters)
 
         # Run sampling routine
-        chains, divergent_iters = self.MCMC_run(
-            sigma0=sigma0, hyperparameters=hyperparameters
-        )
-        chains = np.asarray(chains)
-
-        # Format chains
-        self.chains = self._format_chains(chains, divergent_iters)
-        return self.chains
-
-    def set_stop_criterion(self, max_iterations=10000, r_hat=None):
-        self._max_iters = max_iterations
-        self._r_hat = r_hat
-
-    def MCMC_run(
-        self, save_point_like=None, sigma0=None, hyperparameters=None
-    ):
-        samplers = []
-
-        # Apply a transformation (if given). From this point onward the MCMC
-        # sampler will see only the transformed search space and will know
-        # nothing about the model parameter space.
-        if self._transform is not None:
-            # Convert log pdf
-            log_pdf = self._transform.convert_log_pdf(self._log_posterior)
-            # Convert initial positions
-            x0 = [self._transform.to_search(x) for x in self._initial_params]
-
-            # Convert sigma0, if provided
-            if sigma0 is not None:
-                sigma0 = np.asarray(sigma0)
-                n_parameters = log_pdf.n_parameters()
-                # Make sure sigma0 is a (covariance) matrix
-                if np.product(sigma0.shape) == n_parameters:
-                    # Convert from 1d array
-                    sigma0 = sigma0.reshape((n_parameters,))
-                    sigma0 = np.diag(sigma0)
-                elif sigma0.shape != (n_parameters, n_parameters):
-                    # Check if 2d matrix of correct size
-                    raise ValueError(
-                        'sigma0 must be either a (d, d) matrix or a (d, ) '
-                        'vector, where d is the number of parameters.')
-                sigma0 = self._transform.convert_covariance_matrix(
-                    sigma0, x0[0]
-                )
-        else:
-            log_pdf = self._log_posterior
-            x0 = self._initial_params
-
-        num_initial = 50
-        for i in range(0, self._n_runs):
-            point = x0[i]
-            samplers.append(self._sampler(point, sigma0=sigma0))
-            if samplers[-1].needs_initial_phase():
-                samplers[-1].set_initial_phase(True)
-
-        list_sample = [[]]*self._n_runs
-        if save_point_like is not None:
-            list_pointwise = [[]]*self._n_runs
-            # log_likelihood = log_pdf.get_log_likelihood()
-
-        final_iteration = self._max_iters
-        timer = pints.Timer()
-
-        print("iter", end=' ')
-        for chain in range(len(samplers)):
-            print('\t', "chain "+str(chain), end=' ')
-        print('\t', "R_hat", '\t\t', "Time")
-
-        i = 0
-        r_hat = np.NaN
-
-        # Create evaluator object
-        f = log_pdf
-        if samplers[0].needs_sensitivities():
-            f = f.evaluateS1
-        evaluator = pints.SequentialEvaluator(f)
-        print_func = [None]*self._n_runs
-        chain_lengths = [0]*self._n_runs
-        n_return = 0
-        print_rhat_start = True
-
-        while n_return < final_iteration:
-            # update each chain and pointwise using ask/tell
-            if (i == num_initial) & samplers[0].needs_initial_phase():
-                print("\n...........................")
-                print("End of Initial Phase")
-                print("...........................")
-                for sampler in samplers:
-                    sampler.set_initial_phase(False)
-            
-            chains_to_evaluate = [chain for chain, length in enumerate(chain_lengths) if length == n_return]
-            theta_hat = [alg.ask() for alg in np.asarray(samplers)[chains_to_evaluate]]
-            try:
-                fxs = evaluator.evaluate(theta_hat)
-                fxs_iterator = iter(fxs)
-                for chain in chains_to_evaluate:
-                    alg = samplers[chain]
-                    if chain_lengths[chain]==n_return:
-                        lp = next(fxs_iterator)
-                        reply = alg.tell(lp)
-                        if reply is not None:
-                            theta_g, f_theta, accepted = reply
-                            if self._transform:
-                                model_theta_g = self._transform.to_model(theta_g)
-                            else:
-                                model_theta_g = theta_g
-                            list_sample[chain] = list_sample[chain]+[model_theta_g]
-                            chain_lengths[chain] += 1
-                            if issubclass(
-                                self._sampler,
-                                (pints.HamiltonianMCMC, pints.NoUTurnMCMC)
-                            ):
-                                print_func[chain] = chain_lengths[chain]
-                            else:
-                                print_func[chain] = round(f_theta[0], 4)
-
-                            # if save_point_like is not None:
-                            #     if accepted:
-                            #         list_pointwise[chain] = (
-                            #             list_pointwise[chain] +
-                            #             [log_likelihood.compute_pointwise_ll(
-                            #                 model_theta_g
-                            #             )]
-                            #         )
-                            #     else:
-                            #         list_pointwise[chain] = (
-                            #             list_pointwise[chain] +
-                            #             [list_pointwise[chain][-1]]
-                            #         )
-#                         else:
-#                             print(reply, alg._next)
-            except:
-                print("Error for iteration", i, ", parameters:", theta_hat)
-                raise
-
-            n_return = np.min(chain_lengths)
-            if self._r_hat is not None:
-                if (
-                    (n_return >= num_initial + self._required_iters) &
-                    print_rhat_start
-                ):
-                    print("\n...........................")
-                    print("Sart of Convergence Testing")
-                    print("...........................")
-                    print_rhat_start = False
-                # Have the chains converged?
-                test_r_hat = n_return >= num_initial
-                test_r_hat = test_r_hat & (n_return % 20 == 0)
-                if test_r_hat:
-                    samples_test = [list[-n_return:] for list in list_sample]
-                    r_hat = pints.rhat(
-                        np.asarray(samples_test))
-                    # [:, -self._required_iters:, :])
-                    terminate = (n_return >= num_initial+self._required_iters)
-                    terminate = terminate & np.all(r_hat <= self._r_hat)
-                    if terminate:
-                        final_iteration = n_return
-                        print("complete")
-            elif n_return >= num_initial+self._required_iters:
-                final_iteration = n_return
-                print("complete")
-
-            i += 1
-            if (n_return < 10) or (n_return % 20 == 0):
-                print_string = str(n_return) + ' \t'
-                for chain in range(0, self._n_runs):
-                    print_string += str(print_func[chain])+'     \t'
-                if self._r_hat is not None:
-                    print_string += str(round(np.average(r_hat), 4))
-                    print_string += '     \t'
-                print_string += timer.format(timer.time())
-                print(
-                    "\r" + print_string,
-                    sep=' ',
-                    end='        ',
-                    flush=True
-                )
-
-        if save_point_like is not None:
-            np.savez_compressed(save_point_like, *list_pointwise)
+        chains = sampler.run()
 
         # If Hamiltonian Monte Carlo, get number of divergent
-        # iterations # TODO: Implement
+        # iterations
         divergent_iters = None
         if issubclass(
                 self._sampler, (pints.HamiltonianMCMC, pints.NoUTurnMCMC)):
             divergent_iters = [
-                s.divergent_iterations() for s in samplers
-            ]
-        return_samples = [list[-n_return:] for list in list_sample]
+                s.divergent_iterations() for s in sampler.samplers()]
 
-        return return_samples, divergent_iters
+        # Format chains
+        if reset:
+            self.reset_chains()
+        else:
+            chains = chains[:, int(n_iterations*0.1):]
+        self.add_samples(self._format_chains(chains, divergent_iters))
+        return self.chains
+
+    def reset_chains(self):
+        self.chains = None
+
+    def add_samples(self, new_chains):
+        if self.chains is None:
+            self.chains = new_chains
+        else:
+            new_chains = new_chains.assign_coords(
+                draw=(new_chains.draw + len(self.chains.draw))
+            )
+            self.chains = xr.concat((
+                self.chains,
+                new_chains
+            ), dim='draw')
+
+    def set_stop_criterion(self, max_iterations=10000, r_hat=None):
+        self._max_iters = max_iterations
+        self._r_hat = r_hat
 
 
 class OptimisationController(chi.OptimisationController):
@@ -638,9 +524,11 @@ class OptimisationController(chi.OptimisationController):
         self._optimiser = pints.CMAES
 
     def run(
-            self, n_max_iterations=10000, show_run_progress_bar=False,
-            log_to_screen=False
-        ):
+        self,
+        n_max_iterations=10000,
+        show_run_progress_bar=False,
+        log_to_screen=False
+    ):
         """
         Runs the optimisation and returns the maximum a posteriori probability
         parameter estimates in from of a :class:`pandas.DataFrame` with the
@@ -711,9 +599,10 @@ class OptimisationController(chi.OptimisationController):
     def make_initial_point(
         self, n_runs, population_parameters, individual_parameters=None
     ):
-        n_top = self._log_posterior.n_parameters(exclude_bottom_level=True)
-        n_bottom = self._log_posterior.n_parameters(exclude_bottom_level=False) - n_top
-        log_likelihood = self._log_posterior.get_log_likelihood()
+        post = self._log_posterior
+        n_top = post.n_parameters(exclude_bottom_level=True)
+        n_bottom = post.n_parameters(exclude_bottom_level=False) - n_top
+        log_likelihood = post.get_log_likelihood()
 
         population_parameters = np.atleast_2d(population_parameters)
         if population_parameters.shape[1] != n_top:
@@ -724,14 +613,13 @@ class OptimisationController(chi.OptimisationController):
         population_model = log_likelihood.get_population_model()
         dims = []
         current_dim = 0
-        
+
         if individual_parameters is not None:
             individual_parameters = np.atleast_2d(individual_parameters)
-            if individual_parameters.shape[1]!=n_bottom:
+            if individual_parameters.shape[1] != n_bottom:
                 raise ValueError(
                     'individual parameters must match the ' +
                     'number of individuals')
-
 
         if isinstance(population_model, chi.ReducedPopulationModel):
             population_model = population_model.get_population_model()
@@ -760,8 +648,8 @@ class OptimisationController(chi.OptimisationController):
                 bottom_parameters.append(population_model.sample(
                     parameters=population_parameters[i, :],
                     n_samples=n_ids, covariates=covariates))
-                # Remove pooled dimensions
-                # (Pooled and heterogen. dimensions do not count as bottom parameters)
+                # Remove pooled dimensions (Pooled and heterogen. dimensions
+                # do not count as bottom parameters)
                 for idx, bottom_params in enumerate(bottom_parameters):
                     bottom_parameters[idx] = bottom_params[:, dims].flatten()
                 bottom_parameters = np.vstack(bottom_parameters)
@@ -779,8 +667,6 @@ class OptimisationController(chi.OptimisationController):
         """
         Sets the initial starting points for a selection of the runs.
         """
-        # n_top = self._log_posterior.n_parameters(exclude_bottom_level=True)
-        # n_bottom = self._log_posterior.n_parameters(exclude_bottom_level=False) - n_top
         if isinstance(run_ids, int):
             run_ids = [run_ids]
         run_ids = np.asarray(run_ids)
@@ -790,24 +676,12 @@ class OptimisationController(chi.OptimisationController):
                 'currently set number of runs. Use set_n_runs to increase ' +
                 'number of runs set')
 
-        initial_points = self.make_initial_point(len(run_ids), population_parameters, individual_parameters)
+        initial_points = self.make_initial_point(
+            len(run_ids), population_parameters, individual_parameters
+        )
         for i, run in enumerate(run_ids):
             self._initial_params[run-1, :] = initial_points[i, :]
 
 
-if __name__=="__main__":
-    df = pandas.read_csv("Data_and_parameters/PD_sim/sythesised_data_real_timepoints.csv")
-    df = df.sort_values(['ID', 'TIME'], ascending=True, ignore_index=True)
-    PK_params = np.load("Data_and_parameters/PK_sim/actual_params.npy")[1, :].astype('float64')
-    df_before_0 = df[df["TIME"] < 0]
-    R_0_approx = np.mean(df_before_0["OBS"])
-    PD_model = Pints_PD_model(PK_params[:-1], data=df, num_comp=2)
-    pseudo_times = PD_model.pseudotime
-    problem = pints.SingleOutputProblem(PD_model, pseudo_times, df['OBS'].to_numpy())
-
-    lower_bound = [0.1*R_0_approx, df['TIME'].max()*0.01, 0.005, 0.01,     0.001,      0.001, 0.001]
-    upper_bound = [10*R_0_approx,      df['TIME'].max(),     5,    100,   R_0_approx,   10,    1]
-    point = list(np.exp((np.log(np.asarray(lower_bound)) + np.log(np.asarray(upper_bound)))/2))
-    point[0] = R_0_approx
-    x = maximum_likelihood(problem, "All", point, boundaries=[lower_bound, upper_bound], transform=True)
-    print(x)
+if __name__ == "__main__":
+    pass

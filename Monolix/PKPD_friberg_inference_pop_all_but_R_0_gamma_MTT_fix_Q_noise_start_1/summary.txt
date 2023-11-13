@@ -1,0 +1,85 @@
+********************************************************************************
+* PKPD_friberg_inference_pop_all_but_R_0_gamma_MTT_fix_Q_noise_start_1.mlxtran *
+*  at                                                                          *
+* Monolix version : 2023R1                                                     *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------
+Cl_pop                         :      2.82
+V1_pop                         :     0.693
+Q_pop                          :      2.34
+V2_pop                         :      4.95
+S_pop                          :      20.1
+R0_pop                         :       983
+gamma_pop                      :     0.436
+MTT_pop                        :      85.1
+
+Standard Deviation of the Random Effects -
+omega_V1                       :     0.326
+omega_V2                       :    0.0139
+omega_S                        :    0.0097
+omega_MTT                      :   0.00129
+
+Error Model Parameters -------------------
+bPK_central_drug_concentration :    0.0886
+acirculating_R                 :      41.6
+
+Elapsed time (seconds):    1e+02
+CPU time     (seconds):  3.6e+02
+Exploratory phase iterations:      500 (Stopped at the maximum number of iterations/auto-stop criteria have not been reached)
+Smoothing phase iterations:         95 (Autostop)
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
+
+
+Estimation of the individual parameters by Conditional Distribution ------------
+              min        Q1    median        Q3       max
+Cl    :      2.81      2.82      2.82      2.82      2.82
+V1    :     0.324     0.555     0.648     0.926      1.31
+Q     :      2.34      2.34      2.34      2.34      2.34
+V2    :      4.89      4.93      4.95      4.97      5.03
+S     :        20        20      20.1      20.1      20.2
+R0    :       972       983       983       983       985
+gamma :     0.433     0.436     0.436     0.436     0.437
+MTT   :        85        85      85.1      85.1      85.1
+
+Elapsed time (seconds):      8.7
+CPU time     (seconds):       32
+Iterations:       91 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+
+Estimation of the individual parameters by Conditional Mode --------------------
+              min        Q1    median        Q3       max
+Cl    :      2.81      2.82      2.82      2.82      2.82
+V1    :     0.325     0.552     0.647     0.927      1.32
+Q     :      2.34      2.34      2.34      2.34      2.34
+V2    :      4.89      4.93      4.95      4.97      5.02
+S     :        20        20      20.1      20.1      20.3
+R0    :       972       983       983       983       985
+gamma :     0.433     0.436     0.436     0.436     0.437
+MTT   :        85      85.1      85.1      85.1      85.2
+
+Elapsed time (seconds):     0.55
+CPU time     (seconds):        2
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+DATASET INFORMATION
+Number of individuals: 45
+Number of observations (obsid PK_central_drug_concentration): 2250
+Number of observations (obsid circulating_R): 2250
+Number of doses: 45
+

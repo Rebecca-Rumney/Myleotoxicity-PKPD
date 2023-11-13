@@ -1,0 +1,7 @@
+residuals,statistics,p-value,test
+IWRES_yPK_central_drug_concentration,0.811577,0.417034,Symmetry
+PWRES_yPK_central_drug_concentration,2.01144,0.0442791,Symmetry
+NPDE_yPK_central_drug_concentration,-0.350892,0.725669,Symmetry
+IWRES_ycirculating_R,-1.42773,0.153369,Symmetry
+PWRES_ycirculating_R,-1.63205,0.102669,Symmetry
+NPDE_ycirculating_R,-1.69319,0.0904192,Symmetry

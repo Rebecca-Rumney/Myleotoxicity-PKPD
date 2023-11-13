@@ -1,0 +1,4 @@
+residuals,statistics,p-value,test
+IWRES_central_drug_conc,1.61966,0.105305,Symmetry
+PWRES_central_drug_conc,3.33675,0.000847634,Symmetry
+NPDE_central_drug_conc,0.0705678,0.943742,Symmetry

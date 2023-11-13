@@ -1,0 +1,32 @@
+{
+    "divergent iterations": "true",
+    "divergent iterations chain 0": [
+        102,
+        151,
+        152,
+        252
+    ],
+    "divergent iterations chain 1": [
+        102,
+        152
+    ],
+    "divergent iterations chain 2": [
+        102,
+        152,
+        252
+    ],
+    "divergent iterations chain 3": [
+        101,
+        102,
+        103,
+        152,
+        252
+    ],
+    "divergent iterations chain 4": [
+        101,
+        102,
+        103,
+        152,
+        252
+    ]
+}

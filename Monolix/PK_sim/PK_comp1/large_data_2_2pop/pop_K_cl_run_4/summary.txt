@@ -1,0 +1,104 @@
+********************************************************************************
+*                         pop_K_cl_run_4.mlxtran                               *
+*                         August 16, 2023 at 14:41:47                          *
+*                         Monolix version : 2023R1                             *
+********************************************************************************
+
+
+ESTIMATION OF THE POPULATION PARAMETERS ________________________________________
+
+Fixed Effects ----------------------------     se_sa    rse(%)
+V_pop    :                            5.16    0.0455     0.882
+Cl_pop   :                            2.97      0.17       5.7
+
+Standard Deviation of the Random Effects -
+omega_Cl :                           0.381    0.0402      10.6
+
+Error Model Parameters -------------------
+b        :                           0.204   0.00318      1.56
+
+Elapsed time (seconds):      7.1
+CPU time     (seconds):       14
+Exploratory phase iterations:      205 (Autostop)
+Smoothing phase iterations:        117 (Autostop)
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE INDIVIDUAL PARAMETERS ________________________________________
+
+
+Estimation of the individual parameters by Conditional Distribution ------------
+           min        Q1    median        Q3       max
+V  :      5.16      5.16      5.16      5.16      5.16
+Cl :      1.51      2.13      2.89      3.86      5.96
+
+Elapsed time (seconds):     0.54
+CPU time     (seconds):      1.2
+Iterations:       77 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+
+Estimation of the individual parameters by Conditional Mode --------------------
+           min        Q1    median        Q3       max
+V  :      5.16      5.16      5.16      5.16      5.16
+Cl :      1.51      2.14      2.89      3.87      5.96
+
+Elapsed time (seconds):    0.012
+CPU time     (seconds):        0
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE FISHER INFORMATION MATRIX ____________________________________
+
+
+Estimation of the Fisher information matrix by Stochastic Approximation --------
+
+Correlation Matrix :
+   V_pop         1
+  Cl_pop   0.07237         1
+omega_Cl  0.036883 0.0046931         1
+       b   0.15458  0.020778 0.0022154         1
+
+                               min       max   max/min
+Eigen values           :      0.83       1.2       1.4
+
+Elapsed time (seconds):     0.68
+CPU time     (seconds):      1.6
+Iterations:       50 (Autostop)
+
+ -------------------------------------------------------------------------------
+
+ _______________________________________________________________________________
+
+
+
+ESTIMATION OF THE LOG-LIKELIHOOD _______________________________________________
+
+                                                            (is)
+-2 x log-likelihood                       (OFV) :      -12221.84
+Akaike Information Criteria               (AIC) :      -12213.84
+Corrected Bayesian Information Criteria  (BICc) :      -12194.88
+Bayesian Information Criteria             (BIC) :      -12206.61
+
+Elapsed time                          (seconds) :           5.09
+CPU time                              (seconds) :          10.00
+MonteCarlo size (is):    10000 (Fixed number of iterations)
+
+
+[Importance Sampling] Standard error        : 0.025
+                      Sampling distribution : T-distribution with 5 degrees of freedom
+
+ _______________________________________________________________________________
+
+DATASET INFORMATION
+Number of individuals: 45
+Number of observations (central_drug_conc): 2250
+Number of doses: 45
+
