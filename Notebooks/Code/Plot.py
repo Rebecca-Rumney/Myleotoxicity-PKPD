@@ -19,13 +19,13 @@ class ProfileLogLikelihood():
 
     def __init__(self, log_likelihood, params_ref, opts) -> None:
         self.set_options(opts, reset=True)
-        self.slice_func = self.create_plot_func(
+        self.slice_func = self.create_func(
             log_likelihood, params_ref, profile=False
         )
         if self.opts['slice']:
             self.f = self.slice_func
         else:
-            self.f = self.create_plot_func(
+            self.f = self.create_func(
                 log_likelihood, params_ref, profile=True
             )
         self.MLE = params_ref.copy()
@@ -33,26 +33,30 @@ class ProfileLogLikelihood():
         self.l_star = self.ref_score - self.opts['alpha']
         self.param_range = {}
         self.result = {}
+        self.pints_optimisers = dict(zip(
+            [cls.__name__ for cls in pints.Optimiser.__subclasses__()],
+            pints.Optimiser.__subclasses__()
+        ))
 
     def run(self, i_param, n_points=100, opts=None):
-        opts = self.opts.copy()
+        local_opts = self.opts.copy()
         if opts is not None:
-            opts.update(opts)
+            local_opts.update(opts)
         if i_param not in self.param_range.keys():
             self.set_param_range(i_param, adapt=True)
 
         # Reset results
         self.result[i_param] = {}
 
-        if opts['method'] == 'quadratic approx.':
-            CI = self.ci_poly_approx(i_param, opts=opts)
-            profile_ll = self.ll_from_ci(i_param, opts=opts)
-        elif opts['method'] == 'piecewise calc.':
-            profile_ll = self.ll_piecewise(i_param, opts=opts)
-            CI = self.ci_from_ll(i_param, opts=opts)
-        elif opts['method'] == 'sequential calc.':
-            profile_ll = self.ll_sequential(i_param, opts=opts)
-            CI = self.ci_from_ll(i_param, opts=opts)
+        if local_opts['method'] == 'quadratic approx.':
+            self.ci_poly_approx(i_param, opts=local_opts)
+            profile_ll = self.ll_from_ci(i_param, opts=local_opts)
+        elif local_opts['method'] == 'piecewise calc.':
+            profile_ll = self.ll_piecewise(i_param, opts=local_opts)
+            self.ci_from_ll(i_param, opts=local_opts)
+        elif local_opts['method'] == 'sequential calc.':
+            profile_ll = self.ll_sequential(i_param, opts=local_opts)
+            self.ci_from_ll(i_param, opts=local_opts)
         else:
             raise NameError(
                 'Unknown profile likelihood method'
@@ -67,13 +71,95 @@ class ProfileLogLikelihood():
 
         return np.array([x_values, ll_values])
 
-    def ll_sequential(self, i_param, opts=None):
-        opts = self.opts.copy()
+    def optimise(
+            self, func, start, fix=None, minimise=False, transformation=None, opts=None
+        ):
+        local_opts = self.opts.copy()
         if opts is not None:
-            opts.update(opts)
+            local_opts.update(opts)
+
+        # PINTS optimisers minimise.
+        # To maximise the function, f, we will need to minimise -f
+        if minimise:
+            sign = 1
+        else:
+            sign = -1
+
+        # Transform start point into [eta, pop]
+        opt_start = start.copy()
+        if transformation is not None:
+            opt_start = transformation.to_search(opt_start)
+
+        if fix is not None:
+            fix = np.asarray(fix)
+            # If there are fixed params, determine what values need to be deleted and inserted
+            if len(fix.shape) == 1:
+                delete_arg = int(fix[0])
+                insert_arg = int(fix[0])
+                fix_values = fix[1]
+            else:
+                fix = fix[:, np.argsort(fix[0])]
+                insert_arg = fix[0].astype(int)-np.arange(len(fix[0]))
+                delete_arg = fix[0].astype(int)
+                fix_values = fix[1]
+
+            # Delete fixed values from the starting point
+            opt_start = np.delete(opt_start, delete_arg)
+
+            # Create the function to minimise
+            def minimise_func(reduced_params):
+                # insert the fixed values to the correct spots
+                full_params = np.insert(reduced_params, insert_arg, fix_values)
+                # transform parameters back from [eta, pop] to [ind, pop]
+                if transformation is not None:
+                    full_params = transformation.to_model(full_params)
+                return sign*func(full_params)
+        else:
+            def minimise_func(full_params):
+                if transformation is not None:
+                    full_params = transformation.to_model(full_params)
+                return sign*func(full_params)
+        max_iter = local_opts['maxiter']
+        max_unchanged = local_opts['max_unchanged']
+        opt_package = local_opts['opt_package']
+        opt_method = local_opts['optimiser']
+        if opt_package == "pints":
+            if opt_method not in self.pints_optimisers.keys():
+                raise NameError(
+                    "pints does not have optimiser " + opt_method + ". " +
+                    "Perhaps you need to change 'opt_package' option to " +
+                    "'scipy'."
+                )
+            else:
+                optimiser = self.pints_optimisers['opt_method']
+            xbest, fbest = pints.fmin(
+                minimise_func, opt_start, max_iter=max_iter,
+                max_unchanged=max_unchanged, method=optimiser
+            )
+        elif opt_package == "scipy":
+            options = {}
+            if max_iter is not None:
+                options['maxiter'] = max_iter
+            result = minimize(
+                minimise_func, opt_start, method=opt_method, options=options
+            )
+            xbest = result.x
+            fbest = result.fun
+
+        if fix is not None:
+            xbest = np.insert(xbest, insert_arg, fix_values)
+        if transformation is not None:
+            xbest = transformation.to_model(xbest)
+
+        return xbest, sign*fbest
+
+    def ll_sequential(self, i_param, opts=None):
+        local_opts = self.opts.copy()
+        if opts is not None:
+            local_opts.update(opts)
 
         param_range = self.param_range[i_param][0]
-        x_rec = np.linspace(param_range[0], param_range[1], opts['max_N_opts'])
+        x_rec = np.linspace(param_range[0], param_range[1], local_opts['max_N_opts'])
 
         # Start from the centre, for more accurate extrapolating
         lower = x_rec <= self.MLE[i_param]
@@ -82,8 +168,8 @@ class ProfileLogLikelihood():
         # x_rec = np.concatenate((x_lower, x_upper))
         ll_rec = [np.empty_like(x_lower), np.empty_like(x_upper)]
         param_rec = [
-            np.empty_like(x_lower, len(self.MLE)),
-            np.empty_like(x_upper, len(self.MLE))
+            np.empty((len(x_lower), len(self.MLE))),
+            np.empty((len(x_upper), len(self.MLE)))
         ]
         proj_rec = param_rec.copy()
 
@@ -93,16 +179,16 @@ class ProfileLogLikelihood():
                 if i_x <= 1:
                     # Set current approximation of optimum parameters to MLE
                     curr = self.MLE.copy()
-                elif opts['interp']>0:
-                    if i_x > opts['interp']+1:
-                        k = opts['interp']
+                elif local_opts['interp'] > 0:
+                    if i_x > local_opts['interp']+1:
+                        k = local_opts['interp']
                     else:
                         k = (i_x-1)
 
                     x_interp = x_LU[i_x-1-k: i_x]
                     param_interp = param_rec[LU][i_x-1-k: i_x]
 
-                    if LU==0:
+                    if LU == 0:
                         x_interp = x_interp[::-1]
                         param_interp = param_interp[::-1]
                     interpolator = make_interp_spline(
@@ -115,7 +201,9 @@ class ProfileLogLikelihood():
                 else:
                     curr = param_rec[LU][i_x-1]
                 proj_rec[LU][i_x] = curr
-                param_rec[LU][i_x], ll_rec[LU][i_x] = self.f(x, i_param, curr=curr)
+                param_rec[LU][i_x], ll_rec[LU][i_x] = self.f(
+                    x, i_param, curr=curr
+                )
             LU = 1
 
         x_rec = np.concatenate((x_lower[::-1], x_upper))
@@ -123,13 +211,13 @@ class ProfileLogLikelihood():
         param_rec = np.concatenate((param_rec[0][::-1], param_rec[1]))
         proj_rec = np.concatenate((proj_rec[0][::-1], proj_rec[1]))
 
-        if opts['normalise']:
+        if local_opts['normalise']:
             ll_rec = ll_rec - self.l_star  # Normalise the result
         param_interpolator = PchipInterpolator(
-                x_rec, param_rec, k=opts['interp'], axis=0
+                x_rec, param_rec, axis=0
             )
         ll_interpolator = PchipInterpolator(
-                x_rec, ll_rec, k=opts['interp']
+                x_rec, ll_rec
             )
 
         result = self.result[i_param]
@@ -144,9 +232,9 @@ class ProfileLogLikelihood():
         return ll_interpolator
 
     def ll_piecewise(self, i_param, opts=None):
-        opts = self.opts.copy()
+        local_opts = self.opts.copy()
         if opts is not None:
-            opts.update(opts)
+            local_opts.update(opts)
 
         param_range = self.param_range[i_param][0]
         x_rec = [param_range[0], self.MLE[i_param], param_range[1]]
@@ -186,7 +274,7 @@ class ProfileLogLikelihood():
             # Create intitial prediction using interpolation
             interpolator = make_interp_spline(
                     x_rec, param_rec,
-                    k=opts['interp'], axis=0
+                    k=local_opts['interp'], axis=0
                 )
             proj_values = interpolator(x_insert)
             proj_rec = np.insert(proj_rec, insert_args, proj_values)
@@ -198,21 +286,29 @@ class ProfileLogLikelihood():
                 param_insert.append(param_value)
 
             arg_delete = None
-            if len(x_rec) >= opts['min_N_opts']:
+            if len(x_rec) >= local_opts['min_N_opts']:
                 # Whether the approximation is good
                 interpolator = PchipInterpolator(
                         x_insert, param_insert,
-                        k=opts['interp'], axis=0
+                        k=local_opts['interp'], axis=0
                     )
                 error = np.sum(np.abs(interpolator(x_rec) - param_rec), axis=1)
-                error_new = np.sum(np.abs(proj_values - np.asarray(param_insert)), axis=1)
+                error_new = np.sum(
+                    np.abs(proj_values - np.asarray(param_insert)), axis=1
+                )
                 stop_criteria = error <= 1e-2
-                stop_criteria = np.insert(stop_criteria, insert_args, error_new<= 1e-2)
+                stop_criteria = np.insert(
+                    stop_criteria, insert_args, error_new <= 1e-2
+                )
 
                 # Find outliers
                 arg_delete = np.argpartition(error, len(error)-n_del)[-n_del:]
-                arg_delete = arg_delete[np.logical_not(stop_criteria[arg_delete])]
-                arg_delete += np.count_nonzero(np.tile(insert_args, (n_del, 1)).transpose() <= arg_delete, axis=0)
+                arg_delete = arg_delete[
+                    np.logical_not(stop_criteria[arg_delete])
+                ]
+                arg_delete += np.count_nonzero(np.tile(
+                    insert_args, (n_del, 1)
+                ).transpose() <= arg_delete, axis=0)
 
             else:
                 stop_criteria += [False]*len(x_insert)
@@ -233,13 +329,13 @@ class ProfileLogLikelihood():
             if np.all(stop_criteria):
                 break
 
-        if opts['normalise']:
+        if local_opts['normalise']:
             ll_rec = ll_rec - self.l_star  # Normalise the result
         param_interpolator = PchipInterpolator(
-                x_rec, param_rec, k=opts['interp'], axis=0
+                x_rec, param_rec, k=local_opts['interp'], axis=0
             )
         ll_interpolator = PchipInterpolator(
-                x_rec, ll_rec, k=opts['interp']
+                x_rec, ll_rec, k=local_opts['interp']
             )
 
         result = self.result[i_param]
@@ -253,51 +349,62 @@ class ProfileLogLikelihood():
 
         return ll_interpolator
 
-    def ll_from_ci(self, i_param, CI = None, opts=None):
-        opts = self.opts.copy()
-        opts['interp'] = 2
+    def ll_from_ci(self, i_param, CI=None, opts=None):
+        # Update options
+        local_opts = self.opts.copy()
         if opts is not None:
-            opts.update(opts)
+            local_opts.update(opts)
 
+        # Get relevant current result
         result = self.result[i_param]
-        
+
+        # Get Confidence intervals
         if CI is None:
             x_CI, ll_CI, params_CI = result['CI']
         else:
             x_CI, ll_CI, params_CI = CI
-        
-        if 'opt_points' in result.keys() and CI is None:
+
+        # If ci was calculated from this class, find points of optimisation
+        if 'opt points' in result.keys() and CI is None:
             x_rec, ll_rec, param_rec = result['opt points']
         else:
             x_rec = x_CI.copy()
             ll_rec = ll_CI.copy()
             param_rec = params_CI.copy()
 
-        param_range = self.param_range[i_param][0],
-        if opts['approx shape N']>0:
-            x_shape_points = np.linspace(param_range[0], param_range[1], opts['approx shape N'])
+        param_range = self.param_range[i_param][0]
+        if local_opts['approx shape N'] > 0:
+            x_shape_points = np.linspace(
+                param_range[0], param_range[1], local_opts['approx shape N']
+            )
             param_interpolator = make_interp_spline(
-                    x_CI, ll_CI, k=opts['interp'], axis=0
+                    x_CI, params_CI, k=local_opts['interp'], axis=0
                 )
             for x in x_shape_points:
                 param, ll = self.f(x, i_param, curr=param_interpolator(x))
                 param_rec = np.append(param_rec, [param], axis=0)
                 x_rec = np.append(x_rec, x)
-                if opts['normalise']:
+                if local_opts['normalise']:
                     ll = ll - self.l_star
                 ll_rec = np.append(ll_rec, ll)
-
             sort_args = np.argsort(x_rec)
             x_rec = x_rec[sort_args]
             ll_rec = ll_rec[sort_args]
             param_rec = param_rec[sort_args]
-            result['opt points'] =(x_rec, ll_rec, param_rec)
+            result['opt points'] = (x_rec, ll_rec, param_rec)
 
-        # ll_interpolator = UnivariateSpline(
-        #         x_anchors, ll_anchors,
-        #         w=weights, s=1e-4*len(weights)
-        #     )
-        ll_interpolator = PchipInterpolator(x_rec, ll_rec, extrapolate=True)
+        weights = np.ones(len(x_rec))
+        weights[np.isin(x_rec, x_CI)] = 80
+        weights[x_rec == self.MLE[i_param]] = 200
+        inf_result = np.logical_not(np.isfinite(ll_rec))
+        if np.any(inf_result):
+            ll_rec[inf_result] = 2
+            weights[inf_result] = 0
+        ll_interpolator = UnivariateSpline(
+                x_rec, ll_rec,
+                w=weights, s=1e-2*len(weights)
+            )
+        # ll_interpolator = PchipInterpolator(x_rec, ll_rec, extrapolate=True)
         param_interpolator = PchipInterpolator(
                 x_rec, param_rec, axis=0, extrapolate=True
             )
@@ -310,18 +417,20 @@ class ProfileLogLikelihood():
         return ll_interpolator
 
     def ci_from_ll(self, i_param, opts=None):
-        opts = self.opts.copy()
+        local_opts = self.opts.copy()
         if opts is not None:
-            opts.update(opts)
+            local_opts.update(opts)
         result = self.result[i_param]
 
         ll_interpolator = result['profile ll']
         param_interpolator = result['profile param']
         param_range = self.param_range[i_param][0]
-        if opts['normalise']:
+        if local_opts['normalise']:
             roots = np.sort(ll_interpolator.roots(extrapolate=False))
         else:
-            roots = np.sort(ll_interpolator.solve(y=self.l_star, extrapolate=False))
+            roots = np.sort(
+                ll_interpolator.solve(y=self.l_star, extrapolate=False)
+            )
 
         x_CI = [param_range[0], self.MLE[i_param], param_range[1]]
         if len(roots) <= 2:
@@ -337,18 +446,20 @@ class ProfileLogLikelihood():
             identifiable_CI = [None, None]
         ll_CI = ll_interpolator(x_CI)
         param_CI = param_interpolator(x_CI)
-            
-        result['CI']= (x_CI, ll_CI, param_CI)
-        result['identifiabilty']= identifiable_CI
+
+        result['CI'] = (x_CI, ll_CI, param_CI)
+        result['identifiabilty'] = identifiable_CI
         self.result[i_param] = result
         return x_CI, ll_CI, param_CI
 
     def ci_poly_approx(self, i_param, opts=None):
-        opts = self.opts.copy()
+        local_opts = self.opts.copy()
         if opts is not None:
-            opts.update(opts)
+            local_opts.update(opts)
         result = self.result[i_param]
-        
+        if local_opts['interp'] < 2:
+            local_opts['interp'] = 2
+
         # First step: Estimate CI using slice function
         param_range = self.param_range[i_param][0]
         x_CI = [param_range[0], self.MLE[i_param], param_range[1]]
@@ -379,19 +490,21 @@ class ProfileLogLikelihood():
             # Solve LL(x)-L_star=0 assuming polynomial
             poly_spline = PPoly.from_spline(make_interp_spline(
                 x_CI, ll_CI - self.l_star,
-                k=opts['interp'], axis=0
+                k=local_opts['interp'], axis=0
             ))
             roots = np.sort(poly_spline.roots())
-            
+
             # Approximate maximum parameters.
             interpolator = make_interp_spline(
                     x_CI, param_CI,
-                    k=opts['interp'], axis=0
+                    k=local_opts['interp'], axis=0
                 )
             if identifiable_CI[0] is None:
                 approx_param = interpolator(roots[0])
                 # Calculate true max params and likelihood at the lower root
-                param_CI[0], ll_CI[0] = self.f(roots[0], i_param, curr=approx_param)
+                param_CI[0], ll_CI[0] = self.f(
+                    roots[0], i_param, curr=approx_param
+                )
                 x_CI[0] = roots[0]
 
                 # Record these values
@@ -401,9 +514,9 @@ class ProfileLogLikelihood():
                 x_rec = np.insert(x_rec, 0, x_CI[0])
 
                 # Check termination status
-                if np.abs(ll_CI[0]-self.l_star) < opts['T_ident']:
+                if np.abs(ll_CI[0]-self.l_star) < local_opts['T_ident']:
                     identifiable_CI[0] = 'Ident'
-                elif np.abs(ll_rec[0] - ll_rec[1]) < opts['T_unident']:
+                elif np.abs(ll_rec[0] - ll_rec[1]) < local_opts['T_unident']:
                     unchanged_iters_L += 1
                     if unchanged_iters_L >= 5:
                         identifiable_CI[0] = 'Unident'
@@ -413,21 +526,27 @@ class ProfileLogLikelihood():
             if identifiable_CI[1] is None:
                 approx_param = interpolator(roots[0])
                 # Calculate true max params and likelihood at the upper root
-                param_CI[2], ll_CI[2] = self.f(roots[1], i_param, curr=approx_param)
+                param_CI[2], ll_CI[2] = self.f(
+                    roots[1], i_param, curr=approx_param
+                )
                 x_CI[2] = roots[1]
-                
+
                 # Record these values
-                param_rec = np.insert(param_rec, len(x_rec), param_CI[2], axis=0)
-                proj_rec = np.insert(proj_rec, len(x_rec),  approx_param, axis=0)
+                param_rec = np.insert(
+                    param_rec, len(x_rec), param_CI[2], axis=0
+                )
+                proj_rec = np.insert(
+                    proj_rec, len(x_rec),  approx_param, axis=0
+                )
                 ll_rec = np.insert(ll_rec, len(x_rec), ll_CI[2])
                 x_rec = np.insert(x_rec, len(x_rec), roots[1])
 
                 # Check termination status
-                if np.abs(ll_CI[2]-self.l_star) < opts['T_ident']:
+                if np.abs(ll_CI[2]-self.l_star) < local_opts['T_ident']:
                     identifiable_CI[1] = 'Ident'
-                elif np.abs(ll_rec[-1] - ll_rec[-2]) < opts['T_unident']:
+                elif np.abs(ll_rec[-1] - ll_rec[-2]) < local_opts['T_unident']:
                     unchanged_iters_U += 1
-                    if unchanged_iters_U >= opts['unchanged_iters']:
+                    if unchanged_iters_U >= local_opts['unchanged_opts']:
                         identifiable_CI[1] = 'Unident'
                 else:
                     unchanged_iters_U = 0
@@ -435,7 +554,7 @@ class ProfileLogLikelihood():
             if all(identifiable_CI):
                 break
 
-        if opts['normalise']:  # Normalise the result
+        if local_opts['normalise']:  # Normalise the result
             ll_rec = ll_rec - self.l_star
             ll_CI = ll_CI - self.l_star
 
@@ -458,20 +577,23 @@ class ProfileLogLikelihood():
         if reset:
             self.opts = {
                 'optimiser': 'Powell',
+                'opt_package': 'scipy',
                 'method': 'quadratic approx.',
                 'minimise': False,
                 'transformation': None,
                 'normalise': True,
                 'slice': False,
                 'alpha': 1.92,
-                'view_aim': 3*1.92,
+                'view_aim': -3*1.92,
                 'interp': 2,
                 'T_ident': 1e-3,
                 'T_unident': 1e-4,
                 'max_N_opts': 50,
                 'min_N_opts': 10,
-                'unchanged_iters': 5,
+                'unchanged_opts': 5,
                 'approx shape N': 10,
+                'maxiter': None,
+                'max_unchanged': (200, 1e-11)
             }
         self.opts.update(opts)
 
@@ -481,7 +603,7 @@ class ProfileLogLikelihood():
                 opt_param, score = self.optimise(
                     function,
                     curr,
-                    fix=(param_arg, param_value)
+                    fix=[param_arg, param_value]
                 )
                 return opt_param, score
             f = profile_function
@@ -525,14 +647,16 @@ class ProfileLogLikelihood():
             param_range is calculated for.
         bounds
             The bounds of the parameter range. NDArray of shape (2, ) or
-            (len(i_param), 2). If None is given or either bound is None, 0.5*MLE_i and 1.5*MLE_i will be used.
+            (len(i_param), 2). If None is given or either bound is None,
+            0.5*MLE_i and 1.5*MLE_i will be used.
         adapt
             Whether the bounds of the range should be shrunk to better view
-            the loglikelihood curve around MLE. Aims to view between ll(MLE) and ll(MLE)-3*1.92. Can be changed in set_opts.
+            the loglikelihood curve around MLE. Aims to view between ll(MLE)
+            and ll(MLE)-3*1.92. Can be changed in set_opts.
         """
         if bounds is None:
             bounds = np.full((len(i_param), 2), None)
-        
+
         bounds = np.array(bounds)
         if bounds.ndim == 1:
             if len(bounds) > 2:
@@ -545,46 +669,58 @@ class ProfileLogLikelihood():
                         "Bounds must be of shape (2, ), or (len(i_param), 2)"
                     )
             else:
-                bounds[0]=[bounds[0]]*len(i_param)
-                bounds[1]=[bounds[1]]*len(i_param)
+                bounds = np.array([
+                    [bounds[0]]*len(i_param),
+                    [bounds[1]]*len(i_param)
+                ])
                 bounds = np.array(bounds).transpose()
         elif bounds.shape != (len(i_param), 2):
             raise TypeError(
                 "Bounds must be of shape (2, ), or (len(i_param), 2)"
             )
-        
-        bounds[bounds[:,0]==None, 0]=0.5*(self.MLE[i_param])[bounds[:,0]==None]
-        bounds[bounds[:,1]==None, 1]=1.5*(self.MLE[i_param])[bounds[:,1]==None]
+        none_L = bounds[:, 0] == None
+        none_U = bounds[:, 1] == None
+        bounds[none_L, 0] = 0.5*(self.MLE[i_param])[none_L]
+        bounds[none_U, 1] = 1.5*(self.MLE[i_param])[none_U]
 
-        if adapt:
-            for j_param, bound in enumerate(bounds):
-                x_min = bound[0]
-                i_check = 0
-                j_check = 0
+        if isinstance(adapt, bool):
+            adapt = [adapt]*2
+        for j_param, bound in enumerate(bounds):
+            x_min = bound[0]
+            i_check = 0
+            j_check = 0
+            if adapt[0]:
                 while i_check == 0 and j_check <= 20:
-                    x_check = np.linspace(self.MLE[i_param], x_min, 20)[1:]
+                    x_check = np.linspace(
+                        self.MLE[i_param[j_param]], x_min, 10
+                    )[1:]
                     for x in x_check:
-                        _, score = self.slice_func(x, i_param)
-                        if score-self.l_star < (self.opts['view_aim']):
+                        _, score = self.slice_func(x, i_param[j_param])
+                        if score - self.l_star < self.opts['view_aim']:
                             x_min = x_check[i_check]
                             break
                         i_check += 1
                     j_check += 1
-                x_max = bound[1]
-                i_check = 0
-                j_check = 0
+            x_max = bound[1]
+            i_check = 0
+            j_check = 0
+            if adapt[1]:
                 while i_check == 0 and j_check <= 20:
-                    x_check = np.linspace(self.MLE[i_param], x_max, 20)[1:]
+                    x_check = np.linspace(
+                        self.MLE[i_param[j_param]], x_max, 10
+                    )[1:]
                     for x in x_check:
-                        _, score = self.slice_func(x, i_param)
-                        if score-self.l_star < (self.opts['view_aim']):
+                        _, score = self.slice_func(x, i_param[j_param])
+                        if score-self.l_star < self.opts['view_aim']:
                             x_max = x_check[i_check]
                             break
                         i_check += 1
                     j_check += 1
-                bounds[j_param] = [x_min, x_max]
+            bounds[j_param] = [x_min, x_max]
 
-        self.param_range.update(dict(zip(i_param, zip(bounds, [adapt]*len(i_param)))))
+        self.param_range.update(
+            dict(zip(i_param, zip(bounds, [adapt]*len(i_param))))
+        )
 
 
 class Plot_Models():
@@ -2238,19 +2374,9 @@ class Plot_Models():
             self, log_likelihood, i_param, params_ref,
             param_name=None, bounds=(None, None),
             force_bounds=(False, False), n_evals=50, profile_opts=None,
-            show=["ll", "ind_ll", "ind_param_0"]
+            show=["PLL", "ind pll", "ind param 0"]
     ):
-        # Potential Show: "ll", "ind_ll", "param_i", "ind_param_i", "deriv_i"
-
-        # Create function
-        slice_function = self.create_plot_func(
-            log_likelihood, params_ref, profile=False
-        )
-        f = self.create_plot_func(
-            log_likelihood, params_ref, profile=True, profile_opts=profile_opts
-        )
-        ref_score = log_likelihood(params_ref)
-        param_ref_i = params_ref[i_param+self.n_ind_params]
+        # Potential Show: "pll", "ind pll", "param i", "ind param i", "deriv i"
 
         # Set name if not provided
         if (param_name is None) and (self.pop_model is not None):
@@ -2269,255 +2395,100 @@ class Plot_Models():
             ind_colour_selection = self.ind_colours
         else:
             ind_colour_selection = [self.base_colour]*self.n_ind
-
-        # Set up param range
-        if bounds[0] is None:
-            lower_bound = 0.5*param_ref_i
-        else:
-            lower_bound = bounds[0]
-        if bounds[1] is None:
-            upper_bound = 1.5*param_ref_i
-        else:
-            upper_bound = bounds[1]
-
-        view_aim = 3*1.92
-
-        x_min = lower_bound
-        i_check = 0
-        j_check = 0
-        if not force_bounds[0]:
-            while i_check == 0 and j_check <= 20:
-                x_check = np.linspace(param_ref_i, x_min, 20)[1:]
-                for x in x_check:
-                    _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - view_aim):
-                        x_min = x_check[i_check]
-                        break
-                    i_check += 1
-                j_check += 1
-        x_max = upper_bound
-        i_check = 0
-        j_check = 0
-        if not force_bounds[1]:
-            while i_check == 0 and j_check <= 20:
-                x_check = np.linspace(param_ref_i, x_max, 20)[1:]
-                for x in x_check:
-                    _, score = slice_function(x, i_param+self.n_ind_params)
-                    if score < (ref_score - view_aim):
-                        x_max = x_check[i_check]
-                        break
-                    i_check += 1
-                j_check += 1
-        param_range = (x_min, x_max)
-
-        # Calculate function
-        if 'quadratic approx' in profile_opts:
-            quad_approx = profile_opts['quadratic approx']
-        else:
-            quad_approx = False
-        if 'piecewise approx' in profile_opts:
-            piece_approx = profile_opts['piecewise approx']
-        else:
-            piece_approx = False
-
-        if quad_approx:
-            interp = 2  # Use Quadratic approximation
-
-            # First step: Estimate CI using slice function
-            l_star = ref_score - 1.92
-            x_anchors = [param_range[0], params_ref[i_param+self.n_ind_params], param_range[1]]
-            param_anchors = [None, params_ref, None]
-
-            def solve_slice(x, L_U):
-                param_anchors[L_U+1], ll = slice_function(x, i_param+self.n_ind_params)
-                return ll - l_star
-
-            x_anchors[0] = brentq(solve_slice, x_anchors[0], x_anchors[1], args=(-1))
-            x_anchors[2] = brentq(solve_slice, x_anchors[1], x_anchors[2], args=(1))
-            ll_anchors = [None, ref_score, None]
-
-            # Optimise at this point to find true profile log-likelihood points
-            param_anchors[0], ll_anchors[0] = self.optimise(
-                log_likelihood, param_anchors[0], fix=(i_param+self.n_ind_params, x_anchors[0]), minimise=False, method='powell',
-                transform_ind=True
-            )
-            param_anchors[2], ll_anchors[2] = self.optimise(
-                log_likelihood, param_anchors[2], fix=(i_param+self.n_ind_params, x_anchors[2]), minimise=False, method='powell',
-                transform_ind=True
-            )
-            # Iterative Steps:
-            x_CI_estimates, LL_CI_estimates, params_CI_estimates = self.f_over_param_range_poly_approx(
-                f, i_param, param_range, [x_anchors, ll_anchors, param_anchors], l_star, max_evals=n_evals, interpolate=interp
-            )
-            
-            # # Reset the anchors to the CIs
-            # x_anchors[0] = x_CI_estimates[0]
-            # x_anchors[2] = x_CI_estimates[-1]
-            # ll_anchors[0] = LL_CI_estimates[0]
-            # ll_anchors[1] = (LL_CI_estimates[x_CI_estimates==params_ref[i_param+self.n_ind_params]])[0]
-            # ll_anchors[2] = LL_CI_estimates[-1]
-            # param_anchors[0] = params_CI_estimates[0]
-            # param_anchors[2] = params_CI_estimates[-1]
-
-            # Reset the anchors to the CIs
-            sort_args = np.argsort(x_CI_estimates)
-            x_anchors = x_CI_estimates.copy()[sort_args]
-            ll_anchors = LL_CI_estimates.copy()[sort_args]
-            param_anchors = params_CI_estimates.copy()[sort_args]
-            # ll_anchors[1] = (LL_CI_estimates[x_CI_estimates==params_ref[i_param+self.n_ind_params]])[0]
-
-            # Build interpolated spline for plotting in between
-            CI_points = [x_CI_estimates[0], params_ref[i_param+self.n_ind_params], x_CI_estimates[-1]]
-            
-            ll_interpolator = make_interp_spline(
-                    CI_points,
-                    ll_anchors[np.isin(x_anchors, CI_points)],
-                    k=interp
-                )
-            param_interpolator = make_interp_spline(
-                    CI_points,
-                    param_anchors[np.isin(x_anchors, CI_points)],
-                    k=interp, axis=0
-                )
-            # view_range = PPoly.from_spline(interpolator).solve(-4)
-            view_range = param_range
-
-            # Add extra points to interpolator to determine shape
-            if 'approx shape' in profile_opts:
-                if profile_opts['approx shape']:
-                    x_shape_points = np.linspace(view_range[0], view_range[-1], 10)
-                    for x in x_shape_points:
-                        params, ll = f(x, i_param+self.n_ind_params, curr=param_interpolator(x))
-
-                        param_anchors = np.append(param_anchors, [params], axis=0)
-                        x_anchors = np.append(x_anchors, x)
-                        if 'normalise' in profile_opts:
-                            if profile_opts['normalise']:
-                                ll = ll - l_star
-                        else:
-                            ll = ll - l_star
-                        ll_anchors = np.append(ll_anchors, ll)
-
-                    sort_args = np.argsort(x_anchors)
-
-                    x_anchors = x_anchors[sort_args]
-                    ll_anchors = ll_anchors[sort_args]
-                    param_anchors = param_anchors[sort_args]
-
-            weights = np.ones(len(x_anchors))
-            weights[np.isin(x_anchors, CI_points)] = 8
-            weights[x_anchors==params_ref[i_param+self.n_ind_params]] = 20
-            inf_result = np.logical_not(np.isfinite(ll_anchors))
-            if np.any(inf_result):
-                ll_anchors[inf_result] = 2
-                weights[inf_result] = 0
-            ll_interpolator = UnivariateSpline(
-                    x_anchors, ll_anchors,
-                    w=weights, s=1e-4*len(weights)
-                )
-            param_interpolator = make_interp_spline(
-                    x_anchors, param_anchors,
-                    k=interp, axis=0
-                )
-
-            # Get points to plot
-            x_values = np.linspace(view_range[0], view_range[-1], 100)
-            result = ll_interpolator(x_values)
-            params_result = param_interpolator(x_values)
-
-        elif piece_approx:
-            if 'projection' in profile_opts:
-                interp = profile_opts['projection']
-
-            else:
-                interp = profile_opts['projection']
-            print("Projecting piecewise", interp, n_evals)
-            x_anchors = [param_range[0], params_ref[i_param+self.n_ind_params], param_range[1]]
-            param_anchors = [None, params_ref, None]
-            ll_anchors = [None, ref_score, None]
-            param_anchors[0], ll_anchors[0] = self.optimise(
-                log_likelihood, params_ref, fix=(i_param+self.n_ind_params, x_anchors[0]), minimise=False, method='powell',
-                transform_ind=True
-            )
-            param_anchors[2], ll_anchors[2] = self.optimise(
-                log_likelihood, params_ref, fix=(i_param+self.n_ind_params, x_anchors[2]), minimise=False, method='powell',
-                transform_ind=True
-            )
-            x_values, result, params_result = self.f_over_param_range_piecewise(
-                f, i_param, param_range, [x_anchors, ll_anchors, param_anchors], n_evals=n_evals, interpolate=interp
-            )
-        elif 'projection' in profile_opts:
-            extrap = profile_opts['projection']
-            print("Projecting sequentially", extrap, n_evals)
-            x_values, result, params_result = self.f_over_param_range_sequential(
-                f, i_param, param_range, params_ref, n_evals=n_evals, extrapolate=extrap
-            )
-        else:
-            print("Not Projecting sequentially", n_evals)
-            x_values, result, params_result = self.f_over_param_range_sequential(
-                f, i_param, param_range, params_ref, n_evals=n_evals, extrapolate=0
-            )
+        
+        result = log_likelihood.result[i_param+self.n_ind_params]
+        if len(result)==0:
+            log_likelihood.run(i_param+self.n_ind_params, opts=profile_opts)
+            result = log_likelihood.result[i_param+self.n_ind_params]
+        bounds = log_likelihood.param_range[i_param+self.n_ind_params][0]
+        x_values = np.linspace(bounds[0], bounds[1], n_evals)
+        pll_values = result['profile ll'](x_values)
+        param_values = result['profile param'](x_values)
         y_ax_names = []
         for row, graph_type in enumerate(show):
-            if graph_type == "ll":
+            if graph_type.startswith("PLL"):
                 fig.add_trace(
                     go.Scatter(
-                        name='Population Log-likelihood',
+                        name='Profile Log-likelihood',
                         x=x_values,
-                        y=result,
+                        y=pll_values,
                         mode='lines',
                         line=dict(color=self.base_colour),
                     ),
                     row=row+1,
                     col=1
                 )
-                if quad_approx:
+                if graph_type == "PLL points":
+                    optimiser_points = result['opt points']
                     fig.add_trace(
                         go.Scatter(
-                            name='Estimates of CI',
-                            x=x_anchors,
-                            y=ll_anchors,
+                            name='Optimiser Evaluations',
+                            x=optimiser_points[0],
+                            y=optimiser_points[1],
                             mode='markers',
-                            marker=dict(color=self.base_colour, symbol="star-diamond", opacity=0.5),
+                            marker=dict(
+                                color=self.base_colour,
+                                symbol="star-diamond",
+                                opacity=0.5
+                            ),
                         ),
                         row=row+1,
                         col=1
                     )
-
-
+                elif graph_type == "PLL projection":
+                    x_points = result['opt points'][0]
+                    proj_params = result['projected optimum']
+                    proj_LL = []
+                    for param in proj_params:
+                        proj_LL.append(log_likelihood(param))
+                    fig.add_trace(
+                        go.Scatter(
+                            name='Projected PLL',
+                            x=x_points[0],
+                            y=proj_LL[1],
+                            mode='markers',
+                            marker=dict(
+                                color=self.base_colour,
+                                symbol="circle",
+                                opacity=0.5
+                            ),
+                        ),
+                        row=row+1,
+                        col=1
+                    )
                 y_ax_names.append("Log-Likelihood")
-            elif graph_type == "ind_ll":
+            elif graph_type == "ind PLL":
                 # create matrix of pointwise loglikelihoods of shape
                 # (n_x_values, n_ind)
-                ind_ll = np.empty((x_values.shape[0], self.n_ind))
-                for i_vec, param_vec in enumerate(params_result):
-                    pll = np.array(log_likelihood.compute_pointwise_ll(
+                ind_pll = np.empty((x_values.shape[0], self.n_ind))
+                for i_vec, param_vec in enumerate(param_values):
+                    point_pll = np.array(log_likelihood.compute_pointwise_ll(
                         param_vec, per_individual=True
                     ))
                     full_ll = log_likelihood(param_vec)
-                    if np.abs(np.sum(pll) - full_ll) > 1e-3:
+                    if np.abs(np.sum(point_pll) - full_ll) > 1e-3:
                         raise ValueError(
-                            "Incorrect pointwise log-likelihood calculated for "
-                            + str(i_vec) + "th parameter vector:"
-                            + str(np.sum(pll)) + "!=" + str(full_ll)
+                            "Incorrect pointwise log-likelihood calculated " +
+                            "for " + str(i_vec) + "th parameter vector:"
+                            + str(np.sum(point_pll)) + "!=" + str(full_ll)
                         )
-                    if pll.shape != (self.n_ind, ):
+                    if point_pll.shape != (self.n_ind, ):
                         raise ValueError(
-                            "individual log-likelihood is wrong shape. Should be "
-                            + str((self.n_ind, ))
-                            + "but is " + str(pll.shape)
+                            "Individual log-likelihood is wrong shape. Should" +
+                            " be " + str((self.n_ind, )) + "but is " +
+                            str(point_pll.shape)
                         )
-                    ind_ll[i_vec] = pll
-                ind_ll = ind_ll - np.array(log_likelihood.compute_pointwise_ll(
-                    params_ref, per_individual=True)
-                )
+                    ind_pll[i_vec] = point_pll
+                ind_pll -= np.array(log_likelihood.compute_pointwise_ll(
+                    params_ref, per_individual=True
+                ))
                 for i_ind in range(0, self.n_ind):
                     ind_colour = ind_colour_selection.flatten()[i_ind]
                     fig.add_trace(
                         go.Scatter(
                             name='Individual Log-likelihoods',
                             x=x_values,
-                            y=ind_ll[:, i_ind],
+                            y=ind_pll[:, i_ind],
                             mode='lines',
                             line=dict(color=ind_colour, width=1),
                             showlegend=False
@@ -2525,44 +2496,54 @@ class Plot_Models():
                         row=row+1,
                         col=1
                     )
-            elif graph_type.startswith("ind_param"):
-                ind_param = np.arange(self.n_ind_params)[int(graph_type[-1])::int(len(self.ME_param_args)/2)]
-                typ_param = self.ME_param_args[int(graph_type[-1])*2]
-                for i_ind in range(0, self.n_ind):
-                    ind_colour = ind_colour_selection.flatten()[i_ind]
-                    param_arg = ind_param[i_ind]
+            elif graph_type.startswith("ind param"):
+                param_args = graph_type.split()[2:]
+                for i_param in param_args:
+                    i_param = int(i_param)
+                    # ind_param = np.arange(self.n_ind_params)[
+                    #     i_param::int(len(self.ME_param_args)/2)
+                    # ]
+                    for i_ind in range(0, self.n_ind):
+                        ind_colour = ind_colour_selection.flatten()[i_ind]
+                        ind_param_arg = (
+                            i_param + i_ind*int(len(self.ME_param_args)/2)
+                        )
+                        fig.add_trace(
+                            go.Scatter(
+                                name='Individual Parameter optimised',
+                                x=x_values,
+                                y=(
+                                    param_values[:, ind_param_arg] -
+                                    params_ref[ind_param_arg]
+                                ),
+                                mode='lines',
+                                line=dict(color=ind_colour, width=1),
+                                showlegend=False
+                            ),
+                            row=row+1,
+                            col=1
+                        )
+
+                    typ_param = self.ME_param_args[i_param*2]
+                    norm_res = (
+                        np.exp(param_values[:, typ_param])
+                        - np.exp(params_ref[typ_param])
+                    )
                     fig.add_trace(
                         go.Scatter(
-                            name='Individual Parameter optimised',
+                            name='Population Parameter optimised',
                             x=x_values,
-                            y=params_result[:, param_arg]-params_ref[param_arg],
+                            y=norm_res,
                             mode='lines',
-                            line=dict(color=ind_colour, width=1),
+                            line=dict(color=pop_colour),
                             showlegend=False
                         ),
                         row=row+1,
                         col=1
                     )
 
-                norm_res = (
-                    np.exp(params_result[:, typ_param])
-                    - np.exp(params_ref[typ_param])
-                )
-                fig.add_trace(
-                    go.Scatter(
-                        name='Population Parameter optimised',
-                        x=x_values,
-                        y=norm_res,
-                        mode='lines',
-                        line=dict(color=pop_colour),
-                        showlegend=False
-                    ),
-                    row=row+1,
-                    col=1
-                )
-
             elif graph_type.startswith("deriv"):
-                y_deriv = {0: result}
+                y_deriv = {0: pll_values}
                 x_deriv = {0: x_values}
                 n_deriv = int(graph_type[-1])
                 for deriv in range(1, n_deriv+1):

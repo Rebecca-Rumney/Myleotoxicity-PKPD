@@ -1,0 +1,294 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Log_Growth_PLL_QPLL_plus_table.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{481.68889564bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.10626216)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.0196207,1.09507406){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(a)\end{tabular}}}}%
+    \put(0.02592311,0.75175657){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(b)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.19340613,1.08644303){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Model}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,1.08644303){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Parameter}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,1.0596622){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.19439801,1.02989144){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Standard}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,1.03188949){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,1.00510867){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C_0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,0.97832784){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.19439801,0.94855709){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Gompertz}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,0.95055513){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,0.92377431){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C_0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,0.89699348){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,0.87021265){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.30968691,0.81565912){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\alpha$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.19439801,0.85532146){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Richards}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31243202,0.84243994){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$C_0$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.43145792,1.08644303){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Lower C-I}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55048381,1.08644303){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Upper C-I}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66950971,1.08644303){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Time Change}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.79652662,0.6945566){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Standard growth model\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.67296604){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Profile Likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.65144345){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Quick Profile Likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.62992086){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimiser Evaluations\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.79652662,0.59611906){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Gompertz growth model\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.57452851){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Profile Likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.55300592){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Quick Profile Likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.53148332){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimiser Evaluations\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.79652662,0.49768153){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Richards growth model\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.47609097){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Profile Likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.45456838){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Quick Profile Likelihood\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.43304579){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimiser Evaluations\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.79652662,0.399244){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Confidence Interval\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.37765344){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Lower confidence interval\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.35613085){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MLE\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.8361735,0.33460826){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Upper confidence interval\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.03229965,0.64919773){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$PLL_j(\beta) - L^*$\end{tabular}}}}}%
+    \put(0.03229965,0.46045028){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$PLL_j(\beta) - L^*$\end{tabular}}}}}%
+    \put(0.03229965,0.27170282){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$PLL_j(\beta) - L^*$\end{tabular}}}}}%
+    \put(0.51130134,0.08295541){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$PLL_j(\beta) - L^*$\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.17460722,0.72516399){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Standard\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.41275398,0.72516399){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Gompertz\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.6524052,0.72516399){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Richards'\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.75781138,0.64989366){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$r$\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.75738652,0.46040281){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$K$\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.75809454,0.2713191){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$C_0$\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.75766973,0.08319112){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{-90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\alpha$\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,1.05974747){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,1.05974747){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,1.05974747){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-81.5\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,1.03195462){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,1.03195462){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,1.03195462){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-30.19\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,1.00515436){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,1.00515436){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,1.00515436){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}115.75\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,0.97835411){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,0.97835411){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,0.97835411){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-62.54\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,0.95056125){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,0.95056125){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=58]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,0.95056125){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-18.66\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=59]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,0.92376099){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Unknown\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=60]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,0.92376099){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Unknown\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=61]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,0.92376099){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-35.86\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=62]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,0.89696074){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Unknown\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=63]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,0.89696074){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Unknown\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=64]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,0.89696074){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}201.03\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=65]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,0.87016048){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=66]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,0.87016048){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=67]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,0.87016048){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}-28.18\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=68]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,0.84236763){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Unknown\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=69]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,0.84236763){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Unknown\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=70]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,0.84236763){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.59\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=71]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.4313543,0.81556737){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Unidentifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=72]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55046654,0.81556737){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identifiable\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=73]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.66957879,0.81556737){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}52.72\%\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=74]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31631456,0.56686655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.41345115,0.56686655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.005\end{tabular}}}}%
+    \put(0.51059911,0.56686655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.01\end{tabular}}}}%
+    \put(0.31517858,0.59607796){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.31517858,0.6345191){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.31517858,0.67296025){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.31517858,0.7114014){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=75]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.56846998,0.56696475){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.65090716,0.56696475){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.05\end{tabular}}}}%
+    \put(0.73335569,0.56696475){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
+    \put(0.5546907,0.59617616){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.5546907,0.6346173){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.5546907,0.67305845){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.5546907,0.7114996){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=76]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.31631379,0.37780343){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}60\end{tabular}}}}%
+    \put(0.36488777,0.37780343){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}70\end{tabular}}}}%
+    \put(0.41345039,0.37780343){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}80\end{tabular}}}}%
+    \put(0.46202437,0.37780343){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}90\end{tabular}}}}%
+    \put(0.51059835,0.37780343){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.31517782,0.40701484){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.31517782,0.44545598){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.31517782,0.48389713){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.31517782,0.52233828){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=77]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.55581113,0.37785776){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}60\end{tabular}}}}%
+    \put(0.60438511,0.37785776){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}70\end{tabular}}}}%
+    \put(0.65294773,0.37785776){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}80\end{tabular}}}}%
+    \put(0.7015217,0.37785776){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}90\end{tabular}}}}%
+    \put(0.75009568,0.37785776){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.55467516,0.40706917){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.55467516,0.44551032){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.55467516,0.48395146){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.55467516,0.52239261){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=78]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.12466305,0.1888015){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.5\end{tabular}}}}%
+    \put(0.17347558,0.1888015){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0.22229947,0.1888015){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.5\end{tabular}}}}%
+    \put(0.271112,0.1888015){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.07569148,0.21801291){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.07569148,0.25645406){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.07569148,0.29489521){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.07569148,0.33333635){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=79]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.33027831,0.18951939){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.39038236,0.18951939){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.005\end{tabular}}}}%
+    \put(0.45048641,0.18951939){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.01\end{tabular}}}}%
+    \put(0.51059046,0.18951939){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.015\end{tabular}}}}%
+    \put(0.31516993,0.2187308){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.31516993,0.25717194){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.31516993,0.29561309){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.31516993,0.33405424){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=80]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.56976375,0.18961071){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.65993687,0.18961071){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.5\end{tabular}}}}%
+    \put(0.75010998,0.18961071){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0.55468946,0.21882212){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.55468946,0.25726326){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.55468946,0.29570441){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.55468946,0.33414556){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=81]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.56979783,0.00072237){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.65994823,0.00072237){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.5\end{tabular}}}}%
+    \put(0.75010998,0.00072237){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0.55468946,0.02993378){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.55468946,0.06837492){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.55468946,0.10681607){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.55468946,0.14525722){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=82]{Log_Growth_PLL_QPLL_plus_table.pdf}}%
+    \put(0.07681721,0.56691889){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.17395381,0.56691889){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.005\end{tabular}}}}%
+    \put(0.27110176,0.56691889){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.01\end{tabular}}}}%
+    \put(0.07568124,0.5961303){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.07568124,0.63457145){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.07568124,0.6730126){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.07568124,0.71145374){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0.07681644,0.37779796){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}60\end{tabular}}}}%
+    \put(0.12539042,0.37779796){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}70\end{tabular}}}}%
+    \put(0.17395304,0.37779796){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}80\end{tabular}}}}%
+    \put(0.22252702,0.37779796){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}90\end{tabular}}}}%
+    \put(0.271101,0.37779796){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.07568048,0.40700937){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.07568048,0.44545052){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.07568048,0.48389166){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.07568048,0.52233281){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
