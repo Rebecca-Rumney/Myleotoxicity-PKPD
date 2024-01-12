@@ -1,0 +1,140 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'conclusion.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{424.04008484bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.97997991)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{conclusion.pdf}}%
+    \put(0.54770419,0.62925397){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Grade 4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{conclusion.pdf}}%
+    \put(0.54770419,0.65486917){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Grade 3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{conclusion.pdf}}%
+    \put(0.99341678,0.68047112){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Grade 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{conclusion.pdf}}%
+    \put(0.99341678,0.75731675){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Grade 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{conclusion.pdf}}%
+    \put(0.54770419,0.59833265){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.64115792,0.59833265){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20\end{tabular}}}}%
+    \put(0.73461165,0.59833265){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}40\end{tabular}}}}%
+    \put(0.82807864,0.59833265){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}60\end{tabular}}}}%
+    \put(0.92153236,0.59833265){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}80\end{tabular}}}}%
+    \put(0.54637767,0.61000608){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.54637767,0.6683732){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}200\end{tabular}}}}%
+    \put(0.54637767,0.72674033){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}400\end{tabular}}}}%
+    \put(0.54637767,0.78510746){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}600\end{tabular}}}}%
+    \put(0.54637767,0.84347458){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
+    \put(0.54637767,0.90184171){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{conclusion.pdf}}%
+    \put(0.47706254,0.7614953){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Platelets  count at Nadir\end{tabular}}}}}%
+    \put(0.59859108,0.92907088){\color[rgb]{0.17647059,0.25882353,0.38431373}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Grade 1:\\11.5\end{tabular}}}}%
+    \put(0.66257136,0.89166149){\color[rgb]{0.17647059,0.25882353,0.38431373}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Grade 2:\\25.7\end{tabular}}}}%
+    \put(0.70840429,0.93186532){\color[rgb]{0.17647059,0.25882353,0.38431373}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Grade 3:\\35.0\end{tabular}}}}%
+    \put(0.79319541,0.89176146){\color[rgb]{0.17647059,0.25882353,0.38431373}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Grade 4:\\53.5\end{tabular}}}}%
+    \put(0.00995265,0.9414691){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.47881757,0.94121134){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{conclusion.pdf}}%
+    \put(0.106338,0.56654611){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.19323869,0.56654611){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.28012611,0.56654611){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1000\end{tabular}}}}%
+    \put(0.3670268,0.56654611){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1500\end{tabular}}}}%
+    \put(0.10501147,0.57821953){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.10501147,0.67234979){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}500\end{tabular}}}}%
+    \put(0.10501147,0.76649331){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0.10501147,0.86062356){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1500\end{tabular}}}}%
+    \put(0.26552105,0.52834216){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Predicted Platelet Count, $10^3$/ $\mu$L\end{tabular}}}}%
+    \put(0.25120752,0.05995436){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Predicted Platelet Count, $10^3$/ $\mu$L\end{tabular}}}}%
+    \put(0.03569636,0.75623927){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Observed Platelet Count, $10^3$/$ \mu$L\end{tabular}}}}}%
+    \put(0.04849681,0.25870857){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Observed Platelet Count, $10^3$/$ \mu$L\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{conclusion.pdf}}%
+    \put(0.104574,0.08758075){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.19265145,0.08758075){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.28074198,0.08758075){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1000\end{tabular}}}}%
+    \put(0.36881943,0.08758075){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1500\end{tabular}}}}%
+    \put(0.10326683,0.09908386){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.10326683,0.19450762){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}500\end{tabular}}}}%
+    \put(0.10326683,0.28993138){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0.10326683,0.38535515){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1500\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{conclusion.pdf}}%
+    \put(0.73697756,0.0319251){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Drug Dose, mg/Kg\end{tabular}}}}%
+    \put(0.48563983,0.23268594){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Platelets  count at Nadir\end{tabular}}}}}%
+    \put(0.54126056,0.07577753){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.54126056,0.13414465){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}200\end{tabular}}}}%
+    \put(0.54126056,0.19251178){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}400\end{tabular}}}}%
+    \put(0.54126056,0.25087891){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}600\end{tabular}}}}%
+    \put(0.54126056,0.30924603){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
+    \put(0.54126056,0.36761316){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0.54595179,0.06315827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.63515992,0.06315827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20\end{tabular}}}}%
+    \put(0.72436806,0.06315827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}40\end{tabular}}}}%
+    \put(0.81357619,0.06315827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}60\end{tabular}}}}%
+    \put(0.90278433,0.06315827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}80\end{tabular}}}}%
+    \put(0.99199246,0.06315827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{conclusion.pdf}}%
+    \put(0.99639676,0.2199429){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Grade 1\end{tabular}}}}%
+    \put(0.99295138,0.14223292){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}Grade 2\end{tabular}}}}%
+    \put(0.54778626,0.1172958){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Grade 3\end{tabular}}}}%
+    \put(0.54734156,0.09199608){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Grade 4\end{tabular}}}}%
+    \put(0.6790167,0.36372187){\color[rgb]{0.17647059,0.25882353,0.38431373}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Grade 2:\\30.2\end{tabular}}}}%
+    \put(0.83956637,0.364996){\color[rgb]{0.17647059,0.25882353,0.38431373}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Grade 4:\\65.0\end{tabular}}}}%
+    \put(0.73733949,0.40752729){\color[rgb]{0.17647059,0.25882353,0.38431373}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Grade 3:\\41.5\end{tabular}}}}%
+    \put(0.02168936,0.44676789){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.49055428,0.42174833){\color[rgb]{0.22352941,0.25490196,0.42352941}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
+    \put(0.60956144,0.40752729){\color[rgb]{0.17647059,0.25882353,0.38431373}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Grade 1:\\13.5\end{tabular}}}}%
+    \put(0.77056049,0.56012872){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Docetaxel Dose, mg/Kg\end{tabular}}}}%
+    \put(0.74735356,0.47799898){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mean of samples\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{conclusion.pdf}}%
+    \put(0.74633568,0.50150911){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Range of samples\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{conclusion.pdf}}%
+    \put(0.57452898,0.51305321){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Maximum \\Likelihood\\estimate\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{conclusion.pdf}}%
+  \end{picture}%
+\endgroup%

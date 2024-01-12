@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{482.33955443bp}%
+    \setlength{\unitlength}{431.25bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,42 +50,41 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.41305494)%
+  \begin{picture}(1,0.46198895)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{Log_Growth_Richards_r_proposed action.pdf}}%
-    \put(0.02526224,0.39930594){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(a)\end{tabular}}}}%
-    \put(0.58203117,0.3921399){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(b)\end{tabular}}}}%
+    \put(0.02825502,0.44661113){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(a)\end{tabular}}}}%
+    \put(0.59185335,0.43859614){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(b)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{Log_Growth_Richards_r_proposed action.pdf}}%
-    \put(0.01984093,0.21131575){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$PLL_j(\beta) - L^*$\end{tabular}}}}}%
+    \put(0.02219146,0.23635001){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$PLL_j(\beta) - L^*$\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{Log_Growth_Richards_r_proposed action.pdf}}%
-    \put(0.27680689,0.00974438){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$r$\end{tabular}}}}%
+    \put(0.30959979,0.01089879){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$r$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{Log_Growth_Richards_r_proposed action.pdf}}%
-    \put(0.39599452,0.29029504){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MLE\end{tabular}}}}%
-    \put(0.20332854,0.34770161){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Current Point\end{tabular}}}}%
-    \put(0.11827305,0.29878592){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Out of bounds\\Proposed point\end{tabular}}}}%
-    \put(0.13561574,0.1970329){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Adjusted\\Proposed\\point\end{tabular}}}}%
-    \put(0.37511314,0.36164157){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}New Optimised point\end{tabular}}}}%
-    \put(0.17560017,0.11982681){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimised point\end{tabular}}}}%
+    \put(0.44290741,0.32468586){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MLE\end{tabular}}}}%
+    \put(0.22741657,0.3888933){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Current Point\end{tabular}}}}%
+    \put(0.13228468,0.33418265){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Out of bounds\\Proposed point\end{tabular}}}}%
+    \put(0.15168193,0.2203751){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Adjusted\\Proposed\\point\end{tabular}}}}%
+    \put(0.38476955,0.41144124){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}New Optimised point\end{tabular}}}}%
+    \put(0.19640326,0.13402252){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimised point\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{Log_Growth_Richards_r_proposed action.pdf}}%
-    \put(0.60910467,0.21770022){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$PLL_j(\beta) - L^*$\end{tabular}}}}}%
-    \put(0.34757863,0.24268337){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}New\\Proposed point\end{tabular}}}}%
+    \put(0.62213421,0.24349083){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$PLL_j(\beta) - L^*$\end{tabular}}}}}%
+    \put(0.38875576,0.27143371){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}New\\Proposed point\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{Log_Growth_Richards_r_proposed action.pdf}}%
-    \put(0.84437839,0.03384309){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$C_0$\end{tabular}}}}%
+    \put(0.88528018,0.03785243){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$C_0$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{Log_Growth_Richards_r_proposed action.pdf}}%
-    \put(0.6779721,0.08330827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
-    \put(0.83822014,0.08330827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.5\end{tabular}}}}%
-    \put(0.99846818,0.08330827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
-    \put(0.65118334,0.1328564){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.65118334,0.19805992){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.65118334,0.26326345){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.65118334,0.32846697){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0.69915965,0.09317769){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.87839204,0.09317769){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.5\end{tabular}}}}%
+    \put(0.66919728,0.14859571){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.66919728,0.2215238){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.66919728,0.29445189){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.66919728,0.36737997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{Log_Growth_Richards_r_proposed action.pdf}}%
-    \put(0.75158739,0.32978144){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Current Point\end{tabular}}}}%
-    \put(0.75333664,0.13057153){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Small\\Step\end{tabular}}}}%
-    \put(0.82262679,0.13163696){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Distance\\Left\end{tabular}}}}%
-    \put(0.68103451,0.30021777){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MLE\end{tabular}}}}%
-    \put(0.80341251,0.30717244){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimised point\end{tabular}}}}%
-    \put(0.80818825,0.26825576){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Proposed point\end{tabular}}}}%
+    \put(0.7814968,0.36885016){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Current Point\end{tabular}}}}%
+    \put(0.78345329,0.14604015){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Small\\Step\end{tabular}}}}%
+    \put(0.86095137,0.1472318){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Distance\\Left\end{tabular}}}}%
+    \put(0.70258552,0.33578412){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}MLE\end{tabular}}}}%
+    \put(0.83946116,0.3435627){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimised point\end{tabular}}}}%
+    \put(0.84480247,0.30003562){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.93725502}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Proposed point\end{tabular}}}}%
   \end{picture}%
 \endgroup%

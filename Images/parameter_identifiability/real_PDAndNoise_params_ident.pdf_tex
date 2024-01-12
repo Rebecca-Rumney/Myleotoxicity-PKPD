@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'real_PDAndNoise_params_ident.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{504.02426147bp}%
+    \setlength{\unitlength}{353.16876221bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,21 +50,21 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.46589825)%
+  \begin{picture}(1,1.57437278)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.11222195,0.22585403){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}%
-    \put(0.33603862,0.22779478){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}%
-    \put(0.11876893,0.00234119){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
-    \put(0.34417173,0.0007778){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}%
-    \put(0.90534059,0.0046559){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}%
-    \put(0.76443598,0.00385759){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}%
-    \put(0.60885641,0.00492982){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, \textrm{PD}}$\end{tabular}}}}%
-    \put(0.53719668,0.05551802){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}}%
-    \put(0.53247921,0.22595819){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}}%
-    \put(0.52788797,0.34194398){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, \textrm{PD}}$\end{tabular}}}}}%
-    \put(0.01140241,0.45288095){\color[rgb]{0.16470588,0.24705882,0.37647059}\transparent{0.94901961}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
-    \put(0.49332048,0.45204696){\color[rgb]{0.16470588,0.24705882,0.37647059}\transparent{0.94901961}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.35797665,1.23179404){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$\end{tabular}}}}%
+    \put(0.67739623,1.23456378){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$MTT$\end{tabular}}}}%
+    \put(0.36732017,0.91280804){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\gamma$\end{tabular}}}}%
+    \put(0.68900338,0.91057684){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$S$\end{tabular}}}}%
+    \put(0.81195887,0.00582217){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}%
+    \put(0.53309517,0.00424225){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}%
+    \put(0.22518832,0.00636426){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, \textrm{PD}}$\end{tabular}}}}%
+    \put(0.05316424,0.11237304){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, \textrm{PD}}$\end{tabular}}}}}%
+    \put(0.05316424,0.44969047){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\eta$\end{tabular}}}}}%
+    \put(0.05316424,0.67923753){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{c, \textrm{PD}}$\end{tabular}}}}}%
+    \put(0.21409221,1.55579516){\color[rgb]{0.16470588,0.24705882,0.37647059}\transparent{0.94902003}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(-0.00346835,0.89714183){\color[rgb]{0.16470588,0.24705882,0.37647059}\transparent{0.94902003}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{real_PDAndNoise_params_ident.pdf}}%
   \end{picture}%
 \endgroup%

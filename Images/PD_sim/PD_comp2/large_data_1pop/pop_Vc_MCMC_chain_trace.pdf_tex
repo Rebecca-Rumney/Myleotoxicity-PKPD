@@ -1,0 +1,79 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'pop_Vc_MCMC_chain_trace.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{487.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.6520112)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.15778249,0.64033447){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.39096609,0.64033447){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.87811749,0.64033447){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
+    \put(0.63890869,0.64033447){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.04497648,0.60307327){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$V_{c, typ}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.04497649,0.52124752){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.04497648,0.43876038){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$V_{c, i}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.04428359,0.36620596){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$R_0$,\\$10^3$/$\mu$L\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.04414187,0.27481697){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}MTT, hr\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.04429934,0.19384884){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$S$, L/mg\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.04497648,0.11202312){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\gamma$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{pop_Vc_MCMC_chain_trace.pdf}}%
+    \put(0.04497649,0.03019736){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\sigma_{m, PD}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{pop_Vc_MCMC_chain_trace.pdf}}%
+  \end{picture}%
+\endgroup%

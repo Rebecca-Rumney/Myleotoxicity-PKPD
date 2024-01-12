@@ -1,0 +1,218 @@
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{316.12513733bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.66073475)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.31312292,1.6345576){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.3103077,1.11046605){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.17440488,1.53549554){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$V_{c, typ}$\end{tabular}}}}%
+    \put(0.17440488,1.39271327){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0.17440488,1.23227118){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$V_{c, i}$\end{tabular}}}}%
+    \put(0.67072057,1.11202774){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$R_0$, $10^3$/$\mu$L\end{tabular}}}}%
+    \put(0.17443288,0.87131724){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\omega_{R_0}$,\end{tabular}}}}%
+    \put(0.17440488,0.72741125){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$R_{0, i}$\end{tabular}}}}%
+    \put(0.17440489,1.01410042){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$R_{0, typ}$\end{tabular}}}}%
+    \put(0.643354,1.63896948){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$V_c$, L\end{tabular}}}}%
+    \put(0.27015694,1.45949377){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.65\end{tabular}}}}%
+    \put(0.37202726,1.45949377){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.70\end{tabular}}}}%
+    \put(0.47389758,1.45949377){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.75\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.63870644,1.45949159){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69890426,1.45949159){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75910208,1.45949159){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81929985,1.45949159){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87949766,1.45949159){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.93969548,1.45949159){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63378748,1.50545285){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.65\end{tabular}}}}%
+    \put(0.63378748,1.53514271){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.70\end{tabular}}}}%
+    \put(0.63378748,1.56483254){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.75\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.307695,1.31670753){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.30\end{tabular}}}}%
+    \put(0.40132639,1.31670753){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.35\end{tabular}}}}%
+    \put(0.49495776,1.31670753){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.40\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.63870644,1.31670938){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69890426,1.31670938){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75910208,1.31670938){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81929985,1.31670938){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87949766,1.31670938){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.93969548,1.31670938){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63378748,1.37434584){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.30\end{tabular}}}}%
+    \put(0.63378748,1.40238081){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.35\end{tabular}}}}%
+    \put(0.63378748,1.43041581){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.40\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.22092192,0.93809994){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}976\end{tabular}}}}%
+    \put(0.32021479,0.93809994){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}980\end{tabular}}}}%
+    \put(0.41950766,0.93809994){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}984\end{tabular}}}}%
+    \put(0.51880053,0.93809994){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}988\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.63870644,0.93809844){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69890426,0.93809844){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75910208,0.93809844){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81929985,0.93809844){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87949766,0.93809844){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.93969548,0.93809844){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63378748,0.99864143){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}980\end{tabular}}}}%
+    \put(0.63378748,1.03482254){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}985\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.22950065,0.79531738){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.000\end{tabular}}}}%
+    \put(0.31824112,0.79531738){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.005\end{tabular}}}}%
+    \put(0.40698159,0.79531738){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.010\end{tabular}}}}%
+    \put(0.49572207,0.79531738){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.015\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.6387065,0.79531621){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69890432,0.79531621){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75910213,0.79531621){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81929991,0.79531621){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87949772,0.79531621){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.93969554,0.79531621){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63378753,0.82960479){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.00\end{tabular}}}}%
+    \put(0.63378753,0.88257403){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.01\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.17440488,0.0597316){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\sigma_{c, PD}$\end{tabular}}}}%
+    \put(0.17292025,0.49486711){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}MTT, hr\end{tabular}}}}%
+    \put(0.17320036,0.3508389){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$S$, L/mg\end{tabular}}}}%
+    \put(0.17440488,0.2052854){\color[rgb]{0,0,0}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}$\gamma$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.57003437,0.58486663){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.25873704,0.29405205){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}20.0\end{tabular}}}}%
+    \put(0.35345059,0.29405205){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}20.2\end{tabular}}}}%
+    \put(0.44816415,0.29405205){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}20.4\end{tabular}}}}%
+    \put(0.54287773,0.29405205){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}20.6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.63770892,0.29405349){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69807293,0.29405349){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75843695,0.29405349){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81880092,0.29405349){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87916494,0.29405349){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.93952895,0.29405349){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63277637,0.3324348){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}20.0\end{tabular}}}}%
+    \put(0.63277637,0.35985625){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}20.2\end{tabular}}}}%
+    \put(0.63277637,0.3872777){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}20.4\end{tabular}}}}%
+    \put(0.63277637,0.41469915){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}20.6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.21854684,0.14576327){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.430\end{tabular}}}}%
+    \put(0.32058201,0.14576327){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.435\end{tabular}}}}%
+    \put(0.42261717,0.14576327){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.440\end{tabular}}}}%
+    \put(0.52465235,0.14576327){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.445\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.63763575,0.14576089){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69801197,0.14576089){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75838819,0.14576089){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81876436,0.14576089){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87914058,0.14576089){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.9395168,0.14576089){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63270218,0.17864115){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.43\end{tabular}}}}%
+    \put(0.63270218,0.23734108){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.44\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.22067052,0.43718303){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}84.6\end{tabular}}}}%
+    \put(0.33848387,0.43718303){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}85.0\end{tabular}}}}%
+    \put(0.45629722,0.43718303){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}85.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.63870636,0.4371825){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69890418,0.4371825){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.759102,0.4371825){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81929977,0.4371825){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87949759,0.4371825){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.9396954,0.4371825){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63378736,0.50369606){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}85.0\end{tabular}}}}%
+    \put(0.63378736,0.54662901){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}85.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.21269895,0.00020203){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}40\end{tabular}}}}%
+    \put(0.29913955,0.00020203){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}41\end{tabular}}}}%
+    \put(0.38558016,0.00020203){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}42\end{tabular}}}}%
+    \put(0.47202074,0.00020203){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}43\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.63714696,0.00020181){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.6976046,0.00020181){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75806224,0.00020181){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81851983,0.00020181){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87897747,0.00020181){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.93943511,0.00020181){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63220676,0.03307484){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}40\end{tabular}}}}%
+    \put(0.63220676,0.05754453){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}41\end{tabular}}}}%
+    \put(0.63220676,0.0820141){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}42\end{tabular}}}}%
+    \put(0.63220676,0.10648379){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}43\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.2596869,1.17398178){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.4\end{tabular}}}}%
+    \put(0.31576173,1.17398178){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.6\end{tabular}}}}%
+    \put(0.37183656,1.17398178){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.8\end{tabular}}}}%
+    \put(0.42791137,1.17398178){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}1.0\end{tabular}}}}%
+    \put(0.4839862,1.17398178){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}1.2\end{tabular}}}}%
+    \put(0.54006103,1.17398178){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}1.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.63855984,1.17398191){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69875766,1.17398191){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75895548,1.17398191){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.81915325,1.17398191){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87935107,1.17398191){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.93954888,1.17398191){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63365582,1.22683719){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
+    \put(0.63365582,1.266804){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}1.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.25308404,0.65259092){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}960\end{tabular}}}}%
+    \put(0.36879712,0.65259092){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}980\end{tabular}}}}%
+    \put(0.48451017,0.65259092){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}1000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{pop_V_c_R_0_fixed_K_1_V_1_sigma_PK_MCMC_trace.pdf}}%
+    \put(0.6385659,0.65259144){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}100\end{tabular}}}}%
+    \put(0.69876371,0.65259144){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}200\end{tabular}}}}%
+    \put(0.75896153,0.65259144){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}300\end{tabular}}}}%
+    \put(0.8191593,0.65259144){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}400\end{tabular}}}}%
+    \put(0.87935712,0.65259144){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}500\end{tabular}}}}%
+    \put(0.93955493,0.65259144){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}600\end{tabular}}}}%
+    \put(0.63366126,0.69361564){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}960\end{tabular}}}}%
+    \put(0.63366126,0.72729852){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}980\end{tabular}}}}%
+    \put(0.63366126,0.76098139){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

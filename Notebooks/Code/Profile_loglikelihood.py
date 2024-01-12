@@ -51,7 +51,8 @@ class ProfileLogLikelihood():
         # Reset results
         self.result[i_param] = {}
 
-        if local_opts['method'] == 'quadratic approx.':
+        if (local_opts['method'] == 'quadratic approx.'
+                or local_opts['method'] == 'quad adaptive'):
             self.ci_poly_approx(i_param, opts=local_opts)
             profile_ll = self.ll_from_ci(i_param, opts=local_opts)
         elif local_opts['method'] == 'piecewise calc.':
@@ -90,10 +91,30 @@ class ProfileLogLikelihood():
         else:
             sign = -1
 
-        # Transform start point into [eta, pop]
         opt_start = start.copy()
+
+        # Set bounds if exist
+        if local_opts['lower_bounds'] is None:
+            LB = None
+        elif np.isscalar(local_opts['lower_bounds']):
+            LB = local_opts['lower_bounds']*np.ones(len(opt_start))
+        elif np.array(local_opts['lower_bounds']).ndim == 1:
+            LB = local_opts['lower_bounds']
+
+        if local_opts['upper_bounds'] is None:
+            UB = None
+        elif np.isscalar(local_opts['upper_bounds']):
+            UB = local_opts['upper_bounds']*np.ones(len(opt_start))
+        elif np.array(local_opts['upper_bounds']).ndim == 1:
+            UB = local_opts['upper_bounds']
+
+        # Transform start point and bounds
         if transformation is not None:
             opt_start = transformation.to_search(opt_start)
+            if LB is not None:
+                LB = transformation.to_search(LB)
+            if UB is not None:
+                UB = transformation.to_search(UB)
 
         if fix is not None:
             fix = np.asarray(fix)
@@ -109,8 +130,12 @@ class ProfileLogLikelihood():
                 delete_arg = fix[0].astype(int)
                 fix_values = fix[1]
 
-            # Delete fixed values from the starting point
+            # Delete fixed values from the starting point and bounds
             opt_start = np.delete(opt_start, delete_arg)
+            if LB is not None:
+                LB = np.delete(LB, delete_arg)
+            if UB is not None:
+                UB = np.delete(UB, delete_arg)
 
             # Create the function to minimise
             def minimise_func(reduced_params):
@@ -125,33 +150,21 @@ class ProfileLogLikelihood():
                 if transformation is not None:
                     full_params = transformation.to_model(full_params)
                 return sign*func(full_params)
-        max_iter = local_opts['maxiter']
-        max_unchanged = local_opts['max_unchanged']
-        opt_package = local_opts['opt_package']
-        opt_method = local_opts['optimiser']
 
-        if local_opts['lower_bounds'] is None:
-            LB = None
-        elif np.isscalar(local_opts['lower_bounds']):
-            LB = local_opts['lower_bounds']*np.ones(len(opt_start))
-        elif np.array(local_opts['lower_bounds']).ndim == 1:
-            LB = local_opts['lower_bounds']
-        
+        # Adjust start point if out of bounds
         if LB is not None:
             out_L_bounds = opt_start < LB
             if any(out_L_bounds):
                 opt_start[out_L_bounds] = LB[out_L_bounds] + 1e-10
-
-        if local_opts['upper_bounds'] is None:
-            UB = None
-        elif np.isscalar(local_opts['upper_bounds']):
-            UB = local_opts['upper_bounds']*np.ones(len(opt_start))
-        elif np.array(local_opts['upper_bounds']).ndim == 1:
-            UB = local_opts['upper_bounds']
         if UB is not None:
             out_U_bounds = opt_start > UB
             if any(out_U_bounds):
                 opt_start[out_U_bounds] = UB[out_U_bounds] - 1e-10
+
+        max_iter = local_opts['maxiter']
+        max_unchanged = local_opts['max_unchanged']
+        opt_package = local_opts['opt_package']
+        opt_method = local_opts['optimiser']
 
         if opt_package == "pints":
             if (UB is not None) and (LB is not None):
@@ -189,22 +202,26 @@ class ProfileLogLikelihood():
             if max_iter is not None:
                 options['maxiter'] = max_iter
             if opt_method == 'basinhopping':
-                result = spopt.basinhopping(minimise_func, opt_start, minimizer_kwargs=dict(
-                    method='Powell', options=options, seed=local_opts['random_seed']
-                ))
+                result = spopt.basinhopping(
+                    minimise_func, opt_start, minimizer_kwargs=dict(
+                        method='Powell', options=options,
+                        seed=local_opts['random_seed']
+                    )
+                )
             elif opt_method == 'differential_evolution':
                 if LB is None:
                     LB = 1e-2*opt_start
                 if UB is None:
                     UB = 1e2*opt_start
                 result = spopt.differential_evolution(
-                    minimise_func, bounds=np.transpose([LB, UB]), maxiter=max_iter,
-                    popsize=30, mutation=(0.75, 1.25), recombination=0.5,
-                    seed=local_opts['random_seed']
+                    minimise_func, bounds=np.transpose([LB, UB]),
+                    maxiter=max_iter, popsize=30, mutation=(0.75, 1.25),
+                    recombination=0.5, seed=local_opts['random_seed']
                 )
             else:
                 result = spopt.minimize(
-                    minimise_func, opt_start, method=opt_method, options=options
+                    minimise_func, opt_start, method=opt_method,
+                    options=options
                 )
             xbest = result.x
             fbest = result.fun
@@ -276,15 +293,15 @@ class ProfileLogLikelihood():
                 param_rec[LU][i_x], ll_rec[LU][i_x] = self.f(
                     x, i_param, curr=curr, opts=opts
                 )
-                # If discrepencies are large, double check with global optimiser
+                # If discrepencies are large, check with global optimiser
                 param_error = np.sum(
                     np.abs((param_rec[LU][i_x]-curr)/curr)
                 )/len(curr)
                 if param_error > 3 or not np.isfinite(ll_rec[LU][i_x]):
                     x_check.append(x)
-                    param_rec[LU][i_x], ll_rec[LU][i_x] = self.f(
-                        x, i_param, curr=self.MLE, opts=check_opts
-                    )
+                    # param_rec[LU][i_x], ll_rec[LU][i_x] = self.f(
+                    #     x, i_param, curr=self.MLE, opts=check_opts
+                    # )
             LU = 1
 
         x_rec = np.concatenate((x_lower[::-1], x_upper))
@@ -292,7 +309,7 @@ class ProfileLogLikelihood():
         param_rec = np.concatenate((param_rec[0][::-1], param_rec[1]))
         proj_rec = np.concatenate((proj_rec[0][::-1], proj_rec[1]))
 
-        if len(x_check)>0:
+        if len(x_check) > 0:
             print("Used global optimisation on shape points " + str(x_check))
         if local_opts['normalise']:
             ll_rec = ll_rec - self.l_star  # Normalise the result
@@ -324,8 +341,12 @@ class ProfileLogLikelihood():
         x_rec = [param_range[0], self.MLE[i_param], param_range[1]]
         param_rec = [None, self.MLE, None]
         ll_rec = [None, self.ref_score, None]
-        param_rec[0], ll_rec[0] = self.f(x_rec[0], i_param, curr=self.MLE, opts=opts)
-        param_rec[2], ll_rec[2] = self.f(x_rec[2], i_param, curr=self.MLE, opts=opts)
+        param_rec[0], ll_rec[0] = self.f(
+            x_rec[0], i_param, curr=self.MLE, opts=opts
+        )
+        param_rec[2], ll_rec[2] = self.f(
+            x_rec[2], i_param, curr=self.MLE, opts=opts
+        )
 
         proj_rec = [self.MLE, self.MLE, self.MLE]
         stop_criteria = [False]*len(x_rec)
@@ -365,7 +386,9 @@ class ProfileLogLikelihood():
 
             # Maximise other params and Generate profile ll score
             for i, x in enumerate(x_insert):
-                param_value, ll = self.f(x, i_param, curr=proj_values[i], opts=opts)
+                param_value, ll = self.f(
+                    x, i_param, curr=proj_values[i], opts=opts
+                )
                 ll_insert.append(ll)
                 param_insert.append(param_value)
 
@@ -480,7 +503,7 @@ class ProfileLogLikelihood():
                 )
                 param_interp = param_interpolator(x)
                 param, ll = self.f(x, i_param, curr=param_interp, opts=opts)
-                # If discrepencies are large, double check with global optimiser
+                # If discrepencies are large, check with global optimiser
                 ll_error = np.abs(
                     ((ll-self.l_star)-ll_interpolator(x))/ll_interpolator(x)
                 )
@@ -495,8 +518,11 @@ class ProfileLogLikelihood():
                 param_rec = np.insert(param_rec, [insert_arg], [param], axis=0)
                 x_rec = np.insert(x_rec, insert_arg, x)
                 ll_rec = np.insert(ll_rec, insert_arg, ll)
-            if len(x_check)>0:
-                print("Used global optimisation on shape points " + str(x_check))
+            if len(x_check) > 0:
+                print(
+                    "Used global optimisation on shape points "
+                    + str(x_check)
+                )
             # result['opt points'] = (x_rec, ll_rec, param_rec)
 
         # weights = np.ones(len(x_rec))
@@ -578,22 +604,42 @@ class ProfileLogLikelihood():
         #     check_opts['optimiser'] = 'CMAES'
         check_opts['opt_package'] = 'pints'
         check_opts['optimiser'] = 'CMAES'
+        
+        # Set bounds for lower and upper exploration
+        if np.isscalar(local_opts['lower_bounds']):
+            LB = [local_opts['lower_bounds'], self.MLE[i_param]]
+        elif np.array(local_opts['lower_bounds']).ndim == 1:
+            LB = [local_opts['lower_bounds'][i_param], self.MLE[i_param]]
+        else:
+            LB = [-np.inf, self.MLE[i_param]]
+
+        if np.isscalar(local_opts['upper_bounds']):
+            UB = [self.MLE[i_param], local_opts['upper_bounds']]
+        elif np.array(local_opts['upper_bounds']).ndim == 1:
+            UB = [self.MLE[i_param], local_opts['upper_bounds'][i_param]]
+        else:
+            UB = [self.MLE[i_param], np.inf]
 
         # First step: Estimate CI using slice function
         param_range = self.param_range[i_param][0]
         x_CI = [param_range[0], self.MLE[i_param], param_range[1]]
         param_CI = [None, self.MLE, None]
         ll_CI = [None, self.ref_score, None]
-
         def solve_slice(x, L_U):
             param_CI[L_U+1], ll = self.slice_func(x, i_param)
             return ll - self.l_star
-        x_CI[0] = spopt.brentq(solve_slice, x_CI[0], x_CI[1], args=(-1))
-        x_CI[2] = spopt.brentq(solve_slice, x_CI[1], x_CI[2], args=(1))
-
+        if solve_slice(x_CI[0], -1) < 0:
+            x_CI[0] = spopt.brentq(solve_slice, x_CI[0], x_CI[1], args=(-1))
+        if solve_slice(x_CI[2], 1) < 0:
+            x_CI[2] = spopt.brentq(solve_slice, x_CI[1], x_CI[2], args=(1))
         # Optimise at this point to find the log-likelihood
-        param_CI[0], ll_CI[0] = self.f(x_CI[0], i_param, curr=param_CI[0], opts=opts)
-        param_CI[2], ll_CI[2] = self.f(x_CI[2], i_param, curr=param_CI[2], opts=opts)
+        param_CI[0], ll_CI[0] = self.f(
+            x_CI[0], i_param, curr=param_CI[0], opts=opts
+        )
+        param_CI[2], ll_CI[2] = self.f(
+            x_CI[2], i_param, curr=param_CI[2], opts=opts
+        )
+        ll_CI = np.array(ll_CI)
 
         x_rec = x_CI.copy()
         ll_rec = ll_CI.copy()
@@ -606,13 +652,15 @@ class ProfileLogLikelihood():
         divert_U = 0
         slow_conv_L = 0
         slow_conv_U = 0
+        quad_approx_L = True
+        quad_approx_U = True
         x_check = []
 
         # Iteratively estimate CI approximating space as polynomial
         while len(x_rec) <= self.opts['max_N_opts']:
-            ll_CI = np.array(ll_CI)
             # Solve LL(x)-L_star=0 assuming polynomial
 
+            param_interp = True
             # Check ll is finite, if not replace with finite values
             if not all(np.isfinite(ll_CI)):
                 param_interp = False
@@ -620,20 +668,93 @@ class ProfileLogLikelihood():
                 ll_CI[np.isnan(ll_CI)] = -1e15
             elif any(ll_CI > ll_CI[1]):
                 param_interp = False
-            else:
-                param_interp = True
 
-            poly_spline = PPoly.from_spline(make_interp_spline(
-                x_CI, ll_CI - self.l_star,
-                k=local_opts['interp'], axis=0
-            ))
-            roots = np.sort(poly_spline.roots())
+            if quad_approx_L and quad_approx_U:
+                poly_spline = PPoly.from_spline(make_interp_spline(
+                    x_CI, ll_CI - self.l_star,
+                    k=local_opts['interp']
+                ))
+                roots = np.sort(poly_spline.roots())
+            else:
+                roots = [None, None]
+                non_inf = np.isfinite(ll_rec)
+                if quad_approx_L:
+                    # Ignore Upper when finding lower root
+                    poly_spline = PPoly.from_spline(make_interp_spline(
+                        [x_CI[0], x_CI[1], 2*x_CI[1]-x_CI[0]],
+                        ll_CI[[0, 1, 0]] - self.l_star,
+                        k=local_opts['interp']
+                    ))
+                    roots[0] = np.sort(poly_spline.roots())[0]
+                else:
+                    # Use local splines to find lower root
+                    k = local_opts['interp']
+
+                    x_interp_points = x_rec[non_inf][:k+1]
+                    ll_interp_points = ll_rec[non_inf][:k+1] - self.l_star
+                    sort_args = np.argsort(x_interp_points)
+
+                    poly_spline = PPoly.from_spline(make_interp_spline(
+                        x_interp_points[sort_args],
+                        ll_interp_points[sort_args],
+                        k=k
+                    ))
+                    try:
+                        roots[0] = np.sort(poly_spline.roots())[0]
+                    except IndexError:
+                        grad = (
+                            (ll_interp_points[0] - ll_interp_points[-1]) /
+                            (x_interp_points[0] - x_interp_points[-1])
+                        )
+                        if grad < 0:
+                            roots[0] = (
+                                x_interp_points[0] - ll_interp_points[0]/grad
+                            )
+                        else:
+                            roots[0] = (x_CI[0]+param_range[0])*0.5
+
+                if quad_approx_U:
+                    # Ignore Lower when finding Upper root
+                    poly_spline = PPoly.from_spline(make_interp_spline(
+                        [2*x_CI[1]-x_CI[2], x_CI[1], x_CI[2]],
+                        ll_CI[[2, 1, 2]] - self.l_star,
+                        k=local_opts['interp']
+                    ))
+                    roots[1] = np.sort(poly_spline.roots())[1]
+                else:
+                    # Use local splines to find upper root
+                    k = local_opts['interp']
+
+                    x_interp_points = x_rec[non_inf][-k-1:]
+                    ll_interp_points = ll_rec[non_inf][-k-1:]- self.l_star
+                    sort_args = np.argsort(x_interp_points)
+
+                    poly_spline = PPoly.from_spline(make_interp_spline(
+                        x_interp_points[sort_args],
+                        ll_interp_points[sort_args],
+                        k=k
+                    ))
+                    try:
+                        roots[1] = np.sort(poly_spline.roots())[1]
+                    except IndexError:
+                        grad = (
+                            (ll_interp_points[0] - ll_interp_points[-1]) /
+                            (x_interp_points[0] - x_interp_points[-1])
+                        )
+                        if grad < 0:
+                            roots[1] = (
+                                x_interp_points[-1] - ll_interp_points[-1]/grad
+                            )
+                        else:
+                            roots[1] = (x_CI[2]+param_range[1])*0.5
 
             if len(roots) == 0:
-                # This can only happen if one of the confidence intervals has
-                # a greater likelihood than the MLE
+                # This can only happen if one or both of the confidence
+                # intervals has a greater likelihood than the MLE
                 ll_fake = ll_CI.copy()
-                ll_fake[ll_fake > ll_fake[1]] = ll_fake[1] - np.abs(ll_fake[1])*0.1
+                ll_fake[ll_fake > ll_fake[1]] = (
+                    ll_fake[1] - np.abs(ll_fake[1])*0.1
+                )
                 poly_spline = PPoly.from_spline(make_interp_spline(
                     x_CI, ll_fake - self.l_star,
                     k=local_opts['interp'], axis=0
@@ -646,14 +767,16 @@ class ProfileLogLikelihood():
                         k=local_opts['interp'], axis=0
                     )
             if identifiable_CI[0] is None:
-                recalc_root = False
                 if ll_CI[0] > self.ref_score:
                     warnings.warn(
                         "MLE is not accurate, found score above the maximum."
                     )
-                    recalc_root = True
-                if recalc_root or roots[0]<param_range[0]:
-                    roots[0] = (x_CI[0]+param_range[0])*0.5
+                if not (LB[0] < roots[0] < LB[1]):
+                    if np.isfinite(LB[0]):
+                        roots[0] = (LB[0] + LB[1])*0.5
+                    else:
+                        roots[0] = (param_range[0] + LB[1])*0.5
+
                 if param_interp:
                     approx_param = interpolator(roots[0])
                 else:
@@ -665,7 +788,7 @@ class ProfileLogLikelihood():
                 )
                 x_CI[0] = roots[0]
 
-                # If discrepencies are large, double check with global optimiser
+                # If discrepencies are large, check with globa optimiser
                 param_error = np.sum(
                     np.abs((param_CI[0]-approx_param)/approx_param)
                 )/len(approx_param)
@@ -681,25 +804,44 @@ class ProfileLogLikelihood():
                 ll_rec = np.insert(ll_rec, 0, ll_CI[0])
                 x_rec = np.insert(x_rec, 0, x_CI[0])
 
-                # Check termination status
-                if x_rec[0] < x_rec[1]:
-                    diverging = ll_rec[1] - ll_rec[0] < local_opts['T_unident']
-                else:
-                    diverging = ll_rec[0] - ll_rec[1] < local_opts['T_unident']
+                # Update bounds
+                if ll_CI[0]-self.l_star<0:
+                    LB[0] = max(roots[0], LB[0])
+                elif ll_CI[0]-self.l_star>0:
+                    LB[1] = min(roots[0], LB[1])
 
+                # Check termination status
+                # if x_rec[0] < x_rec[1]:
+                #     diverging = ll_rec[1] - ll_rec[0] < local_opts['T_unident']
+                # else:
+                #     diverging = ll_rec[0] - ll_rec[1] < local_opts['T_unident']
+
+                diverging = (
+                    (ll_rec[0] - ll_rec[1])/(x_rec[0] - x_rec[1])
+                    < local_opts['T_unident']
+                )
                 if np.abs(ll_CI[0]-self.l_star) < local_opts['T_ident']:
                     identifiable_CI[0] = 'Ident'
                 elif diverging:
                     divert_L += 1
                     if divert_L >= 5:
                         identifiable_CI[0] = 'Unident'
-                elif np.abs(ll_rec[1] - ll_rec[0]) < np.abs(ll_CI[0]-self.l_star):
+                elif (np.abs(ll_rec[1] - ll_rec[0])
+                        < np.abs(ll_CI[0] - self.l_star)):
                     slow_conv_L += 1
-                    if slow_conv_L >= 5:
-                        warnings.warn(
-                            "Convergence is slow, quadratic approximation " +
-                            "may not be appropriate"
-                        )
+                    if slow_conv_L == 3:
+                        if (local_opts['method'] == 'quad adaptive'
+                                and quad_approx_L):
+                            warnings.warn(
+                                "Convergence is slow, changing approximation" +
+                                " method"
+                            )
+                            quad_approx_L = False
+                        else:
+                            warnings.warn(
+                                "Convergence is slow, approximation method " +
+                                "may not be appropriate"
+                            )
                 else:
                     divert_L = 0
                     slow_conv_L = 0
@@ -709,9 +851,13 @@ class ProfileLogLikelihood():
                     warnings.warn(
                         "MLE is not accurate, found score above the maximum."
                     )
-                    recalc_root = True
-                if recalc_root or roots[1]>param_range[1]:
-                    roots[1] = (x_CI[2]+param_range[1]*0.5)
+                    # recalc_root = True
+                if not (UB[0] < roots[1] < UB[1]):
+                    if np.isfinite(UB[1]):
+                        roots[1] = (UB[0] + UB[1])*0.5
+                    else:
+                        roots[1] = (UB[0] + param_range[1])*0.5
+
                 if param_interp:
                     approx_param = interpolator(roots[1])
                 else:
@@ -743,12 +889,23 @@ class ProfileLogLikelihood():
                 ll_rec = np.insert(ll_rec, len(x_rec), ll_CI[2])
                 x_rec = np.insert(x_rec, len(x_rec), roots[1])
 
-                # Check termination status
-                if x_rec[-1] > x_rec[-2]:
-                    diverging = ll_rec[-2] - ll_rec[-1] < local_opts['T_unident']
-                else:
-                    diverging = ll_rec[-1] - ll_rec[-2] < local_opts['T_unident']
+                # Update bounds
+                if ll_CI[2]-self.l_star<0:
+                    UB[1] = min(roots[1], UB[1])
+                elif ll_CI[2]-self.l_star>0:
+                    UB[0] = max(roots[1], UB[0])
 
+                # Check termination status
+                # if x_rec[-1] > x_rec[-2]:
+                #     diverging = ll_rec[-2] - ll_rec[-1] < local_opts['T_unident']
+                # else:
+                #     diverging = ll_rec[-1] - ll_rec[-2] < local_opts['T_unident']
+
+                # Gradient should be negative when greater than the MLE
+                diverging = (
+                    (ll_rec[-1] - ll_rec[-2])/(x_rec[-1] - x_rec[-2])
+                    > -local_opts['T_unident']
+                )
                 if np.abs(ll_CI[2]-self.l_star) < local_opts['T_ident']:
                     identifiable_CI[1] = 'Ident'
                 elif diverging:
@@ -757,15 +914,22 @@ class ProfileLogLikelihood():
                         identifiable_CI[1] = 'Unident'
                 elif np.abs(ll_rec[-2]-ll_rec[-1]) < np.abs(ll_CI[2]-self.l_star):
                     slow_conv_U += 1
-                    if slow_conv_U >= 5:
-                        warnings.warn(
-                            "Convergence is slow, quadratic approximation " +
-                            "may not be appropriate"
-                        )
+                    if slow_conv_U == 3:
+                        if local_opts['method'] == 'quad adaptive' and quad_approx_U:
+                            warnings.warn(
+                                "Convergence is slow, changing approximation method"
+                            )
+                            quad_approx_U = False
+                            slow_conv_U = 0
+                        else:
+                            warnings.warn(
+                                "Convergence is slow, approximation method " +
+                                "may not be appropriate"
+                            )
                 else:
                     divert_U = 0
                     slow_conv_U = 0
-            
+
             if all(identifiable_CI):
                 break
 
@@ -795,7 +959,7 @@ class ProfileLogLikelihood():
             self.opts = {
                 'optimiser': 'Powell',
                 'opt_package': 'scipy',
-                'method': 'quadratic approx.',
+                'method': 'quadratic approx.', # 'quad adaptive'
                 'minimise': False,
                 'transformation': None,
                 'normalise': True,

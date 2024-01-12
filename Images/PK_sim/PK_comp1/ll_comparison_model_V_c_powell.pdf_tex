@@ -134,7 +134,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=25]{ll_comparison_model_V_c_powell.pdf}}%
     \put(0.90744762,0.07707247){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-generating\\parameter\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=26]{ll_comparison_model_V_c_powell.pdf}}%
-    \put(0.03338079,0.39499006){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: V_c\end{tabular}}}}%
+    \put(0.03338079,0.39499006){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: $V_c$\end{tabular}}}}%
     \put(0.11919833,0.20657545){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
     \put(0.33869219,0.20657545){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
     \put(0.55818602,0.20657545){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%

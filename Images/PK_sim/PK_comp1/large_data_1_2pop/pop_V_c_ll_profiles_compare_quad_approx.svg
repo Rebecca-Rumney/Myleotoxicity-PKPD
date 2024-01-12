@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="171.11211mm"
-   height="157.83409mm"
-   viewBox="0 0 171.11211 157.83409"
+   width="575"
+   height="596.53827"
+   viewBox="0 0 152.13542 157.83409"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -24,19 +24,21 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="286.37825"
-     inkscape:cy="281.4285"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="309.35922"
+     inkscape:cy="153.08862"
      inkscape:window-width="1920"
-     inkscape:window-height="839"
-     inkscape:window-x="0"
-     inkscape:window-y="28"
+     inkscape:window-height="964"
+     inkscape:window-x="1080"
+     inkscape:window-y="434"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     units="px"
+     width="575px" />
   <defs
      id="defs2">
     <g
@@ -3905,7 +3907,7 @@
        transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
     <g
        class="groups"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,64.994168)"
+       transform="matrix(0.19492697,0,0,0.20879583,64.531578,64.994168)"
        id="g14608">
       <g
          class="traces"
@@ -3963,7 +3965,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,82.119348)"
+       transform="matrix(0.19492697,0,0,0.20879583,64.531578,82.119348)"
        id="g14624">
       <text
          class="legendtext"
@@ -4000,7 +4002,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,86.18043)"
+       transform="matrix(0.19492697,0,0,0.20879583,64.531578,86.18043)"
        id="g14642">
       <text
          class="legendtext"
@@ -4044,7 +4046,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,94.014185)"
+       transform="matrix(0.19492697,0,0,0.20879583,64.531578,94.014185)"
        id="g14714">
       <text
          class="legendtext"
@@ -4089,7 +4091,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,99.551184)"
+       transform="matrix(0.19492697,0,0,0.20879583,64.531578,99.551184)"
        id="g14732">
       <text
          class="legendtext"
@@ -4133,7 +4135,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,107.1618)"
+       transform="matrix(0.19492697,0,0,0.20879583,64.531578,107.1618)"
        id="g14804">
       <text
          class="legendtext"
@@ -4178,7 +4180,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,112.28122)"
+       transform="matrix(0.19492697,0,0,0.20879583,64.531578,112.28122)"
        id="g14822">
       <text
          class="legendtext"
@@ -4255,7 +4257,7 @@
     <g
        class="gridlayer"
        id="g11634-9"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)">
+       transform="matrix(0.16936268,0,0,0.41429919,-0.9596113,5.0398373)">
       <g
          class="x"
          id="g11624-3">
@@ -4397,12 +4399,12 @@
     <path
        class="xlines-above crisp"
        d="M -0.9596113,5.0398373"
-       style="fill:none;stroke-width:0.280247"
+       style="fill:none;stroke-width:0.264891"
        id="path11660-9" />
     <path
        class="ylines-above crisp"
        d="M -0.9596113,5.0398373"
-       style="fill:none;stroke-width:0.280247"
+       style="fill:none;stroke-width:0.264891"
        id="path11662-3" />
     <g
        class="overlines-above"
@@ -4495,7 +4497,7 @@
     <g
        class="annotation-text-g"
        id="g11839"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,25.878452)">
+       transform="matrix(0.16403026,0,0,0.18360013,0.37421931,25.878452)">
       <g
          class="cursor-pointer"
          transform="translate(5,23)"
@@ -4522,7 +4524,7 @@
     <g
        class="annotation-text-g"
        id="g11941"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,25.878452)">
+       transform="matrix(0.16403026,0,0,0.18360013,0.37421931,25.878452)">
       <g
          class="cursor-pointer"
          transform="translate(5,46)"
@@ -4549,7 +4551,7 @@
     <g
        class="annotation-text-g"
        id="g12043"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,25.878452)">
+       transform="matrix(0.16403026,0,0,0.18360013,0.37421931,25.878452)">
       <g
          class="cursor-pointer"
          transform="translate(5,68)"
@@ -4648,7 +4650,7 @@
     <g
        class="annotation-text-g"
        id="g12710"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,9.3544404)">
+       transform="matrix(0.16403026,0,0,0.18360013,0.37421931,9.3544404)">
       <g
          class="cursor-pointer"
          transform="translate(5,23)"
@@ -4675,7 +4677,7 @@
     <g
        class="annotation-text-g"
        id="g12812"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,9.3544404)">
+       transform="matrix(0.16403026,0,0,0.18360013,0.37421931,9.3544404)">
       <g
          class="cursor-pointer"
          transform="translate(5,46)"
@@ -4702,7 +4704,7 @@
     <g
        class="annotation-text-g"
        id="g12914"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,9.3544404)">
+       transform="matrix(0.16403026,0,0,0.18360013,0.37421931,9.3544404)">
       <g
          class="cursor-pointer"
          transform="translate(5,68)"
@@ -4759,36 +4761,39 @@
          y="5.6939998">(a)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="2.3745172"
-       y="47.416542"
-       id="text81552-4"><tspan
+       style="font-style:normal;font-weight:normal;font-size:2.42091px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.201742"
+       x="2.4128349"
+       y="45.814709"
+       id="text81552-4"
+       transform="scale(0.96621786,1.0349633)"><tspan
          sodipodi:role="line"
          id="tspan81550-4"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="2.3745172"
-         y="47.416542">(b)</tspan></text>
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.201742"
+         x="2.4128349"
+         y="45.814709">(b)</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="26.069983"
-       y="160.23454"
-       id="text81552-4-3-7"><tspan
+       style="font-style:normal;font-weight:normal;font-size:2.42091px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.201742"
+       x="25.307817"
+       y="154.82147"
+       id="text81552-4-3-7"
+       transform="scale(0.96621786,1.0349633)"><tspan
          id="tspan81550-4-0-8"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="26.069983"
-         y="160.23454"
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.201742"
+         x="25.307817"
+         y="154.82147"
          sodipodi:role="line">$V_{c, typ}$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="127.97221"
-       y="161.036"
-       id="text81552-4-3-7-6"><tspan
+       style="font-style:normal;font-weight:normal;font-size:2.42091px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.201742"
+       x="123.76757"
+       y="155.59586"
+       id="text81552-4-3-7-6"
+       transform="scale(0.96621786,1.0349633)"><tspan
          id="tspan81550-4-0-8-8"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="127.97221"
-         y="161.036"
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.201742"
+         x="123.76757"
+         y="155.59586"
          sodipodi:role="line">$K_{cl}$</tspan></text>
     <g
        class="layer-below"
@@ -4863,7 +4868,7 @@
        transform="matrix(0.21225463,0,0,0.21225463,169.47763,42.402466)" />
     <g
        id="g105637"
-       transform="translate(-176.56892,2.7484751)">
+       transform="matrix(0.93357695,0,0,1,-164.72614,2.7484751)">
       <rect
          class="bg"
          x="184.39067"
@@ -5207,7 +5212,7 @@
        transform="matrix(0.21225463,0,0,0.21225463,169.47763,42.402466)" />
     <g
        id="g105578"
-       transform="translate(-151.10858,2.7484753)">
+       transform="matrix(0.93357695,0,0,1,-140.95696,2.7484753)">
       <rect
          class="bg"
          x="255.0495"
@@ -5533,7 +5538,7 @@
        transform="matrix(0.21225463,0,0,0.21225463,169.47763,42.402466)" />
     <g
        id="g105985"
-       transform="translate(-176.37593,-2.9288805)">
+       transform="matrix(0.93357695,0,0,1,-164.54597,-2.9288805)">
       <rect
          class="bg"
          x="184.39067"
@@ -5751,7 +5756,7 @@
        transform="matrix(0.21225463,0,0,0.21225463,169.47763,42.402466)" />
     <g
        id="g106052"
-       transform="translate(-150.91669,-2.9288841)">
+       transform="matrix(0.93357695,0,0,1,-140.77781,-2.9288841)">
       <rect
          class="bg"
          x="255.0495"
@@ -5969,7 +5974,7 @@
        transform="matrix(0.21225463,0,0,0.21225463,169.47763,42.402466)" />
     <g
        id="g106078"
-       transform="translate(-176.43911,-7.6904065)">
+       transform="matrix(0.93357695,0,0,1,-164.60496,-7.6904065)">
       <rect
          class="bg"
          x="184.39067"
@@ -6163,7 +6168,7 @@
        transform="matrix(0.21225463,0,0,0.21225463,169.47763,42.402466)" />
     <g
        id="g106138"
-       transform="translate(-150.99415,-7.5761039)">
+       transform="matrix(0.93357695,0,0,1,-140.85013,-7.5761039)">
       <rect
          class="bg"
          x="255.0495"
@@ -6353,7 +6358,7 @@
        transform="matrix(0.21225463,0,0,0.21225463,169.47763,42.402466)" />
     <g
        id="g106417"
-       transform="translate(-176.40841,-12.178268)">
+       transform="matrix(0.93357695,0,0,1,-164.5763,-12.178268)">
       <rect
          class="bg"
          x="184.39067"
@@ -6591,7 +6596,7 @@
        transform="matrix(0.21225463,0,0,0.21225463,169.47763,42.402466)" />
     <g
        id="g106342"
-       transform="translate(-151.07955,-12.179312)">
+       transform="matrix(0.93357695,0,0,1,-140.92986,-12.179312)">
       <rect
          class="bg"
          x="255.0495"
@@ -6915,17 +6920,17 @@
        id="g101782"
        transform="matrix(0.20168069,0,0,0.16750602,168.25621,27.547366)" />
     <rect
-       x="3.4624937"
+       x="2.9911432"
        y="9.2819462"
-       width="166.69"
+       width="148.92258"
        height="16.669001"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.185211"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.175062"
        id="rect157370" />
     <rect
        class="bg"
-       x="3.4624937"
+       x="2.9911432"
        y="9.2819462"
-       width="166.69"
+       width="148.92258"
        height="16.669001"
        style="fill:#e5ecf6;fill-opacity:1;stroke-width:0"
        id="rect157391" />
@@ -6940,7 +6945,7 @@
     <g
        class="subplot xy"
        id="g157467"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="layer-subplot"
          id="g157405">
@@ -7104,7 +7109,7 @@
        class="annotation"
        data-index="1"
        id="g157528"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157526">
@@ -7128,7 +7133,7 @@
              style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#ffffff;fill-opacity:1"
              id="text157522"><tspan
                style="font-weight:bold"
-               id="tspan157520">Sequential </tspan></text>
+               id="tspan157520">Brute Force</tspan></text>
         </g>
       </g>
     </g>
@@ -7136,7 +7141,7 @@
        class="annotation"
        data-index="2"
        id="g157540"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157538">
@@ -7164,7 +7169,7 @@
                x="2"
                y="15"><tspan
                  style="font-weight:bold"
-                 id="tspan157532">Quadratic approx.</tspan></tspan></text>
+                 id="tspan157532">QPLL</tspan></tspan></text>
         </g>
       </g>
     </g>
@@ -7172,7 +7177,7 @@
        class="annotation"
        data-index="3"
        id="g157552"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157550">
@@ -7191,13 +7196,13 @@
           <text
              class="annotation-text"
              text-anchor="start"
-             x="2"
+             x="-7.5939112"
              y="15"
              style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#ffffff;fill-opacity:1"
              id="text157546"><tspan
                sodipodi:role="line"
                id="tspan167694"
-               x="2"
+               x="-7.5939112"
                y="15"
                style="font-weight:bold">With shape points</tspan></text>
         </g>
@@ -7207,7 +7212,7 @@
        class="annotation"
        data-index="4"
        id="g157564"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157562">
@@ -7239,7 +7244,7 @@
        class="annotation"
        data-index="5"
        id="g157574"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157572">
@@ -7269,7 +7274,7 @@
        class="annotation"
        data-index="6"
        id="g157584"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157582">
@@ -7299,7 +7304,7 @@
        class="annotation"
        data-index="7"
        id="g157594"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157592">
@@ -7329,7 +7334,7 @@
        class="annotation"
        data-index="8"
        id="g157606"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157604">
@@ -7361,7 +7366,7 @@
        class="annotation"
        data-index="9"
        id="g157616"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157614">
@@ -7391,7 +7396,7 @@
        class="annotation"
        data-index="10"
        id="g157626"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157624">
@@ -7421,7 +7426,7 @@
        class="annotation"
        data-index="11"
        id="g157636"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157634">
@@ -7451,7 +7456,7 @@
        class="annotation"
        data-index="12"
        id="g157648"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157646">
@@ -7483,7 +7488,7 @@
        class="annotation"
        data-index="13"
        id="g157658"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157656">
@@ -7513,7 +7518,7 @@
        class="annotation"
        data-index="14"
        id="g157668"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157666">
@@ -7543,7 +7548,7 @@
        class="annotation"
        data-index="15"
        id="g157678"
-       transform="matrix(0.18521111,0,0,0.18521111,3.4624936,9.2819464)">
+       transform="matrix(0.16546953,0,0,0.18521111,2.9911431,9.2819464)">
       <g
          class="annotation-text-g"
          id="g157676">
@@ -7598,17 +7603,17 @@
        id="g157979"
        transform="matrix(0.18520834,0,0,0.18520834,169.65225,28.837845)" />
     <rect
-       x="3.4637423"
+       x="2.9922585"
        y="25.806082"
-       width="166.6875"
+       width="148.92033"
        height="16.668751"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.185208"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.175059"
        id="rect157845" />
     <rect
        class="bg"
-       x="3.4637423"
+       x="2.9922585"
        y="25.806082"
-       width="166.6875"
+       width="148.92033"
        height="16.668751"
        style="fill:#e5ecf6;fill-opacity:1;stroke-width:0"
        id="rect157866" />
@@ -7637,7 +7642,7 @@
     <g
        class="gridlayer"
        id="g157904"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="x"
          id="g157894">
@@ -7717,7 +7722,7 @@
        class="plot"
        clip-path="url(#clip34089dxyplot)"
        id="g157926"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="heatmaplayer mlayer"
          id="g157924">
@@ -7742,13 +7747,13 @@
        transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)" />
     <path
        class="xlines-above crisp"
-       d="M 3.46374,25.806083"
-       style="fill:none;stroke-width:0.185208"
+       d="M 2.9922566,25.806083"
+       style="fill:none;stroke-width:0.175059"
        id="path157930" />
     <path
        class="ylines-above crisp"
-       d="M 3.46374,25.806083"
-       style="fill:none;stroke-width:0.185208"
+       d="M 2.9922566,25.806083"
+       style="fill:none;stroke-width:0.175059"
        id="path157932" />
     <g
        class="overlines-above"
@@ -7769,7 +7774,7 @@
     <g
        class="annotation-text-g"
        id="g158037"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(11,23)"
@@ -7796,7 +7801,7 @@
     <g
        class="annotation-text-g"
        id="g158047"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(236,23)"
@@ -7821,7 +7826,7 @@
     <g
        class="annotation-text-g"
        id="g158057"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(461,23)"
@@ -7846,7 +7851,7 @@
     <g
        class="annotation-text-g"
        id="g158067"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(686,23)"
@@ -7871,7 +7876,7 @@
     <g
        class="annotation-text-g"
        id="g158079"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(11,46)"
@@ -7898,7 +7903,7 @@
     <g
        class="annotation-text-g"
        id="g158089"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(236,46)"
@@ -7923,7 +7928,7 @@
     <g
        class="annotation-text-g"
        id="g158099"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(461,46)"
@@ -7948,7 +7953,7 @@
     <g
        class="annotation-text-g"
        id="g158109"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(686,46)"
@@ -7973,7 +7978,7 @@
     <g
        class="annotation-text-g"
        id="g158121"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(11,68)"
@@ -8000,7 +8005,7 @@
     <g
        class="annotation-text-g"
        id="g158131"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(236,68)"
@@ -8025,7 +8030,7 @@
     <g
        class="annotation-text-g"
        id="g158141"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(461,68)"
@@ -8050,7 +8055,7 @@
     <g
        class="annotation-text-g"
        id="g158151"
-       transform="matrix(0.18520834,0,0,0.18520834,3.46374,25.806083)">
+       transform="matrix(0.16546705,0,0,0.18520834,2.9922566,25.806083)">
       <g
          class="cursor-pointer"
          transform="translate(686,68)"
@@ -8075,7 +8080,7 @@
     <g
        class="annotation-text-g"
        id="g12710-4-0"
-       transform="matrix(0.18360013,0,0,0.18360013,4.8518545,6.4851459)">
+       transform="matrix(0.16403026,0,0,0.18360013,4.2324125,6.4851459)">
       <g
          class="cursor-pointer"
          transform="translate(5,23)"

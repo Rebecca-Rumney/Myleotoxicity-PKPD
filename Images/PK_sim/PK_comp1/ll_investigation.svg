@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="454.82858pt"
+   width="430.82858pt"
    height="334.02258pt"
-   viewBox="0 0 454.8286 334.02258"
+   viewBox="0 0 430.8286 334.02258"
    version="1.1"
    id="svg5353"
    sodipodi:docname="ll_investigation.svg"
@@ -25,8 +25,8 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="1.1622024"
-     inkscape:cx="419.46222"
-     inkscape:cy="323.09346"
+     inkscape:cx="406.55569"
+     inkscape:cy="185.42381"
      inkscape:window-width="1920"
      inkscape:window-height="964"
      inkscape:window-x="1080"
@@ -70221,7 +70221,7 @@
          transform="matrix(0.62656226,0,0,0.62656223,57.58147,2.5947627)" />
       <g
          id="g46462"
-         transform="translate(-178.87991)">
+         transform="translate(-203.02039)">
         <g
            class="gridlayer"
            id="g56645"
@@ -76820,23 +76820,23 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.1053px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#293e60;fill-opacity:0.992157;stroke:none;stroke-width:1.50878;stroke-linecap:butt;stroke-linejoin:round"
-         x="454.99548"
+         x="430.8551"
          y="620.33771"
          id="text121181-3-2-2"><tspan
            sodipodi:role="line"
            style="fill:#293e60;fill-opacity:0.992157;stroke-width:1.50878"
-           x="454.99548"
+           x="430.8551"
            y="620.33771"
            id="tspan130251-1-7">$K_{cl}$</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.1053px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#293e60;fill-opacity:0.992157;stroke:none;stroke-width:1.50878;stroke-linecap:butt;stroke-linejoin:round"
-         x="765.28174"
+         x="717.00049"
          y="620.33771"
          id="text121181-3-2-2-3"><tspan
            sodipodi:role="line"
            style="fill:#293e60;fill-opacity:0.992157;stroke-width:1.50878"
-           x="765.28174"
+           x="717.00049"
            y="620.33771"
            id="tspan130251-1-7-6">$K_{cl}$</tspan></text>
       <g
@@ -77040,7 +77040,7 @@
          transform="matrix(0.4677366,0,0,0.46773657,349.11433,703.92981)" />
       <g
          id="g42196"
-         transform="translate(0,-3.089059)">
+         transform="translate(-48.280929,-3.089059)">
         <g
            class="gridlayer"
            id="g32976"
@@ -79979,34 +79979,34 @@
            style="fill:#293e60;fill-opacity:0.992157;stroke-width:1.50878"
            x="128.19081"
            y="-20.268997"
-           id="tspan132813-5">Nelder Mead</tspan></text>
+           id="tspan132813-5">A. Nelder Mead</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.1053px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#293e60;fill-opacity:0.992157;stroke:none;stroke-width:1.50878;stroke-linecap:butt;stroke-linejoin:round"
-         x="461.12634"
+         x="436.98596"
          y="-20.428125"
          id="text121181-75-6"><tspan
            sodipodi:role="line"
            style="fill:#293e60;fill-opacity:0.992157;stroke-width:1.50878"
-           x="461.12634"
+           x="436.98596"
            y="-20.428125"
-           id="tspan132813-5-2">CMA-ES</tspan></text>
+           id="tspan132813-5-2">B. CMA-ES</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-weight:normal;font-size:18.1053px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#293e60;fill-opacity:0.992157;stroke:none;stroke-width:1.50878;stroke-linecap:butt;stroke-linejoin:round"
-         x="805.27612"
+         x="756.99487"
          y="-33.591599"
          id="text121181-75-9"><tspan
            sodipodi:role="line"
            style="text-align:center;text-anchor:middle;fill:#293e60;fill-opacity:0.992157;stroke-width:1.50878"
-           x="805.27612"
+           x="756.99487"
            y="-33.591599"
-           id="tspan132813-5-1">Nelder Mead</tspan><tspan
+           id="tspan132813-5-1">C. Nelder Mead</tspan><tspan
            sodipodi:role="line"
            style="text-align:center;text-anchor:middle;fill:#293e60;fill-opacity:0.992157;stroke-width:1.50878"
-           x="805.27612"
+           x="756.99487"
            y="-10.959972"
-           id="tspan50146">optimising for $/eta_i$</tspan></text>
+           id="tspan50146">optimising for $\eta_i$</tspan></text>
     </g>
     <g
        class="layer-subplot"

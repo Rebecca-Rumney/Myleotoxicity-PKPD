@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'PD_zamboni.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{489.45355225bp}%
+    \setlength{\unitlength}{423.75bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,47 +50,51 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.41372669)%
+  \begin{picture}(1,0.47787611)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{PD_zamboni.pdf}}%
-    \put(0.54030365,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}−48\end{tabular}}}}%
-    \put(0.57332134,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
-    \put(0.60633903,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}48\end{tabular}}}}%
-    \put(0.63935671,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}96\end{tabular}}}}%
-    \put(0.6723744,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
-    \put(0.70539209,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}192\end{tabular}}}}%
-    \put(0.73840978,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}240\end{tabular}}}}%
-    \put(0.77142747,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
-    \put(0.80444516,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}336\end{tabular}}}}%
-    \put(0.83746285,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}384\end{tabular}}}}%
-    \put(0.87048053,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
-    \put(0.90349822,0.07699913){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}480\end{tabular}}}}%
-    \put(0.53915441,0.1102007){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
-    \put(0.53915441,0.16949004){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}850\end{tabular}}}}%
-    \put(0.53915441,0.22876788){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}900\end{tabular}}}}%
-    \put(0.53915441,0.28805721){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}950\end{tabular}}}}%
+    \put(-0.00022124,0.41021652){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{PD_zamboni.pdf}}%
-    \put(0.97076329,0.28687349){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
+    \put(0.46124729,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}−48\end{tabular}}}}%
+    \put(0.49938446,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.53752163,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}48\end{tabular}}}}%
+    \put(0.5756588,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}96\end{tabular}}}}%
+    \put(0.61379596,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.65193313,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}192\end{tabular}}}}%
+    \put(0.6900703,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}240\end{tabular}}}}%
+    \put(0.72820747,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.76634464,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}336\end{tabular}}}}%
+    \put(0.80448181,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}384\end{tabular}}}}%
+    \put(0.84261897,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.88075614,0.08893805){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}480\end{tabular}}}}%
+    \put(0.45991986,0.12728761){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}800\end{tabular}}}}%
+    \put(0.45991986,0.19576991){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}850\end{tabular}}}}%
+    \put(0.45991986,0.26423894){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}900\end{tabular}}}}%
+    \put(0.45991986,0.33272124){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}950\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{PD_zamboni.pdf}}%
-    \put(0.97076329,0.26503792){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.0\end{tabular}}}}%
+    \put(0.67894638,0.05070798){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.37663574,0.41021652){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.39873603,0.2477905){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.988235}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0.25}\smash{\begin{tabular}[t]{c}Circulating blood cells,\\1000/L\end{tabular}}}}}%
+    \put(0.95845083,0.30657522){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{PD_zamboni.pdf}}%
-    \put(0.97076329,0.24320234){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.0\end{tabular}}}}%
+    \put(0.95845083,0.28135398){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{PD_zamboni.pdf}}%
-    \put(0.72877914,0.04390101){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
-    \put(0.05865921,0.21254785){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Proliferating \\cells, $P$\end{tabular}}}}%
-    \put(0.21921839,0.21233795){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Transit,\\$T$\end{tabular}}}}%
-    \put(0.37739729,0.21128841){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating\\cells, $R$\end{tabular}}}}%
+    \put(0.95845083,0.25613274){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{PD_zamboni.pdf}}%
-    \put(-0.00019154,0.35514963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
-    \put(0.46705023,0.35514963){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.90289404,0.38274816){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.988235}\makebox(0,0)[lt]{\lineheight{0.25}\smash{\begin{tabular}[t]{l}Dose\\amount, \\mg\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{PD_zamboni.pdf}}%
-    \put(0.48618381,0.21452745){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.98823529}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0.25}\smash{\begin{tabular}[t]{c}Circulating blood cells,\\1000/L\end{tabular}}}}}%
-    \put(0.92266436,0.33136859){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.98823529}\makebox(0,0)[lt]{\lineheight{0.25}\smash{\begin{tabular}[t]{l}Dose\\amount, mg\end{tabular}}}}%
-    \put(0.08529141,0.28263023){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
-    \put(0.01602802,0.29537578){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
-    \put(0.32736685,0.12199283){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{out}$\end{tabular}}}}%
-    \put(0.12095996,0.17093692){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{tr}$\end{tabular}}}}%
-    \put(0.28124693,0.17274215){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{tr}$\end{tabular}}}}%
+    \put(0.14446023,0.13306394){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating\\cells, $R$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{PD_zamboni.pdf}}%
+    \put(0.14432595,0.27464841){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Transit,\\$T$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{PD_zamboni.pdf}}%
+    \put(0.14206694,0.41797665){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Proliferating \\cells, $P$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{PD_zamboni.pdf}}%
+    \put(0.25647378,0.27006138){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
+    \put(0.24442417,0.41949289){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
+    \put(0.24442417,0.09649361){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{out}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{PD_zamboni.pdf}}%
+    \put(0.08065845,0.32675961){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{tr}$\end{tabular}}}}%
+    \put(0.08065845,0.18502627){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{tr}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

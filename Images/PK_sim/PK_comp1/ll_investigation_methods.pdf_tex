@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{415.83544922bp}%
+    \setlength{\unitlength}{271.00912476bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,159 +50,62 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.6244647)%
+  \begin{picture}(1,1.20473678)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{ll_investigation_methods.pdf}}%
-    \put(0.02038038,1.4103742){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Profile\\Likelihood\end{tabular}}}}}%
-    \put(0.02447324,1.15386884){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Individual\\Contributions\end{tabular}}}}}%
-    \put(0.0164437,0.87770108){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimised\\parameter $V_c$\end{tabular}}}}}%
-    \put(0.16776486,0.82631235){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
+    \put(0.03059212,0.88437358){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Profile\\Likelihood\end{tabular}}}}}%
+    \put(0.03673574,0.49934373){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Individual\\Contributions\end{tabular}}}}}%
+    \put(0.02468292,0.08479938){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Optimised\\parameter $V_c$\end{tabular}}}}}%
+    \put(0.25182502,0.00766189){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{ll_investigation_methods.pdf}}%
-    \put(0.09350904,1.39180932){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.09350904,1.42484732){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.09350904,1.45788531){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.09350904,1.49092331){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.09350904,1.52395382){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.09350904,1.55699182){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.14036261,0.85650658){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
+    \put(0.14036261,0.90609859){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.14036261,0.95569059){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.14036261,1.0052826){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.14036261,1.05486337){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.14036261,1.10445538){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{ll_investigation_methods.pdf}}%
-    \put(0.09350904,1.15298655){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.09350904,1.19945396){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.09350904,1.24592137){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
-    \put(0.09350904,1.29238878){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
+    \put(0.14036261,0.49801935){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
+    \put(0.14036261,0.5677697){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.14036261,0.63752006){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
+    \put(0.14036261,0.70727042){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{ll_investigation_methods.pdf}}%
-    \put(0.09425804,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.66\end{tabular}}}}%
-    \put(0.14518943,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.68\end{tabular}}}}%
-    \put(0.19612083,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.7\end{tabular}}}}%
-    \put(0.24705223,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.72\end{tabular}}}}%
-    \put(0.29798362,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.74\end{tabular}}}}%
-    \put(0.34891502,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.76\end{tabular}}}}%
-    \put(0.09350904,0.91909966){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
-    \put(0.09350904,0.96391929){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.1\end{tabular}}}}%
-    \put(0.09350904,1.00873892){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.09350904,1.05355855){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
-    \put(0.21557423,1.608021){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nelder Mead\\implemented in PINTS\end{tabular}}}}%
+    \put(0.14148689,0.07137827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.66\end{tabular}}}}%
+    \put(0.21793796,0.07137827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.68\end{tabular}}}}%
+    \put(0.29438903,0.07137827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.7\end{tabular}}}}%
+    \put(0.3708401,0.07137827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.72\end{tabular}}}}%
+    \put(0.44729116,0.07137827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.74\end{tabular}}}}%
+    \put(0.52374223,0.07137827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.76\end{tabular}}}}%
+    \put(0.14036261,0.14694115){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
+    \put(0.14036261,0.21421809){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.1\end{tabular}}}}%
+    \put(0.14036261,0.28149503){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.14036261,0.34877197){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
+    \put(0.32675417,1.18105323){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}A. Dataset 1\end{tabular}}}}%
+    \put(0.80224138,1.18105323){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}B. Dataset 5\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{ll_investigation_methods.pdf}}%
-    \put(0.40658496,1.39106033){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.40658496,1.42424813){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.40658496,1.45743593){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.40658496,1.49062372){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.40658496,1.52380403){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.40658496,1.55699183){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.60472137,0.84522641){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−6\end{tabular}}}}%
+    \put(0.60472137,0.88828346){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
+    \put(0.60472137,0.93135171){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.60472137,0.97440877){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.60472137,1.01747702){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.60472137,1.06053407){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.60472137,1.10360232){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{ll_investigation_methods.pdf}}%
-    \put(0.40658496,1.15312138){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.40658496,1.19959628){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.40658496,1.24607118){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
-    \put(0.40658496,1.29254608){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=7]{ll_investigation_methods.pdf}}%
-    \put(0.40733395,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.66\end{tabular}}}}%
-    \put(0.45826534,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.68\end{tabular}}}}%
-    \put(0.50919674,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.7\end{tabular}}}}%
-    \put(0.56012814,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.72\end{tabular}}}}%
-    \put(0.61105953,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.74\end{tabular}}}}%
-    \put(0.66199093,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.76\end{tabular}}}}%
-    \put(0.40658496,0.91762415){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
-    \put(0.40658496,0.96278082){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.1\end{tabular}}}}%
-    \put(0.40658496,1.0079375){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.40658496,1.05309417){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
-    \put(0.48329117,0.83199212){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
-    \put(0.53032536,1.60408694){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Nelder Mead\\implemented in SCIPY\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=8]{ll_investigation_methods.pdf}}%
-    \put(0.7361284,1.39105282){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.7361284,1.42424062){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.7361284,1.45742841){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.7361284,1.49061621){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.7361284,1.52380401){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.7361284,1.5569918){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=9]{ll_investigation_methods.pdf}}%
-    \put(0.7361284,1.15315133){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.7361284,1.19963372){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.7361284,1.2461236){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
-    \put(0.7361284,1.29260599){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=10]{ll_investigation_methods.pdf}}%
-    \put(0.73687739,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.66\end{tabular}}}}%
-    \put(0.78780879,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.68\end{tabular}}}}%
-    \put(0.83874018,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.7\end{tabular}}}}%
-    \put(0.88967158,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.72\end{tabular}}}}%
-    \put(0.94060298,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.74\end{tabular}}}}%
-    \put(0.99153437,0.86875997){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.76\end{tabular}}}}%
-    \put(0.7361284,0.91796119){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
-    \put(0.7361284,0.96354479){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.1\end{tabular}}}}%
-    \put(0.7361284,1.00913588){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.7361284,1.05471948){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
-    \put(0.87065332,1.60773571){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Powell\\implemented in SCIPY\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=11]{ll_investigation_methods.pdf}}%
-    \put(0.09404762,0.59542234){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−6\end{tabular}}}}%
-    \put(0.09404762,0.62511488){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.09404762,0.65481514){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.09404762,0.68450768){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.09404762,0.71420794){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.09404762,0.74390047){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.09404762,0.77360073){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=12]{ll_investigation_methods.pdf}}%
-    \put(0.09404762,0.32146407){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−10\end{tabular}}}}%
-    \put(0.09404762,0.36402209){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.09404762,0.4065801){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.09404762,0.44914584){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
-    \put(0.09404762,0.49170386){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=13]{ll_investigation_methods.pdf}}%
-    \put(0.13521561,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.45\end{tabular}}}}%
-    \put(0.23620113,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
-    \put(0.33718665,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.55\end{tabular}}}}%
-    \put(0.09404762,0.07307459){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.6\end{tabular}}}}%
-    \put(0.09404762,0.11175597){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.4\end{tabular}}}}%
-    \put(0.09404762,0.15043736){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
-    \put(0.09404762,0.18912646){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.09404762,0.22780785){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.2\end{tabular}}}}%
-    \put(0.09404762,0.26648923){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.4\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=14]{ll_investigation_methods.pdf}}%
-    \put(0.40712353,0.59339137){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−6\end{tabular}}}}%
-    \put(0.40712353,0.62342369){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.40712353,0.65346373){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.40712353,0.68349606){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.40712353,0.71352838){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.40712353,0.74356842){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.40712353,0.77360075){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=15]{ll_investigation_methods.pdf}}%
-    \put(0.40712353,0.3635047){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.40712353,0.406333){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.40712353,0.44915358){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
-    \put(0.40712353,0.49197416){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=16]{ll_investigation_methods.pdf}}%
-    \put(0.44829152,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.45\end{tabular}}}}%
-    \put(0.54927704,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
-    \put(0.65026256,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.55\end{tabular}}}}%
-    \put(0.40712353,0.07626393){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.6\end{tabular}}}}%
-    \put(0.40712353,0.11357073){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.4\end{tabular}}}}%
-    \put(0.40712353,0.15087753){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
-    \put(0.40712353,0.18817661){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.40712353,0.22548341){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.2\end{tabular}}}}%
-    \put(0.40712353,0.26279021){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.4\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=17]{ll_investigation_methods.pdf}}%
-    \put(0.73666698,0.5934068){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−6\end{tabular}}}}%
-    \put(0.73666698,0.62343912){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.73666698,0.65347144){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.73666698,0.68350377){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.73666698,0.71353609){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.73666698,0.74356841){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.73666698,0.77360073){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=18]{ll_investigation_methods.pdf}}%
-    \put(0.73666698,0.36360508){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
-    \put(0.73666698,0.40646427){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.73666698,0.44932346){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
-    \put(0.73666698,0.49219037){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
-    \put(0.77783497,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.45\end{tabular}}}}%
-    \put(0.87882049,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
-    \put(0.97980601,0.06176903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.55\end{tabular}}}}%
-    \put(0.73666698,0.07945327){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.6\end{tabular}}}}%
-    \put(0.73666698,0.11656701){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.4\end{tabular}}}}%
-    \put(0.73666698,0.15368075){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
-    \put(0.73666698,0.1907945){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.73666698,0.22790824){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.2\end{tabular}}}}%
-    \put(0.73666698,0.26502198){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.4\end{tabular}}}}%
-    \put(0.83401588,0.83509591){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
-    \put(0.16568445,0.00510426){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
-    \put(0.48121074,0.01078403){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
-    \put(0.83193546,0.01388781){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
+    \put(0.60472137,0.44796043){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−10\end{tabular}}}}%
+    \put(0.60472137,0.50967367){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−5\end{tabular}}}}%
+    \put(0.60472137,0.57138691){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.60472137,0.63311135){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
+    \put(0.60472137,0.69482459){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}10\end{tabular}}}}%
+    \put(0.66651698,0.07137751){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.45\end{tabular}}}}%
+    \put(0.81810227,0.07137751){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
+    \put(0.96968757,0.07137751){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.55\end{tabular}}}}%
+    \put(0.60472137,0.08777166){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.6\end{tabular}}}}%
+    \put(0.60472137,0.14386341){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.4\end{tabular}}}}%
+    \put(0.60472137,0.19995516){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
+    \put(0.60472137,0.25605811){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.60472137,0.31214985){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.2\end{tabular}}}}%
+    \put(0.60472137,0.3682416){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.4\end{tabular}}}}%
+    \put(0.72885708,0.00766189){\color[rgb]{0.16078431,0.24313725,0.37647059}\transparent{0.99215698}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

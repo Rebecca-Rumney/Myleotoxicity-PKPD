@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{485.04219115bp}%
+    \setlength{\unitlength}{431.25bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,148 +50,148 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.92240166)%
+  \begin{picture}(1,1.03745786)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.45766312,0.51814519){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Maximum\\of results\end{tabular}}}}%
+    \put(0.48173049,0.58277624){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Maximum\\of results\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.41495513,0.45846531){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sequential \end{tabular}}}}%
+    \put(0.43688594,0.51565216){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sequential \end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.45766312,0.43520774){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Results\end{tabular}}}}%
+    \put(0.48173049,0.48949355){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Results\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.41495513,0.40359317){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Quadratic\\approx. of CI\end{tabular}}}}%
+    \put(0.43688594,0.45393552){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Quadratic\\approx. of CI\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.45766312,0.35706742){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Results\end{tabular}}}}%
+    \put(0.48173049,0.40160636){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Results\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.41495513,0.3267569){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}With shape\\points\end{tabular}}}}%
+    \put(0.43688594,0.36751505){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}With shape\\points\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.45766312,0.28267154){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Results\end{tabular}}}}%
+    \put(0.48173049,0.31793067){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Results\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.04308097,0.75255721){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$}\end{tabular}}}}%
+    \put(0.04328992,0.84642778){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.04308097,0.72787864){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$}\end{tabular}}}}%
+    \put(0.04328992,0.81867091){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.04552142,0.70427305){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Total}\end{tabular}}}}%
+    \put(0.04574222,0.79212086){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Total}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.04064051,0.84912555){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$}\end{tabular}}}}%
+    \put(0.04083763,0.95504162){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.04064051,0.82444698){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$}\end{tabular}}}}%
+    \put(0.04083763,0.92728475){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.04064051,0.80084138){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Total}\end{tabular}}}}%
-    \put(0.01861091,0.83050727){\color[rgb]{1,1,1}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{TIME}\end{tabular}}}}}%
-    \put(0.01875551,0.73926501){\color[rgb]{1,1,1}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{ERROR}\end{tabular}}}}}%
-    \put(0.01948505,0.91129091){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(a)\end{tabular}}}}%
-    \put(0.01948505,0.66745929){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(b)\end{tabular}}}}%
-    \put(0.15796424,0.00813715){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
-    \put(0.7534933,0.00345336){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
+    \put(0.04083763,0.9007347){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Total}\end{tabular}}}}%
+    \put(0.02093235,0.93410097){\color[rgb]{1,1,1}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{TIME}\end{tabular}}}}}%
+    \put(0.02109499,0.83147756){\color[rgb]{1,1,1}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{ERROR}\end{tabular}}}}}%
+    \put(0.02191553,1.0249612){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(a)\end{tabular}}}}%
+    \put(0.02163162,0.75071512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(b)\end{tabular}}}}%
+    \put(0.16703853,0.0091521){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_{c, typ}$\end{tabular}}}}%
+    \put(0.79236019,0.00388404){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.05014067,0.37334057){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.05014067,0.42014301){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.05014067,0.46695523){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.05014067,0.51376745){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.05014067,0.56056988){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.05014067,0.6073821){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
-    \put(0.05014067,0.65419433){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0.05382088,0.41990935){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.05382088,0.47254971){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.05382088,0.52520108){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.05382088,0.57785245){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.05382088,0.63049281){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.05382088,0.68314418){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.05382088,0.73579554){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=15]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.61187282,0.41026565){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.61187282,0.45909445){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.61187282,0.50791347){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.61187282,0.55674228){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.61187282,0.60557109){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
-    \put(0.61187282,0.6543999){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0.64365484,0.46144029){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.64365484,0.51635979){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.64365484,0.57126827){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.64365484,0.62618777){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.64365484,0.68110726){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.64365484,0.73602676){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.05126853,0.26345955){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.05126853,0.28394846){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.5\end{tabular}}}}%
-    \put(0.05126853,0.30442758){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.05126853,0.32491649){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
-    \put(0.05126853,0.34539562){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.05500515,0.29632226){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.05500515,0.31936687){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.5\end{tabular}}}}%
+    \put(0.05500515,0.34240046){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.05500515,0.36544507){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
+    \put(0.05500515,0.38847867){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.61299425,0.26345957){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.61299425,0.28394848){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.5\end{tabular}}}}%
-    \put(0.61299425,0.3044276){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.61299425,0.32491652){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
-    \put(0.61299425,0.34539564){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.64483241,0.29632228){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.64483241,0.31936689){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.5\end{tabular}}}}%
+    \put(0.64483241,0.34240049){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.64483241,0.3654451){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
+    \put(0.64483241,0.38847869){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.0508993,0.16597422){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.0508993,0.20009957){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
-    \put(0.0508993,0.23421512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.05461741,0.18667705){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.05461741,0.22505904){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
+    \put(0.05461741,0.26343002){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=19]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.61254156,0.17740574){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.01\end{tabular}}}}%
-    \put(0.61254156,0.20607847){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.005\end{tabular}}}}%
-    \put(0.61254156,0.2347512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.64435705,0.19953449){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.01\end{tabular}}}}%
+    \put(0.64435705,0.23178373){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.005\end{tabular}}}}%
+    \put(0.64435705,0.26403297){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=20]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.0829611,0.03930344){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.4\end{tabular}}}}%
-    \put(0.18022301,0.03930344){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.5\end{tabular}}}}%
-    \put(0.27748492,0.03930344){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.6\end{tabular}}}}%
-    \put(0.37474683,0.03930344){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.7\end{tabular}}}}%
-    \put(0.05107871,0.06471635){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.02\end{tabular}}}}%
-    \put(0.05107871,0.08709459){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.05107871,0.10946304){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.02\end{tabular}}}}%
+    \put(0.08828316,0.04420593){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.4\end{tabular}}}}%
+    \put(0.19041081,0.04420593){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.5\end{tabular}}}}%
+    \put(0.29253846,0.04420593){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.6\end{tabular}}}}%
+    \put(0.39466611,0.04420593){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.7\end{tabular}}}}%
+    \put(0.05480579,0.07278873){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.02\end{tabular}}}}%
+    \put(0.05480579,0.09795833){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.05480579,0.12311692){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.02\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=21]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.61322111,0.03930954){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.66\end{tabular}}}}%
-    \put(0.68079292,0.03930954){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.68\end{tabular}}}}%
-    \put(0.74836472,0.03930954){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.7\end{tabular}}}}%
-    \put(0.81593653,0.03930954){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.72\end{tabular}}}}%
-    \put(0.88350833,0.03930954){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.74\end{tabular}}}}%
-    \put(0.95108014,0.03930954){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.76\end{tabular}}}}%
-    \put(0.61204247,0.05047908){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.01\end{tabular}}}}%
-    \put(0.61204247,0.08711048){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.005\end{tabular}}}}%
-    \put(0.61204247,0.12375166){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.64507058,0.04421279){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.66\end{tabular}}}}%
+    \put(0.71602281,0.04421279){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.68\end{tabular}}}}%
+    \put(0.78697504,0.04421279){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.7\end{tabular}}}}%
+    \put(0.85792727,0.04421279){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.72\end{tabular}}}}%
+    \put(0.9288795,0.04421279){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.74\end{tabular}}}}%
+    \put(0.99983173,0.04421279){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.76\end{tabular}}}}%
+    \put(0.64383297,0.05677557){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.01\end{tabular}}}}%
+    \put(0.64383297,0.0979762){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−0.005\end{tabular}}}}%
+    \put(0.64383297,0.13918784){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=22]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.28345364,0.87300417){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Sequential }\end{tabular}}}}%
+    \put(0.2848285,0.98189875){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Brute Force}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=23]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.5269928,0.87300417){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Quadratic approx.}\end{tabular}}}}%
+    \put(0.52954893,0.98189875){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{QPLL}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=24]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.77053197,0.87300417){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{With shape points}\end{tabular}}}}%
+    \put(0.76383457,0.98189875){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{With shape points}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=25]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.03991447,0.84919145){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$}\end{tabular}}}}%
+    \put(0.04010807,0.95511574){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=26]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.28345364,0.84919145){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}14.3624\end{tabular}}}}%
+    \put(0.2848285,0.95511574){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}14.3624\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=27]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.5269928,0.84919145){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.8226\end{tabular}}}}%
+    \put(0.52954893,0.95511574){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.8226\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=28]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.77053197,0.84919145){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.961\end{tabular}}}}%
+    \put(0.77426936,0.95511574){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.961\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=29]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.03991447,0.82429634){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$}\end{tabular}}}}%
+    \put(0.04010807,0.92711532){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=30]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.28345364,0.82429634){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10.2902\end{tabular}}}}%
+    \put(0.2848285,0.92711532){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10.2902\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=31]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.5269928,0.82429634){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.9586\end{tabular}}}}%
+    \put(0.52954893,0.92711532){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.9586\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=32]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.77053197,0.82429634){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.9063\end{tabular}}}}%
+    \put(0.77426936,0.92711532){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.9063\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=33]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.03991447,0.80048362){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Total}\end{tabular}}}}%
+    \put(0.04010807,0.90033231){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Total}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=34]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.28345364,0.80048362){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}24.6525\end{tabular}}}}%
+    \put(0.2848285,0.90033231){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}24.6525\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=35]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.5269928,0.80048362){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.7811\end{tabular}}}}%
+    \put(0.52954893,0.90033231){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.7811\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=36]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.77053197,0.80048362){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.8674\end{tabular}}}}%
+    \put(0.77426936,0.90033231){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.8674\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=37]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.03992155,0.752623){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$}\end{tabular}}}}%
+    \put(0.04011518,0.84650177){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$V_c$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=38]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.28345707,0.752623){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0.28483194,0.84650177){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=39]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.52699259,0.752623){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}121.3334\end{tabular}}}}%
+    \put(0.5295487,0.84650177){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}121.3334\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=40]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.77052812,0.752623){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2132\end{tabular}}}}%
+    \put(0.77426546,0.84650177){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2132\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=41]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.03992155,0.72772826){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$}\end{tabular}}}}%
+    \put(0.04011518,0.81850177){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$K_{cl}$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=42]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.28345707,0.72772826){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0.28483194,0.81850177){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=43]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.52699259,0.72772826){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0562\end{tabular}}}}%
+    \put(0.5295487,0.81850177){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0562\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=44]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.77052812,0.72772826){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0368\end{tabular}}}}%
+    \put(0.77426546,0.81850177){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0368\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=45]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.03992155,0.7039159){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Total}\end{tabular}}}}%
+    \put(0.04011518,0.79171916){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Total}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=46]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.28345707,0.7039159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0.28483194,0.79171916){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=47]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.52699259,0.7039159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}121.3895\end{tabular}}}}%
+    \put(0.5295487,0.79171916){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}121.3895\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=48]{pop_V_c_ll_profiles_compare_quad_approx.pdf}}%
-    \put(0.77052812,0.7039159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2499\end{tabular}}}}%
-    \put(0.03659287,0.87077497){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Method}\end{tabular}}}}%
+    \put(0.77426546,0.79171916){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.2499\end{tabular}}}}%
+    \put(0.03677036,0.97939149){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Method}\end{tabular}}}}%
   \end{picture}%
 \endgroup%

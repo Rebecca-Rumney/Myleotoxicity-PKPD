@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'simulation_data.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{514.39017709bp}%
+    \setlength{\unitlength}{424.3901825bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,123 +50,124 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.68505686)%
+  \begin{picture}(1,0.83033617)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{simulation_data.pdf}}%
-    \put(0.01389294,0.59951561){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
-    \put(0.01513893,0.29676594){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.01685306,0.77967158){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(-0.00292243,0.3597008){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{simulation_data.pdf}}%
-    \put(0.11110242,0.36465319){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
-    \put(0.22474184,0.36465319){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
-    \put(0.33838125,0.36465319){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
-    \put(0.08966927,0.37661638){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.01\end{tabular}}}}%
-    \put(0.08966927,0.46720423){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
-    \put(0.08966927,0.55778115){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
-    \put(0.25315169,0.33972081){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
-    \put(0.44145456,0.55509821){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
-    \put(0.48068649,0.46494917){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
+    \put(0.10961562,0.49500208){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.23871585,0.49500208){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.36781608,0.49500208){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
+    \put(0.08526646,0.50950229){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.01\end{tabular}}}}%
+    \put(0.08526646,0.61930102){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.1\end{tabular}}}}%
+    \put(0.08526646,0.72908649){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.27099087,0.46478233){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.46084916,0.77531743){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.45966181,0.66251598){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{simulation_data.pdf}}%
-    \put(0.11252402,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
-    \put(0.14880727,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
-    \put(0.18507959,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
-    \put(0.22135191,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
-    \put(0.25763517,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
-    \put(0.0863887,0.07247321){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}500\end{tabular}}}}%
-    \put(0.0863887,0.13927682){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
-    \put(0.0863887,0.20608044){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1500\end{tabular}}}}%
-    \put(0.0863887,0.27288406){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2000\end{tabular}}}}%
+    \put(0.01457963,0.20359244){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Blood Cell Count, $10^3/\mu \textrm{L}$\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{simulation_data.pdf}}%
-    \put(0.3046514,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
-    \put(0.34093465,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
-    \put(0.37720697,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
-    \put(0.41347929,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
-    \put(0.44976255,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0.10922299,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.15330157,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.19736686,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.24143215,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.28551072,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0.0774726,0.08784253){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}500\end{tabular}}}}%
+    \put(0.0774726,0.16881312){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0.0774726,0.24978372){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1500\end{tabular}}}}%
+    \put(0.0774726,0.33075431){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2000\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{simulation_data.pdf}}%
-    \put(0.49677878,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
-    \put(0.53306204,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
-    \put(0.56933436,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
-    \put(0.60560668,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
-    \put(0.64188993,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0.34262821,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.38670678,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.43077207,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.47483736,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.51891594,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{simulation_data.pdf}}%
-    \put(0.68890616,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
-    \put(0.72518942,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
-    \put(0.76146174,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
-    \put(0.79773406,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
-    \put(0.83401731,0.03346707){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0.57603343,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.620112,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.66417729,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.70824258,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.75232116,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{simulation_data.pdf}}%
-    \put(0.85817884,0.26835686){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose, mg\end{tabular}}}}%
-    \put(0.89973287,0.24738299){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0.80943865,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0.85351722,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}144\end{tabular}}}}%
+    \put(0.89758251,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}288\end{tabular}}}}%
+    \put(0.9416478,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}432\end{tabular}}}}%
+    \put(0.98572637,0.0405644){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}576\end{tabular}}}}%
+    \put(0.18635054,0.00239199){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.41975575,0.00239199){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.65316093,0.00239199){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
+    \put(0.88656616,0.00239199){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{simulation_data.pdf}}%
-    \put(0.89973287,0.22660596){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
+    \put(0.18642775,0.35734246){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=0.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{simulation_data.pdf}}%
-    \put(0.89973287,0.20582893){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.0\end{tabular}}}}%
+    \put(0.42023815,0.35734246){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=1.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{simulation_data.pdf}}%
-    \put(0.89973287,0.1850519){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.0\end{tabular}}}}%
+    \put(0.65272008,0.35734246){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=2.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{simulation_data.pdf}}%
-    \put(0.89973287,0.06771636){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Noise\end{tabular}}}}%
+    \put(0.88653049,0.35734246){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=3.0\end{tabular}}}}%
+    \put(0.01553791,0.65440648){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.988235}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0.25}\smash{\begin{tabular}[t]{c}Drug concentration,\\mg/L\end{tabular}}}}}%
+    \put(0.8564414,0.77810018){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$\sigma_{m, \textrm{Pk}}$}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{simulation_data.pdf}}%
-    \put(0.17601152,0.00197348){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
-    \put(0.36813889,0.00197348){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
-    \put(0.56026625,0.00197348){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
-    \put(0.75239364,0.00197348){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Time, hours\end{tabular}}}}%
-    \put(0.02924845,0.167971){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Blood Cell Count, $10^3/\mu \textrm{L}$\end{tabular}}}}}%
+    \put(0.50210266,0.77930928){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_c$, L\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{simulation_data.pdf}}%
-    \put(0.17607508,0.29482023){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=0.0\end{tabular}}}}%
+    \put(0.60421904,0.77930928){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$, L/hr\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{simulation_data.pdf}}%
-    \put(0.36853598,0.29482023){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=1.0\end{tabular}}}}%
+    \put(0.70473985,0.77930928){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_1$, L\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=15]{simulation_data.pdf}}%
-    \put(0.55990336,0.29482023){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=2.0\end{tabular}}}}%
+    \put(0.80685623,0.77930928){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_1$, L/hr\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{simulation_data.pdf}}%
-    \put(0.75236427,0.29482023){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Dose, mg=3.0\end{tabular}}}}%
-    \put(0.02829129,0.49616751){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.98823529}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0.25}\smash{\begin{tabular}[t]{c}Drug concentration,\\mg/L\end{tabular}}}}}%
-    \put(0.89944007,0.14521019){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.98823529}\makebox(0,0)[lt]{\lineheight{0.25}\smash{\begin{tabular}[t]{l}Simulated\\data\end{tabular}}}}%
-    \put(0.89865109,0.10610355){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.98823529}\makebox(0,0)[lt]{\lineheight{0.25}\smash{\begin{tabular}[t]{l}Noiseless\\simulation\end{tabular}}}}%
-    \put(0.83907671,0.56614236){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{$\sigma_{m, \textrm{Pk}}$}\end{tabular}}}}%
+    \put(0.90737704,0.77930928){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{simulation_data.pdf}}%
-    \put(0.47705885,0.56713991){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_c$, L\end{tabular}}}}%
+    \put(0.50210266,0.74270213){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{simulation_data.pdf}}%
-    \put(0.58138827,0.56713991){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_{cl}$, L/hr\end{tabular}}}}%
+    \put(0.60421904,0.74270213){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.8\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=19]{simulation_data.pdf}}%
-    \put(0.68408754,0.56713991){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$V_1$, L\end{tabular}}}}%
+    \put(0.70473985,0.74270213){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.9\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=20]{simulation_data.pdf}}%
-    \put(0.78841695,0.56713991){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_1$, L/hr\end{tabular}}}}%
+    \put(0.80685623,0.74270213){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.3\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=21]{simulation_data.pdf}}%
-    \put(0.89111622,0.56713991){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sigma_{m, PK}$\end{tabular}}}}%
+    \put(0.90737704,0.74270213){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=22]{simulation_data.pdf}}%
-    \put(0.47705885,0.53693771){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.68\end{tabular}}}}%
+    \put(0.68394549,0.66385477){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}MTT, $\textrm{hr}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=23]{simulation_data.pdf}}%
-    \put(0.58138827,0.53693771){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.8\end{tabular}}}}%
+    \put(0.49329444,0.66385477){\color[rgb]{1,1,1}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_0$, $10^3/\mu\textrm{L}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=24]{simulation_data.pdf}}%
-    \put(0.68408754,0.53693771){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4.9\end{tabular}}}}%
+    \put(0.81120979,0.66498739){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\gamma$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=25]{simulation_data.pdf}}%
-    \put(0.78841695,0.53693771){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.3\end{tabular}}}}%
+    \put(0.93825259,0.66498739){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$S$, $\textrm{L}/\textrm{mg}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=26]{simulation_data.pdf}}%
-    \put(0.89111622,0.53693771){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.091\end{tabular}}}}%
+    \put(0.55448143,0.62968251){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}983.1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=27]{simulation_data.pdf}}%
-    \put(0.5630592,0.44949167){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R_0$, $10^3/\mu\textrm{L}$\end{tabular}}}}%
+    \put(0.68265845,0.62854988){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}85.26\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=28]{simulation_data.pdf}}%
-    \put(0.67596432,0.44855722){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}MTT, $\textrm{hr}$\end{tabular}}}}%
+    \put(0.80996942,0.62968251){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.44\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=29]{simulation_data.pdf}}%
-    \put(0.78926455,0.44949167){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\gamma$\end{tabular}}}}%
+    \put(0.9368252,0.62968251){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20.0\end{tabular}}}}%
+    \put(0.61437918,0.56407309){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}42.43\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=30]{simulation_data.pdf}}%
-    \put(0.90236714,0.44949167){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$S$, $\textrm{L}/\textrm{mg}$\end{tabular}}}}%
+    \put(0.75011577,0.5590727){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=31]{simulation_data.pdf}}%
-    \put(0.56070606,0.42036388){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}983.1\end{tabular}}}}%
+    \put(0.88735564,0.5590727){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.13\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=32]{simulation_data.pdf}}%
-    \put(0.6748187,0.41942943){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}85.26\end{tabular}}}}%
+    \put(0.85835975,0.60098105){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_{m, PD}$\end{tabular}}}}%
+    \put(0.73131695,0.59943785){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\eta$\end{tabular}}}}%
+    \put(0.60427567,0.60014765){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_{c, PD}$\end{tabular}}}}%
+    \put(0.6837228,0.49324596){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dose, mg\end{tabular}}}}%
+    \put(0.73408926,0.46782418){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=33]{simulation_data.pdf}}%
-    \put(0.78816028,0.42036388){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.44\end{tabular}}}}%
+    \put(0.73408926,0.44264099){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=34]{simulation_data.pdf}}%
-    \put(0.90109654,0.42036388){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}20.0\end{tabular}}}}%
-    \put(0.60603087,0.36623384){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}42.43\end{tabular}}}}%
+    \put(0.73408926,0.4174578){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=35]{simulation_data.pdf}}%
-    \put(0.71801877,0.36210831){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.0\end{tabular}}}}%
+    \put(0.73408926,0.3922746){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=36]{simulation_data.pdf}}%
-    \put(0.83124654,0.36210831){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.13\end{tabular}}}}%
+    \put(0.83581601,0.39982956){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Noise\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=37]{simulation_data.pdf}}%
-    \put(0.83124086,0.39668422){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_{m, PD}$\end{tabular}}}}%
-    \put(0.71813822,0.39541102){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\eta$\end{tabular}}}}%
-    \put(0.60503555,0.39599663){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\sigma_{c, PD}$\end{tabular}}}}%
+    \put(0.83546112,0.49375743){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.988235}\makebox(0,0)[lt]{\lineheight{0.25}\smash{\begin{tabular}[t]{l}Simulated\\data\end{tabular}}}}%
+    \put(0.83450482,0.44635748){\color[rgb]{0.16862745,0.24705882,0.37254902}\transparent{0.988235}\makebox(0,0)[lt]{\lineheight{0.25}\smash{\begin{tabular}[t]{l}Noiseless\\simulation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{simulation_data.pdf}}%
   \end{picture}%
 \endgroup%

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    class="main-svg"
-   width="658.56"
+   width="564.07294"
    height="242.70351"
-   viewBox="0 0 658.56 242.70351"
+   viewBox="0 0 564.07294 242.70351"
    version="1.1"
    id="svg35355"
    sodipodi:docname="PK_num_compartments.svg"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata35359">
     <rdf:RDF>
@@ -23,7 +23,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,7 +36,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="971"
+     inkscape:window-height="964"
      id="namedview35357"
      showgrid="false"
      fit-margin-top="0"
@@ -45,12 +44,13 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.6224719"
-     inkscape:cx="274.46877"
-     inkscape:cy="142.39807"
+     inkscape:cx="244.99654"
+     inkscape:cy="151.92867"
      inkscape:window-x="1080"
      inkscape:window-y="434"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg35355" />
+     inkscape:current-layer="svg35355"
+     inkscape:pagecheckerboard="0" />
   <defs
      id="defs-3f6bf1">
     <g
@@ -244,7 +244,7 @@
   <g
      class="bglayer"
      id="g34815"
-     transform="scale(0.75)">
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
     <rect
        class="bg"
        x="87"
@@ -273,7 +273,7 @@
   <g
      class="layer-below"
      id="g34821"
-     transform="translate(-111.25,-45)">
+     transform="translate(-119.25,-45)">
     <g
        class="imagelayer"
        id="g34817" />
@@ -282,863 +282,852 @@
        id="g34819" />
   </g>
   <g
-     class="cartesianlayer"
-     id="g35193"
-     transform="scale(0.75)">
+     class="layer-subplot"
+     id="g34827"
+     transform="matrix(0.75,0,0,0.75,-8,0)">
     <g
-       class="subplot xy"
-       id="g34955">
-      <g
-         class="layer-subplot"
-         id="g34827">
-        <g
-           class="shapelayer"
-           id="g34823" />
-        <g
-           class="imagelayer"
-           id="g34825" />
-      </g>
-      <g
-         class="gridlayer"
-         id="g34845">
-        <g
-           class="x"
-           id="g34833">
-          <path
-             class="xgrid crisp"
-             transform="translate(162.09)"
-             d="M 0,60 V 280"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34829"
-             inkscape:connector-curvature="0" />
-          <path
-             class="xgrid crisp"
-             transform="translate(237.19)"
-             d="M 0,60 V 280"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34831"
-             inkscape:connector-curvature="0" />
-        </g>
-        <g
-           class="y"
-           id="g34843">
-          <path
-             class="ygrid crisp"
-             transform="translate(0,238.81)"
-             d="M 87,0 H 312.28"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34835"
-             inkscape:connector-curvature="0" />
-          <path
-             class="ygrid crisp"
-             transform="translate(0,192.22)"
-             d="M 87,0 H 312.28"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34837"
-             inkscape:connector-curvature="0" />
-          <path
-             class="ygrid crisp"
-             transform="translate(0,145.63)"
-             d="M 87,0 H 312.28"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34839"
-             inkscape:connector-curvature="0" />
-          <path
-             class="ygrid crisp"
-             transform="translate(0,99.05)"
-             d="M 87,0 H 312.28"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34841"
-             inkscape:connector-curvature="0" />
-        </g>
-      </g>
-      <g
-         class="zerolinelayer"
-         id="g34849">
-        <path
-           class="xzl zl crisp"
-           transform="translate(87)"
-           d="M 0,60 V 280"
-           style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
-           id="path34847"
-           inkscape:connector-curvature="0" />
-      </g>
+       class="shapelayer"
+       id="g34823" />
+    <g
+       class="imagelayer"
+       id="g34825" />
+  </g>
+  <g
+     class="gridlayer"
+     id="g34845"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <g
+       class="x"
+       id="g34833">
       <path
-         class="xlines-below"
-         id="path34851"
-         d=""
+         class="xgrid crisp"
+         transform="translate(162.09)"
+         d="M 0,60 V 280"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34829"
          inkscape:connector-curvature="0" />
       <path
-         class="ylines-below"
-         id="path34853"
-         d=""
+         class="xgrid crisp"
+         transform="translate(237.19)"
+         d="M 0,60 V 280"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34831"
          inkscape:connector-curvature="0" />
-      <g
-         class="overlines-below"
-         id="g34855" />
-      <g
-         class="xaxislayer-below"
-         id="g34857" />
-      <g
-         class="yaxislayer-below"
-         id="g34859" />
-      <g
-         class="overaxes-below"
-         id="g34861" />
-      <g
-         class="plot"
-         transform="translate(87,60)"
-         clip-path="url(#clip3f6bf1xyplot)"
-         id="g34907">
-        <g
-           class="scatterlayer mlayer"
-           id="g34905">
-          <g
-             class="trace scatter trace54906f"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g34875">
-            <g
-               class="fills"
-               id="g34863" />
-            <g
-               class="errorbars"
-               id="g34865" />
-            <g
-               class="lines"
-               id="g34869">
-              <path
-                 class="js-line"
-                 d="m 0,39.05 211.63,159.65 2.27,1.72 11.38,8.58"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
-                 id="path34867"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g34871" />
-            <g
-               class="text"
-               id="g34873" />
-          </g>
-          <g
-             class="trace scatter tracedb3faf"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g34889">
-            <g
-               class="fills"
-               id="g34877" />
-            <g
-               class="errorbars"
-               id="g34879" />
-            <g
-               class="lines"
-               id="g34883">
-              <path
-                 class="js-line"
-                 d="M 0,25.02 225.28,194.98"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
-                 id="path34881"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g34885" />
-            <g
-               class="text"
-               id="g34887" />
-          </g>
-          <g
-             class="trace scatter trace9ed441"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g34903">
-            <g
-               class="fills"
-               id="g34891" />
-            <g
-               class="errorbars"
-               id="g34893" />
-            <g
-               class="lines"
-               id="g34897">
-              <path
-                 class="js-line"
-                 d="M 0,11 225.28,180.95"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#00cc96;stroke-width:2px;stroke-opacity:1"
-                 id="path34895"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g34899" />
-            <g
-               class="text"
-               id="g34901" />
-          </g>
-        </g>
-      </g>
-      <g
-         class="overplot"
-         id="g34909" />
-      <path
-         class="xlines-above crisp"
-         d="M 0,0"
-         style="fill:none"
-         id="path34911"
-         inkscape:connector-curvature="0" />
-      <path
-         class="ylines-above crisp"
-         d="M 0,0"
-         style="fill:none"
-         id="path34913"
-         inkscape:connector-curvature="0" />
-      <g
-         class="overlines-above"
-         id="g34915" />
-      <g
-         class="xaxislayer-above"
-         id="g34933">
-        <g
-           class="xtick"
-           id="g34919">
-          <text
-             x="0"
-             y="293"
-             transform="translate(87)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text34917">0</text>
-        </g>
-        <g
-           class="xtick"
-           id="g34923">
-          <text
-             x="0"
-             y="293"
-             transform="translate(162.09)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text34921">1</text>
-        </g>
-        <g
-           class="xtick"
-           id="g34927">
-          <text
-             x="0"
-             y="293"
-             transform="translate(237.19)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text34925">2</text>
-        </g>
-        <g
-           class="xtick"
-           id="g34931">
-          <text
-             x="0"
-             y="293"
-             transform="translate(312.28)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text34929">3</text>
-        </g>
-      </g>
-      <g
-         class="yaxislayer-above"
-         id="g34951">
-        <g
-           class="ytick"
-           id="g34937">
-          <text
-             x="86"
-             y="4.1999998"
-             transform="translate(0,238.81)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text34935">0.001</text>
-        </g>
-        <g
-           class="ytick"
-           id="g34941">
-          <text
-             x="86"
-             y="4.1999998"
-             transform="translate(0,192.22)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text34939">0.01</text>
-        </g>
-        <g
-           class="ytick"
-           id="g34945">
-          <text
-             x="86"
-             y="4.1999998"
-             transform="translate(0,145.63)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text34943">0.1</text>
-        </g>
-        <g
-           class="ytick"
-           id="g34949">
-          <text
-             x="86"
-             y="4.1999998"
-             transform="translate(0,99.05)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text34947">1</text>
-        </g>
-      </g>
-      <g
-         class="overaxes-above"
-         id="g34953" />
     </g>
     <g
-       class="subplot x2y2"
-       id="g35073">
-      <g
-         class="layer-subplot"
-         id="g34961">
-        <g
-           class="shapelayer"
-           id="g34957" />
-        <g
-           class="imagelayer"
-           id="g34959" />
-      </g>
-      <g
-         class="gridlayer"
-         id="g34979">
-        <g
-           class="x2"
-           id="g34967">
-          <path
-             class="x2grid crisp"
-             transform="translate(401.45)"
-             d="M 0,60 V 280"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34963"
-             inkscape:connector-curvature="0" />
-          <path
-             class="x2grid crisp"
-             transform="translate(476.55)"
-             d="M 0,60 V 280"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34965"
-             inkscape:connector-curvature="0" />
-        </g>
-        <g
-           class="y2"
-           id="g34977">
-          <path
-             class="y2grid crisp"
-             transform="translate(0,238.81)"
-             d="M 326.36,0 H 551.64"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34969"
-             inkscape:connector-curvature="0" />
-          <path
-             class="y2grid crisp"
-             transform="translate(0,192.22)"
-             d="M 326.36,0 H 551.64"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34971"
-             inkscape:connector-curvature="0" />
-          <path
-             class="y2grid crisp"
-             transform="translate(0,145.63)"
-             d="M 326.36,0 H 551.64"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34973"
-             inkscape:connector-curvature="0" />
-          <path
-             class="y2grid crisp"
-             transform="translate(0,99.05)"
-             d="M 326.36,0 H 551.64"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path34975"
-             inkscape:connector-curvature="0" />
-        </g>
-      </g>
-      <g
-         class="zerolinelayer"
-         id="g34983">
-        <path
-           class="x2zl zl crisp"
-           transform="translate(326.36)"
-           d="M 0,60 V 280"
-           style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
-           id="path34981"
-           inkscape:connector-curvature="0" />
-      </g>
+       class="y"
+       id="g34843">
       <path
-         class="xlines-below"
-         id="path34985"
-         d=""
+         class="ygrid crisp"
+         transform="translate(0,238.81)"
+         d="M 87,0 H 312.28"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34835"
          inkscape:connector-curvature="0" />
       <path
-         class="ylines-below"
-         id="path34987"
-         d=""
-         inkscape:connector-curvature="0" />
-      <g
-         class="overlines-below"
-         id="g34989" />
-      <g
-         class="xaxislayer-below"
-         id="g34991" />
-      <g
-         class="yaxislayer-below"
-         id="g34993" />
-      <g
-         class="overaxes-below"
-         id="g34995" />
-      <g
-         class="plot"
-         transform="translate(326.36,60)"
-         clip-path="url(#clip3f6bf1x2y2plot)"
-         id="g35041">
-        <g
-           class="scatterlayer mlayer"
-           id="g35039">
-          <g
-             class="trace scatter trace19270d"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g35009">
-            <g
-               class="fills"
-               id="g34997" />
-            <g
-               class="errorbars"
-               id="g34999" />
-            <g
-               class="lines"
-               id="g35003">
-              <path
-                 class="js-line"
-                 d="m 0,39.05 20.48,26.85 2.28,2.74 11.37,12.52 2.28,2.22 9.1,7.73 2.28,1.64 9.1,5.39 2.27,1.08 11.38,4.08 2.28,0.6 13.65,2.64 2.28,0.32 22.75,2.36 2.28,0.19 81.92,5.75 2.27,0.16 27.31,1.85"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
-                 id="path35001"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g35005" />
-            <g
-               class="text"
-               id="g35007" />
-          </g>
-          <g
-             class="trace scatter trace585b9a"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g35023">
-            <g
-               class="fills"
-               id="g35011" />
-            <g
-               class="errorbars"
-               id="g35013" />
-            <g
-               class="lines"
-               id="g35017">
-              <path
-                 class="js-line"
-                 d="m 0,25.02 20.48,26.86 2.28,2.74 11.37,12.52 2.28,2.21 9.1,7.74 2.28,1.64 9.1,5.39 2.27,1.08 11.38,4.08 2.28,0.6 13.65,2.64 2.28,0.32 22.75,2.36 2.28,0.19 81.92,5.75 2.27,0.15 27.31,1.86"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
-                 id="path35015"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g35019" />
-            <g
-               class="text"
-               id="g35021" />
-          </g>
-          <g
-             class="trace scatter traced2f29e"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g35037">
-            <g
-               class="fills"
-               id="g35025" />
-            <g
-               class="errorbars"
-               id="g35027" />
-            <g
-               class="lines"
-               id="g35031">
-              <path
-                 class="js-line"
-                 d="m 0,11 20.48,26.85 2.28,2.74 11.37,12.52 2.28,2.22 9.1,7.73 2.28,1.64 9.1,5.4 2.27,1.07 9.11,3.42 2.27,0.66 13.66,2.89 2.27,0.35 20.48,2.29 2.28,0.2 50.06,3.66 2.27,0.15 63.72,4.33"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#00cc96;stroke-width:2px;stroke-opacity:1"
-                 id="path35029"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g35033" />
-            <g
-               class="text"
-               id="g35035" />
-          </g>
-        </g>
-      </g>
-      <g
-         class="overplot"
-         id="g35043" />
-      <path
-         class="xlines-above crisp"
-         d="M 0,0"
-         style="fill:none"
-         id="path35045"
+         class="ygrid crisp"
+         transform="translate(0,192.22)"
+         d="M 87,0 H 312.28"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34837"
          inkscape:connector-curvature="0" />
       <path
-         class="ylines-above crisp"
-         d="M 0,0"
-         style="fill:none"
-         id="path35047"
-         inkscape:connector-curvature="0" />
-      <g
-         class="overlines-above"
-         id="g35049" />
-      <g
-         class="xaxislayer-above"
-         id="g35067">
-        <g
-           class="x2tick"
-           id="g35053">
-          <text
-             x="0"
-             y="293"
-             transform="translate(326.36)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text35051">0</text>
-        </g>
-        <g
-           class="x2tick"
-           id="g35057">
-          <text
-             x="0"
-             y="293"
-             transform="translate(401.45)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text35055">1</text>
-        </g>
-        <g
-           class="x2tick"
-           id="g35061">
-          <text
-             x="0"
-             y="293"
-             transform="translate(476.55)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text35059">2</text>
-        </g>
-        <g
-           class="x2tick"
-           id="g35065">
-          <text
-             x="0"
-             y="293"
-             transform="translate(551.64)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text35063">3</text>
-        </g>
-      </g>
-      <g
-         class="yaxislayer-above"
-         id="g35069" />
-      <g
-         class="overaxes-above"
-         id="g35071" />
-    </g>
-    <g
-       class="subplot x3y3"
-       id="g35191">
-      <g
-         class="layer-subplot"
-         id="g35079">
-        <g
-           class="shapelayer"
-           id="g35075" />
-        <g
-           class="imagelayer"
-           id="g35077" />
-      </g>
-      <g
-         class="gridlayer"
-         id="g35097">
-        <g
-           class="x3"
-           id="g35085">
-          <path
-             class="x3grid crisp"
-             transform="translate(640.81)"
-             d="M 0,60 V 280"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path35081"
-             inkscape:connector-curvature="0" />
-          <path
-             class="x3grid crisp"
-             transform="translate(715.91)"
-             d="M 0,60 V 280"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path35083"
-             inkscape:connector-curvature="0" />
-        </g>
-        <g
-           class="y3"
-           id="g35095">
-          <path
-             class="y3grid crisp"
-             transform="translate(0,238.81)"
-             d="M 565.72,0 H 791"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path35087"
-             inkscape:connector-curvature="0" />
-          <path
-             class="y3grid crisp"
-             transform="translate(0,192.22)"
-             d="M 565.72,0 H 791"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path35089"
-             inkscape:connector-curvature="0" />
-          <path
-             class="y3grid crisp"
-             transform="translate(0,145.63)"
-             d="M 565.72,0 H 791"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path35091"
-             inkscape:connector-curvature="0" />
-          <path
-             class="y3grid crisp"
-             transform="translate(0,99.05)"
-             d="M 565.72,0 H 791"
-             style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
-             id="path35093"
-             inkscape:connector-curvature="0" />
-        </g>
-      </g>
-      <g
-         class="zerolinelayer"
-         id="g35101">
-        <path
-           class="x3zl zl crisp"
-           transform="translate(565.72)"
-           d="M 0,60 V 280"
-           style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
-           id="path35099"
-           inkscape:connector-curvature="0" />
-      </g>
-      <path
-         class="xlines-below"
-         id="path35103"
-         d=""
+         class="ygrid crisp"
+         transform="translate(0,145.63)"
+         d="M 87,0 H 312.28"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34839"
          inkscape:connector-curvature="0" />
       <path
-         class="ylines-below"
-         id="path35105"
-         d=""
+         class="ygrid crisp"
+         transform="translate(0,99.05)"
+         d="M 87,0 H 312.28"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34841"
          inkscape:connector-curvature="0" />
-      <g
-         class="overlines-below"
-         id="g35107" />
-      <g
-         class="xaxislayer-below"
-         id="g35109" />
-      <g
-         class="yaxislayer-below"
-         id="g35111" />
-      <g
-         class="overaxes-below"
-         id="g35113" />
-      <g
-         class="plot"
-         transform="translate(565.72,60)"
-         clip-path="url(#clip3f6bf1x3y3plot)"
-         id="g35159">
-        <g
-           class="scatterlayer mlayer"
-           id="g35157">
-          <g
-             class="trace scatter trace9b3442"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g35127">
-            <g
-               class="fills"
-               id="g35115" />
-            <g
-               class="errorbars"
-               id="g35117" />
-            <g
-               class="lines"
-               id="g35121">
-              <path
-                 class="js-line"
-                 d="m 0,39.05 4.55,13.91 2.28,4.46 4.55,5.76 2.27,1.98 9.11,5.92 2.27,1.29 20.48,10.52 2.28,1.05 18.2,7.6 2.28,0.84 18.2,5.83 2.28,0.63 20.48,4.69 2.27,0.43 25.03,3.86 2.28,0.29 38.68,3.88 2.28,0.19 45.51,3.4"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
-                 id="path35119"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g35123" />
-            <g
-               class="text"
-               id="g35125" />
-          </g>
-          <g
-             class="trace scatter tracefd26b6"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g35141">
-            <g
-               class="fills"
-               id="g35129" />
-            <g
-               class="errorbars"
-               id="g35131" />
-            <g
-               class="lines"
-               id="g35135">
-              <path
-                 class="js-line"
-                 d="m 0,25.02 4.55,13.91 2.28,4.47 4.55,5.75 2.27,1.98 9.11,5.93 2.27,1.29 20.48,10.51 2.28,1.06 18.2,7.6 2.28,0.84 18.2,5.83 2.28,0.62 20.48,4.7 2.27,0.43 25.03,3.86 2.28,0.28 34.13,3.5 2.28,0.19 50.06,3.79"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
-                 id="path35133"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g35137" />
-            <g
-               class="text"
-               id="g35139" />
-          </g>
-          <g
-             class="trace scatter trace5d6ccf"
-             style="opacity:1;stroke-miterlimit:2"
-             id="g35155">
-            <g
-               class="fills"
-               id="g35143" />
-            <g
-               class="errorbars"
-               id="g35145" />
-            <g
-               class="lines"
-               id="g35149">
-              <path
-                 class="js-line"
-                 d="m 0,11 4.55,13.91 2.28,4.47 4.55,5.75 2.27,1.98 9.11,5.92 2.27,1.29 20.48,10.52 2.28,1.06 18.2,7.59 2.28,0.84 18.2,5.83 2.28,0.63 20.48,4.69 2.27,0.43 25.03,3.86 2.28,0.29 34.13,3.49 2.28,0.2 50.06,3.78"
-                 style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#00cc96;stroke-width:2px;stroke-opacity:1"
-                 id="path35147"
-                 inkscape:connector-curvature="0" />
-            </g>
-            <g
-               class="points"
-               id="g35151" />
-            <g
-               class="text"
-               id="g35153" />
-          </g>
-        </g>
-      </g>
-      <g
-         class="overplot"
-         id="g35161" />
-      <path
-         class="xlines-above crisp"
-         d="M 0,0"
-         style="fill:none"
-         id="path35163"
-         inkscape:connector-curvature="0" />
-      <path
-         class="ylines-above crisp"
-         d="M 0,0"
-         style="fill:none"
-         id="path35165"
-         inkscape:connector-curvature="0" />
-      <g
-         class="overlines-above"
-         id="g35167" />
-      <g
-         class="xaxislayer-above"
-         id="g35185">
-        <g
-           class="x3tick"
-           id="g35171">
-          <text
-             x="0"
-             y="293"
-             transform="translate(565.72)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text35169">0</text>
-        </g>
-        <g
-           class="x3tick"
-           id="g35175">
-          <text
-             x="0"
-             y="293"
-             transform="translate(640.81)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text35173">1</text>
-        </g>
-        <g
-           class="x3tick"
-           id="g35179">
-          <text
-             x="0"
-             y="293"
-             transform="translate(715.91)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text35177">2</text>
-        </g>
-        <g
-           class="x3tick"
-           id="g35183">
-          <text
-             x="0"
-             y="293"
-             transform="translate(791)"
-             style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
-             id="text35181">3</text>
-        </g>
-      </g>
-      <g
-         class="yaxislayer-above"
-         id="g35187" />
-      <g
-         class="overaxes-above"
-         id="g35189" />
     </g>
   </g>
   <g
+     class="zerolinelayer"
+     id="g34849"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <path
+       class="xzl zl crisp"
+       transform="translate(87)"
+       d="M 0,60 V 280"
+       style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+       id="path34847"
+       inkscape:connector-curvature="0" />
+  </g>
+  <path
+     class="xlines-below"
+     id="path34851"
+     d=""
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.75" />
+  <path
+     class="ylines-below"
+     id="path34853"
+     d=""
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.75" />
+  <g
+     class="overlines-below"
+     id="g34855"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="xaxislayer-below"
+     id="g34857"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="yaxislayer-below"
+     id="g34859"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="overaxes-below"
+     id="g34861"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="plot"
+     transform="matrix(0.62875586,0,0,0.75,53.486458,45)"
+     clip-path="url(#clip3f6bf1xyplot)"
+     id="g34907">
+    <g
+       class="scatterlayer mlayer"
+       id="g34905">
+      <g
+         class="trace scatter trace54906f"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g34875">
+        <g
+           class="fills"
+           id="g34863" />
+        <g
+           class="errorbars"
+           id="g34865" />
+        <g
+           class="lines"
+           id="g34869">
+          <path
+             class="js-line"
+             d="m 0,39.05 211.63,159.65 2.27,1.72 11.38,8.58"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+             id="path34867"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g34871" />
+        <g
+           class="text"
+           id="g34873" />
+      </g>
+      <g
+         class="trace scatter tracedb3faf"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g34889">
+        <g
+           class="fills"
+           id="g34877" />
+        <g
+           class="errorbars"
+           id="g34879" />
+        <g
+           class="lines"
+           id="g34883">
+          <path
+             class="js-line"
+             d="M 0,25.02 225.28,194.98"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+             id="path34881"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g34885" />
+        <g
+           class="text"
+           id="g34887" />
+      </g>
+      <g
+         class="trace scatter trace9ed441"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g34903">
+        <g
+           class="fills"
+           id="g34891" />
+        <g
+           class="errorbars"
+           id="g34893" />
+        <g
+           class="lines"
+           id="g34897">
+          <path
+             class="js-line"
+             d="M 0,11 225.28,180.95"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#00cc96;stroke-width:2px;stroke-opacity:1"
+             id="path34895"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g34899" />
+        <g
+           class="text"
+           id="g34901" />
+      </g>
+    </g>
+  </g>
+  <g
+     class="overplot"
+     id="g34909"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="overlines-above"
+     id="g34915"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="xaxislayer-above"
+     id="g34933"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <g
+       class="xtick"
+       id="g34919">
+      <text
+         x="0"
+         y="293"
+         transform="translate(87)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text34917">0</text>
+    </g>
+    <g
+       class="xtick"
+       id="g34923">
+      <text
+         x="0"
+         y="293"
+         transform="translate(162.09)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text34921">1</text>
+    </g>
+    <g
+       class="xtick"
+       id="g34927">
+      <text
+         x="0"
+         y="293"
+         transform="translate(237.19)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text34925">2</text>
+    </g>
+    <g
+       class="xtick"
+       id="g34931">
+      <text
+         x="0"
+         y="293"
+         transform="translate(312.28)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text34929">3</text>
+    </g>
+  </g>
+  <g
+     class="yaxislayer-above"
+     id="g34951"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <g
+       class="ytick"
+       id="g34937">
+      <text
+         x="86"
+         y="4.1999998"
+         transform="translate(0,238.81)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text34935">0.001</text>
+    </g>
+    <g
+       class="ytick"
+       id="g34941">
+      <text
+         x="86"
+         y="4.1999998"
+         transform="translate(0,192.22)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text34939">0.01</text>
+    </g>
+    <g
+       class="ytick"
+       id="g34945">
+      <text
+         x="86"
+         y="4.1999998"
+         transform="translate(0,145.63)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text34943">0.1</text>
+    </g>
+    <g
+       class="ytick"
+       id="g34949">
+      <text
+         x="86"
+         y="4.1999998"
+         transform="translate(0,99.05)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:end;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text34947">1</text>
+    </g>
+  </g>
+  <g
+     class="overaxes-above"
+     id="g34953"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="layer-subplot"
+     id="g34961"
+     transform="matrix(0.75,0,0,0.75,-8,0)">
+    <g
+       class="shapelayer"
+       id="g34957" />
+    <g
+       class="imagelayer"
+       id="g34959" />
+  </g>
+  <g
+     class="gridlayer"
+     id="g34979"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <g
+       class="x2"
+       id="g34967">
+      <path
+         class="x2grid crisp"
+         transform="translate(401.45)"
+         d="M 0,60 V 280"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34963"
+         inkscape:connector-curvature="0" />
+      <path
+         class="x2grid crisp"
+         transform="translate(476.55)"
+         d="M 0,60 V 280"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34965"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       class="y2"
+       id="g34977">
+      <path
+         class="y2grid crisp"
+         transform="translate(0,238.81)"
+         d="M 326.36,0 H 551.64"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34969"
+         inkscape:connector-curvature="0" />
+      <path
+         class="y2grid crisp"
+         transform="translate(0,192.22)"
+         d="M 326.36,0 H 551.64"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34971"
+         inkscape:connector-curvature="0" />
+      <path
+         class="y2grid crisp"
+         transform="translate(0,145.63)"
+         d="M 326.36,0 H 551.64"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34973"
+         inkscape:connector-curvature="0" />
+      <path
+         class="y2grid crisp"
+         transform="translate(0,99.05)"
+         d="M 326.36,0 H 551.64"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path34975"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <g
+     class="zerolinelayer"
+     id="g34983"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <path
+       class="x2zl zl crisp"
+       transform="translate(326.36)"
+       d="M 0,60 V 280"
+       style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+       id="path34981"
+       inkscape:connector-curvature="0" />
+  </g>
+  <path
+     class="xlines-below"
+     id="path34985"
+     d=""
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.75" />
+  <path
+     class="ylines-below"
+     id="path34987"
+     d=""
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.75" />
+  <g
+     class="overlines-below"
+     id="g34989"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="xaxislayer-below"
+     id="g34991"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="yaxislayer-below"
+     id="g34993"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="overaxes-below"
+     id="g34995"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="plot"
+     transform="matrix(0.62875586,0,0,0.75,203.98546,45)"
+     clip-path="url(#clip3f6bf1x2y2plot)"
+     id="g35041">
+    <g
+       class="scatterlayer mlayer"
+       id="g35039">
+      <g
+         class="trace scatter trace19270d"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g35009">
+        <g
+           class="fills"
+           id="g34997" />
+        <g
+           class="errorbars"
+           id="g34999" />
+        <g
+           class="lines"
+           id="g35003">
+          <path
+             class="js-line"
+             d="m 0,39.05 20.48,26.85 2.28,2.74 11.37,12.52 2.28,2.22 9.1,7.73 2.28,1.64 9.1,5.39 2.27,1.08 11.38,4.08 2.28,0.6 13.65,2.64 2.28,0.32 22.75,2.36 2.28,0.19 81.92,5.75 2.27,0.16 27.31,1.85"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+             id="path35001"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g35005" />
+        <g
+           class="text"
+           id="g35007" />
+      </g>
+      <g
+         class="trace scatter trace585b9a"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g35023">
+        <g
+           class="fills"
+           id="g35011" />
+        <g
+           class="errorbars"
+           id="g35013" />
+        <g
+           class="lines"
+           id="g35017">
+          <path
+             class="js-line"
+             d="m 0,25.02 20.48,26.86 2.28,2.74 11.37,12.52 2.28,2.21 9.1,7.74 2.28,1.64 9.1,5.39 2.27,1.08 11.38,4.08 2.28,0.6 13.65,2.64 2.28,0.32 22.75,2.36 2.28,0.19 81.92,5.75 2.27,0.15 27.31,1.86"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+             id="path35015"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g35019" />
+        <g
+           class="text"
+           id="g35021" />
+      </g>
+      <g
+         class="trace scatter traced2f29e"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g35037">
+        <g
+           class="fills"
+           id="g35025" />
+        <g
+           class="errorbars"
+           id="g35027" />
+        <g
+           class="lines"
+           id="g35031">
+          <path
+             class="js-line"
+             d="m 0,11 20.48,26.85 2.28,2.74 11.37,12.52 2.28,2.22 9.1,7.73 2.28,1.64 9.1,5.4 2.27,1.07 9.11,3.42 2.27,0.66 13.66,2.89 2.27,0.35 20.48,2.29 2.28,0.2 50.06,3.66 2.27,0.15 63.72,4.33"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#00cc96;stroke-width:2px;stroke-opacity:1"
+             id="path35029"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g35033" />
+        <g
+           class="text"
+           id="g35035" />
+      </g>
+    </g>
+  </g>
+  <g
+     class="overplot"
+     id="g35043"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="overlines-above"
+     id="g35049"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="xaxislayer-above"
+     id="g35067"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <g
+       class="x2tick"
+       id="g35053">
+      <text
+         x="0"
+         y="293"
+         transform="translate(326.36)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text35051">0</text>
+    </g>
+    <g
+       class="x2tick"
+       id="g35057">
+      <text
+         x="0"
+         y="293"
+         transform="translate(401.45)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text35055">1</text>
+    </g>
+    <g
+       class="x2tick"
+       id="g35061">
+      <text
+         x="0"
+         y="293"
+         transform="translate(476.55)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text35059">2</text>
+    </g>
+    <g
+       class="x2tick"
+       id="g35065">
+      <text
+         x="0"
+         y="293"
+         transform="translate(551.64)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text35063">3</text>
+    </g>
+  </g>
+  <g
+     class="yaxislayer-above"
+     id="g35069"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="overaxes-above"
+     id="g35071"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="layer-subplot"
+     id="g35079"
+     transform="matrix(0.75,0,0,0.75,-8,0)">
+    <g
+       class="shapelayer"
+       id="g35075" />
+    <g
+       class="imagelayer"
+       id="g35077" />
+  </g>
+  <g
+     class="gridlayer"
+     id="g35097"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <g
+       class="x3"
+       id="g35085">
+      <path
+         class="x3grid crisp"
+         transform="translate(640.81)"
+         d="M 0,60 V 280"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path35081"
+         inkscape:connector-curvature="0" />
+      <path
+         class="x3grid crisp"
+         transform="translate(715.91)"
+         d="M 0,60 V 280"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path35083"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       class="y3"
+       id="g35095">
+      <path
+         class="y3grid crisp"
+         transform="translate(0,238.81)"
+         d="M 565.72,0 H 791"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path35087"
+         inkscape:connector-curvature="0" />
+      <path
+         class="y3grid crisp"
+         transform="translate(0,192.22)"
+         d="M 565.72,0 H 791"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path35089"
+         inkscape:connector-curvature="0" />
+      <path
+         class="y3grid crisp"
+         transform="translate(0,145.63)"
+         d="M 565.72,0 H 791"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path35091"
+         inkscape:connector-curvature="0" />
+      <path
+         class="y3grid crisp"
+         transform="translate(0,99.05)"
+         d="M 565.72,0 H 791"
+         style="stroke:#ffffff;stroke-width:1px;stroke-opacity:1"
+         id="path35093"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <g
+     class="zerolinelayer"
+     id="g35101"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <path
+       class="x3zl zl crisp"
+       transform="translate(565.72)"
+       d="M 0,60 V 280"
+       style="stroke:#ffffff;stroke-width:2px;stroke-opacity:1"
+       id="path35099"
+       inkscape:connector-curvature="0" />
+  </g>
+  <path
+     class="xlines-below"
+     id="path35103"
+     d=""
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.75" />
+  <path
+     class="ylines-below"
+     id="path35105"
+     d=""
+     inkscape:connector-curvature="0"
+     style="stroke-width:0.75" />
+  <g
+     class="overlines-below"
+     id="g35107"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="xaxislayer-below"
+     id="g35109"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="yaxislayer-below"
+     id="g35111"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="overaxes-below"
+     id="g35113"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="plot"
+     transform="matrix(0.62875586,0,0,0.75,354.48447,45)"
+     clip-path="url(#clip3f6bf1x3y3plot)"
+     id="g35159">
+    <g
+       class="scatterlayer mlayer"
+       id="g35157">
+      <g
+         class="trace scatter trace9b3442"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g35127">
+        <g
+           class="fills"
+           id="g35115" />
+        <g
+           class="errorbars"
+           id="g35117" />
+        <g
+           class="lines"
+           id="g35121">
+          <path
+             class="js-line"
+             d="m 0,39.05 4.55,13.91 2.28,4.46 4.55,5.76 2.27,1.98 9.11,5.92 2.27,1.29 20.48,10.52 2.28,1.05 18.2,7.6 2.28,0.84 18.2,5.83 2.28,0.63 20.48,4.69 2.27,0.43 25.03,3.86 2.28,0.29 38.68,3.88 2.28,0.19 45.51,3.4"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#636efa;stroke-width:2px;stroke-opacity:1"
+             id="path35119"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g35123" />
+        <g
+           class="text"
+           id="g35125" />
+      </g>
+      <g
+         class="trace scatter tracefd26b6"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g35141">
+        <g
+           class="fills"
+           id="g35129" />
+        <g
+           class="errorbars"
+           id="g35131" />
+        <g
+           class="lines"
+           id="g35135">
+          <path
+             class="js-line"
+             d="m 0,25.02 4.55,13.91 2.28,4.47 4.55,5.75 2.27,1.98 9.11,5.93 2.27,1.29 20.48,10.51 2.28,1.06 18.2,7.6 2.28,0.84 18.2,5.83 2.28,0.62 20.48,4.7 2.27,0.43 25.03,3.86 2.28,0.28 34.13,3.5 2.28,0.19 50.06,3.79"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#ef553b;stroke-width:2px;stroke-opacity:1"
+             id="path35133"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g35137" />
+        <g
+           class="text"
+           id="g35139" />
+      </g>
+      <g
+         class="trace scatter trace5d6ccf"
+         style="opacity:1;stroke-miterlimit:2"
+         id="g35155">
+        <g
+           class="fills"
+           id="g35143" />
+        <g
+           class="errorbars"
+           id="g35145" />
+        <g
+           class="lines"
+           id="g35149">
+          <path
+             class="js-line"
+             d="m 0,11 4.55,13.91 2.28,4.47 4.55,5.75 2.27,1.98 9.11,5.92 2.27,1.29 20.48,10.52 2.28,1.06 18.2,7.59 2.28,0.84 18.2,5.83 2.28,0.63 20.48,4.69 2.27,0.43 25.03,3.86 2.28,0.29 34.13,3.49 2.28,0.2 50.06,3.78"
+             style="opacity:1;vector-effect:non-scaling-stroke;fill:none;stroke:#00cc96;stroke-width:2px;stroke-opacity:1"
+             id="path35147"
+             inkscape:connector-curvature="0" />
+        </g>
+        <g
+           class="points"
+           id="g35151" />
+        <g
+           class="text"
+           id="g35153" />
+      </g>
+    </g>
+  </g>
+  <g
+     class="overplot"
+     id="g35161"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="overlines-above"
+     id="g35167"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="xaxislayer-above"
+     id="g35185"
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
+    <g
+       class="x3tick"
+       id="g35171">
+      <text
+         x="0"
+         y="293"
+         transform="translate(565.72)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text35169">0</text>
+    </g>
+    <g
+       class="x3tick"
+       id="g35175">
+      <text
+         x="0"
+         y="293"
+         transform="translate(640.81)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text35173">1</text>
+    </g>
+    <g
+       class="x3tick"
+       id="g35179">
+      <text
+         x="0"
+         y="293"
+         transform="translate(715.91)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text35177">2</text>
+    </g>
+    <g
+       class="x3tick"
+       id="g35183">
+      <text
+         x="0"
+         y="293"
+         transform="translate(791)"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text35181">3</text>
+    </g>
+  </g>
+  <g
+     class="yaxislayer-above"
+     id="g35187"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
+     class="overaxes-above"
+     id="g35189"
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
+  <g
      class="polarlayer"
      id="g35195"
-     transform="translate(-111.25,-45)" />
+     transform="translate(-119.25,-45)" />
   <g
      class="ternarylayer"
      id="g35197"
-     transform="translate(-111.25,-45)" />
+     transform="translate(-119.25,-45)" />
   <g
      class="geolayer"
      id="g35199"
-     transform="translate(-111.25,-45)" />
+     transform="translate(-119.25,-45)" />
   <g
      class="funnelarealayer"
      id="g35201"
-     transform="translate(-111.25,-45)" />
+     transform="translate(-119.25,-45)" />
   <g
      class="pielayer"
      id="g35203"
-     transform="translate(-111.25,-45)" />
+     transform="translate(-119.25,-45)" />
   <g
      class="treemaplayer"
      id="g35205"
-     transform="translate(-111.25,-45)" />
+     transform="translate(-119.25,-45)" />
   <g
      class="sunburstlayer"
      id="g35207"
-     transform="translate(-111.25,-45)" />
+     transform="translate(-119.25,-45)" />
   <g
      class="glimages"
      id="g35209"
-     transform="translate(-111.25,-45)" />
+     transform="translate(-119.25,-45)" />
   <defs
      id="topdefs-3f6bf1">
     <g
@@ -1157,7 +1146,7 @@
   <g
      class="layer-above"
      id="g35221"
-     transform="translate(-111.25,-45)">
+     transform="translate(-119.25,-45)">
     <g
        class="imagelayer"
        id="g35217" />
@@ -1165,24 +1154,16 @@
        class="shapelayer"
        id="g35219" />
   </g>
-  <rect
-     class="bg"
-     style="fill:#ffffff;fill-opacity:1;stroke:#444444;stroke-width:0px;stroke-opacity:1;shape-rendering:crispEdges"
-     width="54.75"
-     height="74.25"
-     x="603.81"
-     y="45"
-     id="rect35223" />
   <text
      id="text35229"
      style="font-size:9px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:start;white-space:pre;fill:#2a3f5f;fill-opacity:1;stroke-width:0.75"
      y="56.700001"
-     x="605.31"
+     x="597.31"
      class="legendtitletext" />
   <g
      id="g35249"
      class="groups"
-     transform="matrix(0.75,0,0,0.75,603.81,45)">
+     transform="matrix(0.75,0,0,0.75,507.81,45)">
     <g
        id="g35247"
        style="opacity:1"
@@ -1232,7 +1213,7 @@
   <g
      id="g35269"
      class="groups"
-     transform="matrix(0.75,0,0,0.75,603.81,45)">
+     transform="matrix(0.75,0,0,0.75,507.81,45)">
     <g
        id="g35267"
        style="opacity:1"
@@ -1282,7 +1263,7 @@
   <g
      id="g35289"
      class="groups"
-     transform="matrix(0.75,0,0,0.75,603.81,45)">
+     transform="matrix(0.75,0,0,0.75,507.81,45)">
     <g
        id="g35287"
        style="opacity:1"
@@ -1336,17 +1317,17 @@
      width="0"
      height="0"
      style="fill:#808ba4;fill-opacity:1;stroke-width:0.75"
-     x="603.81"
+     x="595.81"
      y="45"
      id="rect35293" />
   <g
      id="g35297"
      class="g-gtitle"
-     transform="scale(0.75)" />
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
   <g
      id="g35301"
      class="g-xtitle"
-     transform="scale(0.75)">
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
     <text
        id="text35299"
        style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
@@ -1357,7 +1338,7 @@
   <g
      id="g35305"
      class="g-x2title"
-     transform="scale(0.75)">
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
     <text
        id="text35303"
        style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
@@ -1368,7 +1349,7 @@
   <g
      id="g35309"
      class="g-x3title"
-     transform="scale(0.75)">
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
     <text
        id="text35307"
        style="font-weight:normal;font-size:14px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;opacity:1;fill:#2a3f5f"
@@ -1379,17 +1360,17 @@
   <g
      id="g35319"
      class="g-y2title"
-     transform="scale(0.75)" />
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
   <g
      id="g35321"
      class="g-y3title"
-     transform="scale(0.75)" />
+     transform="matrix(0.75,0,0,0.75,-8,0)" />
   <g
      id="g35331"
      style="opacity:1"
      data-index="0"
      class="annotation"
-     transform="scale(0.75)">
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
     <g
        id="g35329"
        class="annotation-text-g">
@@ -1407,10 +1388,14 @@
            class="bg" />
         <text
            id="text35325"
-           style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+           style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;inline-size:91.3091;fill:#2a3f5f;fill-opacity:1"
            y="15"
            x="87.203125"
-           class="annotation-text">Number of compartments=1.0</text>
+           class="annotation-text"
+           xml:space="preserve"><tspan
+             x="87.203125"
+             y="15"
+             id="tspan16668">1 compartment</tspan></text>
       </g>
     </g>
   </g>
@@ -1419,7 +1404,7 @@
      style="opacity:1"
      data-index="1"
      class="annotation"
-     transform="scale(0.75)">
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
     <g
        id="g35339"
        class="annotation-text-g">
@@ -1440,7 +1425,7 @@
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
            y="15"
            x="87.203125"
-           class="annotation-text">Number of compartments=2.0</text>
+           class="annotation-text">2 compartments</text>
       </g>
     </g>
   </g>
@@ -1449,7 +1434,7 @@
      style="opacity:1"
      data-index="2"
      class="annotation"
-     transform="scale(0.75)">
+     transform="matrix(0.62875586,0,0,0.75,-1.215301,0)">
     <g
        id="g35349"
        class="annotation-text-g">
@@ -1470,18 +1455,18 @@
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;text-anchor:middle;white-space:pre;fill:#2a3f5f;fill-opacity:1"
            y="15"
            x="87.203125"
-           class="annotation-text">Number of compartments=3.0</text>
+           class="annotation-text">3 compartments</text>
       </g>
     </g>
   </g>
   <g
      id="g35317-3"
-     transform="matrix(0.75,0,0,0.75,-9.0087864,16.213689)"
+     transform="matrix(0.75,0,0,0.75,-17.008786,16.213689)"
      class="g-ytitle"
      style="fill:#2a3f5f;fill-opacity:1">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:53.33333206px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:1.33333325"
+       style="font-style:normal;font-weight:normal;font-size:53.3333px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:1.33333"
        x="-246.686"
        y="33.837894"
        id="text36093"
@@ -1489,55 +1474,49 @@
          sodipodi:role="line"
          x="-246.686"
          y="33.837894"
-         style="font-size:14.22222233px;line-height:0.25;stroke-width:1.33333325;fill:#2a3f5f;fill-opacity:1"
+         style="font-size:14.2222px;line-height:0.25;fill:#2a3f5f;fill-opacity:1;stroke-width:1.33333"
          id="tspan36095">Drug concentration in the</tspan><tspan
          sodipodi:role="line"
          x="-246.686"
-         y="52.442062"
-         style="font-size:14.22222233px;line-height:0.25;stroke-width:1.33333325;fill:#2a3f5f;fill-opacity:1"
+         y="52.442051"
+         style="font-size:14.2222px;line-height:0.25;fill:#2a3f5f;fill-opacity:1;stroke-width:1.33333"
          id="tspan36099">central compartment, mg/L</tspan></text>
   </g>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="-122.02979"
+     x="-130.02979"
      y="-25.76202"
      id="text36172"><tspan
        sodipodi:role="line"
        id="tspan36170"
-       x="-122.02979"
-       y="9.6286049" /></text>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     x="600.48767"
-     y="47.455849"
-     id="text36176"><tspan
-       sodipodi:role="line"
-       x="600.48767"
-       y="47.455849"
-       style="font-size:10.66666698px;line-height:0.25"
-       id="tspan36186"> </tspan></text>
+       x="-130.02979"
+       y="-25.76202" /></text>
   <g
      id="g35317-3-7"
-     transform="matrix(0.75,0,0,0.75,401.43526,-226.33649)"
+     transform="matrix(0.75,0,0,0.75,313.43526,-226.33649)"
      class="g-ytitle"
-     style="stroke:none;stroke-opacity:1;fill:#2a3f5f;fill-opacity:1">
+     style="fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-opacity:1">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:53.33333206px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:1.33333325;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:53.3333px;line-height:0.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:1.33333;stroke-opacity:1"
        x="257.74695"
-       y="367.58774"
+       y="354.25446"
        id="text36093-8"><tspan
          sodipodi:role="line"
          x="257.74695"
-         y="367.58774"
-         style="font-size:14.22222233px;line-height:0.25;stroke-width:1.33333325;stroke:none;stroke-opacity:1;fill:#2a3f5f;fill-opacity:1"
+         y="354.25446"
+         style="font-size:14.2222px;line-height:0.25;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:1.33333;stroke-opacity:1"
          id="tspan36095-4">Dose</tspan><tspan
          sodipodi:role="line"
          x="257.74695"
-         y="386.19189"
-         style="font-size:14.22222233px;line-height:0.25;stroke-width:1.33333325;stroke:none;stroke-opacity:1;fill:#2a3f5f;fill-opacity:1"
-         id="tspan36099-5">amount, mg</tspan></text>
+         y="372.85861"
+         style="font-size:14.2222px;line-height:0.25;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:1.33333;stroke-opacity:1"
+         id="tspan36099-5">amount,</tspan><tspan
+         sodipodi:role="line"
+         x="257.74695"
+         y="391.46277"
+         style="font-size:14.2222px;line-height:0.25;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:1.33333;stroke-opacity:1"
+         id="tspan2419">mg</tspan></text>
   </g>
 </svg>

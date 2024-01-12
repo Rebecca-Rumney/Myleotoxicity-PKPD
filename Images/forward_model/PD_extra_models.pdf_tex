@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.5, www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'PD_extra_models.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{503.68981934bp}%
+    \setlength{\unitlength}{431.25bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,40 +50,43 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.54755991)%
+  \begin{picture}(1,0.63953704)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{PD_extra_models.pdf}}%
-    \put(0.40337249,0.07569367){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time\end{tabular}}}}%
-    \put(0.08629696,0.06499655){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_P$\end{tabular}}}}%
-    \put(0.20602141,0.06499649){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_M$\end{tabular}}}}%
-    \put(0.33470107,0.06499643){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_R$\end{tabular}}}}%
-    \put(0.06939647,0.13570691){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Proliferating \\cells, $P$\end{tabular}}}}%
-    \put(0.20346946,0.13519918){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Maturing\\cells, $M$\end{tabular}}}}%
-    \put(0.33824138,0.13690085){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating\\cells, $R$\end{tabular}}}}%
-    \put(0.00250018,0.52286237){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
-    \put(0.00608227,0.23271356){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
-    \put(0.45969825,0.51092207){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
-    \put(0.11684819,0.19411705){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
-    \put(0.13474452,0.50337029){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
-    \put(0.4720786,0.28605721){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
-    \put(0.07960031,0.51053446){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
-    \put(0.10760535,0.44257204){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Proliferating \\cells, $P$\end{tabular}}}}%
-    \put(0.24925397,0.44376605){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating\\cells, $R$\end{tabular}}}}%
-    \put(0.16480956,0.41407089){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{tr}$\end{tabular}}}}%
-    \put(0.24342166,0.37825003){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{out}$\end{tabular}}}}%
-    \put(0.05030211,0.19433952){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
-    \put(0.66207692,0.40675125){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
-    \put(0.66201955,0.24759647){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Stem\end{tabular}}}}%
-    \put(0.76228923,0.24759647){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
-    \put(0.73904094,0.40863163){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
-    \put(0.84063035,0.24811462){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
-    \put(0.74705371,0.10363723){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
-    \put(0.66916088,0.1041449){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
-    \put(0.87001828,0.40794525){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
-    \put(0.97160891,0.24981629){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
-    \put(0.87803111,0.10653292){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
-    \put(0.62636888,0.02244339){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$Q_1$\end{tabular}}}}%
-    \put(0.7145398,0.02124926){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$Q_2$\end{tabular}}}}%
+    \put(0.00292015,0.61069089){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.00710394,0.271804){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.36996011,0.59674491){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.15737839,0.58792461){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
+    \put(0.38442006,0.33410811){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
+    \put(0.09297127,0.59629219){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
+    \put(0.12568049,0.51691371){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Proliferating \\cells, $P$\end{tabular}}}}%
+    \put(0.2911227,0.51830828){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating\\cells, $R$\end{tabular}}}}%
+    \put(0.19249364,0.48362503){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{tr}$\end{tabular}}}}%
+    \put(0.2843107,0.44178712){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{out}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{PD_extra_models.pdf}}%
+    \put(0.06762887,0.34952449){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time\end{tabular}}}}%
+    \put(0.09649935,0.29050845){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_P$\end{tabular}}}}}%
+    \put(0.09649928,0.18404173){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_M$\end{tabular}}}}}%
+    \put(0.09649921,0.06961145){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_R$\end{tabular}}}}}%
+    \put(0.19533613,0.30459265){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Proliferating \\cells, $P$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{PD_extra_models.pdf}}%
+    \put(0.19479284,0.1910374){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Maturing\\cells, $M$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{PD_extra_models.pdf}}%
+    \put(0.19677393,0.0784623){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Circulating\\cells, $R$\end{tabular}}}}%
+    \put(0.27401388,0.23747267){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_\textrm{drug}$\end{tabular}}}}%
+    \put(0.27275259,0.30673861){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K_\textrm{in}$\end{tabular}}}}%
+    \put(0.60633358,0.47507587){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
+    \put(0.60626657,0.28918688){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Stem\end{tabular}}}}%
+    \put(0.72337917,0.28918688){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
+    \put(0.69622572,0.47727211){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
+    \put(0.81487973,0.28979207){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
+    \put(0.70558444,0.12104592){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$T_1$\end{tabular}}}}%
+    \put(0.61460747,0.12163887){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$P$\end{tabular}}}}%
+    \put(0.84920413,0.47647044){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
+    \put(0.96785956,0.29177958){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
+    \put(0.85856292,0.12442801){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$R$\end{tabular}}}}%
+    \put(0.56462744,0.02621345){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$Q_1$\end{tabular}}}}%
+    \put(0.66760898,0.02481873){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$Q_2$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

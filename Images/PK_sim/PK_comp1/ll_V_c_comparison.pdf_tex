@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{470.10955811bp}%
+    \setlength{\unitlength}{404.72895813bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,154 +50,137 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.72578829)%
+  \begin{picture}(1,1.05380561)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{ll_V_c_comparison.pdf}}%
-    \put(0.19519158,0.71732498){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: $V_c$, $K_{cl}$\end{tabular}}}}%
-    \put(0.07359646,0.41422278){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.07359646,0.44274758){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.07359646,0.47127888){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.07359646,0.49980368){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.07359646,0.52832848){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.046066,0.47429467){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
-    \put(0.046066,0.6237831){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
-    \put(0.07359646,0.5637112){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.07359646,0.592236){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.07359646,0.62076731){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.07359646,0.6492921){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.07359646,0.6778169){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.22746593,1.02525202){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: $V_c$, $K_{cl}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{ll_V_c_comparison.pdf}}%
-    \put(0.22044031,0.342843){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: $V_c$\end{tabular}}}}%
-    \put(0.07314534,0.03292482){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.07314534,0.06144962){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.07314534,0.08998093){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.07314534,0.11850573){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.07314534,0.14703052){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.04606945,0.09299676){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
+    \put(0.22751476,0.57235964){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: $V_c$\end{tabular}}}}%
+    \put(0.12205957,0.66022023){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.12205957,0.69335298){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.12205957,0.72649328){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.12205957,0.75962602){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.12205957,0.79275876){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.09008179,0.72999624){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
+    \put(0.09008179,0.90363328){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
+    \put(0.12205957,0.83385727){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.12205957,0.86699001){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.12205957,0.90013031){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.12205957,0.93326306){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.12205957,0.9663958){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{ll_V_c_comparison.pdf}}%
-    \put(0.11182408,0.40248198){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
-    \put(0.1802862,0.40248198){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
-    \put(0.24874831,0.40248198){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7\end{tabular}}}}%
-    \put(0.16885676,0.38374305){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.16646254,0.64658281){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.24598415,0.64658281){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
+    \put(0.32550575,0.64658281){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7\end{tabular}}}}%
+    \put(0.23270838,0.62481676){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{ll_V_c_comparison.pdf}}%
-    \put(0.29838381,0.40248198){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
-    \put(0.35273969,0.40248198){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.3\end{tabular}}}}%
-    \put(0.40709556,0.40248198){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.4\end{tabular}}}}%
-    \put(0.36829954,0.38374305){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.38315945,0.64658281){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
+    \put(0.44629607,0.64658281){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.3\end{tabular}}}}%
+    \put(0.50943268,0.64658281){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.4\end{tabular}}}}%
+    \put(0.46436948,0.62481676){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{ll_V_c_comparison.pdf}}%
-    \put(0.16931425,0.68567684){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_{c, typ}$, L\end{tabular}}}}%
+    \put(0.23323977,0.97552544){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_{c, typ}$, L\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{ll_V_c_comparison.pdf}}%
-    \put(0.36816823,0.68567684){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0.46421696,0.97552544){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0.0900858,0.27198206){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
+    \put(0.0900858,0.45468844){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
+    \put(0.12153558,0.202206){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.12153558,0.23533874){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.12153558,0.26847904){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.12153558,0.30161178){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.12153558,0.33474452){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{ll_V_c_comparison.pdf}}%
-    \put(0.12028501,0.02118401){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
-    \put(0.16462351,0.02118401){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
-    \put(0.20895576,0.02118401){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
-    \put(0.25329426,0.02118401){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7\end{tabular}}}}%
-    \put(0.16861865,0.00244524){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.17629027,0.18856855){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}4\end{tabular}}}}%
+    \put(0.22779129,0.18856855){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.27928504,0.18856855){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
+    \put(0.33078606,0.18856855){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7\end{tabular}}}}%
+    \put(0.23243181,0.16680268){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{ll_V_c_comparison.pdf}}%
-    \put(0.28234523,0.021184){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
-    \put(0.33476993,0.021184){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.4\end{tabular}}}}%
-    \put(0.39038539,0.021184){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.6\end{tabular}}}}%
-    \put(0.44600084,0.021184){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.8\end{tabular}}}}%
-    \put(0.36806134,0.00244524){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.36452997,0.18856854){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
+    \put(0.42542345,0.18856854){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.4\end{tabular}}}}%
+    \put(0.49002312,0.18856854){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.6\end{tabular}}}}%
+    \put(0.55462279,0.18856854){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.8\end{tabular}}}}%
+    \put(0.46409281,0.16680268){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{ll_V_c_comparison.pdf}}%
-    \put(0.16867529,0.31218675){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_{c, typ}$, L\end{tabular}}}}%
+    \put(0.2324976,0.52658037){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_{c, typ}$, L\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{ll_V_c_comparison.pdf}}%
-    \put(0.36807307,0.31218675){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\omega_{V_c}$\end{tabular}}}}%
-    \put(0.04606945,0.25029321){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
-    \put(0.07314534,0.19022118){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.07314534,0.21874598){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.07314534,0.24727729){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.07314534,0.27580208){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.07314534,0.30432688){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.46410643,0.52658037){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$\omega_{V_c}$\end{tabular}}}}%
+    \put(0.12153558,0.38491227){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.12153558,0.41804502){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.12153558,0.45118532){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.12153558,0.48431806){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.12153558,0.5174508){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{ll_V_c_comparison.pdf}}%
-    \put(0.59735187,0.3412497){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fixed effects model\end{tabular}}}}%
-    \put(0.59343345,0.71727638){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: $K_cl$\end{tabular}}}}%
-    \put(0.52518165,0.62236911){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
+    \put(0.73560695,1.02519556){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mixed-effects: $K_{cl}$\end{tabular}}}}%
+    \put(0.69370236,0.90335925){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{ll_V_c_comparison.pdf}}%
-    \put(0.56695727,0.55197039){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.4\end{tabular}}}}%
-    \put(0.61171999,0.55197039){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.6\end{tabular}}}}%
-    \put(0.66285811,0.55197039){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.8\end{tabular}}}}%
-    \put(0.71400232,0.55197039){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
+    \put(0.74222648,0.8215882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.4\end{tabular}}}}%
+    \put(0.79422024,0.8215882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.6\end{tabular}}}}%
+    \put(0.8536193,0.8215882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.8\end{tabular}}}}%
+    \put(0.91302544,0.8215882){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{ll_V_c_comparison.pdf}}%
-    \put(0.65005796,0.68567684){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_c$, L\end{tabular}}}}%
-    \put(0.55271208,0.56371119){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.55271208,0.59223599){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.55271208,0.6207673){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.55271208,0.6492921){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.55271208,0.6778169){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.81734409,0.6509467){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}CMA-ES run result\end{tabular}}}}%
+    \put(0.83875139,0.97689382){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_c$, L\end{tabular}}}}%
+    \put(0.72568009,0.83522564){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.72568009,0.86835838){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.72568009,0.90149868){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.72568009,0.93463143){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.72568009,0.96776417){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.62407041){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 1\end{tabular}}}}%
+    \put(0.7744182,0.64521445){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0.8536193,0.64521445){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.2\end{tabular}}}}%
+    \put(0.93282748,0.64521445){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.4\end{tabular}}}}%
+    \put(0.83877109,0.62344836){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.72512689,0.65885187){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.72512689,0.69198461){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.72512689,0.72512491){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.72512689,0.75825765){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.72512689,0.79139039){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.69370236,0.72862794){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
+    \put(0.72512687,0.20220616){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.72512687,0.23533891){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.72512687,0.26847921){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.72512687,0.30161195){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.72512687,0.33474469){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.69370235,0.27198234){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=15]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.59727872){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 2\end{tabular}}}}%
+    \put(0.73276318,0.18856873){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
+    \put(0.78598063,0.18856873){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6.5\end{tabular}}}}%
+    \put(0.83919808,0.18856873){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7\end{tabular}}}}%
+    \put(0.89240874,0.18856873){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7.5\end{tabular}}}}%
+    \put(0.83605216,0.16680268){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
+    \put(0.69370235,0.45742523){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
+    \put(0.72512687,0.38764912){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
+    \put(0.72512687,0.42078187){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
+    \put(0.72512687,0.45392217){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
+    \put(0.72512687,0.48705491){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
+    \put(0.72512687,0.52018765){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.57048703){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 3\end{tabular}}}}%
+    \put(0.83629618,0.5293173){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_c$, L\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.54369534){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 4\end{tabular}}}}%
+    \put(0.74502652,0.57050894){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fixed effects model\end{tabular}}}}%
+    \put(0.02625411,0.67391847){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.98431402}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: two\\M-E parameter\end{tabular}}}}}%
+    \put(0.02625411,0.84755547){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.98431402}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: one\\M-E parameter\end{tabular}}}}}%
+    \put(0.02625411,0.21742524){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.98431402}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: two\\M-E parameter\end{tabular}}}}}%
+    \put(0.02625411,0.40013153){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.98431402}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: one\\M-E parameter\end{tabular}}}}}%
+    \put(0.02692654,1.02321942){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.85490203}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.63831288,1.02321942){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.85490203}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.0224489,0.57069838){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.85490203}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.63831288,0.57099153){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.85490203}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.51690365){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 5\end{tabular}}}}%
+    \put(0.72498007,0.11352931){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Confidence \\Interval\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=19]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.49011196){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 6\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=20]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.46332027){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 7\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=21]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.43652858){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 8\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=22]{ll_V_c_comparison.pdf}}%
-    \put(0.81734409,0.39445151){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mononlix run result\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=23]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.36757521){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 1\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=24]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.34078352){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 2\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=25]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.31399183){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 3\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=26]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.28720014){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 4\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=27]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.26040845){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 5\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=28]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.23361676){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 6\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=29]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.20682507){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 7\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=30]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.18003338){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set 8\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=31]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.12849512){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Confidence \\Interval\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=32]{ll_V_c_comparison.pdf}}%
-    \put(0.8476082,0.07787194){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-generating \\parameter\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=33]{ll_V_c_comparison.pdf}}%
-    \put(0.00775356,0.42881557){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.98431402}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: two\\M-E parameter\end{tabular}}}}}%
-    \put(0.01167034,0.58587273){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.98431402}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: one\\M-E parameter\end{tabular}}}}}%
-    \put(0.01301269,0.04885922){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.98431402}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: two\\M-E parameter\end{tabular}}}}}%
-    \put(0.01692947,0.20591634){\color[rgb]{0.16470588,0.24705882,0.37254902}\transparent{0.98431402}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data: one\\M-E parameter\end{tabular}}}}}%
-    \put(0.59467192,0.40012586){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
-    \put(0.66285811,0.40012586){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.2\end{tabular}}}}%
-    \put(0.73105039,0.40012586){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5.4\end{tabular}}}}%
-    \put(0.65007491,0.38138689){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
-    \put(0.55223581,0.41186664){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.55223581,0.44039144){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.55223581,0.46892275){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.55223581,0.49744755){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.55223581,0.52597235){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.52518165,0.47193859){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
-    \put(0.55223579,0.03056868){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.55223579,0.05909348){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.55223579,0.08762478){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.55223579,0.11614958){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.55223579,0.14467438){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.52518165,0.09064072){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
-    \put(0.55881009,0.01882788){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
-    \put(0.6046263,0.01882788){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6.5\end{tabular}}}}%
-    \put(0.65044252,0.01882788){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7\end{tabular}}}}%
-    \put(0.69625289,0.01882788){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7.5\end{tabular}}}}%
-    \put(0.64773413,0.00008894){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Parameter Value\end{tabular}}}}%
-    \put(0.52518165,0.2502931){\color[rgb]{0.16470588,0.24705882,0.37254902}\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}L-L Score\end{tabular}}}}}%
-    \put(0.55223579,0.19022112){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−4\end{tabular}}}}%
-    \put(0.55223579,0.21874592){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−3\end{tabular}}}}%
-    \put(0.55223579,0.24727722){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−2\end{tabular}}}}%
-    \put(0.55223579,0.27580202){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}−1\end{tabular}}}}%
-    \put(0.55223579,0.30432682){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
-    \put(0.64794421,0.31218676){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}$V_c$, L\end{tabular}}}}%
+    \put(0.72498007,0.05472836){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-generating \\parameter\end{tabular}}}}%
+    \put(0.0689307,0.07957903){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}CMA-ES run result\end{tabular}}}}%
+    \put(0.06933015,0.10692309){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Data-Set\end{tabular}}}}%
+    \put(0.0689307,0.04698527){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mononlix run result\end{tabular}}}}%
+    \put(0.28023674,0.10673114){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0.33682907,0.10673114){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0.38835159,0.10692309){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0.4373138,0.10673114){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4\end{tabular}}}}%
+    \put(0.48544624,0.10692309){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0.53420249,0.10692309){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6\end{tabular}}}}%
+    \put(0.58299994,0.10673114){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}7\end{tabular}}}}%
+    \put(0.63160315,0.10692309){\color[rgb]{0.16470588,0.24705882,0.37254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}8\end{tabular}}}}%
   \end{picture}%
 \endgroup%

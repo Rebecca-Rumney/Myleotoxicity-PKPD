@@ -2161,10 +2161,11 @@ class Plot_Models():
                 extrapolate = profile_opts['projection']
             else:
                 extrapolate = 0
-            x_values, result, _, _ = self.f_over_param_range_sequential(
+
+            x_values, result = self.f_over_param_range_sequential(
                 f, i_param, param_ranges[i_param], params_ref, n_evals=n_evals,
                 extrapolate=extrapolate
-            )
+            )[:2]
             args = [i_param+self.n_ind_params, i_param+self.n_ind_params]
 
             # Plot function

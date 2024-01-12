@@ -29,7 +29,7 @@
      fit-margin-bottom="0"
      inkscape:zoom="1.2293771"
      inkscape:cx="224.91065"
-     inkscape:cy="183.01951"
+     inkscape:cy="117.94591"
      inkscape:window-width="1920"
      inkscape:window-height="839"
      inkscape:window-x="0"
@@ -14637,7 +14637,7 @@
        dy="0"
        style="font-weight:normal;font-size:1.95883px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;stroke-width:0.115225"
        id="text16290"
-       transform="scale(0.92777595,1.0778464)">Mixed-effects: V_c</text>
+       transform="scale(0.92777595,1.0778464)">Mixed-effects: $V_c$</text>
     <text
        class="xtitle"
        x="56.576977"

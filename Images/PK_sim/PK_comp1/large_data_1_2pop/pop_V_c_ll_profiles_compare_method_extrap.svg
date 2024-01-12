@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="170.78491mm"
-   height="228.72473mm"
-   viewBox="0 0 170.78492 228.72473"
+   width="583.64722"
+   height="773.41931"
+   viewBox="0 0 154.42334 204.63385"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="359.5"
-     inkscape:cy="482.5"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="293.80287"
+     inkscape:cy="444.41661"
      inkscape:window-width="1920"
      inkscape:window-height="964"
      inkscape:window-x="1080"
@@ -36,7 +36,10 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     units="px"
+     height="619.73726pt"
+     width="575px" />
   <defs
      id="defs2">
     <g
@@ -2334,67 +2337,67 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(1.1326517,-1.6761491)">
+     transform="translate(1.1326517,-1.7473091)">
     <g
        class="imagelayer"
        id="g11588"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,27.053324)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,25.873879)" />
     <g
        class="shapelayer"
        id="g11590"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,27.053324)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,25.873879)" />
     <g
        class="imagelayer"
        id="g11699"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,27.053324)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,25.873879)" />
     <g
        class="shapelayer"
        id="g11701"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,27.053324)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,25.873879)" />
     <g
        class="g-gtitle"
        id="g11705"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,27.053324)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,25.873879)" />
     <g
        class="g-xtitle"
        id="g11707"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,27.053324)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,25.873879)" />
     <g
        class="g-ytitle"
        id="g11709"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,27.053324)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,25.873879)" />
     <g
        class="imagelayer"
        id="g12459"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,6.1143127)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,5.908042)" />
     <g
        class="shapelayer"
        id="g12461"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,6.1143127)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,5.908042)" />
     <g
        class="imagelayer"
        id="g12570"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,6.1143127)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,5.908042)" />
     <g
        class="shapelayer"
        id="g12572"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,6.1143127)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,5.908042)" />
     <g
        class="g-gtitle"
        id="g12576"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,6.1143127)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,5.908042)" />
     <g
        class="g-xtitle"
        id="g12578"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,6.1143127)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,5.908042)" />
     <g
        class="g-ytitle"
        id="g12580"
-       transform="matrix(0.23265568,0,0,0.23265568,0.68453814,6.1143127)" />
+       transform="matrix(0.22184264,0,0,0.22184264,0.60008135,5.908042)" />
     <g
        class="layer-subplot"
        id="g13606"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="shapelayer"
          id="g13602" />
@@ -2405,7 +2408,7 @@
     <g
        class="minor-gridlayer"
        id="g13612"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="x"
          id="g13608" />
@@ -2417,48 +2420,48 @@
        class="xlines-below"
        id="path13642"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <path
        class="ylines-below"
        id="path13644"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <g
        class="overlines-below"
        id="g13646"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-below"
        id="g13648"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="yaxislayer-below"
        id="g13650"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-below"
        id="g13652"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overplot"
        id="g13714"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overlines-above"
        id="g13720"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-above"
        id="g13722"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-above"
        id="g13750"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="layer-subplot"
        id="g13758"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="shapelayer"
          id="g13754" />
@@ -2469,7 +2472,7 @@
     <g
        class="minor-gridlayer"
        id="g13764"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="x2"
          id="g13760" />
@@ -2481,48 +2484,48 @@
        class="xlines-below"
        id="path13794"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <path
        class="ylines-below"
        id="path13796"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <g
        class="overlines-below"
        id="g13798"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-below"
        id="g13800"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="yaxislayer-below"
        id="g13802"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-below"
        id="g13804"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overplot"
        id="g13866"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overlines-above"
        id="g13872"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-above"
        id="g13874"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-above"
        id="g13902"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="layer-subplot"
        id="g13910"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="shapelayer"
          id="g13906" />
@@ -2533,7 +2536,7 @@
     <g
        class="minor-gridlayer"
        id="g13916"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="x3"
          id="g13912" />
@@ -2545,48 +2548,48 @@
        class="xlines-below"
        id="path13944"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <path
        class="ylines-below"
        id="path13946"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <g
        class="overlines-below"
        id="g13948"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-below"
        id="g13950"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="yaxislayer-below"
        id="g13952"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-below"
        id="g13954"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overplot"
        id="g13974"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overlines-above"
        id="g13980"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-above"
        id="g13982"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-above"
        id="g14006"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="layer-subplot"
        id="g14014"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="shapelayer"
          id="g14010" />
@@ -2597,7 +2600,7 @@
     <g
        class="minor-gridlayer"
        id="g14020"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="x4"
          id="g14016" />
@@ -2609,48 +2612,48 @@
        class="xlines-below"
        id="path14046"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <path
        class="ylines-below"
        id="path14048"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <g
        class="overlines-below"
        id="g14050"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-below"
        id="g14052"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="yaxislayer-below"
        id="g14054"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-below"
        id="g14056"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overplot"
        id="g14076"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overlines-above"
        id="g14082"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-above"
        id="g14084"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-above"
        id="g14104"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="layer-subplot"
        id="g14112"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="shapelayer"
          id="g14108" />
@@ -2661,7 +2664,7 @@
     <g
        class="minor-gridlayer"
        id="g14118"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="x5"
          id="g14114" />
@@ -2673,48 +2676,48 @@
        class="xlines-below"
        id="path14144"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <path
        class="ylines-below"
        id="path14146"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <g
        class="overlines-below"
        id="g14148"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-below"
        id="g14150"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="yaxislayer-below"
        id="g14152"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-below"
        id="g14154"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overplot"
        id="g14174"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overlines-above"
        id="g14180"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-above"
        id="g14182"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-above"
        id="g14202"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="layer-subplot"
        id="g14210"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="shapelayer"
          id="g14206" />
@@ -2725,7 +2728,7 @@
     <g
        class="minor-gridlayer"
        id="g14216"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="x6"
          id="g14212" />
@@ -2737,48 +2740,48 @@
        class="xlines-below"
        id="path14242"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <path
        class="ylines-below"
        id="path14244"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <g
        class="overlines-below"
        id="g14246"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-below"
        id="g14248"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="yaxislayer-below"
        id="g14250"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-below"
        id="g14252"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overplot"
        id="g14272"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overlines-above"
        id="g14278"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-above"
        id="g14280"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-above"
        id="g14300"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="layer-subplot"
        id="g14308"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="shapelayer"
          id="g14304" />
@@ -2789,7 +2792,7 @@
     <g
        class="minor-gridlayer"
        id="g14314"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="x7"
          id="g14310" />
@@ -2801,39 +2804,39 @@
        class="xlines-below"
        id="path14338"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <path
        class="ylines-below"
        id="path14340"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <g
        class="overlines-below"
        id="g14342"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-below"
        id="g14344"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="yaxislayer-below"
        id="g14346"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-below"
        id="g14348"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overplot"
        id="g14368"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overlines-above"
        id="g14374"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        id="g127657"
-       transform="matrix(0.78914958,0,0,0.60605184,-0.23882009,11.441823)">
+       transform="matrix(0.72693296,0,0,0.52087177,-0.30928985,14.200353)">
       <rect
          class="bg"
          x="8.9856195"
@@ -3109,11 +3112,11 @@
     <g
        class="overaxes-above"
        id="g14408"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="layer-subplot"
        id="g14416"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="shapelayer"
          id="g14412" />
@@ -3124,7 +3127,7 @@
     <g
        class="minor-gridlayer"
        id="g14422"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)">
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)">
       <g
          class="x8"
          id="g14418" />
@@ -3136,39 +3139,39 @@
        class="xlines-below"
        id="path14448"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <path
        class="ylines-below"
        id="path14450"
        d=""
-       style="stroke-width:0.264583" />
+       style="stroke-width:0.252286" />
     <g
        class="overlines-below"
        id="g14452"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="xaxislayer-below"
        id="g14454"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="yaxislayer-below"
        id="g14456"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overaxes-below"
        id="g14458"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overplot"
        id="g14478"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="overlines-above"
        id="g14484"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        id="g28692"
-       transform="matrix(0.78914958,0,0,0.60605184,24.81669,6.6312867)">
+       transform="matrix(0.72693296,0,0,0.52087177,22.770841,10.065934)">
       <rect
          class="bg"
          x="99.03656"
@@ -3443,7 +3446,7 @@
     </g>
     <g
        id="g28725"
-       transform="matrix(0.78914958,0,0,0.78914958,24.81669,-29.295601)">
+       transform="matrix(0.72693296,0,0,0.67823528,22.770841,-20.81146)">
       <rect
          class="bg"
          x="99.03656"
@@ -3606,7 +3609,7 @@
     </g>
     <g
        id="g138638"
-       transform="matrix(0.78914958,0,0,0.78914958,-0.23882009,0.35341646)">
+       transform="matrix(0.72693296,0,0,0.67823528,-0.30928985,4.6704128)">
       <rect
          class="bg"
          x="130.78658"
@@ -3721,7 +3724,7 @@
     <g
        class="yaxislayer-above"
        id="g14298"
-       transform="matrix(0.20879583,0,0,0.20879583,13.116064,-6.5601738)">
+       transform="matrix(0.19233435,0,0,0.17944975,11.992694,-1.2714782)">
       <g
          class="y6tick"
          id="g14284">
@@ -3769,7 +3772,7 @@
     </g>
     <g
        id="g138583"
-       transform="matrix(0.78914958,0,0,0.78914958,-0.23882009,0.35341646)">
+       transform="matrix(0.72693296,0,0,0.67823528,-0.30928985,4.6704128)">
       <rect
          class="bg"
          x="130.78658"
@@ -3955,7 +3958,7 @@
     <g
        class="yaxislayer-above"
        id="g14528"
-       transform="matrix(0.20879583,0,0,0.20879583,13.116064,-16.999971)">
+       transform="matrix(0.19233435,0,0,0.17944975,11.992694,-10.243971)">
       <g
          class="y8tick"
          id="g14514">
@@ -4004,10 +4007,10 @@
     <g
        class="overaxes-above"
        id="g14530"
-       transform="matrix(0.26458333,0,0,0.26458333,-14.82688,42.03921)" />
+       transform="matrix(0.2522864,0,0,0.2522864,-14.190419,40.163273)" />
     <g
        class="groups"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,64.994168)"
+       transform="matrix(0.19233435,0,0,0.17944975,63.470972,60.225961)"
        id="g14608">
       <g
          class="traces"
@@ -4065,7 +4068,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,82.119348)"
+       transform="matrix(0.19233435,0,0,0.17944975,63.470972,74.944211)"
        id="g14624">
       <text
          class="legendtext"
@@ -4102,7 +4105,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,86.18043)"
+       transform="matrix(0.19233435,0,0,0.17944975,63.470972,78.434512)"
        id="g14642">
       <text
          class="legendtext"
@@ -4146,7 +4149,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,94.014185)"
+       transform="matrix(0.19233435,0,0,0.17944975,63.470972,85.167239)"
        id="g14714">
       <text
          class="legendtext"
@@ -4191,7 +4194,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,99.551184)"
+       transform="matrix(0.19233435,0,0,0.17944975,63.470972,89.926018)"
        id="g14732">
       <text
          class="legendtext"
@@ -4235,7 +4238,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,107.1618)"
+       transform="matrix(0.19233435,0,0,0.17944975,63.470972,96.466971)"
        id="g14804">
       <text
          class="legendtext"
@@ -4280,7 +4283,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.20879583,0,0,0.20879583,69.000256,112.28122)"
+       transform="matrix(0.19233435,0,0,0.17944975,63.470972,100.86686)"
        id="g14822">
       <text
          class="legendtext"
@@ -4324,18 +4327,18 @@
     </g>
     <rect
        class="scrollbar"
-       rx="5.2916665"
-       ry="0.79374999"
+       rx="5.0457277"
+       ry="0.75685918"
        width="0"
        height="0"
-       style="fill:#808ba4;fill-opacity:1;stroke-width:0.264583"
-       x="178.25015"
-       y="68.497543"
+       style="fill:#808ba4;fill-opacity:1;stroke-width:0.252286"
+       x="169.91306"
+       y="65.391914"
        id="rect14882" />
     <g
        class="layer-subplot"
        id="g11598-2"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)">
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)">
       <g
          class="shapelayer"
          id="g11594-9" />
@@ -4346,7 +4349,7 @@
     <g
        class="minor-gridlayer"
        id="g11604-2"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)">
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)">
       <g
          class="x"
          id="g11600-7" />
@@ -4357,7 +4360,7 @@
     <g
        class="gridlayer"
        id="g11634-9"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)">
+       transform="matrix(0.17139815,0,0,0.39504398,-0.96765363,4.8835045)">
       <g
          class="x"
          id="g11624-3">
@@ -4442,38 +4445,38 @@
     <g
        class="zerolinelayer"
        id="g11636-7"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <path
        class="xlines-below"
        id="path11638-5"
        d=""
-       style="stroke-width:0.280247" />
+       style="stroke-width:0.267222" />
     <path
        class="ylines-below"
        id="path11640-9"
        d=""
-       style="stroke-width:0.280247" />
+       style="stroke-width:0.267222" />
     <g
        class="overlines-below"
        id="g11642-2"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <g
        class="xaxislayer-below"
        id="g11644-2"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <g
        class="yaxislayer-below"
        id="g11646-8"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <g
        class="overaxes-below"
        id="g11648-9"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <g
        class="plot"
        clip-path="url(#clip8457e1xyplot-3)"
        id="g11656-7"
-       transform="matrix(0.18933554,0,0,0.41429919,-0.9596113,5.0398373)">
+       transform="matrix(0.1711873,0,0,0.39504398,-0.96765363,4.8835045)">
       <g
          class="heatmaplayer mlayer"
          id="g11654-3">
@@ -4495,52 +4498,52 @@
     <g
        class="overplot"
        id="g11658-2"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <path
        class="xlines-above crisp"
-       d="M -0.9596113,5.0398373"
-       style="fill:none;stroke-width:0.280247"
+       d="M -0.96765363,4.8835045"
+       style="fill:none;stroke-width:0.260211"
        id="path11660-9" />
     <path
        class="ylines-above crisp"
-       d="M -0.9596113,5.0398373"
-       style="fill:none;stroke-width:0.280247"
+       d="M -0.96765363,4.8835045"
+       style="fill:none;stroke-width:0.260211"
        id="path11662-3" />
     <g
        class="overlines-above"
        id="g11664-1"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <g
        class="xaxislayer-above"
        id="g11666-9"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <g
        class="yaxislayer-above"
        id="g11668-4"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <g
        class="overaxes-above"
        id="g11670-7"
-       transform="matrix(0.18956874,0,0,0.41429919,-0.9596113,5.0398373)" />
+       transform="matrix(0.18075823,0,0,0.39504398,-0.96765363,4.8835045)" />
     <rect
-       x="4.2375207"
-       y="25.878452"
-       width="165.24011"
-       height="16.524012"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.1836"
+       x="3.7313216"
+       y="24.753613"
+       width="149.40147"
+       height="15.756032"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.170474"
        id="rect11563" />
     <rect
        class="bg"
-       x="4.2375207"
-       y="25.878452"
-       width="165.24011"
-       height="16.524012"
+       x="3.7313216"
+       y="24.753613"
+       width="149.40147"
+       height="15.756032"
        style="fill:#e5ecf6;fill-opacity:1;stroke-width:0"
        id="rect11584" />
     <g
        class="layer-subplot"
        id="g11598"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)">
       <g
          class="shapelayer"
          id="g11594" />
@@ -4551,7 +4554,7 @@
     <g
        class="minor-gridlayer"
        id="g11604"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)">
       <g
          class="x"
          id="g11600" />
@@ -4562,7 +4565,7 @@
     <g
        class="gridlayer"
        id="g11634"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="x"
          id="g11624">
@@ -4647,37 +4650,37 @@
     <g
        class="zerolinelayer"
        id="g11636"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <path
        class="xlines-below"
        id="path11638"
        d=""
-       style="stroke-width:0.1836" />
+       style="stroke-width:0.175067" />
     <path
        class="ylines-below"
        id="path11640"
        d=""
-       style="stroke-width:0.1836" />
+       style="stroke-width:0.175067" />
     <g
        class="overlines-below"
        id="g11642"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="xaxislayer-below"
        id="g11644"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="yaxislayer-below"
        id="g11646"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="overaxes-below"
        id="g11648"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="heatmaplayer mlayer"
        id="g11654"
-       transform="matrix(0.18360013,0,0,0.18360013,4.1373483,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.640751,24.753612)">
       <g
          class="hm"
          id="g11652">
@@ -4695,27 +4698,27 @@
     <g
        class="overplot"
        id="g11658"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="overlines-above"
        id="g11664"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="xaxislayer-above"
        id="g11666"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="yaxislayer-above"
        id="g11668"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="overaxes-above"
        id="g11670"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,24.753612)" />
     <g
        class="annotation-text-g"
        id="g11839"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,0.38220754,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(5,23)"
@@ -4742,7 +4745,7 @@
     <g
        class="annotation-text-g"
        id="g11849"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(95,23)"
@@ -4761,13 +4764,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11845">9.3008</text>
+           id="text11845">9.3</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11859"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(185,23)"
@@ -4786,13 +4789,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11855">9.3008</text>
+           id="text11855">9.3</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11869"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(275,23)"
@@ -4811,13 +4814,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11865">9.3008</text>
+           id="text11865">9.3</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11879"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(365,23)"
@@ -4836,13 +4839,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11875">93.9939</text>
+           id="text11875">93.99</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11889"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(455,23)"
@@ -4861,13 +4864,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11885">93.9939</text>
+           id="text11885">93.99</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11899"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(545,23)"
@@ -4886,13 +4889,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11895">93.9939</text>
+           id="text11895">93.99</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11909"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(635,23)"
@@ -4911,13 +4914,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11905">22.6926</text>
+           id="text11905">22.69</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11919"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(725,23)"
@@ -4936,13 +4939,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11915">22.6926</text>
+           id="text11915">22.69</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11929"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(815,23)"
@@ -4961,13 +4964,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11925">22.6926</text>
+           id="text11925">22.69</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11941"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,0.38220754,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(5,46)"
@@ -4994,7 +4997,7 @@
     <g
        class="annotation-text-g"
        id="g11951"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(95,46)"
@@ -5013,13 +5016,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11947">0.3013</text>
+           id="text11947">0.3</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11961"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(185,46)"
@@ -5038,13 +5041,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11957">0.3013</text>
+           id="text11957">0.3</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11971"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(275,46)"
@@ -5063,13 +5066,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11967">0.3013</text>
+           id="text11967">0.3</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11981"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(365,46)"
@@ -5088,13 +5091,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11977">101.1471</text>
+           id="text11977">101.15</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g11991"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(455,46)"
@@ -5113,13 +5116,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11987">101.1471</text>
+           id="text11987">101.15</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12001"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(545,46)"
@@ -5138,13 +5141,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text11997">101.1471</text>
+           id="text11997">101.15</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12011"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(635,46)"
@@ -5163,13 +5166,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12007">0.3223</text>
+           id="text12007">0.32</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12021"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(725,46)"
@@ -5188,13 +5191,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12017">0.3223</text>
+           id="text12017">0.32</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12031"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(815,46)"
@@ -5213,13 +5216,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12027">0.3223</text>
+           id="text12027">0.32</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12043"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,0.38220754,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(5,68)"
@@ -5246,7 +5249,7 @@
     <g
        class="annotation-text-g"
        id="g12053"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(95,68)"
@@ -5265,13 +5268,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12049">9.6021</text>
+           id="text12049">9.6</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12063"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(185,68)"
@@ -5290,13 +5293,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12059">9.6021</text>
+           id="text12059">9.6</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12073"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(275,68)"
@@ -5315,13 +5318,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12069">9.6021</text>
+           id="text12069">9.6</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12083"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(365,68)"
@@ -5340,13 +5343,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12079">195.141</text>
+           id="text12079">195.14</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12093"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(455,68)"
@@ -5365,13 +5368,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12089">195.141</text>
+           id="text12089">195.14</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12103"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(545,68)"
@@ -5390,13 +5393,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12099">195.141</text>
+           id="text12099">195.14</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12113"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(635,68)"
@@ -5415,13 +5418,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12109">23.0149</text>
+           id="text12109">23.01</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12123"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(725,68)"
@@ -5440,13 +5443,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12119">23.0149</text>
+           id="text12119">23.01</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12133"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,25.878452)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,24.753612)">
       <g
          class="cursor-pointer"
          transform="translate(815,68)"
@@ -5465,28 +5468,28 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12129">23.0149</text>
+           id="text12129">23.01</text>
       </g>
     </g>
     <rect
-       x="4.2375207"
-       y="9.3544407"
-       width="165.24011"
-       height="16.524012"
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.1836"
+       x="3.7313216"
+       y="8.9975796"
+       width="149.40147"
+       height="15.756032"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.170474"
        id="rect12434" />
     <rect
        class="bg"
-       x="4.2375207"
-       y="9.3544407"
-       width="165.24011"
-       height="16.524012"
+       x="3.7313216"
+       y="8.9975796"
+       width="149.40147"
+       height="15.756032"
        style="fill:#e5ecf6;fill-opacity:1;stroke-width:0"
        id="rect12455" />
     <g
        class="layer-subplot"
        id="g12469"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)">
       <g
          class="shapelayer"
          id="g12465" />
@@ -5497,7 +5500,7 @@
     <g
        class="minor-gridlayer"
        id="g12475"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)">
       <g
          class="x"
          id="g12471" />
@@ -5508,7 +5511,7 @@
     <g
        class="gridlayer"
        id="g12505"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="x"
          id="g12495">
@@ -5593,37 +5596,37 @@
     <g
        class="zerolinelayer"
        id="g12507"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <path
        class="xlines-below"
        id="path12509"
        d=""
-       style="stroke-width:0.1836" />
+       style="stroke-width:0.175067" />
     <path
        class="ylines-below"
        id="path12511"
        d=""
-       style="stroke-width:0.1836" />
+       style="stroke-width:0.175067" />
     <g
        class="overlines-below"
        id="g12513"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="xaxislayer-below"
        id="g12515"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="yaxislayer-below"
        id="g12517"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="overaxes-below"
        id="g12519"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="heatmaplayer mlayer"
        id="g12525"
-       transform="matrix(0.18360013,0,0,0.18360013,4.1373483,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.640751,8.9975796)">
       <g
          class="hm"
          id="g12523">
@@ -5641,27 +5644,27 @@
     <g
        class="overplot"
        id="g12529"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="overlines-above"
        id="g12535"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="xaxislayer-above"
        id="g12537"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="yaxislayer-above"
        id="g12539"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="overaxes-above"
        id="g12541"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)" />
+       transform="matrix(0.17506702,0,0,0.17506702,3.9879335,8.9975796)" />
     <g
        class="annotation-text-g"
        id="g12602"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(95,1)"
@@ -5688,7 +5691,7 @@
     <g
        class="annotation-text-g"
        id="g12614"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(185,1)"
@@ -5715,7 +5718,7 @@
     <g
        class="annotation-text-g"
        id="g12626"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(275,1)"
@@ -5742,7 +5745,7 @@
     <g
        class="annotation-text-g"
        id="g12638"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(365,1)"
@@ -5769,7 +5772,7 @@
     <g
        class="annotation-text-g"
        id="g12650"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(455,1)"
@@ -5796,7 +5799,7 @@
     <g
        class="annotation-text-g"
        id="g12662"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(545,1)"
@@ -5823,7 +5826,7 @@
     <g
        class="annotation-text-g"
        id="g12674"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(635,1)"
@@ -5850,7 +5853,7 @@
     <g
        class="annotation-text-g"
        id="g12602-1"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,5.2648461)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,5.0980557)">
       <g
          class="cursor-pointer"
          transform="translate(95,1)"
@@ -5877,7 +5880,7 @@
     <g
        class="annotation-text-g"
        id="g12638-5"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,5.2648461)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,5.0980557)">
       <g
          class="cursor-pointer"
          transform="translate(365,1)"
@@ -5904,7 +5907,7 @@
     <g
        class="annotation-text-g"
        id="g12674-5"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,5.2648461)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,5.0980557)">
       <g
          class="cursor-pointer"
          transform="translate(635,1)"
@@ -5931,7 +5934,7 @@
     <g
        class="annotation-text-g"
        id="g12686"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(725,1)"
@@ -5958,7 +5961,7 @@
     <g
        class="annotation-text-g"
        id="g12698"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(815,1)"
@@ -5985,7 +5988,7 @@
     <g
        class="annotation-text-g"
        id="g12710"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,0.38220754,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(5,23)"
@@ -6012,7 +6015,7 @@
     <g
        class="annotation-text-g"
        id="g12720"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(95,23)"
@@ -6031,13 +6034,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12716">12.7854</text>
+           id="text12716">12.79</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12730"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(185,23)"
@@ -6056,13 +6059,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12726">12.6508</text>
+           id="text12726">12.65</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12740"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(275,23)"
@@ -6081,13 +6084,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12736">11.3079</text>
+           id="text12736">11.31</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12750"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(365,23)"
@@ -6106,13 +6109,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12746">3.9794</text>
+           id="text12746">3.98</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12760"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(455,23)"
@@ -6131,13 +6134,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12756">3.9524</text>
+           id="text12756">3.95</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12770"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(545,23)"
@@ -6156,13 +6159,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12766">3.9787</text>
+           id="text12766">3.98</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12780"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(635,23)"
@@ -6181,13 +6184,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12776">38.0813</text>
+           id="text12776">38.08</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12790"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(725,23)"
@@ -6206,13 +6209,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12786">38.1601</text>
+           id="text12786">38.16</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12800"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(815,23)"
@@ -6231,13 +6234,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12796">38.0903</text>
+           id="text12796">38.09</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12812"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,0.38220754,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(5,46)"
@@ -6264,7 +6267,7 @@
     <g
        class="annotation-text-g"
        id="g12822"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(95,46)"
@@ -6283,13 +6286,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12818">10.1931</text>
+           id="text12818">10.19</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12832"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(185,46)"
@@ -6308,13 +6311,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12828">9.9461</text>
+           id="text12828">9.95</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12842"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(275,46)"
@@ -6333,13 +6336,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12838">10.0233</text>
+           id="text12838">10.02</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12852"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(365,46)"
@@ -6358,13 +6361,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12848">11.8241</text>
+           id="text12848">11.82</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12862"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(455,46)"
@@ -6383,13 +6386,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12858">11.6408</text>
+           id="text12858">11.64</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12872"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(545,46)"
@@ -6408,13 +6411,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12868">11.6471</text>
+           id="text12868">11.65</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12882"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(635,46)"
@@ -6433,13 +6436,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12878">41.3345</text>
+           id="text12878">41.33</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12892"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(725,46)"
@@ -6458,13 +6461,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12888">41.3049</text>
+           id="text12888">41.3</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12902"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(815,46)"
@@ -6483,13 +6486,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12898">40.7069</text>
+           id="text12898">40.77</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12914"
-       transform="matrix(0.18360013,0,0,0.18360013,0.53335393,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,0.38220754,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(5,68)"
@@ -6516,7 +6519,7 @@
     <g
        class="annotation-text-g"
        id="g12924"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(95,68)"
@@ -6535,13 +6538,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12920">22.9785</text>
+           id="text12920">22.98</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12934"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(185,68)"
@@ -6560,13 +6563,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12930">22.5968</text>
+           id="text12930">22.6</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12944"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(275,68)"
@@ -6585,13 +6588,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12940">21.3312</text>
+           id="text12940">21.33</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12954"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(365,68)"
@@ -6610,13 +6613,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12950">15.8035</text>
+           id="text12950">15.80</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12964"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(455,68)"
@@ -6635,13 +6638,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12960">15.5932</text>
+           id="text12960">15.59</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12974"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(545,68)"
@@ -6660,13 +6663,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12970">15.6257</text>
+           id="text12970">15.63</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12984"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(635,68)"
@@ -6685,13 +6688,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12980">79.4158</text>
+           id="text12980">79.46</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12994"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(725,68)"
@@ -6710,13 +6713,13 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text12990">79.465</text>
+           id="text12990">79.47</text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g13004"
-       transform="matrix(0.18360013,0,0,0.18360013,4.2375208,9.3544404)">
+       transform="matrix(0.16600164,0,0,0.17506702,3.7313217,8.9975796)">
       <g
          class="cursor-pointer"
          transform="translate(815,68)"
@@ -6735,33 +6738,33 @@
            x="2"
            y="15"
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#000000;fill-opacity:1"
-           id="text13000">78.7972</text>
+           id="text13000">78.8</text>
       </g>
     </g>
     <text
        class="annotation-text"
        text-anchor="start"
-       x="-19.517059"
-       y="2.2249408"
-       style="font-size:2.2032px;font-family:'Open Sans', verdana, arial, sans-serif;text-align:center;text-anchor:middle;white-space:pre;fill:#ffffff;fill-opacity:1;stroke-width:0.1836"
+       x="-18.197592"
+       y="1.963156"
+       style="font-size:2.04568px;font-family:'Open Sans', verdana, arial, sans-serif;text-align:center;text-anchor:middle;white-space:pre;fill:#ffffff;fill-opacity:1;stroke-width:0.170474"
        id="text12910-3"
-       transform="rotate(-90)"><tspan
-         style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.1836"
+       transform="matrix(0,-1.0269421,0.9737647,0,0,0)"><tspan
+         style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.170474"
          id="tspan12908-6">TIME</tspan></text>
     <text
        class="annotation-text"
        text-anchor="start"
-       x="-35.129715"
-       y="2.2496839"
-       style="font-size:2.2032px;font-family:'Open Sans', verdana, arial, sans-serif;text-align:center;text-anchor:middle;white-space:pre;fill:#ffffff;fill-opacity:1;stroke-width:0.1836"
+       x="-32.694061"
+       y="1.9861301"
+       style="font-size:2.04568px;font-family:'Open Sans', verdana, arial, sans-serif;text-align:center;text-anchor:middle;white-space:pre;fill:#ffffff;fill-opacity:1;stroke-width:0.170474"
        id="text12910-3-7"
-       transform="rotate(-90)"><tspan
-         style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.1836"
+       transform="matrix(0,-1.0269421,0.9737647,0,0,0)"><tspan
+         style="font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.170474"
          id="tspan12908-6-5">ERROR</tspan></text>
     <g
        class="annotation-text-g"
        id="g12710-4"
-       transform="matrix(0.18360013,0,0,0.18360013,-1.054146,5.6824378)">
+       transform="matrix(0.16600164,0,0,0.17506702,-1.053127,5.4962392)">
       <g
          class="cursor-pointer"
          transform="translate(5,23)"
@@ -6782,13 +6785,13 @@
            style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#ffffff;fill-opacity:1"
            id="text12706-3"><tspan
              style="font-weight:bold"
-             id="tspan12704-6">Extrapolation</tspan></text>
+             id="tspan12704-6">Extrap.</tspan></text>
       </g>
     </g>
     <g
        class="annotation-text-g"
        id="g12710-4-0"
-       transform="matrix(0.18360013,0,0,0.18360013,-1.054146,2.0104351)">
+       transform="matrix(0.16600164,0,0,0.17506702,-1.053127,1.9948986)">
       <g
          class="cursor-pointer"
          transform="translate(5,23)"
@@ -6814,40 +6817,42 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="2.3745172"
-       y="3.577333"
+       style="font-style:normal;font-weight:normal;font-size:2.3891px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.199092"
+       x="2.2115159"
+       y="3.4889724"
        id="text81552"><tspan
          sodipodi:role="line"
          id="tspan81550"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="2.3745172"
-         y="3.577333">(a)</tspan></text>
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.199092"
+         x="2.2115159"
+         y="3.4889724">A</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="2.3745172"
-       y="47.416542"
-       id="text81552-4"><tspan
+       style="font-style:normal;font-weight:normal;font-size:2.22936px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.185781"
+       x="2.02652"
+       y="46.71056"
+       id="text81552-4"
+       transform="scale(1.035278,0.96592411)"><tspan
          sodipodi:role="line"
          id="tspan81550-4"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="2.3745172"
-         y="47.416542">(b)</tspan></text>
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.185781"
+         x="2.02652"
+         y="46.71056">B</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="2.3745172"
-       y="163.73648"
-       id="text81552-4-3"><tspan
+       style="font-style:normal;font-weight:normal;font-size:2.22936px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.185781"
+       x="2.02652"
+       y="150.20862"
+       id="text81552-4-3"
+       transform="scale(1.035278,0.96592411)"><tspan
          id="tspan81550-4-0"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="2.3745172"
-         y="163.73648"
-         sodipodi:role="line">(c)</tspan></text>
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.185781"
+         x="2.02652"
+         y="150.20862"
+         sodipodi:role="line">C</tspan></text>
     <g
        id="g116523"
-       transform="matrix(0.78914958,0,0,0.78914958,-0.23882009,-14.679893)">
+       transform="matrix(0.72693296,0,0,0.67823528,-0.30928985,-8.249978)">
       <rect
          class="bg"
          x="8.9856195"
@@ -6968,7 +6973,7 @@
     <g
        class="yaxislayer-above"
        id="g14004"
-       transform="matrix(0.20879583,0,0,0.20879583,-9.8514881,3.879624)">
+       transform="matrix(0.19233435,0,0,0.17944975,-9.1640942,7.7010149)">
       <g
          class="y3tick"
          id="g13986">
@@ -7027,7 +7032,7 @@
     </g>
     <g
        id="g116498"
-       transform="matrix(0.78914958,0,0,0.78914958,-0.23882009,-16.767852)">
+       transform="matrix(0.72693296,0,0,0.67823528,-0.30928985,-10.044476)">
       <rect
          class="bg"
          x="8.9856195"
@@ -7142,7 +7147,7 @@
     <g
        class="yaxislayer-above"
        id="g14200"
-       transform="matrix(0.20879583,0,0,0.20879583,-9.8514881,-6.5601727)">
+       transform="matrix(0.19233435,0,0,0.17944975,-9.1640942,-1.2714773)">
       <g
          class="y5tick"
          id="g14186">
@@ -7190,7 +7195,7 @@
     </g>
     <g
        id="g116755"
-       transform="matrix(0.78914958,0,0,0.78914958,-0.23882009,-18.855811)">
+       transform="matrix(0.72693296,0,0,0.67823528,-0.30928985,-11.838974)">
       <g
          id="g116474">
         <rect
@@ -7351,7 +7356,7 @@
     <g
        class="yaxislayer-above"
        id="g14406"
-       transform="matrix(0.20879583,0,0,0.20879583,-9.8514881,-16.999971)">
+       transform="matrix(0.19233435,0,0,0.17944975,-9.1640942,-10.243971)">
       <g
          class="y7tick"
          id="g14396">
@@ -7388,29 +7393,42 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="26.069983"
-       y="160.23454"
-       id="text81552-4-3-7"><tspan
+       style="font-style:normal;font-weight:normal;font-size:2.22936px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.185781"
+       x="23.110046"
+       y="147.0927"
+       id="text81552-4-3-7"
+       transform="scale(1.035278,0.96592411)"><tspan
          id="tspan81550-4-0-8"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="26.069983"
-         y="160.23454"
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.185781"
+         x="23.110046"
+         y="147.0927"
          sodipodi:role="line">$V_{c, typ}$</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="127.97221"
-       y="161.036"
-       id="text81552-4-3-7-6"><tspan
+       style="font-style:normal;font-weight:normal;font-size:2.22936px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.185781"
+       x="113.77966"
+       y="147.8058"
+       id="text81552-4-3-7-6"
+       transform="scale(1.035278,0.96592411)"><tspan
          id="tspan81550-4-0-8-8"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="127.97221"
-         y="161.036"
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.185781"
+         x="113.77966"
+         y="147.8058"
+         sodipodi:role="line">$K_{cl}$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.30801px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.192335"
+       x="117.79358"
+       y="205.83685"
+       id="text81552-4-3-7-6-3"><tspan
+         id="tspan81550-4-0-8-8-6"
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.192335"
+         x="117.79358"
+         y="205.83685"
          sodipodi:role="line">$K_{cl}$</tspan></text>
     <g
        id="g127597"
-       transform="matrix(0.78914958,0,0,0.78914958,-0.23882009,-16.767848)">
+       transform="matrix(0.72693296,0,0,0.72693296,-0.30928985,-21.300854)">
       <g
          id="g116544"
          transform="matrix(0.84666453,0,0,0.3077258,-2.8475488,207.83911)">
@@ -7554,7 +7572,7 @@
     <g
        class="xaxislayer-above"
        id="g108214"
-       transform="matrix(0.17678002,0,0,0.20879583,-8.2841424,-10.589209)">
+       transform="matrix(0.16284267,0,0,0.19233435,-7.7203182,-15.609338)">
       <g
          class="x3tick"
          id="g108200">
@@ -7602,7 +7620,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.1602578,0,0,0.20879583,70.139383,174.96686)"
+       transform="matrix(0.14762306,0,0,0.19233435,64.52029,155.31743)"
        id="g14624-4">
       <text
          class="legendtext"
@@ -7639,7 +7657,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.1602578,0,0,0.20879583,70.139383,195.90861)"
+       transform="matrix(0.14762306,0,0,0.19233435,64.52029,174.60813)"
        id="g14714-8">
       <text
          class="legendtext"
@@ -7684,7 +7702,7 @@
     </g>
     <g
        class="traces"
-       transform="matrix(0.1602578,0,0,0.20879583,70.139384,214.4996)"
+       transform="matrix(0.14762306,0,0,0.19233435,64.52029,191.7334)"
        id="g14804-8">
       <text
          class="legendtext"
@@ -7729,7 +7747,7 @@
     </g>
     <g
        id="g125738"
-       transform="matrix(0.78914958,0,0,0.78914958,-98.101583,-9.3950347)">
+       transform="matrix(0.72693296,0,0,0.72693296,-90.456544,-14.509312)">
       <g
          id="g125708"
          transform="matrix(0.84309033,0,0,0.3561371,20.721189,158.67098)">
@@ -7871,7 +7889,7 @@
     </g>
     <g
        id="g127568"
-       transform="matrix(0.78914958,0,0,0.78914958,-0.23882009,-16.767848)">
+       transform="matrix(0.72693296,0,0,0.72693296,-0.30928985,-21.300854)">
       <g
          id="g126959"
          transform="matrix(0.84309033,0,0,0.3561371,-96.599965,138.4438)">
@@ -8032,18 +8050,18 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.50555px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.208796"
-       x="25.656494"
-       y="229.80997"
+       style="font-style:normal;font-weight:normal;font-size:2.30801px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#2a3f5f;fill-opacity:1;stroke:none;stroke-width:0.192335"
+       x="23.544436"
+       y="205.83685"
        id="text81552-4-3-7-1"><tspan
          id="tspan81550-4-0-8-5"
-         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.208796"
-         x="25.656494"
-         y="229.80997"
+         style="fill:#2a3f5f;fill-opacity:1;stroke-width:0.192335"
+         x="23.544436"
+         y="205.83685"
          sodipodi:role="line">$V_{c, typ}$</tspan></text>
     <g
        id="g138502"
-       transform="matrix(0.67304361,0,0,0.24284168,19.083228,146.9859)">
+       transform="matrix(0.61998079,0,0,0.22369602,17.489406,129.54249)">
       <g
          class="gridlayer"
          id="g133644"
@@ -8150,7 +8168,7 @@
     </g>
     <g
        id="g138910"
-       transform="matrix(0.78914958,0,0,0.78914958,-0.23882009,0.35341646)">
+       transform="matrix(0.72693296,0,0,0.72693296,-0.30928985,-5.5294273)">
       <g
          class="y2tick"
          id="g133690"
@@ -8191,7 +8209,7 @@
     <g
        class="xaxislayer-above"
        id="g134442"
-       transform="matrix(0.17807613,0,0,0.20879583,88.377911,-11.841972)">
+       transform="matrix(0.16403659,0,0,0.19233435,81.32089,-16.763334)">
       <g
          class="x3tick"
          id="g134420">
@@ -8261,7 +8279,7 @@
     </g>
     <g
        id="g140595"
-       transform="matrix(0.78914958,0,0,0.78914958,-75.04934,-7.9861545)">
+       transform="matrix(0.72693296,0,0,0.72693296,-69.221741,-13.211508)">
       <g
          id="g140565"
          transform="matrix(0.85287264,0,0,0.3077258,33.125031,169.36534)">
@@ -8403,7 +8421,7 @@
     </g>
     <g
        id="g141837"
-       transform="matrix(0.67304409,0,0,0.24284169,-46.295473,116.24695)">
+       transform="matrix(0.61998124,0,0,0.22369603,-42.734832,101.227)">
       <g
          class="gridlayer"
          id="g135984"
@@ -8511,7 +8529,7 @@
     <g
        class="y2tick"
        id="g136030"
-       transform="matrix(0.20879582,0,0,0.06425186,85.920295,134.39852)">
+       transform="matrix(0.19233434,0,0,0.05918624,79.057033,117.9475)">
       <text
          text-anchor="end"
          x="79"
@@ -8523,7 +8541,7 @@
     <g
        class="y2tick"
        id="g136038"
-       transform="matrix(0.20879582,0,0,0.06425186,85.920295,134.39852)">
+       transform="matrix(0.19233434,0,0,0.05918624,79.057033,117.9475)">
       <text
          text-anchor="end"
          x="79"
@@ -8535,7 +8553,7 @@
     <g
        class="y2tick"
        id="g136046"
-       transform="matrix(0.20879582,0,0,0.06425186,85.920295,134.39852)">
+       transform="matrix(0.19233434,0,0,0.05918624,79.057033,117.9475)">
       <text
          text-anchor="end"
          x="79"
